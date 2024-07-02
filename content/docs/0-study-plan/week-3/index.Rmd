@@ -1,0 +1,121 @@
+---
+bookHidden: false
+bookSearchExclude: false
+title: "Week 3 Study Plan"
+weight: 3
+bibliography: ../../../../static/libraries.bib
+---
+
+
+<p style="font-size:18px;font-weight:bold;">Week 3</p> 
+
+# Overview 
+
+
+This week, we will cover the following topics:
+
+- Module 3, which is concerned with the calculation of IBNR claim counts.
+- There are some slides with the main elements, but a major component of the module is with a spreadsheet, which can be downloaded [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291)
+
+
+<!-- Here is the end of week 2 video, which introduces week 3: -->
+
+<!-- <!--html_preserve--> -->
+<!-- <iframe height="420" width="640" allowfullscreen frameborder=0 src="https://echo360.net.au/media/5788e954-d697-4105-923f-33a8c74e5ae3/public?autoplay=false&automute=false"></iframe> -->
+<!-- <!--/html_preserve--> -->
+
+<!-- <p style="font-size:10px;color: rgb(252, 156, 249);"> If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and <a href="https://canvas.lms.unimelb.edu.au/courses/150864/external_tools/701">entered Lecture Capture</a> via Canvas once for each session. This is to restrict access to students enrolled at the University of Melbourne only. </p> -->
+
+
+
+
+See also detailed learning outcomes of 5.2 ("Liability valuations / Run-off triangles") of the CM2 syllabus [``here``](../../0-subject-guide/SILO).
+
+# Main references and lectures
+
+
+## Module 3: Reserving Claim Counts
+
+Read: [``Module 3: Reserving Claim Counts``](../../2-reserving/m3-reserving-claim-counts/)
+
+Annotate: [``slides``](../../../output/23-Top-M3-lec.pdf) 
+
+Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/153686/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/154246/external_tools/701)). This is where annotated slides will be made available, too.
+
+
+
+# Additional preparation and resources 
+
+## Mandatory
+
+1. Chapter 2 of @Tay00
+1. Spreadsheet [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291)
+
+## Optional
+
+1. Unit 5 of @IoA23
+
+
+
+# Tutorials
+
+Please let us know of any mistake or required update on [``Ed``](https://canvas.lms.unimelb.edu.au/courses/191080/external_tools/5837?display=borderless).
+
+<!-- ## Pre-Tutorial work -->
+
+<!-- Please study those questions **before** the tutorial. -->
+
+<!-- Pre-Tutorial exercises are available in the [``Pre-Tutorial book``](https://canvas.lms.unimelb.edu.au/courses/173733/modules/items/4464391), which already includes solutions. It is recommended to attempt the questions *before* looking at the solutions -->
+
+## Tutorial materials
+
+Some questions have been especially selected for the tutorials. Students should review The [``Tutorial book``]() includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set.
+
+Note that solutions will be gradually added to that same document. Hence it is not recommended to print it, as it will regularly change (typos will also dynamically be corrected).
+
+
+## This week
+
+All of Module 3 is in scope for this week.
+
+<!-- A recording will be made available at the end of the week. -->
+
+<!-- Here is the recording available for Week 3 from William: -->
+
+<!-- <!--html_preserve--> -->
+<!-- <iframe height="420" width="640" allowfullscreen frameborder=0 src="https://echo360.net.au/media/71c0b08b-80da-4777-b6d7-b8e2af0b4c26/public?autoplay=false&automute=false"></iframe> -->
+<!-- <!--/html_preserve--> -->
+
+<!-- Here is the recording available for Week 3 from Eric: -->
+
+<!-- <!--html_preserve--> -->
+<!-- <iframe height="420" width="640" allowfullscreen frameborder=0 src="https://echo360.net.au/media/6f1c6fc6-a83f-4700-9285-14b09a8d8918/public?autoplay=false&automute=false"></iframe> -->
+<!-- <!--/html_preserve--> -->
+
+<!-- <p style="font-size:10px;color: rgb(252, 156, 249);"> If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and <a href="https://canvas.lms.unimelb.edu.au/courses/145406/external_tools/701">entered Lecture Capture</a> via Canvas once for each session. This is to restrict access to students enrolled at the University of Melbourne only. </p> -->
+
+
+## Next week (week 4)
+
+Next week, we will discuss Module 4.
+
+
+
+
+# Preparation for assessment
+
+
+## Mid-semester (15%) and final (60%) exams
+
+<!-- install.packages("devtools") -->
+<!-- devtools::install_github("hadley/emo") -->
+
+- Finalise your summary of Module 1. 
+- Start your summary of Module 2.
+
+## Assignment (25%)
+
+- Nothing to do for now.
+
+
+# References

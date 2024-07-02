@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on Topics in Actuarial, Insurance and Finance</title>
+    <link>https://topics-actl.netlify.app/</link>
+    <description>Recent content in Homepage on Topics in Actuarial, Insurance and Finance</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://topics-actl.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eligibility and Requirements</title>
+      <link>https://topics-actl.netlify.app/docs/0-subject-guide/Eligibility/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-subject-guide/Eligibility/</guid>
+      <description>To view the eligibility and requirements, including prerequisites, corequisites, recommended background knowledge and core participation requirements for this subject, please see the University Handbook:
+  ACTL30007 handbook  ACTL90020 handbook  Prerequisites #  Relevant knowledge from ACTL20003 Stochastic Techniques in Insurance (or MAST20004 Probability) includes in particular:
+ Distributions of random variables Expectations and conditional expectations Moment and probability generating functions Law of Large Numbers, and the Central Limit Theorem  Relevant knowledge from MAST20005 Statistics includes in particular:</description>
+    </item>
+    
+    <item>
+      <title>Week 1 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-1/</guid>
+      <description>Week 1 Overview #  This week, we will cover the following topics:
+ Introduction to the course (Module 1): what are the broader questions we will answer in this subject, and how are they connected? Collective Risk Modelling (Module 2): how do you work out the distribution of the sum of claims if you can make assumptions about their frequency and severity, and what are typical assumptions for claims frequency?</description>
+    </item>
+    
+    <item>
+      <title>Learning Outcomes</title>
+      <link>https://topics-actl.netlify.app/docs/0-subject-guide/SILO/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-subject-guide/SILO/</guid>
+      <description>Subject Intended Learning Outcomes (SILO) #  To view the subject objectives and the generic skills you will develop through successful completion of this subject, please see the University Handbook.
+ACTL30007 SILO #  The ACTL30007 subject intended learning outcomes (SILO) are as follows:
+ Apply relevant pre-requisite knowledge of mathematics, probability theory and statistics in the solution of a range of practical problems. Derive and calculate probabilities for, and moments of, loss distributions both with and without simple reinsurance arrangements.</description>
+    </item>
+    
+    <item>
+      <title>Week 2 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-2/</guid>
+      <description>Week 2 Overview #  This week, we will cover the following topics:
+ End of Module 2 (Poisson decomposition, and \((a,b)\) family) Data analysis and descriptive statistics (Module 3): how do get a good sense of the properties of a data set, either graphically or numerically? Selected parametric claim size distributions (Module 3): what are good potential candidates for a describing the data likelihood profile with a parametric function? Fitting of distributions (Module 3): How do we then go about fitting the parameters to a given data set?</description>
+    </item>
+    
+    <item>
+      <title>Activities</title>
+      <link>https://topics-actl.netlify.app/docs/0-subject-guide/Activities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-subject-guide/Activities/</guid>
+      <description>Lectures #  Lecture Times #  Lectures will be delivered live, in dual mode (both on Zoom and in person) in the following venue:
+ [PG] PAR-Alan Gilbert-121 (Theatre 3), Mondays, from 11.05am to 1.00pm [UG] PAR-Kwong Lee Dow-227, Mondays, from 2.20pm to 4.15pm  Notes:
+ The tutorials on Friday 7 April 2022 won&amp;rsquo;t run (Good Friday holiday). Students with a tutorial at another time that week will have an opportunity to do a Q&amp;amp;A with their tutor.</description>
+    </item>
+    
+    <item>
+      <title>Week 3 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-3/</guid>
+      <description>Week 3 Overview #  This week, we will cover the following topics:
+ End of Section 3.4, covering the most complicated case of left-truncation and right-censoring (with parameters changing potentially with each claim) Model selection (Module 3): how do we assess how good a model fits to data (“goodness-of-fit”)? How do we make a choice? Calculating wihin layers for claim sizes (Module 3): reinsurance, and some policy tranformations (in particular, stop loss / deductibles) lead to different “layers” of claims being covered by different parties.</description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://topics-actl.netlify.app/docs/0-subject-guide/Resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-subject-guide/Resources/</guid>
+      <description>Website #  Here is a video with detailed overview of the course resources and organisation:
+ The current website contains (or links) to all the resources you need for the course (compare the following list with left hand side menu):
+  Subject guide (you are reading it!)  Study Plan: this outlines your recommended study plan for the subject, week by week. This will include a link to the video lectures / recordings, too.</description>
+    </item>
+    
+    <item>
+      <title>Week 4 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-4/</guid>
+      <description>Week 4 Overview #  This week, we will cover the following topics, mostly from Module 4:
+ Finalising stop-loss calculations Discretisation of continuous distributions (to be able to use Panjer, in particular; see next item) Use of Panjer’s recursion algorithm, which allows us to calculate the exact compound distribution of any random sum, if the frequency follows the \((a,b)\) family Recap of the Normal approximation, as well as translated gamma and lognormal approximations, to be used when one needs a quick approximation, or when only moments are available.</description>
+    </item>
+    
+    <item>
+      <title>Assessment</title>
+      <link>https://topics-actl.netlify.app/docs/0-subject-guide/Assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-subject-guide/Assessment/</guid>
+      <description>Assessment Overview #  Assessment structure #  Your assessment for this subject comprises the following:
+  a 60 minute closed book mid-semester exam (15%)  an individual assignment (25%)  a 2-in-3 hour online final exam (60%)  Hurdle requirement: To pass this subject students must pass the end of semester examination.
+In the following sections, details are provided (and will be populated throughout semester) about those assessments.</description>
+    </item>
+    
+    <item>
+      <title>Week 5 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-5/</guid>
+      <description>Week 5 Overview #  Continuing on with the Claims Modelling component of the subject, which corresponds to the Section 1 of the CS2 syllabus; In particular, we will cover Module 5–Copulas–and
+ discuss what stochastic dependence means, how it arises in an insurance context, and discuss some examples; discuss how to extract the mathematical form of a stochastic dependence structure through copulas briefly discuss how to use copulas in practice  Here is the end of week 4 video, which introduces week 5:</description>
+    </item>
+    
+    <item>
+      <title>Week 6 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-6/</guid>
+      <description>Week 6 Overview #  Continuing on with the Claims Modelling component of the subject, which corresponds to the Section 1 of the CS2 syllabus; In particular, we will cover Module 6–Extreme Value Theory–and
+ discuss how to work out the limiting distribution of the maximum of a sample; discuss how to work out the limiting distribution of the excess cost of a threshold.  Here is the end of week 5 video, which introduces week 6:</description>
+    </item>
+    
+    <item>
+      <title>Week 7 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-7/</guid>
+      <description>Week 7 Overview #  This week, we will focus on the mid-semester exam
+There won’t be lectures, and tutorials will focus on Module 6.
+ -- If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and entered Lecture Capture via Canvas once for each session. This is to restrict access to students enrolled at the University of Melbourne only. -- Main references and lectures #  n/a</description>
+    </item>
+    
+    <item>
+      <title>Week 8 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-8/</guid>
+      <description>Week 8 Overview #  We will introduce the Time Series component of the subject, which corresponds to the Section 2 of the CS2 syllabus
+In particular, we will:
+ explore some example of time series which we will further analyse later in the time series modules introduce some basic models (which we will review in full detail in Module 9) discuss the concept of “Stationarity” Finally, discuss the estimation of “correlation” in the context of time series (the presence of which, really, is the whole point of time series analysis)   -- If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and entered Lecture Capture via Canvas once for each session.</description>
+    </item>
+    
+    <item>
+      <title>Week 9 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-9/</guid>
+      <description>Week 9 Overview #  Note that there is no face to face lecture this week due to unexpected circumstances. Please watch the recorded lectures from Lecture Capture. Thanks for your understanding! Continuing on with the Time Series component of the subject, which corresponds to the Section 2 of the CS2 syllabus; In particular,
+ We will revisit regression from the time series context (TS 2.1) We will see how to explore data, and try to “detrend” a time series (TS 2.</description>
+    </item>
+    
+    <item>
+      <title>Week 10 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-10/</guid>
+      <description>Week 10 Overview #  Continuing on with the Time Series component of the subject, which corresponds to the Section 2 of the CS2 syllabus; In particular, we will
+ introduce the PACF; study in detail \(AR(p)\) models; study in detail \(MA(q)\) models.   -- If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and entered Lecture Capture via Canvas once for each session.</description>
+    </item>
+    
+    <item>
+      <title>Week 11 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-11/</guid>
+      <description>Week 11 Overview #  Continuing on with the Time Series component of the subject, which corresponds to the Section 2 of the CS2 syllabus; In particular, we will
+ study in detail \(ARMA(p,q)\) models; study in detail \(ARIMA(p,d,q)\) models; introduce seasonal \(ARIMA\) models; introduce multivariate autoregressive \(VAR(p)\) models; introduce some additional models mentioned in the CS2 syllabus.  Here is the end of week 10 video, which introduces week 11:</description>
+    </item>
+    
+    <item>
+      <title>Week 12 Study Plan</title>
+      <link>https://topics-actl.netlify.app/docs/0-study-plan/week-12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-12/</guid>
+      <description>Week 12 Please fill out the end of subject survey (ESS) here– thanks in advance! Overview #  Continuing on with the Time Series component of the subject, which corresponds to the Section 2 of the CS2 syllabus; In particular, we will
+ discuss how to fit the models seen in Module 9 to data sets; discuss how to use those fitted models to perform forecasts.   -- If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and entered Lecture Capture via Canvas once for each session.</description>
+    </item>
+    
+    <item>
+      <title>Prerequisite Knowledge</title>
+      <link>https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/</guid>
+      <description>Summary of some of the prerequisite knowledge required for this subject: The first two parts ( Mathematics and Probability) below are basic reminders, and could probably be skipped by most students.
+The third part is more advanced and corresponds to Section 1.2 of the prescribed textbook MW.
+Students are recommended to review all those concepts prior to week 1, and to ask questions at the week 1 tutorial if needed.</description>
+    </item>
+    
+    <item>
+      <title>M1 Introduction</title>
+      <link>https://topics-actl.netlify.app/docs/m1-introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/m1-introduction/</guid>
+      <description>The nature of general insurance (MW 1.1) #  General insurance #   also called non-life, or property and casualty  Includes: car, liability, property, workers compensation, marine, credit, legal, travel, health, …   for more background:  see general insurance practice for further details about the general insurance area see Pooling and Insurance for further details about the law of large numbers mechanism    Risk components #  Risk / randomness comes from different sources:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://topics-actl.netlify.app/template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/template/</guid>
+      <description>TO BE UPDATED #  -- -- </description>
+    </item>
+    
+  </channel>
+</rss>
