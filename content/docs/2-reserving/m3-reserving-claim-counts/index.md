@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '14 August 2023'
+date: '04 July 2024'
 output:
   beamer_presentation:
     toc: true
@@ -137,7 +137,7 @@ Notes on the extrapolation:
 - Now, for the tail estimate (“11 and later”):
   `$$\sum_{j=11}^\infty  \tilde{v}(j) = e^{\beta_0}\left(e^{\beta_1}\right)^{6} \sum_{j=0}^\infty \left(e^{\beta_1}\right)^{j} = e^{\beta_0}\left(e^{\beta_1}\right)^{6}\frac{1}{1-e^{\beta_1}} \quad \text{(2.15).}$$`
 
-## Normalised methods
+## Normalised methods `\(\maltese\)`
 
 ### Motivation
 
@@ -319,7 +319,7 @@ is the proportion of claims notified **in** development period `\(j\)` (assume `
 
 *Main reference:*
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 
 <div id="ref-Tay00" class="csl-entry">
 

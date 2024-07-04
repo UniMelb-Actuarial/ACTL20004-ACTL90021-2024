@@ -207,7 +207,7 @@ $$ \tilde{v}(j) = \exp\left[\beta_0+\beta_1 (j-5)\right] = e^{\beta_0}\times\lef
 - Now, for the tail estimate ("11 and later"):
 $$\sum_{j=11}^\infty  \tilde{v}(j) = e^{\beta_0}\left(e^{\beta_1}\right)^{6} \sum_{j=0}^\infty \left(e^{\beta_1}\right)^{j} = e^{\beta_0}\left(e^{\beta_1}\right)^{6}\frac{1}{1-e^{\beta_1}} \quad \text{(2.15).}$$
 
-## Normalised methods
+## Normalised methods $\maltese$
 
 ### Motivation
 
