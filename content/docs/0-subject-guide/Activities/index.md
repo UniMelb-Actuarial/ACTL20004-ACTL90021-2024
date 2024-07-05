@@ -15,15 +15,15 @@ title: "Activities"
 
 Lectures will be delivered live, in dual mode (both on Zoom and in person) in the following venue:
 
-- [PG] PAR-FBE-211 (Theatre 2), Mondays, from 11:05am to 1:00pm  
-- [UG] PAR-The Spot-4007, Mondays, from 2.15pm to 4.15pm
+- [PG] [`FBE Theatre 2`](https://maps.unimelb.edu.au/point?poi=666402), Mondays, from 10:05am to 11:55am  
+- [UG] [`FBE Prest Theatre`](https://maps.unimelb.edu.au/point?poi=1189246), Mondays, from 2.20pm to 4.05pm
 
 <img src="../../../schedule.jpg" width="100%" style="display: block; margin: auto;" />
 
 
 Notes:
 
-- Tutorials in Week 5 will be dedicated to Q&A for the MSE. Tutorials for week 5 will be covered in week 6 (after the MSE).
+- Lectures and tutorials run in week 6 as normal. The mid-semester exam will be on Wednesday night.
 - Details about readings are available below under "Subject Resources". They can be downloaded from the Canvas [Readings Online](https://canvas.lms.unimelb.edu.au/courses/191080/external_tools/1188).
 
 Note this subject is one-quarter of a standard load. That means, including attendance at classes, you should be putting the equivalent of one quarter of a week’s work into this subject, i.e. 9 to 10 hours. 
