@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Exposure (2.1) #  General idea #  Assume that we there exists \(e(i)\) so that we can write
+$$E[N(i,j)] \equiv e(i) \mu(j),$$ where (this is important), \(\mu(j)\) does not depend on \(i\).
+ \(e(i)\) will be called the exposure in period of occurrence \(i\) (for instance, “car-years”). \(\mu(j)\) may be interpreted as relative claim frequency in period \(j\) (per unit of exposure). The cumulative version $$\frac{E[N(i,\cdot)]}{e(i)} = \mu(\cdot)$$ is the relative frequency of claim occurence per period.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="M3 Reserving Claim Counts" />
+<meta property="og:description" content="Exposure (2.1) #  General idea #  Assume that we there exists \(e(i)\) so that we can write
+$$E[N(i,j)] \equiv e(i) \mu(j),$$ where (this is important), \(\mu(j)\) does not depend on \(i\).
+ \(e(i)\) will be called the exposure in period of occurrence \(i\) (for instance, “car-years”). \(\mu(j)\) may be interpreted as relative claim frequency in period \(j\) (per unit of exposure). The cumulative version $$\frac{E[N(i,\cdot)]}{e(i)} = \mu(\cdot)$$ is the relative frequency of claim occurence per period." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://topics-actl.netlify.app/docs/2-reserving/m3-reserving-claim-counts/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2024-07-05T14:44:27+10:00" />
+
+<title>M3 Reserving Claim Counts | Topics in Actuarial, Insurance and Finance</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.a08e958a0c32c71fa52257f56602fc9e6f4a8586733f7d90b6b544b160364dce.css" integrity="sha256-oI6Vigwyxx&#43;lIlf1ZgL8nm9KhYZzP32QtrVEsWA2Tc4=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.7ccdccfd9024e93d2231178f57499c78091edc5e2711797bcd4c4128c3fe0ffc.js" integrity="sha256-fM3M/ZAk6T0iMRePV0mceAke3F4nEXl7zUxBKMP&#43;D/w=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script>
+MathJax = {
+  tex: {
+      macros: { 
+          angl: ["\\enclose{actuarial}{#1}", 1],
+          alert:["\\textcolor{red}{#1}", 1],
+          termins: ["A^{1}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          insend: ["\\bar{A}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          pureend: ["A^{\\,\\,\\,\\, 1}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          adv: ["\\maltese"]
+      }
+  }
+};
+</script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><img src="/img/PRIMARY_A_Vertical_Housed_RGB.png" alt="Logo" /><span style="color: black;">Topics in Actuarial, Insurance and Finance</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0c375332c765cd598c6ce4ee8867890f" class="toggle"  />
+    <label for="section-0c375332c765cd598c6ce4ee8867890f" class="flex justify-between">
+      <a href="https://topics-actl.netlify.app/docs/0-subject-guide/" class="">Subject Guide</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Eligibility/" class="">Eligibility and Requirements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/SILO/" class="">Learning Outcomes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Activities/" class="">Activities</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Resources/" class="">Resources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Assessment/" class="">Assessment</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b29660809eb857420b6473840d34e82" class="toggle"  />
+    <label for="section-5b29660809eb857420b6473840d34e82" class="flex justify-between">
+      <a href="https://topics-actl.netlify.app/docs/0-study-plan/" class="">Weekly Study Plan</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-1/" class="">Week 1 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-2/" class="">Week 2 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-3/" class="">Week 3 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-4/" class="">Week 4 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-5/" class="">Week 5 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-6/" class="">Week 6 Study Plan</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/" class="">Prerequisite Knowledge</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/1-utility/" class="">Utility theory (CM2 1.2)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/" class="">M1 Utility, Risk and Insurance</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/" class="">Reserving (CM2 5.2)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m2-basic-reserving-concepts/" class="">M2 Basic Reserving Concepts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m3-reserving-claim-counts/" class=" active">M3 Reserving Claim Counts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m4-reserving-claim-amounts/" class="">M4 Reserving Claim Amounts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m5-reserving-combination/" class="">M5 Reserving Combination</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/3-excel/" class="">Excel (CM2 Exam B)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/3-excel/m6-excel/" class="">M6 Excel Topics</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/4-stochastic-interest/" class="">Stochastic interest (CM2 3)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/5-ruin-theory/" class="">Ruin Theory (CM2 5.1 5.3)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        ___Websites and forums___
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless" target="_blank" rel="noopener">
+        Ed discussion forum
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/183926" target="_blank" rel="noopener">
+        ACTL20004 Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/181779" target="_blank" rel="noopener">
+        ACTL90021 Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/220261" target="_blank" rel="noopener">
+        Community Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        _______Exercises__________
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5029017" target="_blank" rel="noopener">
+        Tutorial exercises
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        __________Links___________
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://bavanzicv.netlify.app/" target="_blank" rel="noopener">
+        Benjamin Avanzi
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/benjaminavanzi/" target="_blank" rel="noopener">
+        Let&#39;s connect on LinkedIn!
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://yuyuchen-uw.github.io" target="_blank" rel="noopener">
+        Yuyu Chen
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://actl10001.netlify.app/" target="_blank" rel="noopener">
+        Introduction to Actuarial Studies 2021
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://communicate-data-with-r.netlify.app/" target="_blank" rel="noopener">
+        Communicate Data with R
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://actuaries.asn.au/becoming-an-actuary/how-to-become-an-actuary/for-uni-students/become-a-uni-subscriber/" target="_blank" rel="noopener">
+        Actuaries Institute info
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>M3 Reserving Claim Counts</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#exposure-21">Exposure (2.1)</a>
+      <ul>
+        <li><a href="#general-idea">General idea</a></li>
+      </ul>
+    </li>
+    <li><a href="#ibnr-claims---exposure-based-methods-222">IBNR claims - Exposure based methods (2.2.2)</a>
+      <ul>
+        <li><a href="#allowing-for-an-i-effect-in-mu">Allowing for an <code>\(i\)</code> effect in <code>\(\mu\)</code></a></li>
+        <li><a href="#examples-of-fi">Examples of <code>\(f(i)\)</code></a></li>
+        <li><a href="#estimating-nij">Estimating <code>\(N(i,j)\)</code></a></li>
+        <li><a href="#example">Example</a></li>
+      </ul>
+    </li>
+    <li><a href="#ibnr-claims---normalised-methods-223-maltese">IBNR claims - Normalised methods (2.2.3) <code>\(\maltese\)</code></a>
+      <ul>
+        <li><a href="#motivation">Motivation</a></li>
+        <li><a href="#the-idea">The idea</a></li>
+        <li><a href="#generalisation">Generalisation</a></li>
+        <li><a href="#example-1">Example</a></li>
+      </ul>
+    </li>
+    <li><a href="#ibnr-claims---chain-ladder-224">IBNR claims - Chain Ladder (2.2.4)</a>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#derivation-1---heuristic-approach">Derivation 1 - Heuristic approach</a>
+          <ul>
+            <li><a href="#example-2">Example</a></li>
+          </ul>
+        </li>
+        <li><a href="#derivation-2---poisson-approach">Derivation 2 - Poisson approach</a></li>
+        <li><a href="#derivation-3---non-parametric-approach">Derivation 3 - Non-parametric approach</a></li>
+        <li><a href="#the-chain-ladder-setting">The Chain Ladder setting</a></li>
+      </ul>
+    </li>
+    <li><a href="#claim-frequency-23">Claim frequency (2.3)</a>
+      <ul>
+        <li><a href="#claim-frequency">Claim frequency</a></li>
+        <li><a href="#notified-claim-frequency">Notified claim frequency</a></li>
+        <li><a href="#example-3">Example</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="exposure-21">
+  Exposure (2.1)
+  <a class="anchor" href="#exposure-21">#</a>
+</h1>
+<h2 id="general-idea">
+  General idea
+  <a class="anchor" href="#general-idea">#</a>
+</h2>
+<p>Assume that we there exists <code>\(e(i)\)</code> so that we can write</p>
+<p><code>$$E[N(i,j)] \equiv e(i) \mu(j),$$</code>
+where (this is important), <code>\(\mu(j)\)</code> does <strong>not depend on <code>\(i\)</code></strong>.</p>
+<ul>
+<li><code>\(e(i)\)</code> will be called the <strong>exposure</strong> in period of occurrence <code>\(i\)</code> (for instance, “car-years”).</li>
+<li><code>\(\mu(j)\)</code> may be interpreted as <strong>relative claim frequency</strong> in period <code>\(j\)</code> (per unit of exposure).</li>
+<li>The cumulative version
+<code>$$\frac{E[N(i,\cdot)]}{e(i)} = \mu(\cdot)$$</code>
+is the <strong>relative frequency of claim occurence per period</strong>.</li>
+</ul>
+<hr>
+<p>In practice, this is not always achievable, that is,
+<code>$$\frac{E[N(i,j)]}{e(i)} = \mu(i,j),$$</code>
+with only <em>weak dependency</em> of <code>\(\mu(i,j)\)</code> on <code>\(i\)</code>.</p>
+<h1 id="ibnr-claims---exposure-based-methods-222">
+  IBNR claims - Exposure based methods (2.2.2)
+  <a class="anchor" href="#ibnr-claims---exposure-based-methods-222">#</a>
+</h1>
+<h2 id="allowing-for-an-i-effect-in-mu">
+  Allowing for an <code>\(i\)</code> effect in <code>\(\mu\)</code>
+  <a class="anchor" href="#allowing-for-an-i-effect-in-mu">#</a>
+</h2>
+<p>Assume
+$$ \mu(i,j) = f(i) v(j),$$
+where <code>\(f(i)\)</code> is some known function (otherwise determined).</p>
+<p>We have then
+<code>$$E[N(i,j)] = e(i)f(i)v(j).$$</code>
+We will discuss how to work with this.</p>
+<h2 id="examples-of-fi">
+  Examples of <code>\(f(i)\)</code>
+  <a class="anchor" href="#examples-of-fi">#</a>
+</h2>
+<ul>
+<li>A simple example could be:
+$$ f(i) = \alpha + \beta i,$$
+which leads to a linear adjustment across rows (periods of origin <code>\(i\)</code>) to “base frequency” of development <code>\(v(j)\)</code> (for given development period <code>\(j\)</code>).</li>
+<li>It is unlikely to hold across all columns without modification, so one could extend this to
+$$ \mu(i,j) = f_j(i) v(j)$$
+so that <code>\(\alpha\)</code> and <code>\(\beta\)</code> will (potentially) depend on <code>\(j\)</code> as well</li>
+<li>This could lead to a highly over-parametrised model.</li>
+</ul>
+<hr>
+<ul>
+<li>In practice, changes in “development speed” often occur in the first two development periods mostly, and in opposite direction (justifying a separate <code>\(\alpha\)</code> and <code>\(\beta\)</code>).</li>
+<li>We could then use
+<code>\begin{eqnarray*} \mu(i,0) &amp;=&amp; f_0(i) = \alpha_0 + \beta_0 i, \\ \mu(i,1) &amp;=&amp; f_1(i) = \alpha_1 + \beta_1 i, \\ \mu(i,j) &amp;=&amp; v(j),\; j=2, 3, \ldots. \end{eqnarray*}</code></li>
+</ul>
+<h2 id="estimating-nij">
+  Estimating <code>\(N(i,j)\)</code>
+  <a class="anchor" href="#estimating-nij">#</a>
+</h2>
+<p>Now, assume
+<code>$$N(i,j)\sim \text{Poisson}(e(i)f(i)v(j))$$</code>
+so that (assuming independence across periods of origin)
+<code>$$N(\cdot,j)\sim \text{Poisson}\left(v(j) \sum_i e(i)f(i)\right).$$</code>
+Then we can show that
+<code>$$\hat{v}(j) = \frac{N(\cdot,j)}{\sum_i e(i)f(i)}$$</code>
+(over existing data) is a maximum likelihood, minimum variance, unbiased, consistent estimator (in short, a good one!).</p>
+<hr>
+<p>In the end, our estimator for <code>\(E[N(i,j)]\)</code> is
+<code>$$\widehat{E[N(i,j)]} = e(i)f(i)\hat{v}(j)$$</code>
+with IBNR
+<code>$$\text{IBNR}(i) = e(i)f(i)\left[ \sum_{j=I-i+1}^I + \sum_{j=I+1}^\infty \right] \hat{v}(j).$$</code></p>
+<ul>
+<li>the first <code>\(\sum\)</code> include <code>\(\hat{v}\)</code>’s estimated from available data</li>
+<li>the second <code>\(\sum\)</code> cannot be estimated from data, and will be extrapolated from the former set (e.g. linear regression or more typically, log-linear regression as exemplified later).</li>
+</ul>
+<h2 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h2>
+<p>Taylor (2000), Table 2.1 and Table 2.2 provide an example of such calculations, where <code>\(f(i)=1\)</code>.</p>
+<p>See the spreadsheet 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291"><code>here</code></a>.</p>
+<hr>
+<p>Notes on the extrapolation:</p>
+<ul>
+<li>We fit a linear regression to <code>\(\ln \hat{v}(j)\)</code> for <code>\(j=4,\ldots,10\)</code> and tell Excel that <code>\(x \equiv j-5\)</code>.</li>
+<li>Using <code>SLOPE</code> and <code>INTERCEPT</code> functions we get <code>\(\beta_1\)</code> and <code>\(\beta_0\)</code>, so that
+$$ \tilde{v}(j) = \exp\left[\beta_0+\beta_1 (j-5)\right] = e^{\beta_0}\times\left(e^{\beta_1}\right)^{j-5} = 3.87\times \left(0.54\right)^{j-5} \quad \text{(2.14)}.$$</li>
+<li>Note you can also get <code>\(\beta+\beta_1 (j-5)\)</code> with the Excel function <code>FORECAST</code>.</li>
+<li>Now, for the tail estimate (“11 and later”):
+<code>$$\sum_{j=11}^\infty  \tilde{v}(j) = e^{\beta_0}\left(e^{\beta_1}\right)^{6} \sum_{j=0}^\infty \left(e^{\beta_1}\right)^{j} = e^{\beta_0}\left(e^{\beta_1}\right)^{6}\frac{1}{1-e^{\beta_1}} \quad \text{(2.15).}$$</code></li>
+</ul>
+<h1 id="ibnr-claims---normalised-methods-223-maltese">
+  IBNR claims - Normalised methods (2.2.3) <code>\(\maltese\)</code>
+  <a class="anchor" href="#ibnr-claims---normalised-methods-223-maltese">#</a>
+</h1>
+<h2 id="motivation">
+  Motivation
+  <a class="anchor" href="#motivation">#</a>
+</h2>
+<ul>
+<li>In the previous section, one hoped that claim notification rates <code>\(\mu\)</code> (as proportions of exposure <code>\(e\)</code> ) would be consistent (constant) across periods of origin <code>\(i\)</code>, or at least approximatively or predictively so.</li>
+<li>There may not always exist such an exposure.</li>
+<li>For instance, consider Public Liability of a manufacturer of toys:
+<ul>
+<li>Would time a good measure of exposure? or revenue?</li>
+<li>This would unlikely to be satisfactory as the mix of business (which toys are sold and in what quantities) is likely to change all the time.</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-idea">
+  The idea
+  <a class="anchor" href="#the-idea">#</a>
+</h2>
+<ul>
+<li>We keep the idea of multiplicative structure, but <code>\(\mu\)</code> would multiply something else than <code>\(e(i)\)</code>, say <code>\(\alpha(i)\)</code>:
+$$ E[N(i,j)] = \alpha(i)\mu(j).$$</li>
+<li>Then we automatically have
+<code>$$\frac{E[N(i,j)]}{E[N(i,0)]}= \frac{\mu(j)}{\mu(0)}$$</code>
+which is independent of <code>\(i\)</code>.</li>
+<li>Now Jensen’s inequality teaches us that
+<code>$$\frac{E[N(i,j)]}{E[N(i,0)]} \neq E\left[\frac{N(i,j)}{N(i,0)}\right];$$</code>
+Nevertheless Taylor (2000) argues that the difference is small and<br>
+that we can use the ratios <code>\(N(i,j)/N(i,0)\)</code> to estimate the <code>\(\mu\)</code>’s.</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>Taking a weighted average, we get
+<code>$$\hat{v}(j) = \frac{\sum_i N(i,j)}{\sum_i N(i,0)}$$</code>
+as an (approximately) unbiased estimator of <code>\(\mu(j)/\mu(0)\)</code>.</p>
+</li>
+<li>
+<p>Hence,
+<code>$$E[N(i,j)] \text{ is estimated by }N(i,0)\hat{v}(j)$$</code>
+and
+$$ \text{IBNR}(i) = N(i,0) \left[ \sum_{j=I-i+1}^I + \sum_{j=I+1}^\infty  \right] \hat{v}(j).$$
+This is analogous to the previous “exposure” based formula.</p>
+</li>
+<li>
+<p>Note that even if we don’t have <code>\(E[N(i,j)] = \alpha(i)\mu(j)\)</code> but rather <code>\(E[N(i,j)] = \alpha_j(i)\mu(j)\)</code>, the triangle of normalised counts <code>\(N(i,j)/N(i,0)\)</code> are useful to investigate, to look for trends.</p>
+</li>
+</ul>
+<h2 id="generalisation">
+  Generalisation
+  <a class="anchor" href="#generalisation">#</a>
+</h2>
+<ul>
+<li>We will now “anchor” our prediction not just on <code>\(N(i,0)\)</code>, but on on a subset <code>\(S\)</code> of existing data.</li>
+<li>This generalises what we had before to
+<code>$$\frac{E[N(i,j)]}{E\left[\sum_{m \in S} N(i,m)\right]} = \frac{\mu(j)}{\sum_{m \in S} \mu(m)}.$$</code>
+where <code>\(S\)</code> is any subset of <code>\(\{0,1,\ldots,I\}\)</code>, but typically the first <code>\(m\)</code> development periods for each period of origin <code>\(i\)</code>.</li>
+<li>It is assumed that this ratio is independent of <code>\(i\)</code>.</li>
+<li>This should work well if <code>\(S\)</code> is deemed to be a good indicator of the propensity to claim in a given period <code>\(i\)</code>.</li>
+</ul>
+<hr>
+<ul>
+<li>The prediction of <code>\(N(i,j)\)</code> becomes
+<code>$$\left(\sum_{m \in S} N(i,m)\right) \hat{v}(j)$$</code>
+with <code>\(\hat{v}(j)\)</code> the estimate of the the ratio on the previous slide.</li>
+<li>Note that the most recent origin years may require special treatment (see example), as we do not have observations for all <code>\(m\in S\)</code>.</li>
+</ul>
+<h2 id="example-1">
+  Example
+  <a class="anchor" href="#example-1">#</a>
+</h2>
+<ul>
+<li>Table 2.3 and 2.4 revisit the previous example with <code>\(S=\{0,1\}\)</code>.</li>
+<li>This can be useful if some disturbance to the claim notification process has caused a movement between development periods 0 and 1 but has had no other effect.</li>
+<li>See the spreadsheet 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291"><code>here</code></a>.</li>
+</ul>
+<hr>
+<p>Notes on treatment of the last row:</p>
+<ul>
+<li>The last row in the triangle requires special treament, as only <code>\(N(I,0)\)</code> is available. We extrapolate
+<code>$$N(I,0)+N(I,1) \text{ as }N(I,0) \frac{\hat{v}(0)+\hat{v}(1)}{\hat{v}(0)}.$$</code>
+Now, because <code>\(\hat{v}(0)+\hat{v}(1) = 1000\)</code> (by definition since we take them from the same type of average - “orange” here) we end up with
+$$ N(I,j)\text{ is estimated by }\left(N(I,0) \frac{\hat{v}(0)+\hat{v}(1)}{\hat{v}(0)}\right)\frac{\hat{v}(j)}{1000} = N(I,0)\frac{\hat{v}(j)}{\hat{v}(0)}.$$</li>
+</ul>
+<h1 id="ibnr-claims---chain-ladder-224">
+  IBNR claims - Chain Ladder (2.2.4)
+  <a class="anchor" href="#ibnr-claims---chain-ladder-224">#</a>
+</h1>
+<h2 id="introduction">
+  Introduction
+  <a class="anchor" href="#introduction">#</a>
+</h2>
+<ul>
+<li>Probably the most famous (and basic) loss reserving technique.</li>
+<li>Quoting Taylor (2000): “The name is understood to refer to the chaining of a sequence of ratios (the age to age factors below) into a ladder of factors (the age to ultimate factors below) which enable one to climb (i.e. project) from experience recorded to date to its predicted ultimate value.”</li>
+<li>We will see three derivations, which are informative about the meaning of the method.</li>
+</ul>
+<h2 id="derivation-1---heuristic-approach">
+  Derivation 1 - Heuristic approach
+  <a class="anchor" href="#derivation-1---heuristic-approach">#</a>
+</h2>
+<ul>
+<li>We start from
+$$ E[N(i,j)] = \alpha(i)\mu(j)$$
+as before, but consider
+<code>$$\frac{E[A(i,j+1)]}{E[A(i,j)]} = \frac{\sum_{m=0}^{j+1} \mu(m)}{\sum_{m=0}^j \mu(m)} \equiv v(j)$$</code>
+instead, where
+$$ A(i,j) = \sum_{m=0}^j N(i,m)$$
+are the **cumulative** claim counts for period of origin <code>\(i\)</code>, as of development period <code>\(j\)</code>.</li>
+</ul>
+<hr>
+<ul>
+<li>This leads to an estimator
+<code>$$\hat{v}(j) = \frac{\sum_i A(i,j+1)}{\sum_i A(i,j)},$$</code>
+where the summations run over those values of <code>\(i\)</code> where we have both <code>\(A\)</code>’s available.</li>
+<li>These are called <strong>chain ladder factors</strong>, <strong>age to age factors</strong>, or <strong>link ratios</strong>.</li>
+</ul>
+<hr>
+<ul>
+<li>Future values of <code>\(A(i,j)\)</code> are predicted by
+<code>$$\hat{A}(i,j) = A(i,I-i) \hat{v}(I-i)\hat{v}(I-i+1)\cdots \hat{v}(j-1),$$</code>
+where <code>\(A(i,I-i)\)</code> is the latest observation for period <code>\(i\)</code> (on the diagonal).</li>
+<li>In particular, ultimate counts are
+<code>$$\hat{A}(i,\infty) = A(i,I-i) \hat{\pi}(I-i),$$</code>
+where
+$$\hat{\pi}(I-i) = \prod_{m=0}^\infty \hat{v}(I-i+m), $$
+called **age to ultimate factors**.</li>
+</ul>
+<h3 id="example-2">
+  Example
+  <a class="anchor" href="#example-2">#</a>
+</h3>
+<ul>
+<li>Table 2.5, 2.6 and 2.7 revisit the previous example using the chain ladder example.</li>
+<li>See the spreadsheet 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291"><code>here</code></a>.</li>
+<li>Notes on the extrapolation: assuming that it is the excess over 1 that decays exponentially, we fit <code>\(\ln\left[\hat{v}(j-6)-1\right]\)</code> for <code>\(j=6,\ldots,9\)</code>. The extrapolation to infinity is then added to 1 to get an age to ultimate factor. This is an ad hoc approach, but it’s the one’s taken in the book.</li>
+</ul>
+<h2 id="derivation-2---poisson-approach">
+  Derivation 2 - Poisson approach
+  <a class="anchor" href="#derivation-2---poisson-approach">#</a>
+</h2>
+<ul>
+<li>Assume that
+$$ N(i,j) \sim \text{Poisson}(\alpha(i) \mu(j)),$$
+and that they are mutually independent.</li>
+<li>Because
+<code>$$\alpha(i)\mu(j) = \left[k \cdot \alpha(i)\right] \left[ \frac{1}{k} \cdot \mu(j)\right],$$</code>
+<code>\(\alpha\)</code> and <code>\(\mu\)</code> are not uniquely defined unless we introduce an extra condition, which we conveniently choose to be
+<code>$$\sum_{j=0}^J \mu(j) = 1,$$</code>
+($J$ being the largest value of <code>\(j\)</code> for which any <code>\(N(i,j)\)</code> is observed) so that <code>\(\mu(j)\)</code> can be interpreted as the proportion of claims being notified in development year <code>\(j\)</code>.</li>
+<li>It can be shown (see Taylor (2000)) that the estimators seen<br>
+before are the MLE estimators in this context.</li>
+</ul>
+<hr>
+<p>Because
+<code>$$\frac{1}{\pi(j)} = \frac{A(i,j)}{A(i,\infty)}$$</code>
+is the proportion of claims notified <strong>by</strong> period <code>\(j\)</code>,
+$$ \frac{1}{\pi(j)}- \frac{1}{\pi(j-1)} \equiv \mu(j)$$
+is the proportion of claims notified <strong>in</strong> development period <code>\(j\)</code> (assume <code>\(\pi(-1)=1\)</code> ).</p>
+<ul>
+<li>Example: The age to ultimate factors and corresponding proportions <code>\(\mu(j)\)</code> are calculated under Table 2.5.</li>
+</ul>
+<h2 id="derivation-3---non-parametric-approach">
+  Derivation 3 - Non-parametric approach
+  <a class="anchor" href="#derivation-3---non-parametric-approach">#</a>
+</h2>
+<ul>
+<li>The Poisson derivation is a parametric one, and starts with rather strong assumptions.</li>
+<li>What assumptions do we need to make <em>at a minimum</em>, in order to retrieve the chain ladder estimators according to some rigorous calculations? (in particular, do we need the Poisson assumption?)</li>
+<li>It turns out that if we assume
+$$ E[N(i,j+1)|A(i,j)] = x(j) A(i,j)$$
+for some <code>\(x(j)\)</code>, and that
+$$ Var(N(i,j+1)|A(i,j)) = \sigma^2(j)A(i,j),$$
+for some constant <code>\(\sigma^2(j)&gt;0\)</code>, then minimising <em>weighted least squares</em> between this model and the data yields <code>\(x(j)\)</code> such that we get the chain ladder estimators again.</li>
+<li>This does not require any distributional assumption!</li>
+</ul>
+<h2 id="the-chain-ladder-setting">
+  The Chain Ladder setting
+  <a class="anchor" href="#the-chain-ladder-setting">#</a>
+</h2>
+<ul>
+<li>Chain ladder won’t always work.</li>
+<li>In particular, it requires a <strong>fixed notification pattern</strong> - the <code>\(\mu(j)\)</code> can’t vary across origin periods.</li>
+<li>One can think of many reasons why notifications may come quicker (e.g. IT systems) or slower (COVID-19), either permanently or temporarily (same examples, respectively).</li>
+<li>As a solution, one can either “tweak” the chain ladder procedure, or proceed with an entirely different approach, which allows for such changes. This is (mostly) out of scope of this introductory treatment of reserving techniques.</li>
+</ul>
+<h1 id="claim-frequency-23">
+  Claim frequency (2.3)
+  <a class="anchor" href="#claim-frequency-23">#</a>
+</h1>
+<h2 id="claim-frequency">
+  Claim frequency
+  <a class="anchor" href="#claim-frequency">#</a>
+</h2>
+<ul>
+<li>If an exposure exists, it is possible to estimate a <strong>claim frequency</strong>, that is, the number of claims per unit of exposure.</li>
+<li>This is mathematically defined as
+<code>$$f(i) = \frac{A(i,\infty)}{e(i)}$$</code>
+for period of origin <code>\(i\)</code>, and is estimated by
+<code>$$\hat{f}(i) = \frac{\hat{A}(i,\infty)}{e(i)}.$$</code></li>
+<li>Examination of such claim frequencies may help with model validation, and may help identify anomalies.</li>
+</ul>
+<h2 id="notified-claim-frequency">
+  Notified claim frequency
+  <a class="anchor" href="#notified-claim-frequency">#</a>
+</h2>
+<ul>
+<li>This is defined as
+<code>$$\frac{A(i,I-i)}{e(i)}$$</code>
+for period of origin <code>\(i\)</code>.</li>
+<li>This corresponds to the frequency of claims that have already been notified (obviously, a decreasing number in <code>\(i\)</code>).</li>
+<li>Comparing this with <code>\(\hat{f}(i)\)</code> gives an idea of the proportion of ultimate claims that have already been notified.</li>
+</ul>
+<h2 id="example-3">
+  Example
+  <a class="anchor" href="#example-3">#</a>
+</h2>
+<ul>
+<li>Table 2.8 (see 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291"><code>spreadsheet here for calculations</code></a>) displays estimated claim frequencies from the three methods presented in the previous section.
+<ul>
+<li>1991 and 1992 seem to reverse a strong downward trend from 1984 to 1990.</li>
+<li>is this due to a method issue (introduced when “completing the rectangle”), or due to a real effect?</li>
+</ul>
+</li>
+<li>Table 2.9 (see 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291"><code>spreadsheet here for calculations</code></a>) and associated Figure 2.2 compares the notified claims frequency with the estimated claims frequencies of Table 2.8.
+<ul>
+<li>It appears that the reversal of trend is already present in the actual data, and is not a result of the modelling.</li>
+<li>This may reassure the actuary that the reversal is real. She would need to gather more data from the claims department to ascertain whether that is a reasonable feature of the model.</li>
+</ul>
+</li>
+</ul>
+<h1 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h1>
+<p><em>Main reference:</em></p>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-Tay00" class="csl-entry">
+<p>Taylor, Greg. 2000. <em>Loss Reserving: An Actuarial Perspective</em>. Huebner International Series on Risk, Insurance and Economic Security. Kluwer Academic Publishers.</p>
+</div>
+</div>
+</article>
+ 
+      <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/1735cca5fdc05a6f668ffbe1330ffc151b464356" title='Last modified by Benjamin Avanzi | 5 July 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>5 July 2024</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#exposure-21">Exposure (2.1)</a>
+      <ul>
+        <li><a href="#general-idea">General idea</a></li>
+      </ul>
+    </li>
+    <li><a href="#ibnr-claims---exposure-based-methods-222">IBNR claims - Exposure based methods (2.2.2)</a>
+      <ul>
+        <li><a href="#allowing-for-an-i-effect-in-mu">Allowing for an <code>\(i\)</code> effect in <code>\(\mu\)</code></a></li>
+        <li><a href="#examples-of-fi">Examples of <code>\(f(i)\)</code></a></li>
+        <li><a href="#estimating-nij">Estimating <code>\(N(i,j)\)</code></a></li>
+        <li><a href="#example">Example</a></li>
+      </ul>
+    </li>
+    <li><a href="#ibnr-claims---normalised-methods-223-maltese">IBNR claims - Normalised methods (2.2.3) <code>\(\maltese\)</code></a>
+      <ul>
+        <li><a href="#motivation">Motivation</a></li>
+        <li><a href="#the-idea">The idea</a></li>
+        <li><a href="#generalisation">Generalisation</a></li>
+        <li><a href="#example-1">Example</a></li>
+      </ul>
+    </li>
+    <li><a href="#ibnr-claims---chain-ladder-224">IBNR claims - Chain Ladder (2.2.4)</a>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#derivation-1---heuristic-approach">Derivation 1 - Heuristic approach</a>
+          <ul>
+            <li><a href="#example-2">Example</a></li>
+          </ul>
+        </li>
+        <li><a href="#derivation-2---poisson-approach">Derivation 2 - Poisson approach</a></li>
+        <li><a href="#derivation-3---non-parametric-approach">Derivation 3 - Non-parametric approach</a></li>
+        <li><a href="#the-chain-ladder-setting">The Chain Ladder setting</a></li>
+      </ul>
+    </li>
+    <li><a href="#claim-frequency-23">Claim frequency (2.3)</a>
+      <ul>
+        <li><a href="#claim-frequency">Claim frequency</a></li>
+        <li><a href="#notified-claim-frequency">Notified claim frequency</a></li>
+        <li><a href="#example-3">Example</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

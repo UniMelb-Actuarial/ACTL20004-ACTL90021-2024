@@ -5,5 +5,14 @@
     <link>https://topics-actl.netlify.app/docs/3-excel/</link>
     <description>Recent content in Excel (CM2 Exam B) on Topics in Actuarial, Insurance and Finance</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://topics-actl.netlify.app/docs/3-excel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M6 Excel Topics</title>
+      <link>https://topics-actl.netlify.app/docs/3-excel/m6-excel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/3-excel/m6-excel/</guid>
+      <description>Introduction and Assumed Knowledge #  Why Excel? #   Excel is great to spread data and calculations in a tabular form, and have a visual overview. Most financial modelling is done in Excel (at least initially). In actuarial work, many more advanced codes (in R, Python, C++, C#, VBA, …) often starts with someone playing around in Excel, and once proof of concept is approved, this moves to proper coding.</description>
+    </item>
+    
   </channel>
 </rss>

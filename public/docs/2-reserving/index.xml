@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reserving (CM2 Section 5.2) on Topics in Actuarial, Insurance and Finance</title>
+    <title>Reserving (CM2 5.2) on Topics in Actuarial, Insurance and Finance</title>
     <link>https://topics-actl.netlify.app/docs/2-reserving/</link>
-    <description>Recent content in Reserving (CM2 Section 5.2) on Topics in Actuarial, Insurance and Finance</description>
+    <description>Recent content in Reserving (CM2 5.2) on Topics in Actuarial, Insurance and Finance</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://topics-actl.netlify.app/docs/2-reserving/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M2 Basic Reserving Concepts</title>
+      <link>https://topics-actl.netlify.app/docs/2-reserving/m2-basic-reserving-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/2-reserving/m2-basic-reserving-concepts/</guid>
+      <description>Introduction - Claims liabilities #  Definition #   Generally in insurance, premiums are collected first, before coverage is provided. The insurer can’t consider this premium as income before coverage is provided. Furthermore, as times goes by, the insurer does not know instantly how much losses it will have to pay (e.g., delays in notification, delays in payments).    This gives rise to two types of liabilities:  Unearned premium liability: an amount set aside for covering losses related to coverage not yet provided, but where a premium has already been collected; Outstanding claim liability: an amount set aside for for covering losses corresponding to coverage that has already been provided, but where payments are still expected to occur.</description>
+    </item>
+    
+    <item>
+      <title>M3 Reserving Claim Counts</title>
+      <link>https://topics-actl.netlify.app/docs/2-reserving/m3-reserving-claim-counts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/2-reserving/m3-reserving-claim-counts/</guid>
+      <description>Exposure (2.1) #  General idea #  Assume that we there exists \(e(i)\) so that we can write
+$$E[N(i,j)] \equiv e(i) \mu(j),$$ where (this is important), \(\mu(j)\) does not depend on \(i\).
+ \(e(i)\) will be called the exposure in period of occurrence \(i\) (for instance, “car-years”). \(\mu(j)\) may be interpreted as relative claim frequency in period \(j\) (per unit of exposure). The cumulative version $$\frac{E[N(i,\cdot)]}{e(i)} = \mu(\cdot)$$ is the relative frequency of claim occurence per period.</description>
+    </item>
+    
+    <item>
+      <title>M4 Reserving Claim Amounts</title>
+      <link>https://topics-actl.netlify.app/docs/2-reserving/m4-reserving-claim-amounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/2-reserving/m4-reserving-claim-amounts/</guid>
+      <description>Case estimation (3.1) #  Case estimates: Definition #   When a claim is notified, the insurer’s employee who manages the claim (the “claims adjuster”) typically formulates an estimate of the (remaining) cost of the claim and records it in the system. This estimate is typically adjusted over time as payments are made and additional information becomes available. These is called a “case estimate” (equivalently, “individual estimate”, “manual estimate”, “physical estimate”).</description>
+    </item>
+    
+    <item>
+      <title>M5 Reserving Combination</title>
+      <link>https://topics-actl.netlify.app/docs/2-reserving/m5-reserving-combination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/2-reserving/m5-reserving-combination/</guid>
+      <description>Background #  Summary #  We have seen covered a number of reserving methods:
+ unadjusted chain ladder on paid losses inflation adjusted chain ladder on paid losses unadjusted chain ladder on incurred losses inflation adjusted chain ladder on incurred losses separation payments per claim incurred (PPCI)  The IBNR claims (counts) were estimated according to a number of methods, too:
+ exposure normaliser chain ladder  Motivation #   All those methods are producing outstanding liability $ estimates in nominal terms.</description>
+    </item>
+    
   </channel>
 </rss>

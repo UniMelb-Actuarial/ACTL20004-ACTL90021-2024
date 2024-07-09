@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Introduction and Assumed Knowledge #  Why Excel? #   Excel is great to spread data and calculations in a tabular form, and have a visual overview. Most financial modelling is done in Excel (at least initially). In actuarial work, many more advanced codes (in R, Python, C&#43;&#43;, C#, VBA, …) often starts with someone playing around in Excel, and once proof of concept is approved, this moves to proper coding.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="M6 Excel Topics" />
+<meta property="og:description" content="Introduction and Assumed Knowledge #  Why Excel? #   Excel is great to spread data and calculations in a tabular form, and have a visual overview. Most financial modelling is done in Excel (at least initially). In actuarial work, many more advanced codes (in R, Python, C&#43;&#43;, C#, VBA, …) often starts with someone playing around in Excel, and once proof of concept is approved, this moves to proper coding." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://topics-actl.netlify.app/docs/3-excel/m6-excel/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2024-07-02T22:58:17+10:00" />
+
+<title>M6 Excel Topics | Topics in Actuarial, Insurance and Finance</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.a08e958a0c32c71fa52257f56602fc9e6f4a8586733f7d90b6b544b160364dce.css" integrity="sha256-oI6Vigwyxx&#43;lIlf1ZgL8nm9KhYZzP32QtrVEsWA2Tc4=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.7ccdccfd9024e93d2231178f57499c78091edc5e2711797bcd4c4128c3fe0ffc.js" integrity="sha256-fM3M/ZAk6T0iMRePV0mceAke3F4nEXl7zUxBKMP&#43;D/w=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script>
+MathJax = {
+  tex: {
+      macros: { 
+          angl: ["\\enclose{actuarial}{#1}", 1],
+          alert:["\\textcolor{red}{#1}", 1],
+          termins: ["A^{1}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          insend: ["\\bar{A}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          pureend: ["A^{\\,\\,\\,\\, 1}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          adv: ["\\maltese"]
+      }
+  }
+};
+</script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><img src="/img/PRIMARY_A_Vertical_Housed_RGB.png" alt="Logo" /><span style="color: black;">Topics in Actuarial, Insurance and Finance</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0c375332c765cd598c6ce4ee8867890f" class="toggle"  />
+    <label for="section-0c375332c765cd598c6ce4ee8867890f" class="flex justify-between">
+      <a href="https://topics-actl.netlify.app/docs/0-subject-guide/" class="">Subject Guide</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Eligibility/" class="">Eligibility and Requirements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/SILO/" class="">Learning Outcomes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Activities/" class="">Activities</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Resources/" class="">Resources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Assessment/" class="">Assessment</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b29660809eb857420b6473840d34e82" class="toggle"  />
+    <label for="section-5b29660809eb857420b6473840d34e82" class="flex justify-between">
+      <a href="https://topics-actl.netlify.app/docs/0-study-plan/" class="">Weekly Study Plan</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-1/" class="">Week 1 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-2/" class="">Week 2 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-3/" class="">Week 3 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-4/" class="">Week 4 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-5/" class="">Week 5 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-6/" class="">Week 6 Study Plan</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/" class="">Prerequisite Knowledge</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/1-utility/" class="">Utility theory (CM2 1.2)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/" class="">M1 Utility, Risk and Insurance</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/" class="">Reserving (CM2 5.2)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m2-basic-reserving-concepts/" class="">M2 Basic Reserving Concepts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m3-reserving-claim-counts/" class="">M3 Reserving Claim Counts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m4-reserving-claim-amounts/" class="">M4 Reserving Claim Amounts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m5-reserving-combination/" class="">M5 Reserving Combination</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/3-excel/" class="">Excel (CM2 Exam B)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/3-excel/m6-excel/" class=" active">M6 Excel Topics</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/4-stochastic-interest/" class="">Stochastic interest (CM2 3)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/5-ruin-theory/" class="">Ruin Theory (CM2 5.1 5.3)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        ___Websites and forums___
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless" target="_blank" rel="noopener">
+        Ed discussion forum
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/183926" target="_blank" rel="noopener">
+        ACTL20004 Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/181779" target="_blank" rel="noopener">
+        ACTL90021 Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/220261" target="_blank" rel="noopener">
+        Community Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        _______Exercises__________
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5029017" target="_blank" rel="noopener">
+        Tutorial exercises
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        __________Links___________
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://bavanzicv.netlify.app/" target="_blank" rel="noopener">
+        Benjamin Avanzi
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/benjaminavanzi/" target="_blank" rel="noopener">
+        Let&#39;s connect on LinkedIn!
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://yuyuchen-uw.github.io" target="_blank" rel="noopener">
+        Yuyu Chen
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://actl10001.netlify.app/" target="_blank" rel="noopener">
+        Introduction to Actuarial Studies 2021
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://communicate-data-with-r.netlify.app/" target="_blank" rel="noopener">
+        Communicate Data with R
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://actuaries.asn.au/becoming-an-actuary/how-to-become-an-actuary/for-uni-students/become-a-uni-subscriber/" target="_blank" rel="noopener">
+        Actuaries Institute info
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>M6 Excel Topics</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-and-assumed-knowledge">Introduction and Assumed Knowledge</a>
+      <ul>
+        <li><a href="#why-excel">Why Excel?</a></li>
+        <li><a href="#issues-with-excel">Issues with Excel</a></li>
+        <li><a href="#assumed-knowledge">Assumed knowledge</a></li>
+        <li><a href="#some-keyboard-shortcuts">Some keyboard shortcuts</a></li>
+      </ul>
+    </li>
+    <li><a href="#data-wrangling-and-exploratory-data-analysis">Data Wrangling and Exploratory Data Analysis</a>
+      <ul>
+        <li><a href="#data-wrangling">Data Wrangling</a>
+          <ul>
+            <li><a href="#some-data-cleaning-steps">Some data cleaning steps</a></li>
+          </ul>
+        </li>
+        <li><a href="#pivot-tables">Pivot tables</a></li>
+        <li><a href="#pivot-charts">Pivot charts</a></li>
+      </ul>
+    </li>
+    <li><a href="#dynamic-arrays">Dynamic Arrays</a>
+      <ul>
+        <li><a href="#spilling">Spilling</a>
+          <ul>
+            <li><a href="#example">Example</a></li>
+          </ul>
+        </li>
+        <li><a href="#think-in-vectors">Think in vectors</a></li>
+        <li><a href="#the--sign">The <code>#</code> sign</a></li>
+        <li><a href="#new-formulas">New formulas</a></li>
+      </ul>
+    </li>
+    <li><a href="#lookup-functions">Lookup functions</a></li>
+    <li><a href="#dynamic-references">Dynamic References</a>
+      <ul>
+        <li><a href="#offset">OFFSET</a></li>
+        <li><a href="#indirect">INDIRECT</a></li>
+        <li><a href="#address">ADDRESS</a></li>
+      </ul>
+    </li>
+    <li><a href="#general-etiquette-and-tools">General etiquette and tools</a>
+      <ul>
+        <li><a href="#etiquette">Etiquette</a></li>
+        <li><a href="#principles">Principles</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools-for-auditing">Tools for auditing</a>
+      <ul>
+        <li><a href="#dependents-and-precendents">Dependents and precendents</a></li>
+        <li><a href="#show-formulas">Show formulas</a></li>
+      </ul>
+    </li>
+    <li><a href="#next-steps">Next steps</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introduction-and-assumed-knowledge">
+  Introduction and Assumed Knowledge
+  <a class="anchor" href="#introduction-and-assumed-knowledge">#</a>
+</h1>
+<h2 id="why-excel">
+  Why Excel?
+  <a class="anchor" href="#why-excel">#</a>
+</h2>
+<ul>
+<li>Excel is great to spread data and calculations in a tabular form, and have a visual overview.</li>
+<li>Most financial modelling is done in Excel (at least initially).</li>
+<li>In actuarial work, many more advanced codes (in R, Python, C++, C#, VBA, …) often starts with someone playing around in Excel, and once proof of concept is approved, this moves to proper coding.</li>
+<li>It is assessed in CM2-B (!).</li>
+</ul>
+<h2 id="issues-with-excel">
+  Issues with Excel
+  <a class="anchor" href="#issues-with-excel">#</a>
+</h2>
+<p>Excel is notoriously problematic in certain areas:</p>
+<ul>
+<li>Lack of transparency - one can’t see the formulas unless you click in a cell; alternatively, you can’t see the formulas and understand where the numbers come from unless you are in Excel (a problem for reports, presentations etc).</li>
+<li>Mistakes can be tiny but have huge consequences in the end (the job of Excel auditor actually exists!).</li>
+<li>Lack of good documentation capability (as opposed to code); this makes collaboration and audit difficult, and creates an operational risk (e.g. builder leaves).</li>
+</ul>
+<hr>
+<ul>
+<li>Lack of rigour in the construction of a model (input, assumptions, intermediary calculations, output).</li>
+<li>Can’t handle (seriously) large data sets.</li>
+<li>Lack of good and flexible data cleaning and manipulation capabilities.</li>
+<li>Sometimes code is a lot easier (e.g. flip a vector around, sum over a diagonal, …).</li>
+</ul>
+<p>I know there are counter arguments for all of those, but this presupposes you know what the solutions are. You’ll learn some of those here!</p>
+<h2 id="assumed-knowledge">
+  Assumed knowledge
+  <a class="anchor" href="#assumed-knowledge">#</a>
+</h2>
+<p>See 
+  <a href="https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/"><code>prerequisite knowledge on the website</code></a>. Some extracts:</p>
+<ul>
+<li>Autofill: Chapter 3, p. 105-116, and p. 298-301</li>
+<li>Named ranges and constants: Chapter 7, page 312-332</li>
+<li>Absolute and mixed cell references ($): Chapter 7, pages 332-342</li>
+<li>New Excel 2019 functions (IFS, MAXIFS, MINIFS): Chapter 8, pages 381-398</li>
+<li>Formula Auditing: Chapter 9, p. 436-439</li>
+<li>Paste special (incl, e.g. <code>Transpose</code>): Chapter 11, pages 518-530</li>
+</ul>
+<p>Page references are for (<strong>EE19?</strong>), see 
+  <a href="https://link.springer.com/book/10.1007/978-1-4842-6209-2"><code>link here</code></a>.</p>
+<p>Also, see tab <code>Assumed Knowledge</code> in the 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a>.</p>
+<h2 id="some-keyboard-shortcuts">
+  Some keyboard shortcuts
+  <a class="anchor" href="#some-keyboard-shortcuts">#</a>
+</h2>
+<p>There are many keyboard shortcuts that can help you work with Excel efficiently. Some (but not all) useful shortcuts are:</p>
+<ul>
+<li>ctrl + shift + arrow key: Extend the selection of cells to the last non-blank cell towards the specified direction</li>
+<li>ctrl + PageDown/PageUp: Move to the next/previous sheet</li>
+<li>shift + F11: Insert new worksheet</li>
+<li>F4: Cycles through combinations of absolute and relative references</li>
+</ul>
+<p>See 
+  <a href="https://support.microsoft.com/en-au/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f">Microsoft - <code>Keyboard shortcuts in Excel</code></a> for list of all keyboard shortcuts.</p>
+<h1 id="data-wrangling-and-exploratory-data-analysis">
+  Data Wrangling and Exploratory Data Analysis
+  <a class="anchor" href="#data-wrangling-and-exploratory-data-analysis">#</a>
+</h1>
+<h2 id="data-wrangling">
+  Data Wrangling
+  <a class="anchor" href="#data-wrangling">#</a>
+</h2>
+<ul>
+<li>Sometimes we need to work on data from an external source.</li>
+<li>The data could be messy to work with.
+<ul>
+<li>There could be non-printable characters such as tabs (<code>\t</code>), new lines (<code>\n</code>) in the original data.</li>
+<li>We may want to process the strings to retrieve information.</li>
+<li>Data formats are inconsistent.</li>
+</ul>
+</li>
+<li>It is important to clean our data before analysis!</li>
+</ul>
+<h3 id="some-data-cleaning-steps">
+  Some data cleaning steps
+  <a class="anchor" href="#some-data-cleaning-steps">#</a>
+</h3>
+<ul>
+<li>Editing Texts
+<ul>
+<li><code>CLEAN()</code> removes any non-printable characters. Check 
+  <a href="https://www.ibm.com/docs/en/aix/7.2?topic=adapters-ascii-decimal-hexadecimal-octal-binary-conversion-table"><code>List of ASCII values</code></a> for ASCII codes for non-printable characters.</li>
+<li>We can use <code>SUBSTITUE()</code> to replace characters.</li>
+</ul>
+</li>
+<li>Merging and splitting columns
+<ul>
+<li><code>LEFT()</code>, <code>RIGHT()</code> and <code>MID()</code> to extract part of your string.</li>
+<li>Use <code>SEARCH()</code> to look for the starting position of specified string.</li>
+<li>Wildcard characters are also useful: <code>?</code> for a single character and <code>*</code> for multiple characters including space.</li>
+</ul>
+</li>
+<li>Formatting different types of data
+<ul>
+<li><code>VALUE()</code> to convert time in terms of days, or currency to number.</li>
+</ul>
+</li>
+<li>Removing duplicate rows: <code>Data &gt; Data Tools &gt; Remove Duplicates</code>.</li>
+<li>There are much more functions and steps can be used to clean your data - see 
+  <a href="https://support.microsoft.com/en-au/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19"><code>Microsoft - Top ten ways to clean your data</code></a>.</li>
+</ul>
+<h2 id="pivot-tables">
+  Pivot tables
+  <a class="anchor" href="#pivot-tables">#</a>
+</h2>
+<ul>
+<li>Pivot tables are often considered as very difficult to master, but they are not that difficult to start with.</li>
+<li>Example (in 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a>): FIFA WWC
+<ul>
+<li>Insert / Pivot Table.</li>
+<li>See how you can use variables as filters, rows, or columns. Move them around.</li>
+<li>See how columns can display other things than <code>Sum</code>, such as <code>Count</code>, <code>Average</code>, <code>Max</code>, <code>Min</code>, or <code>Product</code></li>
+</ul>
+</li>
+<li>Note there are recommended Pivot Tables (automated recommendation within Excel); in the case of FIFA WWC it is not very helpful.</li>
+<li>Reference: Chapter 15 of (<strong>EE19?</strong>).</li>
+</ul>
+<h2 id="pivot-charts">
+  Pivot charts
+  <a class="anchor" href="#pivot-charts">#</a>
+</h2>
+<ul>
+<li>A pivot chart can be created from the Pivot Table but also directly from the data.</li>
+<li>A major difference with start charts is that you it will be somewhat “interactive” - there will be buttons you can use to alter the chart.</li>
+<li>Example (in 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a>): FIFA WWC
+<ul>
+<li>Insert / Pivot Chart;</li>
+<li>In the example I changed the style of graph to “Combo” to allow for the two different scales;</li>
+<li>I also included a “slicer” (click on chart / insert slicer), in order to easily filter by squad.</li>
+</ul>
+</li>
+<li>Reference: Chapter 15 of (<strong>EE19?</strong>).</li>
+</ul>
+<h1 id="dynamic-arrays">
+  Dynamic Arrays
+  <a class="anchor" href="#dynamic-arrays">#</a>
+</h1>
+<h2 id="spilling">
+  Spilling
+  <a class="anchor" href="#spilling">#</a>
+</h2>
+<ul>
+<li>One advantage of programs like <code>R</code> are the easy use and manipulation of vectors.</li>
+<li>Excel can do similar things, and the vectors are called arrays. This is new (post Office 365), and is a bit of a game changer.</li>
+<li>Before Office 365, Excel was incapable of depositing results beyond just 1 cell. This is called “spilling”.</li>
+<li>Note Excell will need the required space to spill.</li>
+<li>Main reference is (<strong>AE23?</strong>) - we’ll only introduce this here.</li>
+</ul>
+<h3 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h3>
+<ul>
+<li>Here we introduce array formulas.
+<ul>
+<li>If you calculate the sum of an array you’ll get a single number.</li>
+<li>The result of an array formula (such as <code>LEN()</code>), when you input an array, will give you an array.</li>
+</ul>
+</li>
+<li>See 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a>:
+<ul>
+<li><code>LEN()</code> gives an array.</li>
+<li>You could then get the sum without having to put the array anywhere: <code>SUM(LEN(B3:B6))</code>.</li>
+<li>Note that when I wrote the above, it became <code>SUM(LEN(B3#))</code> automatically - more on that later.</li>
+</ul>
+</li>
+<li><code>SUM(LEN(B3:B6))</code> will work in any version of Excel because it requires only one cell to output, but not <code>LEN(B3:B6)</code> as it requires several cells (“spilling”).</li>
+<li>Note you can spill named ranges, too!</li>
+</ul>
+<h2 id="think-in-vectors">
+  Think in vectors
+  <a class="anchor" href="#think-in-vectors">#</a>
+</h2>
+<ul>
+<li>Once you understand you can create vectors and either display or manipulate them, Excel becomes a lot more powerful.</li>
+<li>You can also use arrays in arguments of known formulas such as <code>VLOOKUP()</code>,
+<ul>
+<li>For instance <code>VLOOKUP(.,.,{2,5})</code> will return value from the 2nd and 5th columns row-wise.</li>
+<li>If you use <code>VLOOKUP(.,.,{2;5})</code> (with the semicolon) they will display columnwise.</li>
+<li>See examples in 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="the--sign">
+  The <code>#</code> sign
+  <a class="anchor" href="#the--sign">#</a>
+</h2>
+<ul>
+<li>The <code>#</code> sign when added to a reference to a cell where a dynamic array is written will duplicate that array (and spilled results).</li>
+<li>It is shorter, but also it will dynamically change the size of the array
+<ul>
+<li>This can be desired or not.</li>
+<li>See example in 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="new-formulas">
+  New formulas
+  <a class="anchor" href="#new-formulas">#</a>
+</h2>
+<ul>
+<li>There are a number of new formulas which were available in coding languages like <code>R</code> for a long time, which can be useful, and which are now available in Excel
+<ul>
+<li>for instance <code>SEQUENCE()</code>, <code>UNIQUE()</code>, <code>FILTER()</code>, <code>RANDARRAY()</code>…</li>
+</ul>
+</li>
+<li>Some of those are exemplifed in 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a>.</li>
+<li>You are encouraged to browse through. They really bring data handling in Excel a little closer to coded languages such as <code>R</code>.</li>
+</ul>
+<h1 id="lookup-functions">
+  Lookup functions
+  <a class="anchor" href="#lookup-functions">#</a>
+</h1>
+<h1 id="dynamic-references">
+  Dynamic References
+  <a class="anchor" href="#dynamic-references">#</a>
+</h1>
+<p>Sometimes we have to work with references that changes position or size over time. For instance, when we work with chain ladder, we need to adjust our range of references for each development period. This is tedious to do manually!</p>
+<h2 id="offset">
+  OFFSET
+  <a class="anchor" href="#offset">#</a>
+</h2>
+<h2 id="indirect">
+  INDIRECT
+  <a class="anchor" href="#indirect">#</a>
+</h2>
+<h2 id="address">
+  ADDRESS
+  <a class="anchor" href="#address">#</a>
+</h2>
+<p>Reference: Murray, 2022 (Chapter 11)</p>
+<h1 id="general-etiquette-and-tools">
+  General etiquette and tools
+  <a class="anchor" href="#general-etiquette-and-tools">#</a>
+</h1>
+<h2 id="etiquette">
+  Etiquette
+  <a class="anchor" href="#etiquette">#</a>
+</h2>
+<p>You should build your spreadsheet with (at least) the following <strong>objectives</strong> in mind:</p>
+<ol>
+<li>so as to minimise chances or error (accuracy);</li>
+<li>so as to minimise unnecessary calculations (efficiency);</li>
+<li>so as to make the structure as clear as possible (transparency);</li>
+<li>so as to make updates, changes and extensions possible and easy (extendibility);</li>
+<li>so as to allow someone else to use it easily (user friendliness);</li>
+<li>so as to allow someone else to verify it easily (auditability).</li>
+</ol>
+<p>Those are, of course, interconnected. We could add more (for instance, automation of data input via an API, automation of communication objects such as charts, etc…).</p>
+<h2 id="principles">
+  Principles
+  <a class="anchor" href="#principles">#</a>
+</h2>
+<p>There is no single way to achieve the objectives above, but there are a number of <strong>principles</strong> that one could list, and that will contribute to meeting those objectives:</p>
+<ul>
+<li>Have a separate tab that collects all your assumptions that are valid for the whole spreadsheet (1, 3, 4, 5, 6).
+<ul>
+<li>Include some explanations about the source/justification of those assumptions.</li>
+<li>Give your assumptions names (for instance, the technical rate of interest to calculate life insurance could be called <code>techint</code> or similar, for ease of later reference, and to make formulas more easily readable).</li>
+</ul>
+</li>
+<li>Also include your data sets in separate tabs (1, 3, 4, 5, 6).
+<ul>
+<li>Name your data (including columns and/or rows if possible; e.g. <code>FIFA WWC</code> in the spreadsheet; see also “Named ranges and constants”: Chapter 7, page 312-332).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>Consider colouring / contouring input and output differently (3, 5)
+<ul>
+<li>This is not always advisable, but if you have a large model with relatively few input (e.g. purchase price and interest rate for a property mortgage schedule) and/or few outputs (e.g. NPV) then this achieves many of the objectives.</li>
+</ul>
+</li>
+<li>Use named ranges and variables as much as possible (1, 3, 5, 6), unless the variable is going to be used only once.</li>
+<li>Use more advanced formulas if shorter, and avoid too much nesting (1, 3, 4, 5, 6).</li>
+</ul>
+<h1 id="tools-for-auditing">
+  Tools for auditing
+  <a class="anchor" href="#tools-for-auditing">#</a>
+</h1>
+<h2 id="dependents-and-precendents">
+  Dependents and precendents
+  <a class="anchor" href="#dependents-and-precendents">#</a>
+</h2>
+<p>Use of dependents / precedents, e.g.:</p>
+<ol>
+<li>go to tab <code>Dependents - Precedents - PPCI</code>;</li>
+<li>click on one of the outstanding loss projected amounts;</li>
+<li>make sure the formula tool tab is live;</li>
+<li>click on the “trace precedents” sequentially.</li>
+</ol>
+<p>This will highlight dependence of each cell to previous cells, sequentially, with arrows.</p>
+<p>This is useful for</p>
+<ul>
+<li>understanding the structure of a spreadsheet;</li>
+<li>check formulas (audit);</li>
+<li>debug issues.</li>
+</ul>
+<p>(Formula Auditing: Chapter 9, p. 436-439)</p>
+<h2 id="show-formulas">
+  Show formulas
+  <a class="anchor" href="#show-formulas">#</a>
+</h2>
+<ul>
+<li>The “Formulas” tool tab should have a “Show formula” tile. This will replace all numeric values by formulas.
+<ul>
+<li>This is helpful to check what numbers are hard coded, and which are results of calculations. Together with dependents, it helps seeing if everything is as dynamic as it should.</li>
+</ul>
+</li>
+<li>If you want a formula to be shown all the time start with an apostrophe <code>'</code>, and the formula will show as text.</li>
+<li>Note also the <code>FORMULATEXT()</code> formula which is a dynamic array formula requiring spilling (see later section “Dynamic Arrays”!).</li>
+</ul>
+<p>(Formula Auditing: Chapter 9, p. 436-439)</p>
+<h1 id="next-steps">
+  Next steps
+  <a class="anchor" href="#next-steps">#</a>
+</h1>
+<ul>
+<li>All of (<strong>AE23?</strong>) is relevant, but take it as a cook book for the assignment. You can go as far as you wish.</li>
+<li>Chapters 16, 17, 18, and 19 of (<strong>EE19?</strong>) are out of scope.</li>
+<li>However, macros and VBA (which is Chapter 19) are essential components of Excel
+<ul>
+<li>I strongly encourage you to get started. Start by recording a macro, then play around with the code.</li>
+<li>VBA allows more efficient calculations via compiled code, and is a powerful addition to Excel.</li>
+</ul>
+</li>
+<li>Fun fact: the 2021 
+  <a href="https://www.fmworldcup.com/excel-esports/microsoft-excel-world-championship/"><code>Excel World Champion</code></a> is an actuary: Andrew Ngai, now Director at Taylor Fry.</li>
+</ul>
+<h1 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h1>
+</article>
+ 
+      <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/e2beda13bf512af5904cdeb728a05aa71fe9e7fe" title='Last modified by William Ho | 2 July 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2 July 2024</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction-and-assumed-knowledge">Introduction and Assumed Knowledge</a>
+      <ul>
+        <li><a href="#why-excel">Why Excel?</a></li>
+        <li><a href="#issues-with-excel">Issues with Excel</a></li>
+        <li><a href="#assumed-knowledge">Assumed knowledge</a></li>
+        <li><a href="#some-keyboard-shortcuts">Some keyboard shortcuts</a></li>
+      </ul>
+    </li>
+    <li><a href="#data-wrangling-and-exploratory-data-analysis">Data Wrangling and Exploratory Data Analysis</a>
+      <ul>
+        <li><a href="#data-wrangling">Data Wrangling</a>
+          <ul>
+            <li><a href="#some-data-cleaning-steps">Some data cleaning steps</a></li>
+          </ul>
+        </li>
+        <li><a href="#pivot-tables">Pivot tables</a></li>
+        <li><a href="#pivot-charts">Pivot charts</a></li>
+      </ul>
+    </li>
+    <li><a href="#dynamic-arrays">Dynamic Arrays</a>
+      <ul>
+        <li><a href="#spilling">Spilling</a>
+          <ul>
+            <li><a href="#example">Example</a></li>
+          </ul>
+        </li>
+        <li><a href="#think-in-vectors">Think in vectors</a></li>
+        <li><a href="#the--sign">The <code>#</code> sign</a></li>
+        <li><a href="#new-formulas">New formulas</a></li>
+      </ul>
+    </li>
+    <li><a href="#lookup-functions">Lookup functions</a></li>
+    <li><a href="#dynamic-references">Dynamic References</a>
+      <ul>
+        <li><a href="#offset">OFFSET</a></li>
+        <li><a href="#indirect">INDIRECT</a></li>
+        <li><a href="#address">ADDRESS</a></li>
+      </ul>
+    </li>
+    <li><a href="#general-etiquette-and-tools">General etiquette and tools</a>
+      <ul>
+        <li><a href="#etiquette">Etiquette</a></li>
+        <li><a href="#principles">Principles</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools-for-auditing">Tools for auditing</a>
+      <ul>
+        <li><a href="#dependents-and-precendents">Dependents and precendents</a></li>
+        <li><a href="#show-formulas">Show formulas</a></li>
+      </ul>
+    </li>
+    <li><a href="#next-steps">Next steps</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

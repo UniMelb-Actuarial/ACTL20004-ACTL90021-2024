@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Background #  Summary #  We have seen covered a number of reserving methods:
+ unadjusted chain ladder on paid losses inflation adjusted chain ladder on paid losses unadjusted chain ladder on incurred losses inflation adjusted chain ladder on incurred losses separation payments per claim incurred (PPCI)  The IBNR claims (counts) were estimated according to a number of methods, too:
+ exposure normaliser chain ladder  Motivation #   All those methods are producing outstanding liability $ estimates in nominal terms.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="M5 Reserving Combination" />
+<meta property="og:description" content="Background #  Summary #  We have seen covered a number of reserving methods:
+ unadjusted chain ladder on paid losses inflation adjusted chain ladder on paid losses unadjusted chain ladder on incurred losses inflation adjusted chain ladder on incurred losses separation payments per claim incurred (PPCI)  The IBNR claims (counts) were estimated according to a number of methods, too:
+ exposure normaliser chain ladder  Motivation #   All those methods are producing outstanding liability $ estimates in nominal terms." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://topics-actl.netlify.app/docs/2-reserving/m5-reserving-combination/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2024-07-02T22:58:17+10:00" />
+
+<title>M5 Reserving Combination | Topics in Actuarial, Insurance and Finance</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.a08e958a0c32c71fa52257f56602fc9e6f4a8586733f7d90b6b544b160364dce.css" integrity="sha256-oI6Vigwyxx&#43;lIlf1ZgL8nm9KhYZzP32QtrVEsWA2Tc4=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.7ccdccfd9024e93d2231178f57499c78091edc5e2711797bcd4c4128c3fe0ffc.js" integrity="sha256-fM3M/ZAk6T0iMRePV0mceAke3F4nEXl7zUxBKMP&#43;D/w=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script>
+MathJax = {
+  tex: {
+      macros: { 
+          angl: ["\\enclose{actuarial}{#1}", 1],
+          alert:["\\textcolor{red}{#1}", 1],
+          termins: ["A^{1}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          insend: ["\\bar{A}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          pureend: ["A^{\\,\\,\\,\\, 1}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          adv: ["\\maltese"]
+      }
+  }
+};
+</script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><img src="/img/PRIMARY_A_Vertical_Housed_RGB.png" alt="Logo" /><span style="color: black;">Topics in Actuarial, Insurance and Finance</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0c375332c765cd598c6ce4ee8867890f" class="toggle"  />
+    <label for="section-0c375332c765cd598c6ce4ee8867890f" class="flex justify-between">
+      <a href="https://topics-actl.netlify.app/docs/0-subject-guide/" class="">Subject Guide</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Eligibility/" class="">Eligibility and Requirements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/SILO/" class="">Learning Outcomes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Activities/" class="">Activities</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Resources/" class="">Resources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Assessment/" class="">Assessment</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b29660809eb857420b6473840d34e82" class="toggle"  />
+    <label for="section-5b29660809eb857420b6473840d34e82" class="flex justify-between">
+      <a href="https://topics-actl.netlify.app/docs/0-study-plan/" class="">Weekly Study Plan</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-1/" class="">Week 1 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-2/" class="">Week 2 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-3/" class="">Week 3 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-4/" class="">Week 4 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-5/" class="">Week 5 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-6/" class="">Week 6 Study Plan</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/" class="">Prerequisite Knowledge</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/1-utility/" class="">Utility theory (CM2 1.2)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/" class="">M1 Utility, Risk and Insurance</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/" class="">Reserving (CM2 5.2)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m2-basic-reserving-concepts/" class="">M2 Basic Reserving Concepts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m3-reserving-claim-counts/" class="">M3 Reserving Claim Counts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m4-reserving-claim-amounts/" class="">M4 Reserving Claim Amounts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m5-reserving-combination/" class=" active">M5 Reserving Combination</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/3-excel/" class="">Excel (CM2 Exam B)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/3-excel/m6-excel/" class="">M6 Excel Topics</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/4-stochastic-interest/" class="">Stochastic interest (CM2 3)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/5-ruin-theory/" class="">Ruin Theory (CM2 5.1 5.3)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        ___Websites and forums___
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless" target="_blank" rel="noopener">
+        Ed discussion forum
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/183926" target="_blank" rel="noopener">
+        ACTL20004 Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/181779" target="_blank" rel="noopener">
+        ACTL90021 Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/220261" target="_blank" rel="noopener">
+        Community Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        _______Exercises__________
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5029017" target="_blank" rel="noopener">
+        Tutorial exercises
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        __________Links___________
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://bavanzicv.netlify.app/" target="_blank" rel="noopener">
+        Benjamin Avanzi
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/benjaminavanzi/" target="_blank" rel="noopener">
+        Let&#39;s connect on LinkedIn!
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://yuyuchen-uw.github.io" target="_blank" rel="noopener">
+        Yuyu Chen
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://actl10001.netlify.app/" target="_blank" rel="noopener">
+        Introduction to Actuarial Studies 2021
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://communicate-data-with-r.netlify.app/" target="_blank" rel="noopener">
+        Communicate Data with R
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://actuaries.asn.au/becoming-an-actuary/how-to-become-an-actuary/for-uni-students/become-a-uni-subscriber/" target="_blank" rel="noopener">
+        Actuaries Institute info
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>M5 Reserving Combination</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#background">Background</a>
+      <ul>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#motivation">Motivation</a></li>
+        <li><a href="#criteria-for-choice">Criteria for choice</a></li>
+      </ul>
+    </li>
+    <li><a href="#combining-the-results-of-the-different-models">Combining the results of the different models</a>
+      <ul>
+        <li><a href="#idea">Idea</a></li>
+      </ul>
+    </li>
+    <li><a href="#allowance-for-prior-expectations">Allowance for prior expectations</a>
+      <ul>
+        <li><a href="#idea-1">Idea</a></li>
+        <li><a href="#choice-of-credibility-weights">Choice of credibility weights</a>
+          <ul>
+            <li><a href="#bornhuetter-ferguson">Bornhuetter-Ferguson</a></li>
+            <li><a href="#more-generally">More generally</a></li>
+          </ul>
+        </li>
+        <li><a href="#prior-expectations">Prior expectations</a>
+          <ul>
+            <li><a href="#bf-loss-ratio">BF loss ratio</a></li>
+            <li><a href="#example">Example</a></li>
+            <li><a href="#extensions">Extensions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="background">
+  Background
+  <a class="anchor" href="#background">#</a>
+</h1>
+<h2 id="summary">
+  Summary
+  <a class="anchor" href="#summary">#</a>
+</h2>
+<p>We have seen covered a number of reserving methods:</p>
+<ol>
+<li>unadjusted chain ladder on paid losses</li>
+<li>inflation adjusted chain ladder on paid losses</li>
+<li>unadjusted chain ladder on incurred losses</li>
+<li>inflation adjusted chain ladder on incurred losses</li>
+<li>separation</li>
+<li>payments per claim incurred (PPCI)</li>
+</ol>
+<p>The IBNR claims (counts) were estimated according to a number of methods, too:</p>
+<ul>
+<li>exposure</li>
+<li>normaliser</li>
+<li>chain ladder</li>
+</ul>
+<h2 id="motivation">
+  Motivation
+  <a class="anchor" href="#motivation">#</a>
+</h2>
+<ul>
+<li>All those methods are producing outstanding liability $ estimates in nominal terms.</li>
+<li>There are a number of differences:
+<ul>
+<li>whether inflation is accounted for explicitly (2, 4, 5, 6) or not (1, 3)</li>
+<li>whether inflation is assumed for past data (2, 4), or a result of the method (1, 3, 5, 6)</li>
+<li>whether paid (1, 2, 6) or incurred (3, 4, 5) losses are used</li>
+<li>whether aggregate amounts (1, 2, 3, 4) or amounts per claim (5, 6) are used. The latter require an estimate of IBNR counts.</li>
+</ul>
+</li>
+<li>All methods have strengths and weaknesses.</li>
+</ul>
+<p>There is obviously a good mix of assumptions and approaches. Which one should we choose? Or should we combine them?</p>
+<h2 id="criteria-for-choice">
+  Criteria for choice
+  <a class="anchor" href="#criteria-for-choice">#</a>
+</h2>
+<p>Decision factors include:</p>
+<ul>
+<li>analytical properties of the various models
+<ul>
+<li>e.g., we know there has been a change in the past, that affected the development of claims. Can the method allow for that?</li>
+</ul>
+</li>
+<li>average claim sizes for various periods of origin
+<ul>
+<li>e.g., do those average claims make sense, given our (also qualitative) knowledge of the claims development processes??</li>
+<li>e.g., do trends in average claim size agree with our beliefs around claims inflation and superimposed inflation?</li>
+</ul>
+</li>
+<li>relation of forecasts of liability to case estimates
+<ul>
+<li>e.g., they are not directly comparable, but the evolution of the ratio should be smooth enough.</li>
+</ul>
+</li>
+</ul>
+<h1 id="combining-the-results-of-the-different-models">
+  Combining the results of the different models
+  <a class="anchor" href="#combining-the-results-of-the-different-models">#</a>
+</h1>
+<h2 id="idea">
+  Idea
+  <a class="anchor" href="#idea">#</a>
+</h2>
+<ul>
+<li>Let <code>\(\hat{P}_h^*(i,j)\)</code> be the estimate of outstanding liability of model <code>\(h=1,2\ldots\)</code>, at end of development period <code>\(j\)</code> and for period of origin <code>\(i\)</code>.</li>
+<li>Assume the we want to combine such estimates (at the end of experience period <code>\(k\)</code> ) as follows:
+<code>$$\overline{\hat{P}^*}(i,k) = \sum_h w_h(i) \overline{\hat{P}^*_h}(i,k),$$</code>
+where <code>\(\overline{\hat{P}^*_h}(i,k) = \hat{P}_h^*(i,k-i)\)</code>, <code>\(w_h(i)\)</code> are weights allocated to to model <code>\(h\)</code>,
+<code>$$\sum_h w_h(i)=1.$$</code></li>
+<li>Note that in general those weights depend on <code>\(i\)</code> as well; different reserving models will typically perform better for different levels of maturity (in complex environments - understand “non chain ladder like”).</li>
+</ul>
+<hr>
+<p>Those weights can be determined in different ways:</p>
+<ul>
+<li>Judgmentally, by considering the properties of the models available, and their respective strenghts and weaknesses for different <code>\(i\)</code>.</li>
+<li>With respect to some sort of objective criteria.
+<ul>
+<li>This is done to some extent in the book (Chapter 12).</li>
+<li>This has been done a lot more rigorously only very recently by 
+  <a href="https://arxiv.org/abs/2206.08541">Avanzi et al. (2023)</a> via ensembling, which was awarded the 2023 Hachemeister Prize by the American Casualty Actuarial Society (CAS).</li>
+<li>It is still a relevant topic!</li>
+</ul>
+</li>
+</ul>
+<h1 id="allowance-for-prior-expectations">
+  Allowance for prior expectations
+  <a class="anchor" href="#allowance-for-prior-expectations">#</a>
+</h1>
+<h2 id="idea-1">
+  Idea
+  <a class="anchor" href="#idea-1">#</a>
+</h2>
+<ul>
+<li>Imagine one might to combine a “prior expectation” (or belief) with the estimate of liability provided by a method (or ensemble thereof).</li>
+<li>This can be done in a way which is routinely referred to as “credibility weighting” by actuaries:
+$$ \text{estimate} = [1-z(i)] \overline{P_0^<em>}(i,k) + z(i) \overline{\hat{P}^</em>}(i,k),$$
+where
+<ul>
+<li><code>\(\overline{\hat{P}^*}(i,k)\)</code> is the quantity defined earlier</li>
+<li><code>\(\overline{P_0^*}(i,k)\)</code> is the prior expectation (examples later), and</li>
+<li><code>\(z(i)\)</code> is the credibility assigned to the model estimate <code>\(\overline{\hat{P}^*}(i,k)\)</code></li>
+</ul>
+</li>
+<li>One probably should give more credibility to models in more mature years (small <code>\(i\)</code> ).</li>
+<li>The formula above will yield equivalent results if <code>\(z(i)\)</code> is applied on incurred amounts instead (see Taylor (2000)).</li>
+</ul>
+<h2 id="choice-of-credibility-weights">
+  Choice of credibility weights
+  <a class="anchor" href="#choice-of-credibility-weights">#</a>
+</h2>
+<h3 id="bornhuetter-ferguson">
+  Bornhuetter-Ferguson
+  <a class="anchor" href="#bornhuetter-ferguson">#</a>
+</h3>
+<p>Bornhuetter and Ferguson (1972) suggested the most simple approach, which is to use either</p>
+<ul>
+<li><code>\(z(i)=0\)</code>: outstanding liability is exclusively calculated on the basis of prior expectations; or</li>
+<li><code>\(z(i)=1\)</code>: outstanding liability is entirely based on models, ignoring prior expectations totally.</li>
+</ul>
+<p>The “textbook”, “plain” vanilla Bornhuetter-Ferguson (BF):</p>
+<ul>
+<li>applies <code>\(z(i)\)</code> on all or only some subset of the most immature years</li>
+<li>calculates the prior expectation based on premium and loss ratios</li>
+</ul>
+<p>An example is provided below.</p>
+<h3 id="more-generally">
+  More generally
+  <a class="anchor" href="#more-generally">#</a>
+</h3>
+<p>The following would make sense:</p>
+<ul>
+<li><code>\(z(i)=0\)</code> when no information has been collected (start of development period 0);</li>
+<li><code>\(z(i)=1\)</code> at the end of the running off period (when all claims and their costs are known and certain);</li>
+<li>some monotonic progression between those two extremes.</li>
+</ul>
+<p>For instance, <code>\(1/\pi\)</code> from chain ladder:</p>
+<ul>
+<li>It satisfies the criteria above:</li>
+<li>It is somewhat reflective of the amount of information gathered so far</li>
+<li>In particular, a highly leveraged line, which would benefit from averaging with prior expectation, will have a very low <code>\(z(I) = 1/\pi(0)\)</code>.</li>
+</ul>
+<h2 id="prior-expectations">
+  Prior expectations
+  <a class="anchor" href="#prior-expectations">#</a>
+</h2>
+<p>In this section we review some possible choices for the “prior expectations”.</p>
+<h3 id="bf-loss-ratio">
+  BF loss ratio
+  <a class="anchor" href="#bf-loss-ratio">#</a>
+</h3>
+<p>The loss method proceeds as follows. For each <code>\(i\)</code></p>
+<ul>
+<li>Define <code>\(EP(i)\)</code> as the gross aggregate premium earnt for period of origin <code>\(i\)</code>.</li>
+<li>Define <code>\(C(i)\)</code> as the aggregate sum of all payments made for period of origin <code>\(i\)</code> (the ultimate).</li>
+<li>The loss ratio is then defined as
+$$ LR(i) = \frac{C(i)}{EP(i)}.$$</li>
+</ul>
+<p>The method projects <code>\(LR(i)\)</code> from past values and infers <code>\(C(i)\)</code> from observable <code>\(EP(i)\)</code>. We have then (assuming chain ladder development patterns)
+<code>$$\overline{P_0^*}(i,k) = LR(i)EP(i)\left( 1-\frac{1}{\pi(k)}\right)$$</code>
+which is typically applied with <code>\(z(i)=1\)</code> in immature (or all) years.</p>
+<h3 id="example">
+  Example
+  <a class="anchor" href="#example">#</a>
+</h3>
+<p>Consider the following triangle (cumulative claims):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Origin</th>
+<th style="text-align:center">EP</th>
+<th style="text-align:center">DY1</th>
+<th style="text-align:center">DY2</th>
+<th style="text-align:center">DY3</th>
+<th style="text-align:center">DY4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">2020</td>
+<td style="text-align:center">860</td>
+<td style="text-align:center">473</td>
+<td style="text-align:center">620</td>
+<td style="text-align:center">690</td>
+<td style="text-align:center">715</td>
+</tr>
+<tr>
+<td style="text-align:center">2021</td>
+<td style="text-align:center">940</td>
+<td style="text-align:center">512</td>
+<td style="text-align:center">660</td>
+<td style="text-align:center">750</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">2022</td>
+<td style="text-align:center">980</td>
+<td style="text-align:center">611</td>
+<td style="text-align:center">700</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">2023</td>
+<td style="text-align:center">1,020</td>
+<td style="text-align:center">647</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>It is assumed that the ultimate loss ratios for
+underwriting years 2021-2023 are expected to be in line with year 2020.</p>
+<hr>
+<p>First calculate the development factors:
+<code>$$\begin{aligned} \widehat{f}_1 &amp;= \frac{620+660+700}{473+512+611} = 1.2406 \\ \widehat{f}_2 &amp;= \frac{690+750}{620+660} = 1.125 \\ \widehat{f}_3 &amp;= \frac{715}{690} = 1.0362 \end{aligned}$$</code>
+Then calculate the loss ratio <code>\(LR\)</code> and the prior expectations of ultimate:
+<code>$$\begin{aligned} LR(1)EP(1) &amp;=  LR \cdot 860 = 715 \Longrightarrow LR = 0.8314 \\ LR(2)EP(2)  &amp;= LR \cdot 940 = 781.52\\ LR(3)EP(3)  &amp;= LR \cdot 980 = 814.77\\ LR(4)EP(4)  &amp;= LR \cdot 1020 = 848.02 \end{aligned}$$</code></p>
+<hr>
+<p>Now, we have</p>
+<p><code>$$\begin{aligned} \text{outstanding} &amp;= \sum_{i=1}^4 \overline{P_0^*}(i,4) \\ &amp;= \sum_{i=1}^4 LR(i)EP(i)\left(1-\frac{1}{\pi(i)}\right) \\ &amp;= 0+27.30+115.82+261.64 \\ &amp;=404.76. \end{aligned}$$</code></p>
+<p>Remember that <code>\(\pi\)</code> is normally defined as a <code>\(\pi(j)\)</code>, so that <code>\(\pi(1)\)</code> applies to that year where we have only <code>\(j=1\)</code> cell available - the last row. Similarly, <code>\(\pi(3)\)</code> is the one that applies to the amount in the diagonal that is at <code>\(j=3\)</code> - here 781.41.</p>
+<h3 id="extensions">
+  Extensions
+  <a class="anchor" href="#extensions">#</a>
+</h3>
+<ul>
+<li>The problem with the plain vanilla BF is that it does not specify objectively how <code>\(LR(i)\)</code> is determined. A priori, this is too judgmental.</li>
+<li>There are a number of methods which try to make this choice more objective, such as “modified BF”, “Cape Cod”, …</li>
+</ul>
+<h1 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-AvLiWoXi23" class="csl-entry">
+<p>Avanzi, Benjamin, Yanfeng Li, Bernard Wong, and Alan Xian. 2023. “Ensemble Distributional Forecasting for Insurance Loss Reserving.”</p>
+</div>
+<div id="ref-BoFe72" class="csl-entry">
+<p>Bornhuetter, R., and R. Ferguson. 1972. “The Actuary and <span class="smallcaps">IBNR</span>.” <em>Proceedings of The Casualty Actuarial Society</em> 59: 181–95.</p>
+</div>
+<div id="ref-Tay00" class="csl-entry">
+<p>Taylor, Greg. 2000. <em>Loss Reserving: An Actuarial Perspective</em>. Huebner International Series on Risk, Insurance and Economic Security. Kluwer Academic Publishers.</p>
+</div>
+</div>
+</article>
+ 
+      <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/e2beda13bf512af5904cdeb728a05aa71fe9e7fe" title='Last modified by William Ho | 2 July 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2 July 2024</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#background">Background</a>
+      <ul>
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#motivation">Motivation</a></li>
+        <li><a href="#criteria-for-choice">Criteria for choice</a></li>
+      </ul>
+    </li>
+    <li><a href="#combining-the-results-of-the-different-models">Combining the results of the different models</a>
+      <ul>
+        <li><a href="#idea">Idea</a></li>
+      </ul>
+    </li>
+    <li><a href="#allowance-for-prior-expectations">Allowance for prior expectations</a>
+      <ul>
+        <li><a href="#idea-1">Idea</a></li>
+        <li><a href="#choice-of-credibility-weights">Choice of credibility weights</a>
+          <ul>
+            <li><a href="#bornhuetter-ferguson">Bornhuetter-Ferguson</a></li>
+            <li><a href="#more-generally">More generally</a></li>
+          </ul>
+        </li>
+        <li><a href="#prior-expectations">Prior expectations</a>
+          <ul>
+            <li><a href="#bf-loss-ratio">BF loss ratio</a></li>
+            <li><a href="#example">Example</a></li>
+            <li><a href="#extensions">Extensions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

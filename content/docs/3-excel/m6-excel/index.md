@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '21 August 2023'
+date: '10 July 2024'
 output:
   beamer_presentation:
     toc: true
@@ -50,7 +50,7 @@ header-includes:
 classoption: t,handout 
 ---
 
-# General Considerations
+# Introduction and Assumed Knowledge
 
 ## Why Excel?
 
@@ -76,7 +76,7 @@ Excel is notoriously problematic in certain areas:
 
 I know there are counter arguments for all of those, but this presupposes you know what the solutions are. You’ll learn some of those here!
 
-# Assumed knowledge
+## Assumed knowledge
 
 See [`prerequisite knowledge on the website`](https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/). Some extracts:
 
@@ -87,9 +87,123 @@ See [`prerequisite knowledge on the website`](https://topics-actl.netlify.app/do
 - Formula Auditing: Chapter 9, p. 436-439
 - Paste special (incl, e.g. `Transpose`): Chapter 11, pages 518-530
 
-Page references are for Slager and Slager (2020), see [`link here`](https://link.springer.com/book/10.1007/978-1-4842-6209-2).
+Page references are for (**EE19?**), see [`link here`](https://link.springer.com/book/10.1007/978-1-4842-6209-2).
 
-Also, see tab `Prerequisite` in the [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+Also, see tab `Assumed Knowledge` in the [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+
+## Some keyboard shortcuts
+
+There are many keyboard shortcuts that can help you work with Excel efficiently. Some (but not all) useful shortcuts are:
+
+- ctrl + shift + arrow key: Extend the selection of cells to the last non-blank cell towards the specified direction
+- ctrl + PageDown/PageUp: Move to the next/previous sheet
+- shift + F11: Insert new worksheet
+- F4: Cycles through combinations of absolute and relative references
+
+See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en-au/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f) for list of all keyboard shortcuts.
+
+# Data Wrangling and Exploratory Data Analysis
+
+## Data Wrangling
+
+- Sometimes we need to work on data from an external source.
+- The data could be messy to work with.
+  - There could be non-printable characters such as tabs (`\t`), new lines (`\n`) in the original data.
+  - We may want to process the strings to retrieve information.
+  - Data formats are inconsistent.
+- It is important to clean our data before analysis!
+
+### Some data cleaning steps
+
+- Editing Texts
+  - `CLEAN()` removes any non-printable characters. Check [`List of ASCII values`](https://www.ibm.com/docs/en/aix/7.2?topic=adapters-ascii-decimal-hexadecimal-octal-binary-conversion-table) for ASCII codes for non-printable characters.
+  - We can use `SUBSTITUE()` to replace characters.
+- Merging and splitting columns
+  - `LEFT()`, `RIGHT()` and `MID()` to extract part of your string.
+  - Use `SEARCH()` to look for the starting position of specified string.
+  - Wildcard characters are also useful: `?` for a single character and `*` for multiple characters including space.
+- Formatting different types of data
+  - `VALUE()` to convert time in terms of days, or currency to number.
+- Removing duplicate rows: `Data > Data Tools > Remove Duplicates`.
+- There are much more functions and steps can be used to clean your data - see [`Microsoft - Top ten ways to clean your data`](https://support.microsoft.com/en-au/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19).
+
+## Pivot tables
+
+- Pivot tables are often considered as very difficult to master, but they are not that difficult to start with.
+- Example (in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456)): FIFA WWC
+  - Insert / Pivot Table.
+  - See how you can use variables as filters, rows, or columns. Move them around.
+  - See how columns can display other things than `Sum`, such as `Count`, `Average`, `Max`, `Min`, or `Product`
+- Note there are recommended Pivot Tables (automated recommendation within Excel); in the case of FIFA WWC it is not very helpful.
+- Reference: Chapter 15 of (**EE19?**).
+
+## Pivot charts
+
+- A pivot chart can be created from the Pivot Table but also directly from the data.
+- A major difference with start charts is that you it will be somewhat “interactive” - there will be buttons you can use to alter the chart.
+- Example (in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456)): FIFA WWC
+  - Insert / Pivot Chart;
+  - In the example I changed the style of graph to “Combo” to allow for the two different scales;
+  - I also included a “slicer” (click on chart / insert slicer), in order to easily filter by squad.
+- Reference: Chapter 15 of (**EE19?**).
+
+# Dynamic Arrays
+
+## Spilling
+
+- One advantage of programs like `R` are the easy use and manipulation of vectors.
+- Excel can do similar things, and the vectors are called arrays. This is new (post Office 365), and is a bit of a game changer.
+- Before Office 365, Excel was incapable of depositing results beyond just 1 cell. This is called “spilling”.
+- Note Excell will need the required space to spill.
+- Main reference is (**AE23?**) - we’ll only introduce this here.
+
+### Example
+
+- Here we introduce array formulas.
+  - If you calculate the sum of an array you’ll get a single number.
+  - The result of an array formula (such as `LEN()`), when you input an array, will give you an array.
+- See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456):
+  - `LEN()` gives an array.
+  - You could then get the sum without having to put the array anywhere: `SUM(LEN(B3:B6))`.
+  - Note that when I wrote the above, it became `SUM(LEN(B3#))` automatically - more on that later.
+- `SUM(LEN(B3:B6))` will work in any version of Excel because it requires only one cell to output, but not `LEN(B3:B6)` as it requires several cells (“spilling”).
+- Note you can spill named ranges, too!
+
+## Think in vectors
+
+- Once you understand you can create vectors and either display or manipulate them, Excel becomes a lot more powerful.
+- You can also use arrays in arguments of known formulas such as `VLOOKUP()`,
+  - For instance `VLOOKUP(.,.,{2,5})` will return value from the 2nd and 5th columns row-wise.
+  - If you use `VLOOKUP(.,.,{2;5})` (with the semicolon) they will display columnwise.
+  - See examples in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+
+## The `#` sign
+
+- The `#` sign when added to a reference to a cell where a dynamic array is written will duplicate that array (and spilled results).
+- It is shorter, but also it will dynamically change the size of the array
+  - This can be desired or not.
+  - See example in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+
+## New formulas
+
+- There are a number of new formulas which were available in coding languages like `R` for a long time, which can be useful, and which are now available in Excel
+  - for instance `SEQUENCE()`, `UNIQUE()`, `FILTER()`, `RANDARRAY()`…
+- Some of those are exemplifed in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+- You are encouraged to browse through. They really bring data handling in Excel a little closer to coded languages such as `R`.
+
+# Lookup functions
+
+# Dynamic References
+
+Sometimes we have to work with references that changes position or size over time. For instance, when we work with chain ladder, we need to adjust our range of references for each development period. This is tedious to do manually!
+
+## OFFSET
+
+## INDIRECT
+
+## ADDRESS
+
+Reference: Murray, 2022 (Chapter 11)
 
 # General etiquette and tools
 
@@ -153,76 +267,10 @@ This is useful for
 
 (Formula Auditing: Chapter 9, p. 436-439)
 
-# Tools for analysing data
-
-## Pivot tables
-
-- Pivot tables are often considered as very difficult to master, but they are not that difficult to start with.
-- Example (in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456)): FIFA WWC
-  - Insert / Pivot Table.
-  - See how you can use variables as filters, rows, or columns. Move them around.
-  - See how columns can display other things than `Sum`, such as `Count`, `Average`, `Max`, `Min`, or `Product`
-- Note there are recommended Pivot Tables (automated recommendation within Excel); in the case of FIFA WWC it is not very helpful.
-- Reference: Chapter 15 of Slager and Slager (2020).
-
-## Pivot charts
-
-- A pivot chart can be created from the Pivot Table but also directly from the data.
-- A major difference with start charts is that you it will be somewhat “interactive” - there will be buttons you can use to alter the chart.
-- Example (in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456)): FIFA WWC
-  - Insert / Pivot Chart;
-  - In the example I changed the style of graph to “Combo” to allow for the two different scales;
-  - I also included a “slicer” (click on chart / insert slicer), in order to easily filter by squad.
-- Reference: Chapter 15 of Slager and Slager (2020).
-
-# Dynamic Arrays
-
-## Spilling
-
-- One advantage of programs like `R` are the easy use and manipulation of vectors.
-- Excel can do similar things, and the vectors are called arrays. This is new (post Office 365), and is a bit of a game changer.
-- Before Office 365, Excel was incapable of depositing results beyond just 1 cell. This is called “spilling”.
-- Note Excell will need the required space to spill.
-- Main reference is Katz (2023) - we’ll only introduce this here.
-
-### Example
-
-- Here we introduce array formulas.
-  - If you calculate the sum of an array you’ll get a single number.
-  - The result of an array formula (such as `LEN()`), when you input an array, will give you an array.
-- See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456):
-  - `LEN()` gives an array.
-  - You could then get the sum without having to put the array anywhere: `SUM(LEN(B3:B6))`.
-  - Note that when I wrote the above, it became `SUM(LEN(B3#))` automatically - more on that later.
-- `SUM(LEN(B3:B6))` will work in any version of Excel because it requires only one cell to output, but not `LEN(B3:B6)` as it requires several cells (“spilling”).
-- Note you can spill named ranges, too!
-
-## Think in vectors
-
-- Once you understand you can create vectors and either display or manipulate them, Excel becomes a lot more powerful.
-- You can also use arrays in arguments of known formulas such as `VLOOKUP()`,
-  - For instance `VLOOKUP(.,.,{2,5})` will return value from the 2nd and 5th columns row-wise.
-  - If you use `VLOOKUP(.,.,{2;5})` (with the semicolon) they will display columnwise.
-  - See examples in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
-
-## The `#` sign
-
-- The `#` sign when added to a reference to a cell where a dynamic array is written will duplicate that array (and spilled results).
-- It is shorter, but also it will dynamically change the size of the array
-  - This can be desired or not.
-  - See example in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
-
-## New formulas
-
-- There are a number of new formulas which were available in coding languages like `R` for a long time, which can be useful, and which are now available in Excel
-  - for instance `SEQUENCE()`, `UNIQUE()`, `FILTER()`, `RANDARRAY()`…
-- Some of those are exemplifed in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
-- You are encouraged to browse through. They really bring data handling in Excel a little closer to coded languages such as `R`.
-
 # Next steps
 
-- All of Katz (2023) is relevant, but take it as a cook book for the assignment. You can go as far as you wish.
-- Chapters 16, 17, 18, and 19 of Slager and Slager (2020) are out of scope.
+- All of (**AE23?**) is relevant, but take it as a cook book for the assignment. You can go as far as you wish.
+- Chapters 16, 17, 18, and 19 of (**EE19?**) are out of scope.
 - However, macros and VBA (which is Chapter 19) are essential components of Excel
   - I strongly encourage you to get started. Start by recording a macro, then play around with the code.
   - VBA allows more efficient calculations via compiled code, and is a powerful addition to Excel.
@@ -230,20 +278,4 @@ This is useful for
 
 # References
 
-<div id="refs" class="references csl-bib-body hanging-indent">
-
-<div id="ref-AE23" class="csl-entry">
-
-Katz, A. I. 2023. *Up up and Array! Dynamic Array Formulas for Excel 365 and Beyond*. Apress.
-
-</div>
-
-<div id="ref-EE19" class="csl-entry">
-
-Slager, D., and A. Slager. 2020. *Essential Excel 2019*. 2nd ed. Apress.
-
-</div>
-
-</div>
-
-[^1]: References: Slager and Slager (2020) and Katz (2023) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/23-Top-M6-lec.pdf)
+[^1]: References: (**EE19?**) and (**AE23?**) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/23-Top-M6-lec.pdf)

@@ -12,7 +12,7 @@
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-1/</guid>
       <description>Week 1 Overview #  This week, we will cover the following topics:
- Introduction to the course (Module 1): what are the broader questions we will answer in this subject, and how are they connected? Collective Risk Modelling (Module 2): how do you work out the distribution of the sum of claims if you can make assumptions about their frequency and severity, and what are typical assumptions for claims frequency?</description>
+ Introduction to the course: what are the topics we will cover in this subject, and how are they connected? Risk and Insurance (Module 1): to put it in the way the CM2 notes puts it, how do we model the behaviours of agents on a market? What is a possible mathematical model for “rational” behaviour, that could explain why people purchase insurance?</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-2/</guid>
       <description>Week 2 Overview #  This week, we will cover the following topics:
- End of Module 2 (Poisson decomposition, and \((a,b)\) family) Data analysis and descriptive statistics (Module 3): how do get a good sense of the properties of a data set, either graphically or numerically? Selected parametric claim size distributions (Module 3): what are good potential candidates for a describing the data likelihood profile with a parametric function? Fitting of distributions (Module 3): How do we then go about fitting the parameters to a given data set?</description>
+ End of Module 1 (characterising risk aversion, and additional considerations) Module 2, which introduces the basics of loss reserving: what it is, why it matters, notation, data   -- If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and entered Lecture Capture via Canvas once for each session.</description>
     </item>
     
     <item>
@@ -32,7 +32,7 @@
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-3/</guid>
       <description>Week 3 Overview #  This week, we will cover the following topics:
- End of Section 3.4, covering the most complicated case of left-truncation and right-censoring (with parameters changing potentially with each claim) Model selection (Module 3): how do we assess how good a model fits to data (“goodness-of-fit”)? How do we make a choice? Calculating wihin layers for claim sizes (Module 3): reinsurance, and some policy tranformations (in particular, stop loss / deductibles) lead to different “layers” of claims being covered by different parties.</description>
+ Module 3, which is concerned with the calculation of IBNR claim counts. There are some slides with the main elements, but a major component of the module is with a spreadsheet, which can be downloaded here   -- If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and entered Lecture Capture via Canvas once for each session.</description>
     </item>
     
     <item>
@@ -41,8 +41,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-4/</guid>
-      <description>Week 4 Overview #  This week, we will cover the following topics, mostly from Module 4:
- Finalising stop-loss calculations Discretisation of continuous distributions (to be able to use Panjer, in particular; see next item) Use of Panjer’s recursion algorithm, which allows us to calculate the exact compound distribution of any random sum, if the frequency follows the \((a,b)\) family Recap of the Normal approximation, as well as translated gamma and lognormal approximations, to be used when one needs a quick approximation, or when only moments are available.</description>
+      <description>Week 4 Overview #  This week, we will cover the following topics:
+ Module 4, which is concerned with the calculation of IBNR claim amounts. There are some slides with the main elements, but a major component of the module is with two spreadsheets, which can be downloaded here and here  See also detailed learning outcomes of 5.2 (“Liability valuations / Run-off triangles”) of the CM2 syllabus here.</description>
     </item>
     
     <item>
@@ -51,8 +51,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-5/</guid>
-      <description>Week 5 Overview #  Continuing on with the Claims Modelling component of the subject, which corresponds to the Section 1 of the CS2 syllabus; In particular, we will cover Module 5–Copulas–and
- discuss what stochastic dependence means, how it arises in an insurance context, and discuss some examples; discuss how to extract the mathematical form of a stochastic dependence structure through copulas briefly discuss how to use copulas in practice  Here is the end of week 4 video, which introduces week 5:</description>
+      <description>Week 5 Overview #  This week, we will cover the following topics:
+ Module 5, which is concerned with the comparison between methods and choice of outstanding liabilities, based on those different methods. Module 6 about Excel.  See also detailed learning outcomes of 5.2 (“Liability valuations / Run-off triangles”) of the CM2 syllabus, as well as CM2-B Excel examinations here.
+Main references and lectures #  Module 5 #  Read: Module 5</description>
     </item>
     
     <item>
@@ -61,8 +62,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-6/</guid>
-      <description>Week 6 Overview #  Continuing on with the Claims Modelling component of the subject, which corresponds to the Section 1 of the CS2 syllabus; In particular, we will cover Module 6–Extreme Value Theory–and
- discuss how to work out the limiting distribution of the maximum of a sample; discuss how to work out the limiting distribution of the excess cost of a threshold.  Here is the end of week 5 video, which introduces week 6:</description>
+      <description>Week 6 Overview #  This week, we have the mid-semester exam on Monday, and tutorials for Module 5.
+Main references and lectures #  n/a
+Additional preparation and resources #  n/a
+Tutorials #  Please let us know of any mistake or required update on Ed.
+Tutorial materials #  Some questions have been especially selected for the tutorials. Students should review The Tutorial book includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set.</description>
     </item>
     
     <item>
