@@ -9,14 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://topics-actl.netlify.app/docs/3-excel/m6-excel/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2024-07-02T22:58:17+10:00" />
+<meta property="article:modified_time" content="2024-07-10T04:04:01+10:00" />
 
 <title>M6 Excel Topics | Topics in Actuarial, Insurance and Finance</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a08e958a0c32c71fa52257f56602fc9e6f4a8586733f7d90b6b544b160364dce.css" integrity="sha256-oI6Vigwyxx&#43;lIlf1ZgL8nm9KhYZzP32QtrVEsWA2Tc4=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.7ccdccfd9024e93d2231178f57499c78091edc5e2711797bcd4c4128c3fe0ffc.js" integrity="sha256-fM3M/ZAk6T0iMRePV0mceAke3F4nEXl7zUxBKMP&#43;D/w=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.a9f6a3cced3b471a8b4fd4606d1373fc1fce680336d2d51bd3c4189791d49a8f.js" integrity="sha256-qfajzO07RxqLT9RgbRNz/B/OaAM20tUb08QYl5HUmo8=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -615,28 +615,35 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
         <li><a href="#think-in-vectors">Think in vectors</a></li>
         <li><a href="#the--sign">The <code>#</code> sign</a></li>
         <li><a href="#new-formulas">New formulas</a></li>
+        <li><a href="#lookup-functions">Lookup functions</a>
+          <ul>
+            <li><a href="#vlookup"><code>VLOOKUP()</code></a></li>
+            <li><a href="#xlookup"><code>XLOOKUP()</code></a></li>
+            <li><a href="#match-xmatch"><code>MATCH()</code>, <code>XMATCH()</code></a></li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#lookup-functions">Lookup functions</a></li>
-    <li><a href="#dynamic-references">Dynamic References</a>
+    <li><a href="#dynamic-references">Dynamic references</a>
       <ul>
-        <li><a href="#offset">OFFSET</a></li>
-        <li><a href="#indirect">INDIRECT</a></li>
-        <li><a href="#address">ADDRESS</a></li>
+        <li><a href="#offset"><code>OFFSET()</code></a></li>
+        <li><a href="#indirect"><code>INDIRECT()</code></a></li>
+        <li><a href="#address"><code>ADDRESS()</code></a></li>
       </ul>
     </li>
-    <li><a href="#general-etiquette-and-tools">General etiquette and tools</a>
+    <li><a href="#general-etiquette-and-tools-and-tools-for-auditing">General etiquette and tools, and tools for auditing</a>
       <ul>
         <li><a href="#etiquette">Etiquette</a></li>
         <li><a href="#principles">Principles</a></li>
+        <li><a href="#tools-for-auditing">Tools for auditing</a>
+          <ul>
+            <li><a href="#dependents-and-precendents">Dependents and precendents</a></li>
+            <li><a href="#show-formulas">Show formulas</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#tools-for-auditing">Tools for auditing</a>
-      <ul>
-        <li><a href="#dependents-and-precendents">Dependents and precendents</a></li>
-        <li><a href="#show-formulas">Show formulas</a></li>
-      </ul>
-    </li>
+    <li><a href="#simulation-macros-and-vba">Simulation, Macros and VBA</a></li>
     <li><a href="#next-steps">Next steps</a></li>
     <li><a href="#references">References</a></li>
   </ul>
@@ -710,10 +717,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </h2>
 <p>There are many keyboard shortcuts that can help you work with Excel efficiently. Some (but not all) useful shortcuts are:</p>
 <ul>
+<li>F4: Cycles through combinations of absolute and relative references</li>
 <li>ctrl + shift + arrow key: Extend the selection of cells to the last non-blank cell towards the specified direction</li>
 <li>ctrl + PageDown/PageUp: Move to the next/previous sheet</li>
 <li>shift + F11: Insert new worksheet</li>
-<li>F4: Cycles through combinations of absolute and relative references</li>
 </ul>
 <p>See 
   <a href="https://support.microsoft.com/en-au/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f">Microsoft - <code>Keyboard shortcuts in Excel</code></a> for list of all keyboard shortcuts.</p>
@@ -729,7 +736,12 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <li>Sometimes we need to work on data from an external source.</li>
 <li>The data could be messy to work with.
 <ul>
-<li>There could be non-printable characters such as tabs (<code>\t</code>), new lines (<code>\n</code>) in the original data.</li>
+<li>There could be non-printable characters such as tabs (<code>\t</code>), new lines (<code>\n</code>) in the original data.
+<ul>
+<li>Check 
+  <a href="https://www.ibm.com/docs/en/aix/7.2?topic=adapters-ascii-decimal-hexadecimal-octal-binary-conversion-table"><code>List of ASCII values</code></a> for ASCII codes for non-printable characters.</li>
+</ul>
+</li>
 <li>We may want to process the strings to retrieve information.</li>
 <li>Data formats are inconsistent.</li>
 </ul>
@@ -741,28 +753,32 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
   <a class="anchor" href="#some-data-cleaning-steps">#</a>
 </h3>
 <ul>
-<li>Editing Texts
+<li>
+<p>Editing Texts</p>
 <ul>
-<li><code>CLEAN()</code> removes any non-printable characters. Check 
-  <a href="https://www.ibm.com/docs/en/aix/7.2?topic=adapters-ascii-decimal-hexadecimal-octal-binary-conversion-table"><code>List of ASCII values</code></a> for ASCII codes for non-printable characters.</li>
-<li>We can use <code>SUBSTITUE()</code> to replace characters.</li>
+<li><code>CLEAN()</code>, <code>TRIM()</code>, and <code>SUBSTITUTE()</code> to deal with any non-printable characters.</li>
+<li>Merging and splitting columns with functions like <code>LEFT()</code>, <code>RIGHT()</code> and <code>MID()</code> and <code>SEARCH()</code>. Wildcard characters <code>?</code> and <code>*</code> are also useful.</li>
 </ul>
 </li>
-<li>Merging and splitting columns
+<li>
+<p>Removing duplicate rows: <code>Data &gt; Data Tools &gt; Remove Duplicates</code>.</p>
+</li>
+<li>
+<p>Converting table into “machine-readable” formats.</p>
 <ul>
-<li><code>LEFT()</code>, <code>RIGHT()</code> and <code>MID()</code> to extract part of your string.</li>
-<li>Use <code>SEARCH()</code> to look for the starting position of specified string.</li>
-<li>Wildcard characters are also useful: <code>?</code> for a single character and <code>*</code> for multiple characters including space.</li>
+<li>An example in 
+  <a href="https://link.springer.com/book/10.1007/978-1-4842-8942-6">Kolokolov, 2023 (Chapter 1, P.2-9)</a>.</li>
+<li>Macros would be useful here!</li>
 </ul>
 </li>
-<li>Formatting different types of data
-<ul>
-<li><code>VALUE()</code> to convert time in terms of days, or currency to number.</li>
-</ul>
+<li>
+<p>See <code>Data wrangling</code> tab in the 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a>.</p>
 </li>
-<li>Removing duplicate rows: <code>Data &gt; Data Tools &gt; Remove Duplicates</code>.</li>
-<li>There are much more functions and steps can be used to clean your data - see 
-  <a href="https://support.microsoft.com/en-au/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19"><code>Microsoft - Top ten ways to clean your data</code></a>.</li>
+<li>
+<p>There are much more functions and steps can be used to clean your data - see 
+  <a href="https://support.microsoft.com/en-au/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19"><code>Microsoft - Top ten ways to clean your data</code></a>.</p>
+</li>
 </ul>
 <h2 id="pivot-tables">
   Pivot tables
@@ -878,31 +894,127 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
   <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a>.</li>
 <li>You are encouraged to browse through. They really bring data handling in Excel a little closer to coded languages such as <code>R</code>.</li>
 </ul>
-<h1 id="lookup-functions">
+<h2 id="lookup-functions">
   Lookup functions
   <a class="anchor" href="#lookup-functions">#</a>
-</h1>
+</h2>
+<ul>
+<li>Lookup functions are essential for Excel users.</li>
+<li>Useful when you need to search within a single row or column to find a corresponding value in the same position in a second row or column.</li>
+<li>Multiple lookup functions are available.</li>
+<li>All of them works with arrays of lookup values!</li>
+</ul>
+<h3 id="vlookup">
+  <code>VLOOKUP()</code>
+  <a class="anchor" href="#vlookup">#</a>
+</h3>
+<ul>
+<li>Available for all versions of Excel, so it is reliable when sharing
+spreadsheets.</li>
+<li>Some drawbacks of <code>VLOOKUP()</code>:
+<ul>
+<li>Lookup Column Must Be the First Column</li>
+<li>Can be confusing when specifying the return column</li>
+</ul>
+</li>
+<li><code>HLOOKUP()</code> is the horizontal version of <code>VLOOKUP()</code>.</li>
+<li>Check 
+  <a href="https://support.microsoft.com/en-au/office/video-vlookup-when-and-how-to-use-it-9a86157a-5542-4148-a536-724823014785"><code>this video</code></a> to see how it works.</li>
+</ul>
+<h3 id="xlookup">
+  <code>XLOOKUP()</code>
+  <a class="anchor" href="#xlookup">#</a>
+</h3>
+<ul>
+<li>An upgraded version for <code>VLOOKUP()</code> released in 2020 - not available in Excel 2016 and Excel 2019.
+<ul>
+<li>Robust lookup function: You can search any direction.</li>
+<li>Can return multiple arrays as well.</li>
+<li>The lookup array does not have to be the first column/row.</li>
+<li>Different search modes available: from first to last, last to first, etc.</li>
+<li>An <code>if not found</code> argument to allow combinations with functions like <code>IFERROR</code>, <code>IFNA</code>.</li>
+</ul>
+</li>
+<li>Watch 
+  <a href="https://support.microsoft.com/en-au/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929"><code>this video</code></a> to see how it works.</li>
+</ul>
+<h3 id="match-xmatch">
+  <code>MATCH()</code>, <code>XMATCH()</code>
+  <a class="anchor" href="#match-xmatch">#</a>
+</h3>
+<ul>
+<li>
+<p>Both functions work similarly by finding the index of your lookup value within the lookup array.</p>
+</li>
+<li>
+<p><code>XMATCH()</code> is more robust by providing new match mode and search mode.</p>
+</li>
+<li>
+<p>By combining with <code>INDEX()</code>, it returns the value instead of the index inside the lookup array.</p>
+</li>
+<li>
+<p>Check the <code>lookup</code> tab in 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a> for comparisons between these lookup functions.</p>
+</li>
+</ul>
+<p>Reference: Murray, 2022 (Chapter 7, 11)</p>
 <h1 id="dynamic-references">
-  Dynamic References
+  Dynamic references
   <a class="anchor" href="#dynamic-references">#</a>
 </h1>
-<p>Sometimes we have to work with references that changes position or size over time. For instance, when we work with chain ladder, we need to adjust our range of references for each development period. This is tedious to do manually!</p>
+<ul>
+<li>Sometimes we have to work with references that changes position or size over time.</li>
+<li>For instance, we need to adjust our range of references for each development period when modelling the development effects.</li>
+<li>This is tedious to do manually if we have a large dataset!</li>
+<li>Dynamic Referencing will be useful here.</li>
+</ul>
 <h2 id="offset">
-  OFFSET
+  <code>OFFSET()</code>
   <a class="anchor" href="#offset">#</a>
 </h2>
+<ul>
+<li>Allows you to move your initial references to any direction by any number of cells.</li>
+<li>You can select the height and width of the returned range.</li>
+</ul>
 <h2 id="indirect">
-  INDIRECT
+  <code>INDIRECT()</code>
   <a class="anchor" href="#indirect">#</a>
 </h2>
+<ul>
+<li>
+<p>Goes to the address specified by the reference text you entered.</p>
+<ul>
+<li>e.g. <code>INDIRECT(B2)</code> goes to the cell <code>A2</code> if cell <code>B2</code> contains the text <code>A2</code>.</li>
+</ul>
+</li>
+<li>
+<p>Your reference text can be a table, a named range, etc.</p>
+</li>
+<li>
+<p>Combining with <code>ADDRESS()</code> allows you to reference dynamically.</p>
+</li>
+<li>
+<p>Both <code>OFFSET()</code> and <code>INDIRECT()</code> are volatile functions.</p>
+<ul>
+<li>Excel recalculates them even if you changed a cell without these functions!</li>
+<li>Can be computationally inefficient if the spreadsheet relies on them heavily.</li>
+</ul>
+</li>
+</ul>
 <h2 id="address">
-  ADDRESS
+  <code>ADDRESS()</code>
   <a class="anchor" href="#address">#</a>
 </h2>
+<ul>
+<li>Gives you the address of your specified columns and rows.</li>
+<li>This allows you to obtain dynamic addresses by dynamically changing your specified rows and columns.</li>
+</ul>
+<p>See <code>reference</code> tab in 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a> for demonstrations.</p>
 <p>Reference: Murray, 2022 (Chapter 11)</p>
-<h1 id="general-etiquette-and-tools">
-  General etiquette and tools
-  <a class="anchor" href="#general-etiquette-and-tools">#</a>
+<h1 id="general-etiquette-and-tools-and-tools-for-auditing">
+  General etiquette and tools, and tools for auditing
+  <a class="anchor" href="#general-etiquette-and-tools-and-tools-for-auditing">#</a>
 </h1>
 <h2 id="etiquette">
   Etiquette
@@ -946,14 +1058,14 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <li>Use named ranges and variables as much as possible (1, 3, 5, 6), unless the variable is going to be used only once.</li>
 <li>Use more advanced formulas if shorter, and avoid too much nesting (1, 3, 4, 5, 6).</li>
 </ul>
-<h1 id="tools-for-auditing">
+<h2 id="tools-for-auditing">
   Tools for auditing
   <a class="anchor" href="#tools-for-auditing">#</a>
-</h1>
-<h2 id="dependents-and-precendents">
+</h2>
+<h3 id="dependents-and-precendents">
   Dependents and precendents
   <a class="anchor" href="#dependents-and-precendents">#</a>
-</h2>
+</h3>
 <p>Use of dependents / precedents, e.g.:</p>
 <ol>
 <li>go to tab <code>Dependents - Precedents - PPCI</code>;</li>
@@ -969,10 +1081,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <li>debug issues.</li>
 </ul>
 <p>(Formula Auditing: Chapter 9, p. 436-439)</p>
-<h2 id="show-formulas">
+<h3 id="show-formulas">
   Show formulas
   <a class="anchor" href="#show-formulas">#</a>
-</h2>
+</h3>
 <ul>
 <li>The “Formulas” tool tab should have a “Show formula” tile. This will replace all numeric values by formulas.
 <ul>
@@ -983,6 +1095,10 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <li>Note also the <code>FORMULATEXT()</code> formula which is a dynamic array formula requiring spilling (see later section “Dynamic Arrays”!).</li>
 </ul>
 <p>(Formula Auditing: Chapter 9, p. 436-439)</p>
+<h1 id="simulation-macros-and-vba">
+  Simulation, Macros and VBA
+  <a class="anchor" href="#simulation-macros-and-vba">#</a>
+</h1>
 <h1 id="next-steps">
   Next steps
   <a class="anchor" href="#next-steps">#</a>
@@ -1016,9 +1132,9 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 
 
 
-  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/e2beda13bf512af5904cdeb728a05aa71fe9e7fe" title='Last modified by William Ho | 2 July 2024' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/0c3e6615aff7942456280c9bdff67b180c089e8c" title='Last modified by Lee Ho Ming | 10 July 2024' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>2 July 2024</span>
+      <span>10 July 2024</span>
     </a>
   </div>
 
@@ -1085,28 +1201,35 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
         <li><a href="#think-in-vectors">Think in vectors</a></li>
         <li><a href="#the--sign">The <code>#</code> sign</a></li>
         <li><a href="#new-formulas">New formulas</a></li>
+        <li><a href="#lookup-functions">Lookup functions</a>
+          <ul>
+            <li><a href="#vlookup"><code>VLOOKUP()</code></a></li>
+            <li><a href="#xlookup"><code>XLOOKUP()</code></a></li>
+            <li><a href="#match-xmatch"><code>MATCH()</code>, <code>XMATCH()</code></a></li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#lookup-functions">Lookup functions</a></li>
-    <li><a href="#dynamic-references">Dynamic References</a>
+    <li><a href="#dynamic-references">Dynamic references</a>
       <ul>
-        <li><a href="#offset">OFFSET</a></li>
-        <li><a href="#indirect">INDIRECT</a></li>
-        <li><a href="#address">ADDRESS</a></li>
+        <li><a href="#offset"><code>OFFSET()</code></a></li>
+        <li><a href="#indirect"><code>INDIRECT()</code></a></li>
+        <li><a href="#address"><code>ADDRESS()</code></a></li>
       </ul>
     </li>
-    <li><a href="#general-etiquette-and-tools">General etiquette and tools</a>
+    <li><a href="#general-etiquette-and-tools-and-tools-for-auditing">General etiquette and tools, and tools for auditing</a>
       <ul>
         <li><a href="#etiquette">Etiquette</a></li>
         <li><a href="#principles">Principles</a></li>
+        <li><a href="#tools-for-auditing">Tools for auditing</a>
+          <ul>
+            <li><a href="#dependents-and-precendents">Dependents and precendents</a></li>
+            <li><a href="#show-formulas">Show formulas</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#tools-for-auditing">Tools for auditing</a>
-      <ul>
-        <li><a href="#dependents-and-precendents">Dependents and precendents</a></li>
-        <li><a href="#show-formulas">Show formulas</a></li>
-      </ul>
-    </li>
+    <li><a href="#simulation-macros-and-vba">Simulation, Macros and VBA</a></li>
     <li><a href="#next-steps">Next steps</a></li>
     <li><a href="#references">References</a></li>
   </ul>

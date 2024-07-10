@@ -163,10 +163,10 @@ Also, see tab `Assumed Knowledge` in the [`module 6 spreadsheet`](https://canvas
 
 There are many keyboard shortcuts that can help you work with Excel efficiently. Some (but not all) useful shortcuts are:
 
+- F4: Cycles through combinations of absolute and relative references
 - ctrl + shift + arrow key: Extend the selection of cells to the last non-blank cell towards the specified direction
 - ctrl + PageDown/PageUp: Move to the next/previous sheet
 - shift + F11: Insert new worksheet
-- F4: Cycles through combinations of absolute and relative references
 
 See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en-au/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f) for list of all keyboard shortcuts. 
 
@@ -177,6 +177,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 - Sometimes we need to work on data from an external source.
 - The data could be messy to work with. 
   - There could be non-printable characters such as tabs (`\t`), new lines (`\n`) in the original data. 
+    - Check [`List of ASCII values`](https://www.ibm.com/docs/en/aix/7.2?topic=adapters-ascii-decimal-hexadecimal-octal-binary-conversion-table) for ASCII codes for non-printable characters.
   - We may want to process the strings to retrieve information.
   - Data formats are inconsistent.
 - It is important to clean our data before analysis!
@@ -184,11 +185,13 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 ### Some data cleaning steps
 
 - Editing Texts
-  - `CLEAN()` removes any non-printable characters. Check [`List of ASCII values`](https://www.ibm.com/docs/en/aix/7.2?topic=adapters-ascii-decimal-hexadecimal-octal-binary-conversion-table) for ASCII codes for non-printable characters.
-  - We can use `SUBSTITUE()` to replace characters.
+  - `CLEAN()`, `TRIM()`, and `SUBSTITUTE()` to deal with any non-printable characters. 
+  - Merging and splitting columns with functions like `LEFT()`, `RIGHT()` and `MID()` and `SEARCH()`.  Wildcard characters `?` and `*` are also useful.
   
-- Merging and splitting columns with functions like `LEFT()`, `RIGHT()` and `MID()` and `SEARCH()`.  Wildcard characters `?` and `*` are also useful.
 - Removing duplicate rows: `Data > Data Tools > Remove Duplicates`.
+- Converting table into "machine-readable" formats.
+  - An example in [Kolokolov, 2023 (Chapter 1, P.2-9)](https://link.springer.com/book/10.1007/978-1-4842-8942-6).
+  - Macros would be useful here!
 
 - See `Data wrangling` tab in the [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
 
@@ -300,20 +303,34 @@ Reference: Murray, 2022 (Chapter 7, 11)
 # Dynamic references
 
 - Sometimes we have to work with references that changes position or size over time. 
-- For instance, we need to adjust our range of references for each development period when modelling with chain ladder. 
+- For instance, we need to adjust our range of references for each development period when modelling the development effects. 
 - This is tedious to do manually if we have a large dataset!
 - Dynamic Referencing will be useful here.
 
 ## `OFFSET()`
+- Allows you to move your initial references to any direction by any number of cells.
+- You can select the height and width of the returned range.
 
 ## `INDIRECT()`
+- Goes to the address specified by the reference text you entered.
+  - e.g. `INDIRECT(B2)` goes to the cell `A2` if cell `B2` contains the text `A2`.
+- Your reference text can be a table, a named range, etc.
+- Combining with `ADDRESS()` allows you to reference dynamically.
+
+- Both `OFFSET()` and `INDIRECT()` are volatile functions.
+  - Excel recalculates them even if you changed a cell without these functions!
+  - Can be computationally inefficient if the spreadsheet relies on them heavily.
 
 ## `ADDRESS()`
+- Gives you the address of your specified columns and rows.
+- This allows you to obtain dynamic addresses by dynamically changing your specified rows and columns.
+
+See `reference` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for demonstrations.
 
 Reference: Murray, 2022 (Chapter 11)
 
 
-# General etiquette and tools, tools for auditing
+# General etiquette and tools, and tools for auditing
 
 ## Etiquette
 
@@ -377,8 +394,7 @@ This is useful for
 
 (Formula Auditing: Chapter 9, p. 436-439)
 
-
-
+# Simulation, Macros and VBA
 
 
 # Next steps

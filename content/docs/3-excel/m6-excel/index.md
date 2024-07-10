@@ -95,10 +95,10 @@ Also, see tab `Assumed Knowledge` in the [`module 6 spreadsheet`](https://canvas
 
 There are many keyboard shortcuts that can help you work with Excel efficiently. Some (but not all) useful shortcuts are:
 
+- F4: Cycles through combinations of absolute and relative references
 - ctrl + shift + arrow key: Extend the selection of cells to the last non-blank cell towards the specified direction
 - ctrl + PageDown/PageUp: Move to the next/previous sheet
 - shift + F11: Insert new worksheet
-- F4: Cycles through combinations of absolute and relative references
 
 See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en-au/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f) for list of all keyboard shortcuts.
 
@@ -109,6 +109,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 - Sometimes we need to work on data from an external source.
 - The data could be messy to work with.
   - There could be non-printable characters such as tabs (`\t`), new lines (`\n`) in the original data.
+    - Check [`List of ASCII values`](https://www.ibm.com/docs/en/aix/7.2?topic=adapters-ascii-decimal-hexadecimal-octal-binary-conversion-table) for ASCII codes for non-printable characters.
   - We may want to process the strings to retrieve information.
   - Data formats are inconsistent.
 - It is important to clean our data before analysis!
@@ -116,15 +117,19 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 ### Some data cleaning steps
 
 - Editing Texts
-  - `CLEAN()` removes any non-printable characters. Check [`List of ASCII values`](https://www.ibm.com/docs/en/aix/7.2?topic=adapters-ascii-decimal-hexadecimal-octal-binary-conversion-table) for ASCII codes for non-printable characters.
-  - We can use `SUBSTITUE()` to replace characters.
-- Merging and splitting columns
-  - `LEFT()`, `RIGHT()` and `MID()` to extract part of your string.
-  - Use `SEARCH()` to look for the starting position of specified string.
-  - Wildcard characters are also useful: `?` for a single character and `*` for multiple characters including space.
-- Formatting different types of data
-  - `VALUE()` to convert time in terms of days, or currency to number.
+
+  - `CLEAN()`, `TRIM()`, and `SUBSTITUTE()` to deal with any non-printable characters.
+  - Merging and splitting columns with functions like `LEFT()`, `RIGHT()` and `MID()` and `SEARCH()`. Wildcard characters `?` and `*` are also useful.
+
 - Removing duplicate rows: `Data > Data Tools > Remove Duplicates`.
+
+- Converting table into “machine-readable” formats.
+
+  - An example in [Kolokolov, 2023 (Chapter 1, P.2-9)](https://link.springer.com/book/10.1007/978-1-4842-8942-6).
+  - Macros would be useful here!
+
+- See `Data wrangling` tab in the [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+
 - There are much more functions and steps can be used to clean your data - see [`Microsoft - Top ten ways to clean your data`](https://support.microsoft.com/en-au/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19).
 
 ## Pivot tables
@@ -191,21 +196,82 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 - Some of those are exemplifed in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
 - You are encouraged to browse through. They really bring data handling in Excel a little closer to coded languages such as `R`.
 
-# Lookup functions
+## Lookup functions
 
-# Dynamic References
+- Lookup functions are essential for Excel users.
+- Useful when you need to search within a single row or column to find a corresponding value in the same position in a second row or column.
+- Multiple lookup functions are available.
+- All of them works with arrays of lookup values!
 
-Sometimes we have to work with references that changes position or size over time. For instance, when we work with chain ladder, we need to adjust our range of references for each development period. This is tedious to do manually!
+### `VLOOKUP()`
 
-## OFFSET
+- Available for all versions of Excel, so it is reliable when sharing
+  spreadsheets.
+- Some drawbacks of `VLOOKUP()`:
+  - Lookup Column Must Be the First Column
+  - Can be confusing when specifying the return column
+- `HLOOKUP()` is the horizontal version of `VLOOKUP()`.
+- Check [`this video`](https://support.microsoft.com/en-au/office/video-vlookup-when-and-how-to-use-it-9a86157a-5542-4148-a536-724823014785) to see how it works.
 
-## INDIRECT
+### `XLOOKUP()`
 
-## ADDRESS
+- An upgraded version for `VLOOKUP()` released in 2020 - not available in Excel 2016 and Excel 2019.
+  - Robust lookup function: You can search any direction.
+  - Can return multiple arrays as well.
+  - The lookup array does not have to be the first column/row.
+  - Different search modes available: from first to last, last to first, etc.
+  - An `if not found` argument to allow combinations with functions like `IFERROR`, `IFNA`.
+- Watch [`this video`](https://support.microsoft.com/en-au/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929) to see how it works.
+
+### `MATCH()`, `XMATCH()`
+
+- Both functions work similarly by finding the index of your lookup value within the lookup array.
+
+- `XMATCH()` is more robust by providing new match mode and search mode.
+
+- By combining with `INDEX()`, it returns the value instead of the index inside the lookup array.
+
+- Check the `lookup` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for comparisons between these lookup functions.
+
+Reference: Murray, 2022 (Chapter 7, 11)
+
+# Dynamic references
+
+- Sometimes we have to work with references that changes position or size over time.
+- For instance, we need to adjust our range of references for each development period when modelling the development effects.
+- This is tedious to do manually if we have a large dataset!
+- Dynamic Referencing will be useful here.
+
+## `OFFSET()`
+
+- Allows you to move your initial references to any direction by any number of cells.
+- You can select the height and width of the returned range.
+
+## `INDIRECT()`
+
+- Goes to the address specified by the reference text you entered.
+
+  - e.g. `INDIRECT(B2)` goes to the cell `A2` if cell `B2` contains the text `A2`.
+
+- Your reference text can be a table, a named range, etc.
+
+- Combining with `ADDRESS()` allows you to reference dynamically.
+
+- Both `OFFSET()` and `INDIRECT()` are volatile functions.
+
+  - Excel recalculates them even if you changed a cell without these functions!
+  - Can be computationally inefficient if the spreadsheet relies on them heavily.
+
+## `ADDRESS()`
+
+- Gives you the address of your specified columns and rows.
+- This allows you to obtain dynamic addresses by dynamically changing your specified rows and columns.
+
+See `reference` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for demonstrations.
 
 Reference: Murray, 2022 (Chapter 11)
 
-# General etiquette and tools
+# General etiquette and tools, and tools for auditing
 
 ## Etiquette
 
@@ -237,9 +303,9 @@ There is no single way to achieve the objectives above, but there are a number o
 - Use named ranges and variables as much as possible (1, 3, 5, 6), unless the variable is going to be used only once.
 - Use more advanced formulas if shorter, and avoid too much nesting (1, 3, 4, 5, 6).
 
-# Tools for auditing
+## Tools for auditing
 
-## Dependents and precendents
+### Dependents and precendents
 
 Use of dependents / precedents, e.g.:
 
@@ -258,7 +324,7 @@ This is useful for
 
 (Formula Auditing: Chapter 9, p. 436-439)
 
-## Show formulas
+### Show formulas
 
 - The “Formulas” tool tab should have a “Show formula” tile. This will replace all numeric values by formulas.
   - This is helpful to check what numbers are hard coded, and which are results of calculations. Together with dependents, it helps seeing if everything is as dynamic as it should.
@@ -266,6 +332,8 @@ This is useful for
 - Note also the `FORMULATEXT()` formula which is a dynamic array formula requiring spilling (see later section “Dynamic Arrays”!).
 
 (Formula Auditing: Chapter 9, p. 436-439)
+
+# Simulation, Macros and VBA
 
 # Next steps
 
