@@ -117,19 +117,12 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 ### Some data cleaning steps
 
 - Editing Texts
-
   - `CLEAN()`, `TRIM()`, and `SUBSTITUTE()` to deal with any non-printable characters.
   - Merging and splitting columns with functions like `LEFT()`, `RIGHT()` and `MID()` and `SEARCH()`. Wildcard characters `?` and `*` are also useful.
-
 - Removing duplicate rows: `Data > Data Tools > Remove Duplicates`.
-
 - Converting table into “machine-readable” formats.
-
   - An example in [Kolokolov, 2023 (Chapter 1, P.2-9)](https://link.springer.com/book/10.1007/978-1-4842-8942-6).
   - Macros would be useful here!
-
-- See `Data wrangling` tab in the [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
-
 - There are much more functions and steps can be used to clean your data - see [`Microsoft - Top ten ways to clean your data`](https://support.microsoft.com/en-au/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19).
 
 ## Pivot tables
@@ -226,12 +219,10 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 ### `MATCH()`, `XMATCH()`
 
 - Both functions work similarly by finding the index of your lookup value within the lookup array.
-
 - `XMATCH()` is more robust by providing new match mode and search mode.
-
 - By combining with `INDEX()`, it returns the value instead of the index inside the lookup array.
 
-- Check the `lookup` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for comparisons between these lookup functions.
+Check [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for comparisons between these lookup functions.
 
 Reference: Murray, 2022 (Chapter 7, 11)
 

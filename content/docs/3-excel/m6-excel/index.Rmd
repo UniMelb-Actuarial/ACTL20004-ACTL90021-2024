@@ -294,7 +294,7 @@ spreadsheets.
 - `XMATCH()` is more robust by providing new match mode and search mode.
 - By combining with `INDEX()`, it returns the value instead of the index inside the lookup array.
 
-- Check the `lookup` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for comparisons between these lookup functions.
+Check [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for comparisons between these lookup functions.
 
 Reference: Murray, 2022 (Chapter 7, 11)
 
