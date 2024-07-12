@@ -1,6 +1,6 @@
 ---
-bookHidden: true
-bookSearchExclude: true
+bookHidden: false
+bookSearchExclude: false
 title: "Week 1 Study Plan"
 weight: 1
 bibliography: ../../../../static/libraries.bib
@@ -15,7 +15,8 @@ Week 1
 This week, we will cover the following topics:
 
 - Introduction to the course: what are the topics we will cover in this subject, and how are they connected?
-- Risk and Insurance (Module 1): to put it in the way the CM2 notes puts it, how do we model the behaviours of agents on a market? What is a possible mathematical model for “rational” behaviour, that could explain why people purchase insurance?
+- Risk and Insurance (Module 1.1-1.3): to put it in the way the CM2 notes puts it, how do we model the behaviours of agents on a market? What is a possible mathematical model for “rational” behaviour, that could explain why people purchase insurance?
+- We will also introduce the Excel component of the subject (Module 6.1)
 
 See also detailed learning outcomes of 1.2 (utility theory) of the CM2 syllabus [`here`](../../0-subject-guide/SILO).
 
@@ -43,7 +44,16 @@ Read: [`Module 1: Utility, Risk and Insurance`](../../1-utility/m1-risk-insuranc
 Annotate: [`slides`](../../../output/23-Top-M1-lec.pdf)
 <!-- [``annotated slides``](../../../output/22-GIM-M1-lec_a.pdf) -->
 
-Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/153686/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/154246/external_tools/701)). This is where annotated slides will be made available, too.
+Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
+
+## Module 6: Utility, Risk and Insurance
+
+Read: [`Module 6: Excel topics`](../../3-excel/m6-excel)
+
+Annotate: [`slides`](../../../output/24-Top-M6-lec.pdf)
+<!-- [``annotated slides``](../../../output/22-GIM-M1-lec_a.pdf) -->
+
+Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
 
 # Additional preparation and resources
 
@@ -60,7 +70,7 @@ Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https
 
 # Tutorials
 
-Please let us know of any mistake or required update on [`Ed`](https://canvas.lms.unimelb.edu.au/courses/191080/external_tools/5837?display=borderless).
+Please let us know of any mistake or required update on [`Ed`](https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless).
 
 <!-- ## Pre-Tutorial work -->
 <!-- Please study those questions **before** the tutorial. -->
@@ -74,8 +84,9 @@ Please let us know of any mistake or required update on [`Ed`](https://canvas.lm
 
 ## This week
 
-Tutorial exercises in scope this week are Sections 1.1 to 1.3, minus utilins3 (exercise 1.3.5). The two last exercises (`utilins3` and `util8`) will be covered next week.
+To be announced after the lectures.
 
+<!-- Tutorial exercises in scope this week are Sections 1.1 to 1.3, minus utilins3 (exercise 1.3.5). The two last exercises (`utilins3` and `util8`) will be covered next week. -->
 <!-- Here is the recording available for Week 1 from William: -->
 <!--  -->
 <!-- <iframe height="420" width="640" allowfullscreen frameborder=0 src="https://echo360.net.au/media/986498e7-d7fa-42c4-8af0-492f068f4ccd/public?autoplay=false&automute=false"></iframe> -->
@@ -88,8 +99,9 @@ Tutorial exercises in scope this week are Sections 1.1 to 1.3, minus utilins3 (e
 
 ## Next week (week 2)
 
-The two last exercises of Module `(`utilins3`and`util8\`) will be covered next week. Also, we will start on Loss Reserving and will discuss Modules 2 (and possibly 3).
+To be announced after the lectures.
 
+<!-- The two last exercises of Module ` (`utilins3` and `util8`) will be covered next week. Also, we will start on Loss Reserving and will discuss Modules 2 (and possibly 3). -->
 <!-- ## Additional questions -->
 <!-- The "additional questions" are here for reinforcement or revision, but are not the main focus of the tutorials. Solutions for those exercises are already available. -->
 

@@ -36,7 +36,7 @@ In the following sections, details are provided (and will be populated throughou
 
 ## Date
 
-The mid-semester exam will take place online on  **Monday 28 August 2023 between 2.30pm and 3.30pm**. Please ***arrive by 2.15pm at the latest***. The exam won't start before 2.30pm, but it may start later, so please make sure you are available until 4pm.
+The mid-semester exam will take place on  **Wednesday 28 August 2024 between 5pm and 7pm**. Please ***arrive by 5.15pm at the latest***. The exam won't start before 5.30pm, but it may start later, so please make sure you are available until 7pm.
 
 ## Type
 
@@ -48,10 +48,10 @@ The mid-semester exam will be a "traditional", closed book, pen on paper exam.
 
 ## Venue
 
-[`PAR-Kwong Lee Dow-101and102 `](https://maps.unimelb.edu.au/point?poi=659376)
+[`Wilson Hall`](https://maps.unimelb.edu.au/point?poi=1000461519)
 
 ```{r, fig.align='center', out.width="100%", echo=F}
-knitr::include_graphics("venue3.png")
+knitr::include_graphics("venue4.png")
 ```
 
 ## Duration
@@ -62,7 +62,7 @@ knitr::include_graphics("venue3.png")
 
 ## Scope
 
-The mid-semester exam will assess contents from Modules 1 to 4 (lectures of weeks 1-4) and associated tutorial exercises, readings, spreadsheets, and course contents. This focuses on the risk and insurance, as well as all of reserving components of the subject.
+The mid-semester exam will assess contents from Modules 1 to 4.2 (lectures of weeks 1-5) and associated tutorial exercises, readings, spreadsheets, and course contents. This focuses on the risk and insurance, as well as all of reserving components of the subject.
 
 
 ## Practice
@@ -72,7 +72,7 @@ The mid-semester exam will assess contents from Modules 1 to 4 (lectures of week
 <!-- - [`Practice Quiz`](https://canvas.lms.unimelb.edu.au/courses/107520/assignments/249478) is a very simple 3 question quiz that allows you to see what the three types of questions look like (multiple choice, multiple answer, essay) -->
 <!-- - [`2020 Mid-semester Exam`](https://canvas.lms.unimelb.edu.au/courses/107520/assignments/249479) is the MSE from last year for you to practice and get feedback about your preparation. -->
 
-The exam will be of the "traditional" type, in line if the IFoA CM2A exams; see [`below`](Assessment#past-cm2-exams) for details.
+The exam will be of the "traditional" type, in line if the IFoA CM2A exams, as well as the 2023 Mid-semester Exam [`here`](https://canvas.lms.unimelb.edu.au/courses/220261/modules); see [`below`](Assessment#past-cm2-exams) for details.
 
 
 
@@ -87,7 +87,7 @@ See [`General Advice`](/Assessment/#general-advice) for further details.
 
 The assignment will be an assignment which will need to be performed in Excel, which will be specifically assessed.
 
-The assignment will assess skills from Reserving and Stochastic returns (TBC) and associated tutorial exercises, readings, spreadsheets, and course contents. Communication skills will also be assessed.
+The assignment will assess skills from Excel and Stochastic returns (TBC) and associated tutorial exercises, readings, spreadsheets, and course contents. Communication skills will also be assessed.
 
 
 
@@ -115,13 +115,13 @@ http://students.unimelb.edu.au/admin/special
 
 ## Type
 
-The final exam will be a “traditional”, closed book, pen on paper exam.
+The final exam will be an invigilated exam on campus. There will be a 10 minute reading time. The focus of the final exam will be on the whole subject, with particular focus on the second half of the subject. Subject to confirmation, you may have a university-provided laptop to perform some calculations on Excel.
 
 **You will be allowed to bring one A4 sheet of notes, double sided. You can write as much as you want on that one sheet of paper (text and/or formulas), on both sides, but it cannot be more than one A4 sheet.**
 
 **You will be allowed to bring a Casio FX-82 (with or without suffix) calculator.**
 
-Additional instructions for the exam are on the cover sheets ([UG](https://canvas.lms.unimelb.edu.au/courses/153686/modules/items/5212151)/[PG](https://canvas.lms.unimelb.edu.au/courses/154246/modules/items/5212152))
+<!-- Additional instructions for the exam are on the cover sheets ([UG](https://canvas.lms.unimelb.edu.au/courses/153686/modules/items/5212151)/[PG](https://canvas.lms.unimelb.edu.au/courses/154246/modules/items/5212152)) -->
 
 ## Date
 
@@ -135,18 +135,20 @@ The date of the final exam is published on the [``University of Melbourne Exams 
 
 ## Scope
 
-The final exam will assess **all** contents of the course, with particular focus on the materials taught beyond week 6. The questions will focus particlarly on:
+The final exam will assess **all** contents of the course, with particular focus on the materials taught beyond week 5. 
 
-- Modules 1 and 5 (and associated knowledge which may come from Modules 2-4)
-- Modules 7 to 12
+<!-- The questions will focus particularly on: -->
 
-The material from the following slides from Modules 7 to 12 is not required for the final exam:
+<!-- - Modules 1 and 5 (and associated knowledge which may come from Modules 2-4) -->
+<!-- - Modules 7 to 12 -->
 
-- Module 7: p. 54-56
-- Module 9: p. 10, p. 23, and anything directly related to Excel, e.g., how to implement a procedure in Excel  (however, you may need to understand the procedure, i.e., know the theoretical basis). 
-- Module 10: p. 25 and p. 27
-- Module 11: p. 23-28
-- Module 12: p. 9-11
+<!-- The material from the following slides from Modules 7 to 12 is not required for the final exam: -->
+
+<!-- - Module 7: p. 54-56 -->
+<!-- - Module 9: p. 10, p. 23, and anything directly related to Excel, e.g., how to implement a procedure in Excel  (however, you may need to understand the procedure, i.e., know the theoretical basis).  -->
+<!-- - Module 10: p. 25 and p. 27 -->
+<!-- - Module 11: p. 23-28 -->
+<!-- - Module 12: p. 9-11 -->
 
 
 Examinable materials include associated tutorial questions (it is important that you understand the details of the examples /questions in these materials and that you are able to replicate the solutions independently and efficiently), associated mandatory readings, as well as the assignment task and the mid-semester exam.
@@ -178,12 +180,12 @@ Will be available later.
 Will be announced later.
 
 
-Please see below the schdule of extra consultation times for the final exam. 
+<!-- Please see below the schdule of extra consultation times for the final exam.  -->
 
-- October 18, 13:00-15:00, FBE 365 (Sam)
-- October 20, 15:00-17:00, FBE 365 (Sam)
-- October 24, 13:00-15:00, FBE 308 (Aileen)
-- October 27, 11:00-12:00, FBE 318 (Yuyu)
+<!-- - October 18, 13:00-15:00, FBE 365 (Sam) -->
+<!-- - October 20, 15:00-17:00, FBE 365 (Sam) -->
+<!-- - October 24, 13:00-15:00, FBE 308 (Aileen) -->
+<!-- - October 27, 11:00-12:00, FBE 318 (Yuyu) -->
 
 
 <!-- Beyond support on Yellowdig, the following exam consultation hours with tutors will be available on Zoom: -->

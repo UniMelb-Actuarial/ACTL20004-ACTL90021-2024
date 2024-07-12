@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '31 July 2023'
+date: '12 July 2024 15:09'
 output:
   beamer_presentation:
     toc: true
@@ -30,7 +30,7 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{verbatim}
   - \usepackage[english]{varioref}
-  - \usepackage{natbib}
+  - \usepackage[numbers]{natbib}
   - \usepackage{actuarialangle}
   - \usepackage{pgfpages}    
   - \pgfdeclareimage[height=1cm]{university-logo}{../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png}
@@ -40,7 +40,7 @@ header-includes:
   - \AtBeginSubsection[]{     \begin{frame}    \tableofcontents[sectionstyle=show/hide,subsectionstyle=show/shaded/hide]      \end{frame}  \addtocounter{framenumber}{-1}} # to remove this you need to also change "slide_level" to 2
   - \definecolor{DolphinBlue}{RGB}{51,44,159}
   - \setbeamerfont{section in toc}{size=\normalsize}
-  - \setbeamerfont{subsection in toc}{size=\normalsize}
+  - \setbeamerfont{subsection in toc}{size=\normalsize} 
   - \pretocmd{\tableofcontents}{\setlength{\parskip}{.2em}}{}{}
   - \setbeamertemplate{footline}{\hspace*{.4em} \raisebox{1.5ex}[0pt]{\textcolor{DolphinBlue}{\insertframenumber/\inserttotalframenumber}}}
   #- \setbeamertemplate{footline}{\hspace*{.4em} \raisebox{1.5ex}[0pt]{\textcolor{DolphinBlue}{\insertframenumber}}}
@@ -138,7 +138,7 @@ Ella is considering investing *all* her savings in *either* selling umbrellas *o
 
 `\(\;\;\;\)` **What would *YOU* choose?**
 
-### Example 7.2 of Joshi (2013)
+### Example 7.2 of (**Jos13?**)
 
 In a game, a true coin is tossed.
 
@@ -147,7 +147,7 @@ In a game, a true coin is tossed.
 
 **Would you play this game?**
 
-### Example 7.3 of Joshi (2013)
+### Example 7.3 of (**Jos13?**)
 
 In a game, a true coin is tossed.
 
@@ -210,7 +210,7 @@ The idea is:
 
 ### EUT vs expectation maximisation
 
-According to IoA (2023), the “**Expected Utility Theorem**” states that a function, `\(u(w)\)`, can be constructed as representing an investor’s utility of wealth, `\(w\)`, at some future date. Decisions are made in a manner to maximise the expected value of utility given the investor’s particular beliefs about the probability of different outcomes.”
+According to (**IoA23?**), the “**Expected Utility Theorem**” states that a function, `\(u(w)\)`, can be constructed as representing an investor’s utility of wealth, `\(w\)`, at some future date. Decisions are made in a manner to maximise the expected value of utility given the investor’s particular beliefs about the probability of different outcomes.”
 
 Note:
 
@@ -604,8 +604,8 @@ There are essentially two different types of use:
 
 There are many refinements and alternatives to the EUT, to support/describe decision-making. The ones mentioned in the syllabus (and taught in ACTL30006) are
 
-- mean-variance portfolio theory (see Joshi (2013)) — this is very similar to using a quadratic utility function;
-- behavioural finance (Section 3 of IoA 2023).
+- mean-variance portfolio theory (see (**Jos13?**)) — this is very similar to using a quadratic utility function;
+- behavioural finance (Section 3 of **IoA23?**).
 
 This is a whole (fascinating) field in itself, but we need to stop here for now!
 
@@ -618,20 +618,4 @@ This is a whole (fascinating) field in itself, but we need to stop here for now!
 
 *Selected references:*
 
-<div id="refs" class="references csl-bib-body hanging-indent">
-
-<div id="ref-IoA23" class="csl-entry">
-
-IoA. 2023. *Course Notes and Core Reading for Subject CM2 Models*. The Institute of Actuaries.
-
-</div>
-
-<div id="ref-Jos13" class="csl-entry">
-
-Joshi, Mark Suresh. 2013. *Introduction to Mathematical Portfolio Theory*. Cambridge University Press.
-
-</div>
-
-</div>
-
-[^1]: References: Chapter 7.1-7.3 and 8.1-8.3 of Joshi (2013) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/23-Top-M1-lec.pdf)
+[^1]: References: Chapter 7.1-7.3 and 8.1-8.3 of (**Jos13?**) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/24-Top-M1-lec.pdf)

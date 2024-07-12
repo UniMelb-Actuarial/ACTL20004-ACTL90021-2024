@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '`r format(Sys.time(), "%d %B %Y")`'
+date: '`r format(Sys.time(), "%d %B %Y %H:%M")`'
 output:
   beamer_presentation:
     toc: true
@@ -30,7 +30,7 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{verbatim}
   - \usepackage[english]{varioref}
-  - \usepackage{natbib}
+  - \usepackage[numbers]{natbib}
   - \usepackage{actuarialangle}
   - \usepackage{pgfpages}    
   - \pgfdeclareimage[height=1cm]{university-logo}{../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png}
@@ -40,7 +40,7 @@ header-includes:
   - \AtBeginSubsection[]{     \begin{frame}    \tableofcontents[sectionstyle=show/hide,subsectionstyle=show/shaded/hide]      \end{frame}  \addtocounter{framenumber}{-1}} # to remove this you need to also change "slide_level" to 2
   - \definecolor{DolphinBlue}{RGB}{51,44,159}
   - \setbeamerfont{section in toc}{size=\normalsize}
-  - \setbeamerfont{subsection in toc}{size=\normalsize}
+  - \setbeamerfont{subsection in toc}{size=\normalsize} 
   - \pretocmd{\tableofcontents}{\setlength{\parskip}{.2em}}{}{}
   - \setbeamertemplate{footline}{\hspace*{.4em} \raisebox{1.5ex}[0pt]{\textcolor{DolphinBlue}{\insertframenumber/\inserttotalframenumber}}}
   #- \setbeamertemplate{footline}{\hspace*{.4em} \raisebox{1.5ex}[0pt]{\textcolor{DolphinBlue}{\insertframenumber}}}
@@ -56,7 +56,7 @@ library(knitr)
 ### Change these two variables to change name of image folder and output file
 #
 graphics_folder <- "module-1"
-output_name <- "23-Top-M1-lec" # change latest slides below, too!
+output_name <- "24-Top-M1-lec" # change latest slides below, too!
 
 ### Do not change the following unless you know what you are doing
 # output width
@@ -113,7 +113,7 @@ library(extRemes)
 ```
 
 
-[^1]: References: Chapter 7.1-7.3 and 8.1-8.3 of @Jos13 | $\; \rightarrow$ [\textcolor{blue}{\underline{latest slides}}](https://gim-am3.netlify.app/output/23-Top-M1-lec.pdf) 
+[^1]: References: Chapter 7.1-7.3 and 8.1-8.3 of @Jos13 | $\; \rightarrow$ [\textcolor{blue}{\underline{latest slides}}](https://gim-am3.netlify.app/output/24-Top-M1-lec.pdf) 
 
 # Introduction
 

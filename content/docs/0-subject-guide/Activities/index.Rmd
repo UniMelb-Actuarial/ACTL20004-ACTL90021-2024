@@ -16,17 +16,17 @@ title: "Activities"
 Lectures will be delivered live, in dual mode (both on Zoom and in person) in the following venue:
 
 - [PG] [`FBE Theatre 2`](https://maps.unimelb.edu.au/point?poi=666402), Mondays, from 10:05am to 11:55am  
-- [UG] [`FBE Prest Theatre`](https://maps.unimelb.edu.au/point?poi=1189246), Mondays, from 2.20pm to 4.05pm
+- [UG] [`FBE Prest Theatre`](https://maps.unimelb.edu.au/point?poi=1189246), Mondays, from 2.20pm to 4.10pm
 
 ```{r, fig.align='center', out.width="100%", echo=F}
-knitr::include_graphics("../../../schedule.jpg")
+knitr::include_graphics("../../../schedule2024.png")
 ```
 
 
 Notes:
 
 - Lectures and tutorials run in week 6 as normal. The mid-semester exam will be on Wednesday night.
-- Details about readings are available below under "Subject Resources". They can be downloaded from the Canvas [Readings Online](https://canvas.lms.unimelb.edu.au/courses/191080/external_tools/1188).
+- Details about readings are available below under "Subject Resources". They can be downloaded from the Canvas [Readings Online](https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/1188).
 
 Note this subject is one-quarter of a standard load. That means, including attendance at classes, you should be putting the equivalent of one quarter of a week’s work into this subject, i.e. 9 to 10 hours. 
 
@@ -44,7 +44,7 @@ All materials are available on this website.
 
 <!-- That being said, the best way to access files is from this website.  -->
 
-The most salient exception are lecture recordings, with annotated slides, which are cohort specific, and which will be available with the associated recording on Echo360.
+The most salient exception are lecture recordings, with annotated slides, which are cohort specific, and which will be available with the associated recording on "Lecture Capture".
 
 
 
@@ -62,7 +62,7 @@ You can access recorded lectures by clicking on the "Lecture Capture" menu item 
 
 ## Tutorial Times
 
-Tutorials start in week 1. Please check your timetable and the University timetable https://sws.unimelb.edu.au/2023/  for details. 
+Tutorials start in week 1. Please check your timetable and the [`University timetable`](https://cloud.timeedit.net/au_unimelb/web/handbook/s.html?sid=4&object=subject.ACTL20004_2024&type=subject)  for details. 
 You must attend the tutorials you are enrolled in.
 
 Tutorials will not be recorded.
@@ -76,8 +76,14 @@ Tutorials will not be recorded.
 
 The tutorial schedule is provided in the plan above. 
 
-Please attempt tutorial exercises before your tutorial, and come prepared with questions.
+There will be two types of tutorial questions:
 
+- **Pre-tutorial exercises**, to be completed prior to the tutorial, and with solutions available straight away. Tutorials won’t discuss those questions in the tutorials, but will, of course, answer questions if you have any.
+- **Tutorial exercises** have been especially selected as more advanced exercises facilitating revisions and discussions during the face to face tutorials. Solutions will only be released in the morning of the tutorials, to encourage students to have a go by themselves prior to the tutorial, but still allowing them to have something to annotate during the tutorial.
+
+{{< hint info>}}
+In the past, solutions were only released after the tutorials. Feedback from the ESS in 2023 suggested that releasing them immediately prior to the tutorial would be beneficial. We are trying this new approach in 2024.
+{{< /hint >}}
 
 ## Private Tutoring Services
 
