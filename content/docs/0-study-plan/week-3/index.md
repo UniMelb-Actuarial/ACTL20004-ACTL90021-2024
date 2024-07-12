@@ -1,6 +1,6 @@
 ---
-bookHidden: false
-bookSearchExclude: false
+bookHidden: true
+bookSearchExclude: true
 title: "Week 3 Study Plan"
 weight: 3
 bibliography: ../../../../static/libraries.bib
@@ -44,7 +44,7 @@ Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https
 
 ## Optional
 
-1.  Unit 5 of IoA (2023)
+1.  Unit 5 of (**IoA23?**)
 
 # Tutorials
 
@@ -95,13 +95,7 @@ Next week, we will discuss Module 4.
 
 # References
 
-<div id="refs" class="references csl-bib-body hanging-indent">
-
-<div id="ref-IoA23" class="csl-entry">
-
-IoA. 2023. *Course Notes and Core Reading for Subject CM2 Models*. The Institute of Actuaries.
-
-</div>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 
 <div id="ref-Tay00" class="csl-entry">
 

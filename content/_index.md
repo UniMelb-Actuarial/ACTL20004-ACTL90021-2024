@@ -5,7 +5,11 @@ type: docs
 
 <!-- <p style="font-size:10px;color: rgb(252, 156, 249);"> If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and <a href="https://canvas.lms.unimelb.edu.au/courses/107520/external_tools/701">entered Lecture Capture</a> via Canvas once for each session. This is to restrict access to students enrolled at the University of Melbourne only. Access to some files requires you to be logged in as well. </p> -->
 
+
 **<p style="font-size:18px;">Welcome to the 2024 edition of Topics in Actuarial Studies / Topics in Insurance and Finance!</p>**
+
+***Note that this website is still updating from 2023 to 2024. This message will disappear once the update is complete.***
+
 
 The overall aim of this website is to provide access to the teaching materials relevant to:
 
@@ -32,7 +36,7 @@ This component will be taught by Yuyu Chen.
 <img src="schedule2024.png" width="100%" style="display: block; margin: auto;" />
 
 
-Some links in this website are only available to students enrolled in the relevant subjects at the University of Melbourne, and so is the information about subjects. Please post any question on the Ed discussion forum (see link in the left navigation bar).
+Some links in this website are only available to students enrolled in the relevant subjects at the University of Melbourne, and so is the information about subjects. Please post any question on the [Ed](https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless) discussion forum (see link in the left navigation bar).
 
 
 

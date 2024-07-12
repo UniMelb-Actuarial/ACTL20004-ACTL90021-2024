@@ -1,6 +1,6 @@
 ---
-bookHidden: false
-bookSearchExclude: false
+bookHidden: true
+bookSearchExclude: true
 title: "Week 5 Study Plan"
 weight: 5
 bibliography: ../../../../static/libraries.bib
@@ -97,7 +97,7 @@ Note that all of Modules 1 to 4 are in scope for the [`mid-semester exam`](../..
 
 # References
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 
 <div id="ref-Tay00" class="csl-entry">
 
