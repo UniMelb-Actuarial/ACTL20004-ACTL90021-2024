@@ -15,7 +15,7 @@ options(width = 70)
 
 <p style="font-size:18px;font-weight:bold;">Summary of some of the prerequisite knowledge required for this subject:</p> 
 
-
+ 
 
 # Excel
 
@@ -79,3 +79,7 @@ Ch. 13: Working with Charts
   
 Ch. 14: Importing Data  
 
+
+\_
+
+*Reference:*

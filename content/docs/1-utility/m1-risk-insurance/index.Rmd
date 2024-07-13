@@ -29,7 +29,7 @@ header-includes:
   - \usepackage{array}
   - \usepackage{booktabs}
   - \usepackage{verbatim}
-  - \usepackage[english]{varioref}
+  - \usepackage[english]{varioref} 
   - \usepackage[numbers]{natbib}
   - \usepackage{actuarialangle}
   - \usepackage{pgfpages}    

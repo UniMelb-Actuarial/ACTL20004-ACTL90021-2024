@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '12 July 2024 15:09'
+date: '13 July 2024 12:49'
 output:
   beamer_presentation:
     toc: true
@@ -29,7 +29,7 @@ header-includes:
   - \usepackage{array}
   - \usepackage{booktabs}
   - \usepackage{verbatim}
-  - \usepackage[english]{varioref}
+  - \usepackage[english]{varioref} 
   - \usepackage[numbers]{natbib}
   - \usepackage{actuarialangle}
   - \usepackage{pgfpages}    
@@ -138,7 +138,7 @@ Ella is considering investing *all* her savings in *either* selling umbrellas *o
 
 `\(\;\;\;\)` **What would *YOU* choose?**
 
-### Example 7.2 of (**Jos13?**)
+### Example 7.2 of Joshi (2013)
 
 In a game, a true coin is tossed.
 
@@ -147,7 +147,7 @@ In a game, a true coin is tossed.
 
 **Would you play this game?**
 
-### Example 7.3 of (**Jos13?**)
+### Example 7.3 of Joshi (2013)
 
 In a game, a true coin is tossed.
 
@@ -210,7 +210,7 @@ The idea is:
 
 ### EUT vs expectation maximisation
 
-According to (**IoA23?**), the “**Expected Utility Theorem**” states that a function, `\(u(w)\)`, can be constructed as representing an investor’s utility of wealth, `\(w\)`, at some future date. Decisions are made in a manner to maximise the expected value of utility given the investor’s particular beliefs about the probability of different outcomes.”
+According to IoA (2023), the “**Expected Utility Theorem**” states that a function, `\(u(w)\)`, can be constructed as representing an investor’s utility of wealth, `\(w\)`, at some future date. Decisions are made in a manner to maximise the expected value of utility given the investor’s particular beliefs about the probability of different outcomes.”
 
 Note:
 
@@ -604,8 +604,8 @@ There are essentially two different types of use:
 
 There are many refinements and alternatives to the EUT, to support/describe decision-making. The ones mentioned in the syllabus (and taught in ACTL30006) are
 
-- mean-variance portfolio theory (see (**Jos13?**)) — this is very similar to using a quadratic utility function;
-- behavioural finance (Section 3 of **IoA23?**).
+- mean-variance portfolio theory (see Joshi (2013)) — this is very similar to using a quadratic utility function;
+- behavioural finance (Section 3 of IoA 2023).
 
 This is a whole (fascinating) field in itself, but we need to stop here for now!
 
@@ -618,4 +618,20 @@ This is a whole (fascinating) field in itself, but we need to stop here for now!
 
 *Selected references:*
 
-[^1]: References: Chapter 7.1-7.3 and 8.1-8.3 of (**Jos13?**) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/24-Top-M1-lec.pdf)
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+
+<div id="ref-IoA23" class="csl-entry">
+
+IoA. 2023. *Course Notes and Core Reading for Subject CM2 Models*. The Institute of Actuaries.
+
+</div>
+
+<div id="ref-Jos13" class="csl-entry">
+
+Joshi, Mark Suresh. 2013. *Introduction to Mathematical Portfolio Theory*. Cambridge University Press.
+
+</div>
+
+</div>
+
+[^1]: References: Chapter 7.1-7.3 and 8.1-8.3 of Joshi (2013) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/24-Top-M1-lec.pdf)

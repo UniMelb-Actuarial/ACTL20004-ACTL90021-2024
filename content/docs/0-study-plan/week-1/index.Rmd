@@ -12,7 +12,7 @@ bibliography: ../../../../static/libraries.bib
 # Overview
 
 
-This week, we will cover the following topics:
+This week, we will cover the following topics: 
 
 - Introduction to the course: what are the topics we will cover in this subject, and how are they connected?
 - Risk and Insurance (Module 1.1-1.3): to put it in the way the CM2 notes puts it, how do we model the behaviours of agents on a market? What is a possible mathematical model for "rational" behaviour, that could explain why people purchase insurance?
@@ -51,7 +51,7 @@ Please review the [``Prerequisite knowledge``](../../0-prerequisite-knowledge/) 
 
 Read: [``Module 1: Utility, Risk and Insurance``](../../1-utility/m1-risk-insurance/)
 
-Annotate: [``slides``](../../../output/23-Top-M1-lec.pdf) 
+Annotate: [``slides``](../../../output/24-Top-M1-lec.pdf) 
 <!-- [``annotated slides``](../../../output/22-GIM-M1-lec_a.pdf) -->
 
 Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
