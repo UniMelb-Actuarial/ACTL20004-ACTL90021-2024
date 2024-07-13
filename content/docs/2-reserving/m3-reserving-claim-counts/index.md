@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '14 August 2023'
+date: '04 July 2024'
 output:
   beamer_presentation:
     toc: true
@@ -50,7 +50,7 @@ header-includes:
 classoption: t,handout 
 ---
 
-# Exposure
+# Exposure (2.1)
 
 ## General idea
 
@@ -71,11 +71,9 @@ In practice, this is not always achievable, that is,
 `$$\frac{E[N(i,j)]}{e(i)} = \mu(i,j),$$`
 with only *weak dependency* of `\(\mu(i,j)\)` on `\(i\)`.
 
-# IBNR claims
+# IBNR claims - Exposure based methods (2.2.2)
 
-## Exposure based methods
-
-### Allowing for an `\(i\)` effect in `\(\mu\)`
+## Allowing for an `\(i\)` effect in `\(\mu\)`
 
 Assume
 $$ \mu(i,j) = f(i) v(j),$$
@@ -85,7 +83,7 @@ We have then
 `$$E[N(i,j)] = e(i)f(i)v(j).$$`
 We will discuss how to work with this.
 
-### Examples of `\(f(i)\)`
+## Examples of `\(f(i)\)`
 
 - A simple example could be:
   $$ f(i) = \alpha + \beta i,$$
@@ -101,7 +99,7 @@ We will discuss how to work with this.
 - We could then use
   `\begin{eqnarray*} \mu(i,0) &=& f_0(i) = \alpha_0 + \beta_0 i, \\ \mu(i,1) &=& f_1(i) = \alpha_1 + \beta_1 i, \\ \mu(i,j) &=& v(j),\; j=2, 3, \ldots. \end{eqnarray*}`
 
-### Estimating `\(N(i,j)\)`
+## Estimating `\(N(i,j)\)`
 
 Now, assume
 `$$N(i,j)\sim \text{Poisson}(e(i)f(i)v(j))$$`
@@ -120,7 +118,7 @@ with IBNR
 - the first `\(\sum\)` include `\(\hat{v}\)`’s estimated from available data
 - the second `\(\sum\)` cannot be estimated from data, and will be extrapolated from the former set (e.g. linear regression or more typically, log-linear regression as exemplified later).
 
-### Example
+## Example
 
 Taylor (2000), Table 2.1 and Table 2.2 provide an example of such calculations, where `\(f(i)=1\)`.
 
@@ -137,9 +135,9 @@ Notes on the extrapolation:
 - Now, for the tail estimate (“11 and later”):
   `$$\sum_{j=11}^\infty  \tilde{v}(j) = e^{\beta_0}\left(e^{\beta_1}\right)^{6} \sum_{j=0}^\infty \left(e^{\beta_1}\right)^{j} = e^{\beta_0}\left(e^{\beta_1}\right)^{6}\frac{1}{1-e^{\beta_1}} \quad \text{(2.15).}$$`
 
-## Normalised methods
+# IBNR claims - Normalised methods (2.2.3) `\(\maltese\)`
 
-### Motivation
+## Motivation
 
 - In the previous section, one hoped that claim notification rates `\(\mu\)` (as proportions of exposure `\(e\)` ) would be consistent (constant) across periods of origin `\(i\)`, or at least approximatively or predictively so.
 - There may not always exist such an exposure.
@@ -147,7 +145,7 @@ Notes on the extrapolation:
   - Would time a good measure of exposure? or revenue?
   - This would unlikely to be satisfactory as the mix of business (which toys are sold and in what quantities) is likely to change all the time.
 
-### The idea
+## The idea
 
 - We keep the idea of multiplicative structure, but `\(\mu\)` would multiply something else than `\(e(i)\)`, say `\(\alpha(i)\)`:
   $$ E[N(i,j)] = \alpha(i)\mu(j).$$
@@ -173,7 +171,7 @@ Notes on the extrapolation:
 
 - Note that even if we don’t have `\(E[N(i,j)] = \alpha(i)\mu(j)\)` but rather `\(E[N(i,j)] = \alpha_j(i)\mu(j)\)`, the triangle of normalised counts `\(N(i,j)/N(i,0)\)` are useful to investigate, to look for trends.
 
-### Generalisation
+## Generalisation
 
 - We will now “anchor” our prediction not just on `\(N(i,0)\)`, but on on a subset `\(S\)` of existing data.
 - This generalises what we had before to
@@ -189,7 +187,7 @@ Notes on the extrapolation:
   with `\(\hat{v}(j)\)` the estimate of the the ratio on the previous slide.
 - Note that the most recent origin years may require special treatment (see example), as we do not have observations for all `\(m\in S\)`.
 
-### Example
+## Example
 
 - Table 2.3 and 2.4 revisit the previous example with `\(S=\{0,1\}\)`.
 - This can be useful if some disturbance to the claim notification process has caused a movement between development periods 0 and 1 but has had no other effect.
@@ -204,15 +202,15 @@ Notes on treatment of the last row:
   Now, because `\(\hat{v}(0)+\hat{v}(1) = 1000\)` (by definition since we take them from the same type of average - “orange” here) we end up with
   $$ N(I,j)\text{ is estimated by }\left(N(I,0) \frac{\hat{v}(0)+\hat{v}(1)}{\hat{v}(0)}\right)\frac{\hat{v}(j)}{1000} = N(I,0)\frac{\hat{v}(j)}{\hat{v}(0)}.$$
 
-## Chain Ladder
+# IBNR claims - Chain Ladder (2.2.4)
 
-### Introduction
+## Introduction
 
 - Probably the most famous (and basic) loss reserving technique.
 - Quoting Taylor (2000): “The name is understood to refer to the chaining of a sequence of ratios (the age to age factors below) into a ladder of factors (the age to ultimate factors below) which enable one to climb (i.e. project) from experience recorded to date to its predicted ultimate value.”
 - We will see three derivations, which are informative about the meaning of the method.
 
-### Derivation 1 - Heuristic approach
+## Derivation 1 - Heuristic approach
 
 - We start from
   $$ E[N(i,j)] = \alpha(i)\mu(j)$$
@@ -246,7 +244,7 @@ Notes on treatment of the last row:
 - See the spreadsheet [`here`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291).
 - Notes on the extrapolation: assuming that it is the excess over 1 that decays exponentially, we fit `\(\ln\left[\hat{v}(j-6)-1\right]\)` for `\(j=6,\ldots,9\)`. The extrapolation to infinity is then added to 1 to get an age to ultimate factor. This is an ad hoc approach, but it’s the one’s taken in the book.
 
-### Derivation 2 - Poisson approach
+## Derivation 2 - Poisson approach
 
 - Assume that
   $$ N(i,j) \sim \text{Poisson}(\alpha(i) \mu(j)),$$
@@ -269,7 +267,7 @@ is the proportion of claims notified **in** development period `\(j\)` (assume `
 
 - Example: The age to ultimate factors and corresponding proportions `\(\mu(j)\)` are calculated under Table 2.5.
 
-### Derivation 3 - Non-parametric approach
+## Derivation 3 - Non-parametric approach
 
 - The Poisson derivation is a parametric one, and starts with rather strong assumptions.
 - What assumptions do we need to make *at a minimum*, in order to retrieve the chain ladder estimators according to some rigorous calculations? (in particular, do we need the Poisson assumption?)
@@ -280,14 +278,14 @@ is the proportion of claims notified **in** development period `\(j\)` (assume `
   for some constant `\(\sigma^2(j)>0\)`, then minimising *weighted least squares* between this model and the data yields `\(x(j)\)` such that we get the chain ladder estimators again.
 - This does not require any distributional assumption!
 
-### The Chain Ladder setting
+## The Chain Ladder setting
 
 - Chain ladder won’t always work.
 - In particular, it requires a **fixed notification pattern** - the `\(\mu(j)\)` can’t vary across origin periods.
 - One can think of many reasons why notifications may come quicker (e.g. IT systems) or slower (COVID-19), either permanently or temporarily (same examples, respectively).
 - As a solution, one can either “tweak” the chain ladder procedure, or proceed with an entirely different approach, which allows for such changes. This is (mostly) out of scope of this introductory treatment of reserving techniques.
 
-# Claim frequency
+# Claim frequency (2.3)
 
 ## Claim frequency
 
@@ -319,7 +317,7 @@ is the proportion of claims notified **in** development period `\(j\)` (assume `
 
 *Main reference:*
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 
 <div id="ref-Tay00" class="csl-entry">
 

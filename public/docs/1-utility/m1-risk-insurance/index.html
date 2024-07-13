@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Introduction #  Decision making under risk and uncertainty #  Context #   In an Enterprise Risk Management context (ERM), “risk” is defined as the “effect of uncertainty on objectives” So essential ingredients here are:  having an objective (e.g. maximise profit under some solvency constraint) having to make a decision (e.g. decide on how much to (re)insure) the object is subject to uncertainty (e.g. the amount of losses an insurer will have to pay)    Understand decisions #   In economics (and social science in general), one can be interested in understanding / modelling how and why individuals make decisions.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="M1 Utility, Risk and Insurance" />
+<meta property="og:description" content="Introduction #  Decision making under risk and uncertainty #  Context #   In an Enterprise Risk Management context (ERM), “risk” is defined as the “effect of uncertainty on objectives” So essential ingredients here are:  having an objective (e.g. maximise profit under some solvency constraint) having to make a decision (e.g. decide on how much to (re)insure) the object is subject to uncertainty (e.g. the amount of losses an insurer will have to pay)    Understand decisions #   In economics (and social science in general), one can be interested in understanding / modelling how and why individuals make decisions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2024-07-02T22:58:17+10:00" />
+
+<title>M1 Utility, Risk and Insurance | Topics in Actuarial, Insurance and Finance</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.a08e958a0c32c71fa52257f56602fc9e6f4a8586733f7d90b6b544b160364dce.css" integrity="sha256-oI6Vigwyxx&#43;lIlf1ZgL8nm9KhYZzP32QtrVEsWA2Tc4=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.99252dcf6d014c8b638b93b9eae4e315ef0248adbbb7a43af0d57ba071cdddb2.js" integrity="sha256-mSUtz20BTItji5O56uTjFe8CSK27t6Q68NV7oHHN3bI=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script>
+MathJax = {
+  tex: {
+      macros: { 
+          angl: ["\\enclose{actuarial}{#1}", 1],
+          alert:["\\textcolor{red}{#1}", 1],
+          termins: ["A^{1}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          insend: ["\\bar{A}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          pureend: ["A^{\\,\\,\\,\\, 1}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          adv: ["\\maltese"]
+      }
+  }
+};
+</script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><img src="/img/PRIMARY_A_Vertical_Housed_RGB.png" alt="Logo" /><span style="color: black;">Topics in Actuarial, Insurance and Finance</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0c375332c765cd598c6ce4ee8867890f" class="toggle"  />
+    <label for="section-0c375332c765cd598c6ce4ee8867890f" class="flex justify-between">
+      <a href="https://topics-actl.netlify.app/docs/0-subject-guide/" class="">Subject Guide</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Eligibility/" class="">Eligibility and Requirements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/SILO/" class="">Learning Outcomes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Activities/" class="">Activities</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Resources/" class="">Resources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Assessment/" class="">Assessment</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b29660809eb857420b6473840d34e82" class="toggle"  />
+    <label for="section-5b29660809eb857420b6473840d34e82" class="flex justify-between">
+      <a href="https://topics-actl.netlify.app/docs/0-study-plan/" class="">Weekly Study Plan</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-1/" class="">Week 1 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-2/" class="">Week 2 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-3/" class="">Week 3 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-4/" class="">Week 4 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-5/" class="">Week 5 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-6/" class="">Week 6 Study Plan</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/" class="">Prerequisite Knowledge</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/1-utility/" class="">Utility theory (CM2 1.2)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/" class=" active">M1 Utility, Risk and Insurance</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/" class="">Reserving (CM2 5.2)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m2-basic-reserving-concepts/" class="">M2 Basic Reserving Concepts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m3-reserving-claim-counts/" class="">M3 Reserving Claim Counts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m4-reserving-claim-amounts/" class="">M4 Reserving Claim Amounts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m5-reserving-combination/" class="">M5 Reserving Combination</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/3-excel/" class="">Excel (CM2 Exam B)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/3-excel/m6-excel/" class="">M6 Excel Topics</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/4-stochastic-interest/" class="">Stochastic interest (CM2 3)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/5-ruin-theory/" class="">Ruin Theory (CM2 5.1 5.3)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        ___Websites and forums___
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless" target="_blank" rel="noopener">
+        Ed discussion forum
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/183926" target="_blank" rel="noopener">
+        ACTL20004 Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/181779" target="_blank" rel="noopener">
+        ACTL90021 Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/220261" target="_blank" rel="noopener">
+        Community Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        _______Exercises__________
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5029017" target="_blank" rel="noopener">
+        Tutorial exercises
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        __________Links___________
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://bavanzicv.netlify.app/" target="_blank" rel="noopener">
+        Benjamin Avanzi
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/benjaminavanzi/" target="_blank" rel="noopener">
+        Let&#39;s connect on LinkedIn!
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://yuyuchen-uw.github.io" target="_blank" rel="noopener">
+        Yuyu Chen
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://actl10001.netlify.app/" target="_blank" rel="noopener">
+        Introduction to Actuarial Studies 2021
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://communicate-data-with-r.netlify.app/" target="_blank" rel="noopener">
+        Communicate Data with R
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://actuaries.asn.au/becoming-an-actuary/how-to-become-an-actuary/for-uni-students/become-a-uni-subscriber/" target="_blank" rel="noopener">
+        Actuaries Institute info
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>M1 Utility, Risk and Insurance</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#decision-making-under-risk-and-uncertainty">Decision making under risk and uncertainty</a>
+          <ul>
+            <li><a href="#context">Context</a></li>
+            <li><a href="#understand-decisions">Understand decisions</a></li>
+          </ul>
+        </li>
+        <li><a href="#preliminary-the-easy-case">Preliminary: the easy case</a>
+          <ul>
+            <li><a href="#first-order-stochastic-dominance">First order stochastic dominance</a></li>
+            <li><a href="#second-order-stochastic-dominance">Second order stochastic dominance</a></li>
+            <li><a href="#in-absence-of-stochastic-dominance">In absence of stochastic dominance</a></li>
+          </ul>
+        </li>
+        <li><a href="#some-motivating-examples">Some motivating examples</a>
+          <ul>
+            <li><a href="#umbrellas-vs-ice-creams">Umbrellas vs Ice creams</a></li>
+            <li><a href="#example-72-of-joshi-2013">Example 7.2 of Joshi (2013)</a></li>
+            <li><a href="#example-73-of-joshi-2013">Example 7.3 of Joshi (2013)</a></li>
+            <li><a href="#the-st-petersburg-paradox">The St Petersburg paradox</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#utility-functions">Utility functions</a>
+      <ul>
+        <li><a href="#the-expected-utility-theorem-eut">The Expected Utility Theorem (EUT)</a>
+          <ul>
+            <li><a href="#the-concept-of-utility">The concept of utility</a></li>
+            <li><a href="#eut-vs-expectation-maximisation">EUT vs expectation maximisation</a></li>
+            <li><a href="#axioms">Axioms</a></li>
+          </ul>
+        </li>
+        <li><a href="#examples">Examples</a>
+          <ul>
+            <li><a href="#umbrellas-vs-ice-creams-1">Umbrellas vs Ice creams</a></li>
+            <li><a href="#st-petersburg">St Petersburg</a></li>
+          </ul>
+        </li>
+        <li><a href="#utility-functions-1">Utility functions</a>
+          <ul>
+            <li><a href="#general-properties">General properties</a></li>
+            <li><a href="#some-utility-functions">Some utility functions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#utility-and-risk-explaining-insurance">Utility and risk: explaining insurance</a>
+      <ul>
+        <li><a href="#a-graphical-explanation">A graphical explanation</a>
+          <ul>
+            <li><a href="#a-simple-situation">A simple situation</a></li>
+            <li><a href="#certainty-equivalent">Certainty equivalent</a></li>
+            <li><a href="#indifference-price-and-risk-premium">Indifference price and risk premium</a></li>
+          </ul>
+        </li>
+        <li><a href="#general-case">General case</a></li>
+        <li><a href="#examples-1">Examples</a>
+          <ul>
+            <li><a href="#umbrellas-vs-ice-cream">Umbrellas vs Ice cream</a></li>
+            <li><a href="#st-petersburg-paradox">St Petersburg paradox</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#characterising-risk-aversion">Characterising risk aversion</a>
+      <ul>
+        <li><a href="#introduction-1">Introduction</a>
+          <ul>
+            <li><a href="#umbrellas-vs-ice-creams-what-if-ellas-wealth-changes">Umbrellas vs Ice creams: What if Ella’s wealth changes?</a></li>
+            <li><a href="#umbrellas-vs-ice-creams-what-if-gamma-changes">Umbrellas vs Ice creams: What if <code>\(\gamma\)</code> changes?</a></li>
+            <li><a href="#discussion">Discussion</a></li>
+          </ul>
+        </li>
+        <li><a href="#absolute-risk-aversion">Absolute Risk Aversion</a>
+          <ul>
+            <li><a href="#definition">Definition</a></li>
+            <li><a href="#interpretation-risk-premia-via-taylors-expansion">Interpretation: risk premia via Taylor’s expansion</a></li>
+            <li><a href="#effect-of-wealth-on-ara">Effect of wealth on ARA</a></li>
+          </ul>
+        </li>
+        <li><a href="#relative-risk-aversion">Relative Risk Aversion</a>
+          <ul>
+            <li><a href="#think-in-relative-terms">Think in relative terms</a></li>
+            <li><a href="#help-via-taylors-expansion">Help via Taylor’s expansion</a></li>
+            <li><a href="#definition-1">Definition</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#additional-considerations">Additional considerations</a>
+      <ul>
+        <li><a href="#how-do-you-come-up-with-a-utility-function">How do you come up with a utility function?</a></li>
+        <li><a href="#when-one-function-is-not-enough">When one function is not enough</a></li>
+        <li><a href="#limitations-to-the-eut">Limitations to the EUT</a></li>
+        <li><a href="#alternatives-to-describing-behaviour">Alternatives to describing behaviour</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introduction">
+  Introduction
+  <a class="anchor" href="#introduction">#</a>
+</h1>
+<h2 id="decision-making-under-risk-and-uncertainty">
+  Decision making under risk and uncertainty
+  <a class="anchor" href="#decision-making-under-risk-and-uncertainty">#</a>
+</h2>
+<h3 id="context">
+  Context
+  <a class="anchor" href="#context">#</a>
+</h3>
+<ul>
+<li>In an Enterprise Risk Management context (ERM), “risk” is defined as the “effect of uncertainty on objectives”</li>
+<li>So essential ingredients here are:
+<ul>
+<li>having an objective (e.g. maximise profit under some solvency constraint)</li>
+<li>having to make a decision (e.g. decide on how much to (re)insure)</li>
+<li>the object is subject to uncertainty (e.g. the amount of losses an insurer will have to pay)</li>
+</ul>
+</li>
+</ul>
+<h3 id="understand-decisions">
+  Understand decisions
+  <a class="anchor" href="#understand-decisions">#</a>
+</h3>
+<ul>
+<li>In economics (and social science in general), one can be interested in understanding / modelling how and why individuals make decisions.</li>
+<li>The “problem” in social sciences (as opposed to “hard” sciences) is that human behaviour is subject to complex forces.</li>
+<li>How a human makes a decision is not as deterministic as calculating, for instance, how long a rock would take to reach the ground if dropped at a certain altitude and under known conditions. Things can get complicated but in science you can theoretically calculate this to any level of precision.</li>
+<li>Here we assume that we know what the objectives and constraints are, and that decisions will depend on our model of the “risk”.</li>
+<li>The question is then - how do people make decisions in that context?</li>
+<li>A sub-question, of particular interest in this subject, is why do individuals choose to insure, even though insurance covers are typically charged at a much higher cost than expected value?</li>
+</ul>
+<h2 id="preliminary-the-easy-case">
+  Preliminary: the easy case
+  <a class="anchor" href="#preliminary-the-easy-case">#</a>
+</h2>
+<h3 id="first-order-stochastic-dominance">
+  First order stochastic dominance
+  <a class="anchor" href="#first-order-stochastic-dominance">#</a>
+</h3>
+<ul>
+<li>
+<p>If possible outcomes of the risk can be ranked according to <strong>stochastic dominance</strong> then we are in relatively simple cases.</p>
+</li>
+<li>
+<p><strong>First order stochastic dominance</strong> is defined as follows. Outcome <code>\(A\)</code> dominates <code>\(B\)</code> if (assuming <code>\(x\)</code> is formulated in terms of gains)
+<code>$$F_A(x) \le F_B(x)\text{ for all }x,\text{ and }$$</code>
+<code>$$F_A(x)&lt;F_B(x)\text{ for (at least) some value of }x,$$</code>
+that is, the probability that <code>\(B\)</code> will yield an outcome higher then a given threshold is never bigger than for <code>\(A\)</code>, and there is at least one instance where it is strictly less.</p>
+</li>
+<li>
+<p>This is strong dominance, and no-one in their right mind would choose <code>\(B\)</code> over <code>\(A\)</code> from a pure financial perspective.</p>
+</li>
+<li>
+<p>Note that we could still have an outcome of <code>\(A\)</code> being lower than<br>
+for <code>\(B\)</code> - the dominance is in probabilistic terms.</p>
+</li>
+</ul>
+<hr>
+<p>For example, two normal distributions with different means, and same variance:</p>
+<p><img src="https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/index_files/figure-html/1stdom-1.png" width="672" /></p>
+<h3 id="second-order-stochastic-dominance">
+  Second order stochastic dominance
+  <a class="anchor" href="#second-order-stochastic-dominance">#</a>
+</h3>
+<ul>
+<li><strong>Second order stochastic dominance</strong> is a slightly weaker version, whereby, in “aggregate” and from the “ground up”, <code>\(A\)</code> dominates <code>\(B\)</code>.</li>
+<li>Mathematically, this means (assuming <code>\(x\)</code> is formulated in terms of gains) that if
+<code>$$\int_{-\infty}^x F_A(y) dy \le \int_{-\infty}^x F_B(y) dy \text{ for all }x,$$</code>
+<code>$$\text{ with strict equality holding for some value of }x,$$</code>
+then <code>\(A\)</code> displays second order stochastic dominance over <code>\(B\)</code>.</li>
+<li>Rather than comparing <code>\(F\)</code>’s at all <code>\(x\)</code> individually, we look at the whole surface under it, from <code>\(-\infty\)</code> to <code>\(x\)</code>. This means that we allow from some local violations (“higher” <code>\(F\)</code>’s) of the first order stochastic dominance, provided they are compensated by at least as many “gains” (“lower” <code>\(F\)</code>’s) in aggregate “so far” (up to <code>\(x\)</code>).</li>
+<li>Of course, first order stochastic dominance implies second order stochastic dominance.</li>
+</ul>
+<hr>
+<p>For example, if two normal disributions have the same mean but different variances, the one with lower variance displays second order dominance over the other.</p>
+<p><img src="https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/index_files/figure-html/2stdom2-1.png" width="672" /></p>
+<hr>
+<p>We have second order dominance, but not first order dominance:</p>
+<p><img src="https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/index_files/figure-html/2stdom-1.png" width="672" /></p>
+<h3 id="in-absence-of-stochastic-dominance">
+  In absence of stochastic dominance
+  <a class="anchor" href="#in-absence-of-stochastic-dominance">#</a>
+</h3>
+<ul>
+<li>Then things get less clear…</li>
+<li>This is explored in the next section</li>
+</ul>
+<h2 id="some-motivating-examples">
+  Some motivating examples
+  <a class="anchor" href="#some-motivating-examples">#</a>
+</h2>
+<h3 id="umbrellas-vs-ice-creams">
+  Umbrellas vs Ice creams
+  <a class="anchor" href="#umbrellas-vs-ice-creams">#</a>
+</h3>
+<p>Ella is considering investing <em>all</em> her savings in <em>either</em> selling umbrellas <em>or</em> ice creams over the next season. Her profit will depend on the weather as follows. <strong>What is she going to choose?</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Weather</th>
+<th style="text-align:right">Umbrellas</th>
+<th style="text-align:right">Ice creams</th>
+<th style="text-align:center">Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Bad</td>
+<td style="text-align:right">30,000</td>
+<td style="text-align:right">2,000</td>
+<td style="text-align:center">1/4</td>
+</tr>
+<tr>
+<td style="text-align:left">OK</td>
+<td style="text-align:right">4,000</td>
+<td style="text-align:right">8,000</td>
+<td style="text-align:center">1/2</td>
+</tr>
+<tr>
+<td style="text-align:left">Sunny</td>
+<td style="text-align:right">2,000</td>
+<td style="text-align:right">16,000</td>
+<td style="text-align:center">1/4</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>In a probability course, one would calculate the expected value of each option, using probabilities for the different states of nature</li>
+<li>For umbrellas, this is 10,000; for ice creams, this is 8,500;</li>
+<li>One would then conclude that Ella will choose to sell umbrellas (due to expectation maximisation).</li>
+</ul>
+<p><code>\(\;\;\;\)</code> <strong>What would <em>YOU</em> choose?</strong></p>
+<h3 id="example-72-of-joshi-2013">
+  Example 7.2 of Joshi (2013)
+  <a class="anchor" href="#example-72-of-joshi-2013">#</a>
+</h3>
+<p>In a game, a true coin is tossed.</p>
+<ul>
+<li>If the coin comes up heads, you get 11 dollars</li>
+<li>If the coin comes up tails, you must pay 10 dollars</li>
+</ul>
+<p><strong>Would you play this game?</strong></p>
+<h3 id="example-73-of-joshi-2013">
+  Example 7.3 of Joshi (2013)
+  <a class="anchor" href="#example-73-of-joshi-2013">#</a>
+</h3>
+<p>In a game, a true coin is tossed.</p>
+<ul>
+<li>If the coin comes up heads, you get <code>\(X\)</code> dollars</li>
+<li>If the coin comes up tails, you must pay 100 dollars</li>
+</ul>
+<p><strong>For what values of <code>\(X\)</code> would you play this game?</strong></p>
+<h3 id="the-st-petersburg-paradox">
+  The St Petersburg paradox
+  <a class="anchor" href="#the-st-petersburg-paradox">#</a>
+</h3>
+<p>In a game,</p>
+<ul>
+<li>a true coin is tossed until the first tail comes up</li>
+<li>let <code>\(N\)</code> be the number of tosses that were required</li>
+<li>you will receive <code>\(2^N\)</code> dollars</li>
+</ul>
+<p><strong>How much money would you be willing to pay?</strong></p>
+<p>Assume that the game organiser has infinite wealth.</p>
+<hr>
+<p>Because
+<code>$$\Pr[N=n]=\left(\frac{1}{2}\right)^n$$</code>
+we have that the expected pay-off for this game is
+<code>$$\sum_{n=1}^\infty 2^{-n}\cdot 2^n = \infty \;!$$</code>
+So why isn’t anyone playing this game?</p>
+<ul>
+<li>the odds of winning a large amount of money are (exponentially) small</li>
+<li>perhaps winning $2 mio is not twice as good as winning $1 mio<br>
+(what about $200 and $100?)</li>
+</ul>
+<hr>
+<p>Also, we assumed infinite wealth, which really is what makes it blow up to infinity (those very, very, very unlikely but very, very, very large outcomes). What if <code>\(N\)</code> was capped to a <code>\(n_\text{max}\)</code>?</p>
+<p>The expectation of the game would be
+<code>$$\sum_{n=1}^{n_\text{max}} 2^{-n}\cdot 2^n = n_\text{max}$$</code>
+and the variance would become
+<code>$$\sum_{n=1}^{n_\text{max}} 2^{-n}\cdot \left(2^n \right)^2 - n_\text{max}^2 = \sum_{n=1}^{n_\text{max}} 2^n - n_\text{max}^2,$$</code>
+which clearly goes to infinity as <code>\(n_\text{max}\)</code> goes to infinity.</p>
+<p><strong>Would you play this game?</strong></p>
+<h1 id="utility-functions">
+  Utility functions
+  <a class="anchor" href="#utility-functions">#</a>
+</h1>
+<h2 id="the-expected-utility-theorem-eut">
+  The Expected Utility Theorem (EUT)
+  <a class="anchor" href="#the-expected-utility-theorem-eut">#</a>
+</h2>
+<h3 id="the-concept-of-utility">
+  The concept of utility
+  <a class="anchor" href="#the-concept-of-utility">#</a>
+</h3>
+<ul>
+<li>It is a fact that humans don’t behave according to expectation maximisation.</li>
+<li>The theory around this is huge, and we only explore the first baby steps.</li>
+<li>How can we build a model that explains human decisions?</li>
+</ul>
+<p>The idea is:</p>
+<ul>
+<li>We “map” wealth in $ to a quantitative value of “happiness”, “keen-ness”, “pleasure” that this wealth procures to the individual.</li>
+<li>Individuals then make decisions based on this transformed quantity <code>\(\rightarrow\)</code> they will want to maximise the “pleasure” they get from their wealth.</li>
+<li>This notion of “happiness” or “pleasure” is called “utility” in economics.</li>
+</ul>
+<h3 id="eut-vs-expectation-maximisation">
+  EUT vs expectation maximisation
+  <a class="anchor" href="#eut-vs-expectation-maximisation">#</a>
+</h3>
+<p>According to IoA (2023), the “<strong>Expected Utility Theorem</strong>” states that a function, <code>\(u(w)\)</code>, can be constructed as representing an investor’s utility of wealth, <code>\(w\)</code>, at some future date. Decisions are made in a manner to maximise the expected value of utility given the investor’s particular beliefs about the probability of different outcomes.”</p>
+<p>Note:</p>
+<ul>
+<li>this means that rather than maximising <code>\(E[X]\)</code> for random <code>\(X\)</code>, we maximise the transformed $ of <code>\(X\)</code> into utility, that is, <code>\(E[u(X)]\)</code>.</li>
+<li>of course, if <code>\(u\)</code> is linear then we just have a change of currency (and potential shift) and both approaches are equivalent.</li>
+<li>rather than “investor” we will refer to “decision maker” (DM).</li>
+</ul>
+<h3 id="axioms">
+  Axioms
+  <a class="anchor" href="#axioms">#</a>
+</h3>
+<p>There are a number of axioms behind EUT which we need to review.</p>
+<p>Notation:</p>
+<ul>
+<li>Let <code>\(A\)</code> and <code>\(B\)</code> be two alternative choices</li>
+<li><code>\(A \succ B\)</code> means that <code>\(A\)</code> is preferred to <code>\(B\)</code></li>
+<li><code>\(A \sim B\)</code> means that neither <code>\(A\)</code> or <code>\(B\)</code> are preferred<br>
+We say that the DM is “indifferent: between <code>\(A\)</code> and <code>\(B\)</code></li>
+<li><code>\(A \succsim B\)</code> means that <code>\(B\)</code> is not preferred over <code>\(A\)</code><br>
+(we can have either <code>\(A \succ B\)</code> or <code>\(A \sim B\)</code>)</li>
+</ul>
+<hr>
+<p>Axioms:</p>
+<ul>
+<li><strong>Comparability</strong>: a DM can state a preference between all available outcomes.</li>
+<li><strong>Transitivity</strong>:
+$$ A \succ B \text{ and } B \succ C \Longrightarrow A \succ C.$$</li>
+<li><strong>Independence</strong>: If <code>\(A \sim B\)</code> then
+<code>\begin{equation*} \left\{ \begin{array}{cccl} A &amp; \text{ w.p. }&amp; p &amp; \text{ and } \\  C &amp; \text{ w.p. }&amp; 1-p \end{array}\right. \;\;\sim\;\; \left\{\begin{array}{cccl} B &amp; \text{ w.p. }&amp; p &amp; \text{ and } \\  C &amp; \text{ w.p. }&amp; 1-p \end{array}\right. \end{equation*}</code></li>
+<li><strong>Certainty equivalence</strong>:
+<ul>
+<li>Suppose <code>\(A \succ B\)</code></li>
+<li>Suppose <code>\(B \succ C\)</code></li>
+<li>Then there exists <code>\(p\)</code> such that
+$$ B ;;\sim;; \left{\begin{array}{cccl} A &amp; \text{ w.p. }&amp; p &amp; \text{ and } \
+C &amp; \text{ w.p. }&amp; 1-p \end{array}\right. $$</li>
+</ul>
+</li>
+</ul>
+<h2 id="examples">
+  Examples
+  <a class="anchor" href="#examples">#</a>
+</h2>
+<h3 id="umbrellas-vs-ice-creams-1">
+  Umbrellas vs Ice creams
+  <a class="anchor" href="#umbrellas-vs-ice-creams-1">#</a>
+</h3>
+<p>Assume now that Ella makes decision according to a power utility function with <code>\(\gamma=0.5\)</code>, that is,
+<code>$$u(x) = \frac{x^\gamma-1}{\gamma}.$$</code>
+A table of utility of outcomes is (rounded from exact)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Weather</th>
+<th style="text-align:right">Umbrellas</th>
+<th style="text-align:right">Ice creams</th>
+<th style="text-align:center">Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Bad</td>
+<td style="text-align:right">344.4</td>
+<td style="text-align:right">87.4</td>
+<td style="text-align:center">1/4</td>
+</tr>
+<tr>
+<td style="text-align:left">OK</td>
+<td style="text-align:right">124.5</td>
+<td style="text-align:right">176.9</td>
+<td style="text-align:center">1/2</td>
+</tr>
+<tr>
+<td style="text-align:left">Sunny</td>
+<td style="text-align:right">87.4</td>
+<td style="text-align:right">251.0</td>
+<td style="text-align:center">1/4</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Expectation</strong></td>
+<td style="text-align:right"><strong>170.2</strong></td>
+<td style="text-align:right"><strong>173.0</strong></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>According to this criterion, Ella will choose to sell ice creams instead.</p>
+<h3 id="st-petersburg">
+  St Petersburg
+  <a class="anchor" href="#st-petersburg">#</a>
+</h3>
+<p>Let us now investigate the case of the St Peterburg paradox, using a log utility function, that is,
+<code>$$u(x)= \log x.$$</code>
+It follows that the expected utility is
+<code>$$E\left[\log \left(2^N\right)\right] = \sum_{n=1}^\infty \log \left( 2^n\right)\cdot 2^{-n},$$</code>
+or (much more simply)
+<code>$$E\left[\log \left(2^N\right)\right] = E[N \log 2] = 2 \log 2.$$</code>
+Note:</p>
+<ul>
+<li>these are not dollars, but “utility”!</li>
+<li>the expectation is no longer infinite</li>
+</ul>
+<h2 id="utility-functions-1">
+  Utility functions
+  <a class="anchor" href="#utility-functions-1">#</a>
+</h2>
+<h3 id="general-properties">
+  General properties
+  <a class="anchor" href="#general-properties">#</a>
+</h3>
+<p>The attitudes of the DM towards risk will be reflected in the mathematical properties of <code>\(u(x)\)</code>. We have:</p>
+<ul>
+<li><strong>Non-satiation</strong>: assuming that more money is always preferred, we must have <code>$$u'(x)&gt;0.$$</code></li>
+<li><strong>Risk aversion</strong>: a risk averse individual will be satisfied by a positive gain <code>\(c\)</code> less than it will be dissatisfied by a loss of <code>\(-c\)</code>. In other words, it will not proceed with a game that pays <code>\(c\)</code> or <code>\(-c\)</code> with equal probability. Since this game needs to have a negative value,
+$$ u(x+dx)-u(x) &lt; u(x) - u(x-dx) \Longrightarrow u(x+dx)-2 u(x) + u(x-dx) &lt; 0$$
+which leads to (for small <code>\(dx\)</code>)
+<code>$$u''(x)&lt;0.$$</code>
+An graphical intuition of this will be provided a little later.</li>
+</ul>
+<hr>
+<ul>
+<li><strong>Risk seeking</strong>: conversely, if
+<code>$$u''(x)&gt;0$$</code>
+then our DM will seek more risk than an expectation maximiser</li>
+<li><strong>Risk neutral</strong>: as stated before, if
+<code>$$u''(x)=0,$$</code>
+the DM is indifferent between gains and losses of equal amount with equal probabilities. This special case is equivalent to expectation maximisation.</li>
+</ul>
+<h3 id="some-utility-functions">
+  Some utility functions
+  <a class="anchor" href="#some-utility-functions">#</a>
+</h3>
+<ul>
+<li><strong>quadratic</strong>:
+$$ u(x) = x -bx^2, \quad \infty &lt; x &lt; \frac{1}{2b}.$$
+If <code>\(b&gt;0\)</code> the DM is risk averse.</li>
+<li><strong>log</strong>:
+<code>$$u(x) = \log x,\quad x&gt;0.$$</code>
+The DM is always risk averse.</li>
+<li><strong>power</strong>:
+<code>$$u(x) = \frac{x^\gamma-1}{\gamma}, \quad x&gt;0,\; \gamma&lt;1.$$</code>
+Here, the DM is always risk averse (a consequence of <code>\(\gamma&lt;1\)</code> due to the non-satiation requirement). This is a special case of so-called “hyperbolic absolute risk aversion” (a.k.a. “HARA”) functions.</li>
+<li><strong>exponential</strong>:
+<code>$$u(x) = 1-e^{-x}.$$</code>
+The DM is always risk averse.</li>
+</ul>
+<h1 id="utility-and-risk-explaining-insurance">
+  Utility and risk: explaining insurance
+  <a class="anchor" href="#utility-and-risk-explaining-insurance">#</a>
+</h1>
+<h2 id="a-graphical-explanation">
+  A graphical explanation
+  <a class="anchor" href="#a-graphical-explanation">#</a>
+</h2>
+<h3 id="a-simple-situation">
+  A simple situation
+  <a class="anchor" href="#a-simple-situation">#</a>
+</h3>
+<p>Consider the following situation:</p>
+<ul>
+<li>Hugo has initial wealth <code>\(W_0\)</code></li>
+<li>He is faced with a risk with two potential outcomes:
+<ul>
+<li>loss of <code>\(c\)</code> with probability <code>\(p\)</code> (say <code>\(p=0.5\)</code>)</li>
+<li>no loss</li>
+</ul>
+</li>
+<li>Hugo is risk averse with a concave utility function</li>
+</ul>
+<p>We will compare expectation maximisation with utility maximisation graphically.</p>
+<hr>
+<p><img src="../../../../../../../../../../../img/module-1/comparison.png" width="100%" style="display: block; margin: auto;" /></p>
+<h3 id="certainty-equivalent">
+  Certainty equivalent
+  <a class="anchor" href="#certainty-equivalent">#</a>
+</h3>
+<ul>
+<li>Denote the initial situation as <code>\(A\)</code>. We have
+$$ E[u(A)] = p u(W_0-c) + (1-p) u(W_0).$$</li>
+<li>Denote now situation <code>\(B\)</code>, whereby Hugo has wealth <code>\(I\)</code> with certainty. We have
+$$ E[u(B)] = u(I).$$</li>
+<li>We call <code>\(I\)</code> the “certainty equivalent” to <code>\(A\)</code> if
+<code>$$A \sim B \Longleftrightarrow E[u(A)] = E[u(B)] \Longleftrightarrow I = u^{-1}(E[u(A)]).$$</code></li>
+</ul>
+<h3 id="indifference-price-and-risk-premium">
+  Indifference price and risk premium
+  <a class="anchor" href="#indifference-price-and-risk-premium">#</a>
+</h3>
+<ul>
+<li>Since the DM will be indifferent between <code>\(A\)</code> and $ <code>\(I\)</code> with certainty, the quantity
+<code>$$I-W_0 \equiv P &lt; 0$$</code>
+is the maximum amount the DM should be willing to pay in order to remove the risk included in <code>\(A\)</code>. It is called the <strong>Indifference price</strong>.<br>
+(Recall that <code>\(E[u(B)]=E[u(I)]\equiv E[u(W_0+P)]\)</code> as per the above.)</li>
+<li>Because of concavity,
+$$ P &lt; -p \cdot c,$$
+the expectation of the loss, which creates a potential market for insurance.</li>
+<li>The quantity
+<code>$$-p\cdot c - P &gt; 0$$</code>
+is called the <strong>Risk premium</strong>.</li>
+</ul>
+<h2 id="general-case">
+  General case
+  <a class="anchor" href="#general-case">#</a>
+</h2>
+<ul>
+<li>Assume now that the loss is no longer <code>\(c\)</code>, but a general random variable $ <code>\(X \in \mathbb{R}\)</code>.</li>
+<li>The certainty equivalent is
+<code>$$I = u^{-1} \left( \; E\left[ u(W_0+X)\right]\; \right).$$</code></li>
+<li>The indifference price is
+$$ P = I - W_0.$$</li>
+<li>The risk premium is
+<code>$$\text{risk premium} = E[X]-P.$$</code>
+This is the maximum amount an insurer would be able to charge for full protection against <code>\(X\)</code>, if the DM faced with <code>\(X\)</code> has utility function <code>\(u(\cdot)\)</code>, and if the DM follows the EUT.</li>
+</ul>
+<h2 id="examples-1">
+  Examples
+  <a class="anchor" href="#examples-1">#</a>
+</h2>
+<h3 id="umbrellas-vs-ice-cream">
+  Umbrellas vs Ice cream
+  <a class="anchor" href="#umbrellas-vs-ice-cream">#</a>
+</h3>
+<p>The certainty equivalent for each option is
+$$ (\gamma \cdot E[u(W_0+X)]+1)^{1/\gamma},$$
+that is, noting that the numbers in the table ore of the type ” <code>\(u(W_0+X)\)</code> ,</p>
+<ul>
+<li>$7,414 for umbrellas, and</li>
+<li>$7,661 for ice creams.</li>
+</ul>
+<p>This means that (according to this utility function)</p>
+<ul>
+<li>Ella would be better off keeping her savings ( <code>\(W_0\)</code> ) if they exceed those amounts (if <code>\(W_0&gt;I\)</code>);</li>
+<li>Ella should be prepared to pay $247 more for the ice cream project than for the umbrella one.</li>
+</ul>
+<h3 id="st-petersburg-paradox">
+  St Petersburg paradox
+  <a class="anchor" href="#st-petersburg-paradox">#</a>
+</h3>
+<p>The certainty equivalent of $ <code>\(X\)</code> here is
+$$ \exp{ E[u(X)]} = \exp{ 2 \log 2} = 4.$$</p>
+<p>This means that an individual with log utility and no money at all (here <code>\(W_0=0\)</code> would be indifferent between receiving $4 with certainty, and playing the game.</p>
+<p>The result would be different in general depending on the initial amount of wealth of the individual.</p>
+<h1 id="characterising-risk-aversion">
+  Characterising risk aversion
+  <a class="anchor" href="#characterising-risk-aversion">#</a>
+</h1>
+<h2 id="introduction-1">
+  Introduction
+  <a class="anchor" href="#introduction-1">#</a>
+</h2>
+<h3 id="umbrellas-vs-ice-creams-what-if-ellas-wealth-changes">
+  Umbrellas vs Ice creams: What if Ella’s wealth changes?
+  <a class="anchor" href="#umbrellas-vs-ice-creams-what-if-ellas-wealth-changes">#</a>
+</h3>
+<p>Assume now that Ella’s savings were $100,000, plus the cost of either projects. The table of utilities becomes<br>
+(computed using $100,000 plus profit for each case)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Weather</th>
+<th style="text-align:right">Umbrellas</th>
+<th style="text-align:right">Ice creams</th>
+<th style="text-align:center">Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Bad</td>
+<td style="text-align:right">719.1</td>
+<td style="text-align:right">636.7</td>
+<td style="text-align:center">1/4</td>
+</tr>
+<tr>
+<td style="text-align:left">OK</td>
+<td style="text-align:right">643.0</td>
+<td style="text-align:right">655.3</td>
+<td style="text-align:center">1/2</td>
+</tr>
+<tr>
+<td style="text-align:left">Sunny</td>
+<td style="text-align:right">636.7</td>
+<td style="text-align:right">679.2</td>
+<td style="text-align:center">1/4</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Expectation</strong></td>
+<td style="text-align:right"><strong>660.5</strong></td>
+<td style="text-align:right"><strong>656.7</strong></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>We are back to preferring Umbrellas!</li>
+<li>That is because Ella has sufficient wealth to accept the much higher level of risk of Umbrellas. This extra risk no longer trumps the<br>
+extra level of expected profit.</li>
+</ul>
+<h3 id="umbrellas-vs-ice-creams-what-if-gamma-changes">
+  Umbrellas vs Ice creams: What if <code>\(\gamma\)</code> changes?
+  <a class="anchor" href="#umbrellas-vs-ice-creams-what-if-gamma-changes">#</a>
+</h3>
+<p>Setting up functions in <code>R</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">power <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(x, gamma) {
+  (x^gamma <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">/</span>gamma
+}
+umbrella <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(gamma) {
+  expectedutility <span style="color:#f92672">&lt;-</span> (<span style="color:#a6e22e">power</span>(<span style="color:#ae81ff">30000</span>, gamma) <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">power</span>(<span style="color:#ae81ff">4000</span>,
+    gamma) <span style="color:#f92672">+</span> <span style="color:#a6e22e">power</span>(<span style="color:#ae81ff">2000</span>, gamma))<span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>
+  <span style="color:#a6e22e">return</span>((expectedutility <span style="color:#f92672">*</span> gamma <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)<span style="color:#a6e22e">^</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>gamma))
+}
+icecream <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">function</span>(gamma) {
+  expectedutility <span style="color:#f92672">&lt;-</span> (<span style="color:#a6e22e">power</span>(<span style="color:#ae81ff">2000</span>, gamma) <span style="color:#f92672">+</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">power</span>(<span style="color:#ae81ff">8000</span>,
+    gamma) <span style="color:#f92672">+</span> <span style="color:#a6e22e">power</span>(<span style="color:#ae81ff">16000</span>, gamma))<span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>
+  <span style="color:#a6e22e">return</span>((expectedutility <span style="color:#f92672">*</span> gamma <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)<span style="color:#a6e22e">^</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span>gamma))
+}
+</code></pre></div><hr>
+<p>Plot <code>R</code> code (result on the next slide):</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a6e22e">par</span>(cex <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.4</span>)
+<span style="color:#a6e22e">curve</span>(<span style="color:#a6e22e">umbrella</span>(x), from <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>, to <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.99</span>, lwd <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>,
+  xlab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;gamma&#34;</span>, ylab <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Certainty equivalent&#34;</span>)
+<span style="color:#a6e22e">curve</span>(<span style="color:#a6e22e">icecream</span>(x), from <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.01</span>, to <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.99</span>, add <span style="color:#f92672">=</span> <span style="color:#66d9ef">TRUE</span>, lwd <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>,
+  col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>)
+<span style="color:#a6e22e">abline</span>(v <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5849920142672</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;green&#34;</span>)
+<span style="color:#a6e22e">text</span>(<span style="color:#ae81ff">0.6</span>, <span style="color:#ae81ff">6000</span>, <span style="color:#a6e22e">paste</span>(<span style="color:#a6e22e">signif</span>(<span style="color:#ae81ff">0.5849920142672</span>, digits <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>), sep <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>),
+  col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;green&#34;</span>, adj <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+<span style="color:#a6e22e">text</span>(<span style="color:#ae81ff">0.6</span>, <span style="color:#ae81ff">7600</span>, <span style="color:#e6db74">&#34;Ice cream&#34;</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;red&#34;</span>, adj <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>)
+<span style="color:#a6e22e">text</span>(<span style="color:#ae81ff">0.78</span>, <span style="color:#ae81ff">9000</span>, <span style="color:#e6db74">&#34;Umbrellas&#34;</span>, col <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;blue&#34;</span>, adj <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</code></pre></div><p>[Note <code>R</code> codes are not assessable!]</p>
+<hr>
+<p><img src="https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/index_files/figure-html/umbicecreamgamma-1.png" width="672" /></p>
+<h3 id="discussion">
+  Discussion
+  <a class="anchor" href="#discussion">#</a>
+</h3>
+<p>Observations:</p>
+<ul>
+<li>We have seen above that results in the Umbrella vs Ice cream example depend on the level of wealth, and also on the parameter of the utility function.</li>
+<li>More generally, results will depend on the shape of the utility function, and the region around which decisions are made (level of wealth <code>\(W_0\)</code>).</li>
+<li>When referring to “results” here, we refer to the attitudes of the decision maker towards risk, or “risk aversion”.</li>
+</ul>
+<p><strong>Is there a way of characterising risk aversion, that takes into account the utility assumptions and wealth, which we can use for comparisons?</strong></p>
+<p>(akin to mean and variance for location and spread of a distribution, for instance)</p>
+<h2 id="absolute-risk-aversion">
+  Absolute Risk Aversion
+  <a class="anchor" href="#absolute-risk-aversion">#</a>
+</h2>
+<h3 id="definition">
+  Definition
+  <a class="anchor" href="#definition">#</a>
+</h3>
+<ul>
+<li>Risk aversion means that we have a concave utility function.</li>
+<li>Concavity is equivalent to the fact that the DM has decreasing marginal utility from more wealth as they become richer: <code>\(u'\)</code>, which is positive, becomes less and less positive as wealth increases: <code>\(u''&lt;0\)</code>.</li>
+<li>The more concave, the higher the risk premium (look back at the graph for the intuition).</li>
+<li>So a good first approximation for an (absolute) risk aversion ratio would be to look at <code>\(u''\)</code>, standardised with <code>\(u'\)</code>, say with a negative sign to make it positive for convenience.</li>
+<li>It turns out to be exactly that! The <strong>Absolute Risk Aversion</strong> (“ARA”) of wealth <code>\(W\)</code> is defined as
+$$ A(W) = - \frac{u''(W)}{u'(W)}.$$</li>
+<li>This is further “brought to life” in the next section</li>
+</ul>
+<hr>
+<p>Examples:</p>
+<ul>
+<li>log utility <code>\(u(w)=\log w\)</code>: we have
+<code>$$u'(w) = \frac{1}{w} \text{ and } u''(w) = -\frac{1}{w^2}$$</code>
+and hence
+<code>$$A(w) = \frac{1}{w},$$</code>
+which is directly inversely proportional to wealth.</li>
+<li>exponential utility <code>\(u(w)=1-e^{-aw}\)</code> ( <code>\(a&gt;0\)</code> ): we have
+<code>$$u'(w)=a e^{-aw} \text{ and }u''(w)=-a^2 e^{-aW}$$</code>
+so that
+<code>$$A(w) = a,$$</code>
+which is constant, and provides a nice interpretation for<br>
+parameter <code>\(a\)</code> in the case of exponential utility.</li>
+</ul>
+<h3 id="interpretation-risk-premia-via-taylors-expansion">
+  Interpretation: risk premia via Taylor’s expansion
+  <a class="anchor" href="#interpretation-risk-premia-via-taylors-expansion">#</a>
+</h3>
+<ul>
+<li>A DM with utility function <code>\(u\)</code> has initial wealth <code>\(W_0\)</code> and faces risk <code>\(X\)</code>.</li>
+<li>We have, by Taylor’s expansion (of <code>\(u\)</code> around <code>\(W_0\)</code>), that
+<code>$$u(W_0+X) \approx u(W_0) + u'(W_0) X + \frac{1}{2}u''(W_0) X^2.$$</code>
+Assume (w.l.o.g.) that <code>\(E[X]=0\)</code> and hence that <code>\(Var(X)=E[X^2]\equiv \sigma^2\)</code>, which implies that (plugging those above)
+<code>$$E[u(W_0+X)] \approx u(W_0) + \frac{1}{2} u''(W_0)\sigma^2.$$</code></li>
+<li>Separately, also by Taylor’s expansions,
+<code>$$u(I)=u(W_0+P)\approx u(W_0) + u'(W_0) P.$$</code></li>
+</ul>
+<hr>
+<ul>
+<li>By definition,
+<code>$$u(I) = E[u(W_0+X)],$$</code>
+and hence
+<code>$$\frac{1}{2} u''(W_0)\sigma^2 \approx u'(W_0) P \Longleftrightarrow P \approx \frac{1}{2}\frac{u''(W_0)}{u'(W_0)} \sigma^2 = - A(W_0) \sigma^2.$$</code>
+This shows that the indifference price is (approximately) proportional to the absolute risk aversion, which makes a lot of sense.</li>
+<li>Here the risk premium is <code>\(-P\)</code> (remember <code>\(E[X]0\)</code> ), which means that it is simply <code>\(A(W_0)\)</code> scaled up by <code>\(\sigma^2\)</code>.</li>
+</ul>
+<h3 id="effect-of-wealth-on-ara">
+  Effect of wealth on ARA
+  <a class="anchor" href="#effect-of-wealth-on-ara">#</a>
+</h3>
+<ul>
+<li>The formula for the ARA <code>\(A(w)\)</code> is a function of <code>\(w\)</code></li>
+<li>This means that the ARA varies for different of wealth, which makes sense: a millionaire is more likely gamble $100 than a poor student with no money.</li>
+<li>In general, one expects the ARA to be decreasing with wealth, that is,
+<code>$$A'(w) &lt; 0.$$</code></li>
+<li>If, on the other hand <code>\(A'(w)=0\)</code>, this means that the risk premium is constant for any levels of wealth.</li>
+<li>Examples:
+<ul>
+<li>log utility: <code>\(A'(w) = - w^{-2} &lt; 0\)</code>.</li>
+<li>exponential utility: <code>\(A'(w) = 0\)</code>. Here the risk premium is insensitive to wealth.</li>
+</ul>
+</li>
+</ul>
+<h2 id="relative-risk-aversion">
+  Relative Risk Aversion
+  <a class="anchor" href="#relative-risk-aversion">#</a>
+</h2>
+<h3 id="think-in-relative-terms">
+  Think in relative terms
+  <a class="anchor" href="#think-in-relative-terms">#</a>
+</h3>
+<ul>
+<li>Think now in <strong>relative</strong> terms.</li>
+<li>Rather than “adding” random <code>\(X\)</code> to <code>\(W_0\)</code>, we multiply <code>\(W_0\)</code> by a random factor <code>\(Z\)</code> with <code>\(E[Z]=1\)</code> and <code>\(Var(Z)=E[Z^2]-1\equiv \sigma^2\)</code>.</li>
+<li>So our wealth after risk has been applied is <code>\(W_0\cdot Z\)</code>.</li>
+<li>We must now define the certainty equivalent as
+$$ u(I) = E[u(W_0\cdot Z)].$$</li>
+<li>The indifference price should also be defined in relative terms, that is,
+<code>$$I-W_0 \equiv - \pi_R W_0\text{ so that } \pi_R=\frac{W_0-I}{W_0}.$$</code></li>
+</ul>
+<h3 id="help-via-taylors-expansion">
+  Help via Taylor’s expansion
+  <a class="anchor" href="#help-via-taylors-expansion">#</a>
+</h3>
+<ul>
+<li>Let’s expand <code>\(u(W_0 Z)\)</code> around <code>\(W_0\)</code>.</li>
+<li>Noting that
+<code>$$W_0 Z-W_0= W_0 (Z-1),$$</code>
+which as mean 0 and variance <code>\(W_0^2 \sigma^2\)</code>, we get
+<code>$$u(W_0 Z) \approx u(W_0)+u'(W_0) (W_0 Z-W_0) + u''(W_0)\frac{(W_0 Z-W_0)^2}{2},$$</code>
+and hence that
+<code>$$E[u(W_0 Z)] \approx u(W_0) + \frac{1}{2} \sigma^2 u''(W_0) W_0^2.$$</code></li>
+</ul>
+<hr>
+<ul>
+<li>Similarly, noting that
+<code>$$I = W_0 - \pi_R W_0,$$</code>
+we get (via Taylor) that
+<code>$$u(I) \approx u(W_0) - \pi_R u'(W_0) W_0.$$</code></li>
+<li>Combining those two results as before yields
+<code>$$\pi_R = -\frac{\sigma^2}{2}W_0 \frac{u''(W_0)}{u'(W_0)}.$$</code></li>
+</ul>
+<p>This result is analogous to the one we had for the ARA, but in relative terms. This leads to the definition in the next slide.</p>
+<h3 id="definition-1">
+  Definition
+  <a class="anchor" href="#definition-1">#</a>
+</h3>
+<p>The <strong>Relative Risk Aversion</strong> (“RRA”) for a DM with utility function <code>\(u\)</code> is defined as
+<code>$$R(w) = -w\frac{u''(w)}{u'(w)}.$$</code></p>
+<p>Examples:</p>
+<ul>
+<li>log utility:
+<code>$$R(w) = wA(w) = 1.$$</code>
+In this case, the log utility is the one with constant RRA. The DM only cares about the proportion of their wealth they will lose, irrespective of their wealth level.</li>
+<li>exponential utility:
+<code>$$R(w) = wA(w) = aw,$$</code>
+which increases with wealth. In this case, the DM realises that a constant proportion of a larger amount of money is more money,<br>
+and so their wealth will impact their RRA.</li>
+</ul>
+<h1 id="additional-considerations">
+  Additional considerations
+  <a class="anchor" href="#additional-considerations">#</a>
+</h1>
+<h2 id="how-do-you-come-up-with-a-utility-function">
+  How do you come up with a utility function?
+  <a class="anchor" href="#how-do-you-come-up-with-a-utility-function">#</a>
+</h2>
+<p>There are essentially two different types of use:</p>
+<ol>
+<li>“Assume” a utility function, which we believe is appropriate to the context, to draw insights from a stylised theoretical model.
+<ul>
+<li>For instance, one might ask what the optimal way of investing money in retirement is (a hot topic!).</li>
+</ul>
+</li>
+<li>Gather data (choices) about an individual, and try to “fit” an appropriate utility function to those choices.
+<ul>
+<li>The result could be informative in itself (such as in supporting assumptions such as those made in the previous case), and/or</li>
+<li>could be used to support decision making.</li>
+</ul>
+</li>
+</ol>
+<h2 id="when-one-function-is-not-enough">
+  When one function is not enough
+  <a class="anchor" href="#when-one-function-is-not-enough">#</a>
+</h2>
+<ul>
+<li>There is no guarantee that a single utility function will fit well:
+<ul>
+<li>for all wealth levels: we may need to paste different functions for different areas;</li>
+<li>in all circumstances: the risk aversion of the DM may be affected by some “state” (e.g., being married vs widowed, or healthy vs sick, for a retiree).</li>
+</ul>
+</li>
+<li>Hence, there may be circumstances where state-dependent, and/or pasted utility functions may be warranted.</li>
+</ul>
+<h2 id="limitations-to-the-eut">
+  Limitations to the EUT
+  <a class="anchor" href="#limitations-to-the-eut">#</a>
+</h2>
+<ul>
+<li>The EUT was gigantic step forward towards being able to describe decision making of humans.</li>
+<li>It suffers from a number of flaws and limitations, though. Here are a few:
+<ul>
+<li>It assumes we can determine someone’s utility function, which is a strong assumption.</li>
+<li>It requires being able to describe risk with certainty. In reality there is uncertainty about outcomes, which complicates things.</li>
+<li>Whether a company has a utility function is debatable (and debated!). At best, it makes decision on the basis of a combination of different utility functions (the decision makers). In the worst case, it is simply impossible to describe decision making with a utility function. One can also argue that risk aversion is a trait of human nature, which is not relevant to a company.</li>
+</ul>
+</li>
+</ul>
+<h2 id="alternatives-to-describing-behaviour">
+  Alternatives to describing behaviour
+  <a class="anchor" href="#alternatives-to-describing-behaviour">#</a>
+</h2>
+<p>There are many refinements and alternatives to the EUT, to support/describe decision-making. The ones mentioned in the syllabus (and taught in ACTL30006) are</p>
+<ul>
+<li>mean-variance portfolio theory (see Joshi (2013)) — this is very similar to using a quadratic utility function;</li>
+<li>behavioural finance (Section 3 of IoA 2023).</li>
+</ul>
+<p>This is a whole (fascinating) field in itself, but we need to stop here for now!</p>
+<!-- # Old -->
+<!-- ```{r fig.align='center',out.width="90%", echo=F} -->
+<!-- include_graphics(sprintf("%s/12_2_2_table.png", graphics_path), error = F) -->
+<!-- ``` -->
+<h1 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h1>
+<p><em>Selected references:</em></p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-IoA23" class="csl-entry">
+<p>IoA. 2023. <em>Course Notes and Core Reading for Subject CM2 Models</em>. The Institute of Actuaries.</p>
+</div>
+<div id="ref-Jos13" class="csl-entry">
+<p>Joshi, Mark Suresh. 2013. <em>Introduction to Mathematical Portfolio Theory</em>. Cambridge University Press.</p>
+</div>
+</div>
+</article>
+ 
+      <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/e2beda13bf512af5904cdeb728a05aa71fe9e7fe" title='Last modified by William Ho | 2 July 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2 July 2024</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#decision-making-under-risk-and-uncertainty">Decision making under risk and uncertainty</a>
+          <ul>
+            <li><a href="#context">Context</a></li>
+            <li><a href="#understand-decisions">Understand decisions</a></li>
+          </ul>
+        </li>
+        <li><a href="#preliminary-the-easy-case">Preliminary: the easy case</a>
+          <ul>
+            <li><a href="#first-order-stochastic-dominance">First order stochastic dominance</a></li>
+            <li><a href="#second-order-stochastic-dominance">Second order stochastic dominance</a></li>
+            <li><a href="#in-absence-of-stochastic-dominance">In absence of stochastic dominance</a></li>
+          </ul>
+        </li>
+        <li><a href="#some-motivating-examples">Some motivating examples</a>
+          <ul>
+            <li><a href="#umbrellas-vs-ice-creams">Umbrellas vs Ice creams</a></li>
+            <li><a href="#example-72-of-joshi-2013">Example 7.2 of Joshi (2013)</a></li>
+            <li><a href="#example-73-of-joshi-2013">Example 7.3 of Joshi (2013)</a></li>
+            <li><a href="#the-st-petersburg-paradox">The St Petersburg paradox</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#utility-functions">Utility functions</a>
+      <ul>
+        <li><a href="#the-expected-utility-theorem-eut">The Expected Utility Theorem (EUT)</a>
+          <ul>
+            <li><a href="#the-concept-of-utility">The concept of utility</a></li>
+            <li><a href="#eut-vs-expectation-maximisation">EUT vs expectation maximisation</a></li>
+            <li><a href="#axioms">Axioms</a></li>
+          </ul>
+        </li>
+        <li><a href="#examples">Examples</a>
+          <ul>
+            <li><a href="#umbrellas-vs-ice-creams-1">Umbrellas vs Ice creams</a></li>
+            <li><a href="#st-petersburg">St Petersburg</a></li>
+          </ul>
+        </li>
+        <li><a href="#utility-functions-1">Utility functions</a>
+          <ul>
+            <li><a href="#general-properties">General properties</a></li>
+            <li><a href="#some-utility-functions">Some utility functions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#utility-and-risk-explaining-insurance">Utility and risk: explaining insurance</a>
+      <ul>
+        <li><a href="#a-graphical-explanation">A graphical explanation</a>
+          <ul>
+            <li><a href="#a-simple-situation">A simple situation</a></li>
+            <li><a href="#certainty-equivalent">Certainty equivalent</a></li>
+            <li><a href="#indifference-price-and-risk-premium">Indifference price and risk premium</a></li>
+          </ul>
+        </li>
+        <li><a href="#general-case">General case</a></li>
+        <li><a href="#examples-1">Examples</a>
+          <ul>
+            <li><a href="#umbrellas-vs-ice-cream">Umbrellas vs Ice cream</a></li>
+            <li><a href="#st-petersburg-paradox">St Petersburg paradox</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#characterising-risk-aversion">Characterising risk aversion</a>
+      <ul>
+        <li><a href="#introduction-1">Introduction</a>
+          <ul>
+            <li><a href="#umbrellas-vs-ice-creams-what-if-ellas-wealth-changes">Umbrellas vs Ice creams: What if Ella’s wealth changes?</a></li>
+            <li><a href="#umbrellas-vs-ice-creams-what-if-gamma-changes">Umbrellas vs Ice creams: What if <code>\(\gamma\)</code> changes?</a></li>
+            <li><a href="#discussion">Discussion</a></li>
+          </ul>
+        </li>
+        <li><a href="#absolute-risk-aversion">Absolute Risk Aversion</a>
+          <ul>
+            <li><a href="#definition">Definition</a></li>
+            <li><a href="#interpretation-risk-premia-via-taylors-expansion">Interpretation: risk premia via Taylor’s expansion</a></li>
+            <li><a href="#effect-of-wealth-on-ara">Effect of wealth on ARA</a></li>
+          </ul>
+        </li>
+        <li><a href="#relative-risk-aversion">Relative Risk Aversion</a>
+          <ul>
+            <li><a href="#think-in-relative-terms">Think in relative terms</a></li>
+            <li><a href="#help-via-taylors-expansion">Help via Taylor’s expansion</a></li>
+            <li><a href="#definition-1">Definition</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#additional-considerations">Additional considerations</a>
+      <ul>
+        <li><a href="#how-do-you-come-up-with-a-utility-function">How do you come up with a utility function?</a></li>
+        <li><a href="#when-one-function-is-not-enough">When one function is not enough</a></li>
+        <li><a href="#limitations-to-the-eut">Limitations to the EUT</a></li>
+        <li><a href="#alternatives-to-describing-behaviour">Alternatives to describing behaviour</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

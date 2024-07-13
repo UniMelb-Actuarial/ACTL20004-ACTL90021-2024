@@ -302,7 +302,7 @@ $$f_j = \left(\frac{\widehat{\mu}(j)}{\widehat{\mu}^*(j)}\right)^{1/j}-1$$
 
 
 
-# Separation method (3.3)
+# Separation method (3.3) $\maltese$
 
 ## Main rationale
 

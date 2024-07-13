@@ -12,8 +12,7 @@
       
       <guid>https://topics-actl.netlify.app/docs/0-subject-guide/Eligibility/</guid>
       <description>To view the eligibility and requirements, including prerequisites, corequisites, recommended background knowledge and core participation requirements for this subject, please see the University Handbook:
-  ACTL30007 handbook  ACTL90020 handbook  Prerequisites #  Relevant knowledge from ACTL20003 Stochastic Techniques in Insurance (or MAST20004 Probability) includes in particular:
- Distributions of random variables Expectations and conditional expectations Moment and probability generating functions Law of Large Numbers, and the Central Limit Theorem  Relevant knowledge from MAST20005 Statistics includes in particular:</description>
+  ACTL20004 handbook  ACTL90021 handbook  See also Excel assumed knowledge.</description>
     </item>
     
     <item>
@@ -23,7 +22,7 @@
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-1/</guid>
       <description>Week 1 Overview #  This week, we will cover the following topics:
- Introduction to the course (Module 1): what are the broader questions we will answer in this subject, and how are they connected? Collective Risk Modelling (Module 2): how do you work out the distribution of the sum of claims if you can make assumptions about their frequency and severity, and what are typical assumptions for claims frequency?</description>
+ Introduction to the course: what are the topics we will cover in this subject, and how are they connected? Risk and Insurance (Module 1): to put it in the way the CM2 notes puts it, how do we model the behaviours of agents on a market? What is a possible mathematical model for “rational” behaviour, that could explain why people purchase insurance?</description>
     </item>
     
     <item>
@@ -33,8 +32,8 @@
       
       <guid>https://topics-actl.netlify.app/docs/0-subject-guide/SILO/</guid>
       <description>Subject Intended Learning Outcomes (SILO) #  To view the subject objectives and the generic skills you will develop through successful completion of this subject, please see the University Handbook.
-ACTL30007 SILO #  The ACTL30007 subject intended learning outcomes (SILO) are as follows:
- Apply relevant pre-requisite knowledge of mathematics, probability theory and statistics in the solution of a range of practical problems. Derive and calculate probabilities for, and moments of, loss distributions both with and without simple reinsurance arrangements.</description>
+ACTL20004 SILO #  The ACTL20004 subject intended learning outcomes (SILO) are as follows:
+ Derive and apply results for simple stochastic models for investment returns. Describe and apply techniques for analysing a delay (or run-off) triangle and projecting the ultimate position.</description>
     </item>
     
     <item>
@@ -44,7 +43,7 @@ ACTL30007 SILO #  The ACTL30007 subject intended learning outcomes (SILO) are as
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-2/</guid>
       <description>Week 2 Overview #  This week, we will cover the following topics:
- End of Module 2 (Poisson decomposition, and \((a,b)\) family) Data analysis and descriptive statistics (Module 3): how do get a good sense of the properties of a data set, either graphically or numerically? Selected parametric claim size distributions (Module 3): what are good potential candidates for a describing the data likelihood profile with a parametric function? Fitting of distributions (Module 3): How do we then go about fitting the parameters to a given data set?</description>
+ End of Module 1 (characterising risk aversion, and additional considerations) Module 2, which introduces the basics of loss reserving: what it is, why it matters, notation, data   -- If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and entered Lecture Capture via Canvas once for each session.</description>
     </item>
     
     <item>
@@ -54,8 +53,8 @@ ACTL30007 SILO #  The ACTL30007 subject intended learning outcomes (SILO) are as
       
       <guid>https://topics-actl.netlify.app/docs/0-subject-guide/Activities/</guid>
       <description>Lectures #  Lecture Times #  Lectures will be delivered live, in dual mode (both on Zoom and in person) in the following venue:
- [PG] PAR-Alan Gilbert-121 (Theatre 3), Mondays, from 11.05am to 1.00pm [UG] PAR-Kwong Lee Dow-227, Mondays, from 2.20pm to 4.15pm  Notes:
- The tutorials on Friday 7 April 2022 won&amp;rsquo;t run (Good Friday holiday). Students with a tutorial at another time that week will have an opportunity to do a Q&amp;amp;A with their tutor.</description>
+ [PG] FBE Theatre 2, Mondays, from 10:05am to 11:55am [UG] FBE Prest Theatre, Mondays, from 2.20pm to 4.05pm  Notes:
+ Lectures and tutorials run in week 6 as normal. The mid-semester exam will be on Wednesday night. Details about readings are available below under &amp;ldquo;Subject Resources&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -65,7 +64,7 @@ ACTL30007 SILO #  The ACTL30007 subject intended learning outcomes (SILO) are as
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-3/</guid>
       <description>Week 3 Overview #  This week, we will cover the following topics:
- End of Section 3.4, covering the most complicated case of left-truncation and right-censoring (with parameters changing potentially with each claim) Model selection (Module 3): how do we assess how good a model fits to data (“goodness-of-fit”)? How do we make a choice? Calculating wihin layers for claim sizes (Module 3): reinsurance, and some policy tranformations (in particular, stop loss / deductibles) lead to different “layers” of claims being covered by different parties.</description>
+ Module 3, which is concerned with the calculation of IBNR claim counts. There are some slides with the main elements, but a major component of the module is with a spreadsheet, which can be downloaded here   -- If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and entered Lecture Capture via Canvas once for each session.</description>
     </item>
     
     <item>
@@ -74,9 +73,8 @@ ACTL30007 SILO #  The ACTL30007 subject intended learning outcomes (SILO) are as
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://topics-actl.netlify.app/docs/0-subject-guide/Resources/</guid>
-      <description>Website #  Here is a video with detailed overview of the course resources and organisation:
- The current website contains (or links) to all the resources you need for the course (compare the following list with left hand side menu):
-  Subject guide (you are reading it!)  Study Plan: this outlines your recommended study plan for the subject, week by week. This will include a link to the video lectures / recordings, too.</description>
+      <description>Website #  The current website contains (or links) to all the resources you need for the course (compare the following list with left hand side menu):
+  Subject guide (you are reading it!)  Prerequisite knowledge: assumed knowledge in Excel  Utility theory (CM2 1.2): the contents covering Section 1.2 of the CM2 syllabus.  Reserving (CM2 5.2): the contents covering Section 5.2 of the CM2 syllabus.  Excel (CM2 Exam B): the contents covering the Excel component of the CM2 syllabus.</description>
     </item>
     
     <item>
@@ -85,8 +83,8 @@ ACTL30007 SILO #  The ACTL30007 subject intended learning outcomes (SILO) are as
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-4/</guid>
-      <description>Week 4 Overview #  This week, we will cover the following topics, mostly from Module 4:
- Finalising stop-loss calculations Discretisation of continuous distributions (to be able to use Panjer, in particular; see next item) Use of Panjer’s recursion algorithm, which allows us to calculate the exact compound distribution of any random sum, if the frequency follows the \((a,b)\) family Recap of the Normal approximation, as well as translated gamma and lognormal approximations, to be used when one needs a quick approximation, or when only moments are available.</description>
+      <description>Week 4 Overview #  This week, we will cover the following topics:
+ Module 4, which is concerned with the calculation of IBNR claim amounts. There are some slides with the main elements, but a major component of the module is with two spreadsheets, which can be downloaded here and here  See also detailed learning outcomes of 5.2 (“Liability valuations / Run-off triangles”) of the CM2 syllabus here.</description>
     </item>
     
     <item>
@@ -96,7 +94,7 @@ ACTL30007 SILO #  The ACTL30007 subject intended learning outcomes (SILO) are as
       
       <guid>https://topics-actl.netlify.app/docs/0-subject-guide/Assessment/</guid>
       <description>Assessment Overview #  Assessment structure #  Your assessment for this subject comprises the following:
-  a 60 minute closed book mid-semester exam (15%)  an individual assignment (25%)  a 2-in-3 hour online final exam (60%)  Hurdle requirement: To pass this subject students must pass the end of semester examination.
+  a 50 minute closed book mid-semester exam (15%)  an individual assignment (25%)  a 2 hour closed book final exam (60%)  Hurdle requirement: To pass this subject students must pass the end of semester examination.
 In the following sections, details are provided (and will be populated throughout semester) about those assessments.</description>
     </item>
     
@@ -106,8 +104,9 @@ In the following sections, details are provided (and will be populated throughou
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-5/</guid>
-      <description>Week 5 Overview #  Continuing on with the Claims Modelling component of the subject, which corresponds to the Section 1 of the CS2 syllabus; In particular, we will cover Module 5–Copulas–and
- discuss what stochastic dependence means, how it arises in an insurance context, and discuss some examples; discuss how to extract the mathematical form of a stochastic dependence structure through copulas briefly discuss how to use copulas in practice  Here is the end of week 4 video, which introduces week 5:</description>
+      <description>Week 5 Overview #  This week, we will cover the following topics:
+ Module 5, which is concerned with the comparison between methods and choice of outstanding liabilities, based on those different methods. Module 6 about Excel.  See also detailed learning outcomes of 5.2 (“Liability valuations / Run-off triangles”) of the CM2 syllabus, as well as CM2-B Excel examinations here.
+Main references and lectures #  Module 5 #  Read: Module 5</description>
     </item>
     
     <item>
@@ -116,8 +115,11 @@ In the following sections, details are provided (and will be populated throughou
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://topics-actl.netlify.app/docs/0-study-plan/week-6/</guid>
-      <description>Week 6 Overview #  Continuing on with the Claims Modelling component of the subject, which corresponds to the Section 1 of the CS2 syllabus; In particular, we will cover Module 6–Extreme Value Theory–and
- discuss how to work out the limiting distribution of the maximum of a sample; discuss how to work out the limiting distribution of the excess cost of a threshold.  Here is the end of week 5 video, which introduces week 6:</description>
+      <description>Week 6 Overview #  This week, we have the mid-semester exam on Monday, and tutorials for Module 5.
+Main references and lectures #  n/a
+Additional preparation and resources #  n/a
+Tutorials #  Please let us know of any mistake or required update on Ed.
+Tutorial materials #  Some questions have been especially selected for the tutorials. Students should review The Tutorial book includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set.</description>
     </item>
     
     <item>
@@ -153,6 +155,15 @@ In particular, we will:
     </item>
     
     <item>
+      <title>M2 Basic Reserving Concepts</title>
+      <link>https://topics-actl.netlify.app/docs/2-reserving/m2-basic-reserving-concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/2-reserving/m2-basic-reserving-concepts/</guid>
+      <description>Introduction - Claims liabilities #  Definition #   Generally in insurance, premiums are collected first, before coverage is provided. The insurer can’t consider this premium as income before coverage is provided. Furthermore, as times goes by, the insurer does not know instantly how much losses it will have to pay (e.g., delays in notification, delays in payments).    This gives rise to two types of liabilities:  Unearned premium liability: an amount set aside for covering losses related to coverage not yet provided, but where a premium has already been collected; Outstanding claim liability: an amount set aside for for covering losses corresponding to coverage that has already been provided, but where payments are still expected to occur.</description>
+    </item>
+    
+    <item>
       <title>Week 10 Study Plan</title>
       <link>https://topics-actl.netlify.app/docs/0-study-plan/week-10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -183,23 +194,122 @@ In particular, we will:
     </item>
     
     <item>
+      <title>M1 Risk and Insurnace</title>
+      <link>https://topics-actl.netlify.app/docs/4-stochastic-interest/m7-stochastic-returns-simple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/4-stochastic-interest/m7-stochastic-returns-simple/</guid>
+      <description>Introduction: Models for aggregate losses #  A portfolio of contracts or a contract will potentially experience a sequence of losses: $$Y_1, Y_2, Y_3, \ldots$$ We are interested in the aggregate sum \(S\) of these losses over a certain period of time.
+ How many losses will occur?  if deterministic \((n)\) \(\longrightarrow\) individual risk model if random \((N)\) \(\longrightarrow\) collective risk model   How do they relate to each other?</description>
+    </item>
+    
+    <item>
+      <title>M1 Risk and Insurnace</title>
+      <link>https://topics-actl.netlify.app/docs/4-stochastic-interest/m8-stochastic-returns-lognormal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/4-stochastic-interest/m8-stochastic-returns-lognormal/</guid>
+      <description>Introduction: Models for aggregate losses #  A portfolio of contracts or a contract will potentially experience a sequence of losses: $$Y_1, Y_2, Y_3, \ldots$$ We are interested in the aggregate sum \(S\) of these losses over a certain period of time.
+ How many losses will occur?  if deterministic \((n)\) \(\longrightarrow\) individual risk model if random \((N)\) \(\longrightarrow\) collective risk model   How do they relate to each other?</description>
+    </item>
+    
+    <item>
+      <title>M1 Risk and Insurnace</title>
+      <link>https://topics-actl.netlify.app/docs/4-stochastic-interest/m9-stochastic-returns-simulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/4-stochastic-interest/m9-stochastic-returns-simulation/</guid>
+      <description>Introduction: Models for aggregate losses #  A portfolio of contracts or a contract will potentially experience a sequence of losses: $$Y_1, Y_2, Y_3, \ldots$$ We are interested in the aggregate sum \(S\) of these losses over a certain period of time.
+ How many losses will occur?  if deterministic \((n)\) \(\longrightarrow\) individual risk model if random \((N)\) \(\longrightarrow\) collective risk model   How do they relate to each other?</description>
+    </item>
+    
+    <item>
+      <title>M1 Risk and Insurnace</title>
+      <link>https://topics-actl.netlify.app/docs/5-ruin-theory/m2-risk-claim-counts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/5-ruin-theory/m2-risk-claim-counts/</guid>
+      <description>Introduction: Models for aggregate losses #  A portfolio of contracts or a contract will potentially experience a sequence of losses: $$Y_1, Y_2, Y_3, \ldots$$ We are interested in the aggregate sum \(S\) of these losses over a certain period of time.
+ How many losses will occur?  if deterministic \((n)\) \(\longrightarrow\) individual risk model if random \((N)\) \(\longrightarrow\) collective risk model   How do they relate to each other?</description>
+    </item>
+    
+    <item>
+      <title>M1 Risk and Insurnace</title>
+      <link>https://topics-actl.netlify.app/docs/5-ruin-theory/m3-reserving-claim-amounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/5-ruin-theory/m3-reserving-claim-amounts/</guid>
+      <description>Introduction: Models for aggregate losses #  A portfolio of contracts or a contract will potentially experience a sequence of losses: $$Y_1, Y_2, Y_3, \ldots$$ We are interested in the aggregate sum \(S\) of these losses over a certain period of time.
+ How many losses will occur?  if deterministic \((n)\) \(\longrightarrow\) individual risk model if random \((N)\) \(\longrightarrow\) collective risk model   How do they relate to each other?</description>
+    </item>
+    
+    <item>
+      <title>M1 Risk and Insurnace</title>
+      <link>https://topics-actl.netlify.app/docs/5-ruin-theory/m4-reserving-combination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/5-ruin-theory/m4-reserving-combination/</guid>
+      <description>Introduction: Models for aggregate losses #  A portfolio of contracts or a contract will potentially experience a sequence of losses: $$Y_1, Y_2, Y_3, \ldots$$ We are interested in the aggregate sum \(S\) of these losses over a certain period of time.
+ How many losses will occur?  if deterministic \((n)\) \(\longrightarrow\) individual risk model if random \((N)\) \(\longrightarrow\) collective risk model   How do they relate to each other?</description>
+    </item>
+    
+    <item>
+      <title>M1 Utility, Risk and Insurance</title>
+      <link>https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/</guid>
+      <description>Introduction #  Decision making under risk and uncertainty #  Context #   In an Enterprise Risk Management context (ERM), “risk” is defined as the “effect of uncertainty on objectives” So essential ingredients here are:  having an objective (e.g. maximise profit under some solvency constraint) having to make a decision (e.g. decide on how much to (re)insure) the object is subject to uncertainty (e.g. the amount of losses an insurer will have to pay)    Understand decisions #   In economics (and social science in general), one can be interested in understanding / modelling how and why individuals make decisions.</description>
+    </item>
+    
+    <item>
+      <title>M3 Reserving Claim Counts</title>
+      <link>https://topics-actl.netlify.app/docs/2-reserving/m3-reserving-claim-counts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/2-reserving/m3-reserving-claim-counts/</guid>
+      <description>Exposure (2.1) #  General idea #  Assume that we there exists \(e(i)\) so that we can write
+$$E[N(i,j)] \equiv e(i) \mu(j),$$ where (this is important), \(\mu(j)\) does not depend on \(i\).
+ \(e(i)\) will be called the exposure in period of occurrence \(i\) (for instance, “car-years”). \(\mu(j)\) may be interpreted as relative claim frequency in period \(j\) (per unit of exposure). The cumulative version $$\frac{E[N(i,\cdot)]}{e(i)} = \mu(\cdot)$$ is the relative frequency of claim occurence per period.</description>
+    </item>
+    
+    <item>
+      <title>M4 Reserving Claim Amounts</title>
+      <link>https://topics-actl.netlify.app/docs/2-reserving/m4-reserving-claim-amounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/2-reserving/m4-reserving-claim-amounts/</guid>
+      <description>Case estimation (3.1) #  Case estimates: Definition #   When a claim is notified, the insurer’s employee who manages the claim (the “claims adjuster”) typically formulates an estimate of the (remaining) cost of the claim and records it in the system. This estimate is typically adjusted over time as payments are made and additional information becomes available. These is called a “case estimate” (equivalently, “individual estimate”, “manual estimate”, “physical estimate”).</description>
+    </item>
+    
+    <item>
+      <title>M5 Reserving Combination</title>
+      <link>https://topics-actl.netlify.app/docs/2-reserving/m5-reserving-combination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/2-reserving/m5-reserving-combination/</guid>
+      <description>Background #  Summary #  We have seen covered a number of reserving methods:
+ unadjusted chain ladder on paid losses inflation adjusted chain ladder on paid losses unadjusted chain ladder on incurred losses inflation adjusted chain ladder on incurred losses separation payments per claim incurred (PPCI)  The IBNR claims (counts) were estimated according to a number of methods, too:
+ exposure normaliser chain ladder  Motivation #   All those methods are producing outstanding liability $ estimates in nominal terms.</description>
+    </item>
+    
+    <item>
+      <title>M6 Excel Topics</title>
+      <link>https://topics-actl.netlify.app/docs/3-excel/m6-excel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/3-excel/m6-excel/</guid>
+      <description>Introduction and Assumed Knowledge #  Why Excel? #   Excel is great to spread data and calculations in a tabular form, and have a visual overview. Most financial modelling is done in Excel (at least initially). In actuarial work, many more advanced codes (in R, Python, C++, C#, VBA, …) often starts with someone playing around in Excel, and once proof of concept is approved, this moves to proper coding.</description>
+    </item>
+    
+    <item>
       <title>Prerequisite Knowledge</title>
       <link>https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/</guid>
-      <description>Summary of some of the prerequisite knowledge required for this subject: The first two parts ( Mathematics and Probability) below are basic reminders, and could probably be skipped by most students.
-The third part is more advanced and corresponds to Section 1.2 of the prescribed textbook MW.
-Students are recommended to review all those concepts prior to week 1, and to ask questions at the week 1 tutorial if needed.</description>
-    </item>
-    
-    <item>
-      <title>M1 Introduction</title>
-      <link>https://topics-actl.netlify.app/docs/m1-introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://topics-actl.netlify.app/docs/m1-introduction/</guid>
-      <description>The nature of general insurance (MW 1.1) #  General insurance #   also called non-life, or property and casualty  Includes: car, liability, property, workers compensation, marine, credit, legal, travel, health, …   for more background:  see general insurance practice for further details about the general insurance area see Pooling and Insurance for further details about the law of large numbers mechanism    Risk components #  Risk / randomness comes from different sources:</description>
+      <description>Summary of some of the prerequisite knowledge required for this subject: Excel #  To view the eligibility and requirements, including prerequisites, corequisites, recommended background knowledge and core participation requirements for this subject, please see the University Handbook: https://handbook.unimelb.edu.au/2023/subjects/actl20004/eligibility-and-requirements
+Excel assumed knowledge Because everyone has used Excel before, a challenge in this subject is to start at the right level of assumed knowledge. We had to strike a balance between (i) not assuming so much that it is too much work to catch up if you have little experience, and (ii) not assuming enough that no-one draws benefits from the subject, and is bored to death.</description>
     </item>
     
     <item>

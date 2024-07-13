@@ -38,5 +38,5 @@ Katz, A. I. (2023) Up Up and Array! Dynamic Array Formulas for Excel 365 and Bey
 - [Dickson] 
 Dickson, D. C. M. (2016) Insurance Risk and Ruin, 2nd Edition, Cambridge University Press, https://doi.org/10.1017/9781316650776
 
-Most of those references can be downloaded from the [Readings Online](https://canvas.lms.unimelb.edu.au/courses/191080/external_tools/1188) section of the Canvas community website.
+Most of those references can be downloaded from the [Readings Online](https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/1188) section of the Canvas community website.
 

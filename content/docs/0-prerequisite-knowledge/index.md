@@ -14,10 +14,10 @@ Summary of some of the prerequisite knowledge required for this subject:
 # Excel
 
 To view the eligibility and requirements, including prerequisites, corequisites, recommended background knowledge and core participation requirements for this subject, please see the University Handbook:
-https://handbook.unimelb.edu.au/2023/subjects/actl20004/eligibility-and-requirements
+https://handbook.unimelb.edu.au/2024/subjects/actl20004/eligibility-and-requirements
 
 Excel assumed knowledge
-Because everyone has used Excel before, a challenge in this subject is to start at the right level of assumed knowledge. We had to strike a balance between (i) not assuming so much that it is too much work to catch up if you have little experience, and (ii) not assuming enough that no-one draws benefits from the subject, and is bored to death. Below, you will find reference to those topics that we will assume are prior knowledge. Numbers correspond to Chapters of Slager and Slager (2020) (see “Subject Resources” below).
+Because everyone has used Excel before, a challenge in this subject is to start at the right level of assumed knowledge. We had to strike a balance between (i) not assuming so much that it is too much work to catch up if you have little experience, and (ii) not assuming enough that no-one draws benefits from the subject, and is bored to death. Below, you will find reference to those topics that we will assume are prior knowledge. Numbers correspond to Chapters of (**EE19?**) (see “Subject Resources” below).
 
 It is strongly recommended that you review those topics, including, but not limited to, those “semi-beginner” topics that are singled out with bullet points.
 
@@ -72,13 +72,3 @@ Ch. 13: Working with Charts
 - Sparklines: p. 656-664
 
 Ch. 14: Importing Data
-
-<div id="refs" class="references csl-bib-body hanging-indent">
-
-<div id="ref-EE19" class="csl-entry">
-
-Slager, D., and A. Slager. 2020. *Essential Excel 2019*. 2nd ed. Apress.
-
-</div>
-
-</div>

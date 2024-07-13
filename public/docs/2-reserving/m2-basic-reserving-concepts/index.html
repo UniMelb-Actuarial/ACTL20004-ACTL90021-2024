@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Introduction - Claims liabilities #  Definition #   Generally in insurance, premiums are collected first, before coverage is provided. The insurer can’t consider this premium as income before coverage is provided. Furthermore, as times goes by, the insurer does not know instantly how much losses it will have to pay (e.g., delays in notification, delays in payments).    This gives rise to two types of liabilities:  Unearned premium liability: an amount set aside for covering losses related to coverage not yet provided, but where a premium has already been collected; Outstanding claim liability: an amount set aside for for covering losses corresponding to coverage that has already been provided, but where payments are still expected to occur.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="M2 Basic Reserving Concepts" />
+<meta property="og:description" content="Introduction - Claims liabilities #  Definition #   Generally in insurance, premiums are collected first, before coverage is provided. The insurer can’t consider this premium as income before coverage is provided. Furthermore, as times goes by, the insurer does not know instantly how much losses it will have to pay (e.g., delays in notification, delays in payments).    This gives rise to two types of liabilities:  Unearned premium liability: an amount set aside for covering losses related to coverage not yet provided, but where a premium has already been collected; Outstanding claim liability: an amount set aside for for covering losses corresponding to coverage that has already been provided, but where payments are still expected to occur." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://topics-actl.netlify.app/docs/2-reserving/m2-basic-reserving-concepts/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2024-07-02T22:58:17+10:00" />
+
+<title>M2 Basic Reserving Concepts | Topics in Actuarial, Insurance and Finance</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.a08e958a0c32c71fa52257f56602fc9e6f4a8586733f7d90b6b544b160364dce.css" integrity="sha256-oI6Vigwyxx&#43;lIlf1ZgL8nm9KhYZzP32QtrVEsWA2Tc4=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.99252dcf6d014c8b638b93b9eae4e315ef0248adbbb7a43af0d57ba071cdddb2.js" integrity="sha256-mSUtz20BTItji5O56uTjFe8CSK27t6Q68NV7oHHN3bI=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  <script>
+MathJax = {
+  tex: {
+      macros: { 
+          angl: ["\\enclose{actuarial}{#1}", 1],
+          alert:["\\textcolor{red}{#1}", 1],
+          termins: ["A^{1}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          insend: ["\\bar{A}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          pureend: ["A^{\\,\\,\\,\\, 1}_{#1 : \\enclose{actuarial}{#2}}", 2],
+          adv: ["\\maltese"]
+      }
+  }
+};
+</script>
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><img src="/img/PRIMARY_A_Vertical_Housed_RGB.png" alt="Logo" /><span style="color: black;">Topics in Actuarial, Insurance and Finance</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0c375332c765cd598c6ce4ee8867890f" class="toggle"  />
+    <label for="section-0c375332c765cd598c6ce4ee8867890f" class="flex justify-between">
+      <a href="https://topics-actl.netlify.app/docs/0-subject-guide/" class="">Subject Guide</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Eligibility/" class="">Eligibility and Requirements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/SILO/" class="">Learning Outcomes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Activities/" class="">Activities</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Resources/" class="">Resources</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-subject-guide/Assessment/" class="">Assessment</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b29660809eb857420b6473840d34e82" class="toggle"  />
+    <label for="section-5b29660809eb857420b6473840d34e82" class="flex justify-between">
+      <a href="https://topics-actl.netlify.app/docs/0-study-plan/" class="">Weekly Study Plan</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-1/" class="">Week 1 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-2/" class="">Week 2 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-3/" class="">Week 3 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-4/" class="">Week 4 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-5/" class="">Week 5 Study Plan</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-6/" class="">Week 6 Study Plan</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/0-prerequisite-knowledge/" class="">Prerequisite Knowledge</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/1-utility/" class="">Utility theory (CM2 1.2)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/" class="">M1 Utility, Risk and Insurance</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/" class="">Reserving (CM2 5.2)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m2-basic-reserving-concepts/" class=" active">M2 Basic Reserving Concepts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m3-reserving-claim-counts/" class="">M3 Reserving Claim Counts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m4-reserving-claim-amounts/" class="">M4 Reserving Claim Amounts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/2-reserving/m5-reserving-combination/" class="">M5 Reserving Combination</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/3-excel/" class="">Excel (CM2 Exam B)</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/3-excel/m6-excel/" class="">M6 Excel Topics</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/4-stochastic-interest/" class="">Stochastic interest (CM2 3)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://topics-actl.netlify.app/docs/5-ruin-theory/" class="">Ruin Theory (CM2 5.1 5.3)</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        ___Websites and forums___
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless" target="_blank" rel="noopener">
+        Ed discussion forum
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/183926" target="_blank" rel="noopener">
+        ACTL20004 Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/181779" target="_blank" rel="noopener">
+        ACTL90021 Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/220261" target="_blank" rel="noopener">
+        Community Canvas
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        _______Exercises__________
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5029017" target="_blank" rel="noopener">
+        Tutorial exercises
+      </a>
+  </li>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        __________Links___________
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://bavanzicv.netlify.app/" target="_blank" rel="noopener">
+        Benjamin Avanzi
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/benjaminavanzi/" target="_blank" rel="noopener">
+        Let&#39;s connect on LinkedIn!
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://yuyuchen-uw.github.io" target="_blank" rel="noopener">
+        Yuyu Chen
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://actl10001.netlify.app/" target="_blank" rel="noopener">
+        Introduction to Actuarial Studies 2021
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://communicate-data-with-r.netlify.app/" target="_blank" rel="noopener">
+        Communicate Data with R
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://actuaries.asn.au/becoming-an-actuary/how-to-become-an-actuary/for-uni-students/become-a-uni-subscriber/" target="_blank" rel="noopener">
+        Actuaries Institute info
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>M2 Basic Reserving Concepts</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction---claims-liabilities">Introduction - Claims liabilities</a>
+      <ul>
+        <li><a href="#definition">Definition</a></li>
+        <li><a href="#the-case-of-iag">The case of IAG</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-claims-process">The claims process</a>
+      <ul>
+        <li><a href="#main-reference">Main reference</a></li>
+        <li><a href="#time-line-of-a-claim-and-ibnr">Time line of a claim and IBNR</a></li>
+        <li><a href="#inflation">Inflation</a></li>
+      </ul>
+    </li>
+    <li><a href="#estimates-of-outstanding-loss-liability">Estimates of outstanding loss liability</a>
+      <ul>
+        <li><a href="#general">General</a>
+          <ul>
+            <li><a href="#time-dimensions-of-periods">Time dimensions of “periods”</a></li>
+            <li><a href="#further-notation">Further notation</a></li>
+          </ul>
+        </li>
+        <li><a href="#components-of-outstanding-loss-liability">Components of outstanding loss liability</a>
+          <ul>
+            <li><a href="#cash-flows">Cash flows</a></li>
+            <li><a href="#claims-inflation">Claims inflation</a></li>
+            <li><a href="#loss-adjustment-expenses">Loss adjustment expenses</a></li>
+            <li><a href="#investment-income">Investment income</a></li>
+            <li><a href="#recoveries">Recoveries</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#loss-reserving">Loss reserving</a>
+      <ul>
+        <li><a href="#general-1">General</a></li>
+        <li><a href="#in-australia">In Australia</a>
+          <ul>
+            <li><a href="#legislative-framework">Legislative framework</a></li>
+            <li><a href="#outstanding-claims-liability-in-australia">Outstanding claims liability in Australia</a></li>
+            <li><a href="#solvency-capital-requirements-in-australia">Solvency capital requirements in Australia</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#data">Data</a>
+      <ul>
+        <li><a href="#nature">Nature</a></li>
+        <li><a href="#aggregate-data">Aggregate data</a>
+          <ul>
+            <li><a href="#incremental-data">Incremental data</a></li>
+            <li><a href="#cumulative-data">Cumulative data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="introduction---claims-liabilities">
+  Introduction - Claims liabilities
+  <a class="anchor" href="#introduction---claims-liabilities">#</a>
+</h1>
+<h2 id="definition">
+  Definition
+  <a class="anchor" href="#definition">#</a>
+</h2>
+<ul>
+<li>Generally in insurance, premiums are collected first, before coverage is provided. The insurer can’t consider this premium as income before coverage is provided.</li>
+<li>Furthermore, as times goes by, the insurer does not know instantly how much losses it will have to pay (e.g., delays in notification, delays in payments).</li>
+</ul>
+<hr>
+<ul>
+<li>This gives rise to two types of liabilities:
+<ul>
+<li><strong>Unearned premium liability</strong>: an amount set aside for covering losses related to coverage <em>not yet provided</em>, but where a premium has already been collected;</li>
+<li><strong>Outstanding claim liability</strong>: an amount set aside for for covering losses corresponding to coverage that <em>has already been provided</em>, but where payments are still expected to occur.</li>
+</ul>
+</li>
+<li>These take a significant proportion of an insurer’s balance sheet, often multiple times its equity, as exemplified in the IAG example (forthwith).</li>
+<li>It is the actuary’s responsibility to determine those amounts</li>
+</ul>
+<p><strong>It’s a huge responsibility!</strong></p>
+<h2 id="the-case-of-iag">
+  The case of IAG
+  <a class="anchor" href="#the-case-of-iag">#</a>
+</h2>
+<p>Insurance Australia Group is one of the largest Australian general insurers (the largest under some measures)</p>
+<p>Its latest Balance Sheet (as at 31 December 2022, see 
+  <a href="https://www.iag.com.au/sites/default/files/Documents/Results%20%26%20reports/IAGL-1H23-Financial-statements.pdf"><code>page 20</code></a>) shows</p>
+<ul>
+<li>Assets
+<ul>
+<li>Total: 34,428m (100%)</li>
+</ul>
+</li>
+<li>Liabilities
+<ul>
+<li>Unearned premium liability: 7,084m (20.6%)</li>
+<li>Outstanding claims liability: 13,560m (39.4%)</li>
+</ul>
+</li>
+<li>Equity
+<ul>
+<li>Total: 6,819m (19.8%)</li>
+</ul>
+</li>
+</ul>
+<p>It is worth noting that IAG holds 2.01 times the APRA “Prescribed Capital Amount” (PCA), see 
+  <a href="https://www.iag.com.au/sites/default/files/Documents/Results%20%26%20reports/IAGL-1H23-Financial-statements.pdf"><code>F on page 12</code></a>.</p>
+<p>See <a href="https://www.iag.com.au/results-and-reports">https://www.iag.com.au/results-and-reports</a> to dowload the<br>
+latest financial statements of IAG.</p>
+<h1 id="the-claims-process">
+  The claims process
+  <a class="anchor" href="#the-claims-process">#</a>
+</h1>
+<h2 id="main-reference">
+  Main reference
+  <a class="anchor" href="#main-reference">#</a>
+</h2>
+<p>Note that figures, notation, examples and structure are mostly drawn from Taylor (2000), which is the main reference for Modules 2–5.</p>
+<h2 id="time-line-of-a-claim-and-ibnr">
+  Time line of a claim and IBNR
+  <a class="anchor" href="#time-line-of-a-claim-and-ibnr">#</a>
+</h2>
+<p><img src="../../../../../../../../../../../img/module-2/Figure_1_1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>From <code>\(t_1\)</code> to <code>\(t_2\)</code>:</p>
+<ul>
+<li>A liability exists (an insured event occurred)</li>
+<li>However, the insurer is unaware of the claim</li>
+<li>During this interval, the claim is said to be <strong>incurred but not reported</strong> (or “<strong>IBNR</strong>”).</li>
+</ul>
+<hr>
+<p>From <code>\(t_2\)</code> and <code>\(t_9\)</code>:</p>
+<ul>
+<li>There will be future payments, even though the insurer may not know with certainty about them</li>
+<li>These should be captured by an appropriate reserve.</li>
+</ul>
+<h2 id="inflation">
+  Inflation
+  <a class="anchor" href="#inflation">#</a>
+</h2>
+<ul>
+<li>Because claims are paid at different points in time, they are subject to inflation.</li>
+<li>Inflation will generally be different from CPI, and is typically specific to a line of business. Let <code>\(\lambda(t)\)</code> be an index describing such claims inflation.</li>
+<li>Inflation may continue beyond the point of occurrence of a claim, up to the point of payment.
+<ul>
+<li>This can have a very long duration (e.g. income in workers compensation)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>We define:
+<code>$$C^* = \sum_{j=3,4,5,8} C(t_j)$$</code>
+as the sum of payments <code>\(C(t_j)\)</code> all expressed in dollars as of <code>\(t_1\)</code> (date of occurrence), and
+<code>$$C = \sum_{j=3,4,5,8} C(t_j) \frac{\lambda(t_j)}{\lambda(t_1)},$$</code>
+as the sum of the nominal (actual) amounts paid.</p>
+<p>(Note that superimposed inflation - Section 1.1.4 - is not in scope this year)</p>
+<h1 id="estimates-of-outstanding-loss-liability">
+  Estimates of outstanding loss liability
+  <a class="anchor" href="#estimates-of-outstanding-loss-liability">#</a>
+</h1>
+<h2 id="general">
+  General
+  <a class="anchor" href="#general">#</a>
+</h2>
+<p>Now assume that an evalutaion of liability is required at time <code>\(t\)</code>:</p>
+<p><img src="../../../../../../../../../../../img/module-2/Figure_1_2.png" width="100%" style="display: block; margin: auto;" /></p>
+<hr>
+<p>Note</p>
+<ul>
+<li>if <code>\(t\ge t_1\)</code>: the liability exists, and ideally the claim should be considered in some shape or form.</li>
+<li>if <code>\(t_1 \ge t \ge t_2\)</code>: claim is unknown, but the insurer knows that there are unknowns. It will try to estimate those as “IBNR” (see also next module).</li>
+<li>if <code>\(t\ge t_2\)</code>: claim will be known, and the insurer will try to estimate its cost (case reserve).</li>
+<li>between <code>\(t_6\)</code> and <code>\(t_7\)</code>, as well as after <code>\(t_9\)</code>, the insurer’s estimate will be zero (because the claim is deemed closed).</li>
+</ul>
+<h3 id="time-dimensions-of-periods">
+  Time dimensions of “periods”
+  <a class="anchor" href="#time-dimensions-of-periods">#</a>
+</h3>
+<p>Let:</p>
+<ul>
+<li>a <code>\(period\)</code> be some appropriate measure of time length, such as a month, quarter or year.</li>
+</ul>
+<p>Now when referring to a specific claim payment, it can be classified according to:</p>
+<ul>
+<li><code>\(i\)</code> being the <strong>period of origin</strong> where <code>\(i=0,\ldots, I\)</code>
+<ul>
+<li>this is the period when the claim occurred (in most cases) or reported (in the rare case of “claims-made” policies)</li>
+</ul>
+</li>
+<li><code>\(j\)</code> being the <strong>development period</strong> where <code>\(j=0,\ldots\)</code>
+<ul>
+<li>this is difference in period index between occurrence and payment (0 if the payment happens in the same period as occurrence)</li>
+</ul>
+</li>
+<li><code>\(k=i+j\)</code> being the <strong>calendar period</strong> where <code>\(k=0,\ldots\)</code>
+<ul>
+<li><code>\(k=0\)</code> is the earliest period with data</li>
+<li>also called <strong>experience period</strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>This illustrates those concepts:</p>
+<p><img src="../../../../../../../../../../../img/module-2/Figure_1_3.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Relation between periods of origin, development and experience.</p>
+<h3 id="further-notation">
+  Further notation
+  <a class="anchor" href="#further-notation">#</a>
+</h3>
+<ul>
+<li><code>\(C(i,j)\)</code>: paid losses in the <code>\((i,j)\)</code> cell</li>
+<li>Outstanding loss liability at the end of <code>\(j\)</code> (or <code>\(k\)</code>) for <code>\(i\)</code>:
+$$  P(i,j)\equiv \overline{P}(i,k) \equiv \sum_{m=j+1}^\infty C(i,m)$$
+(note you can replace <code>\(j\)</code> with <code>\(k-i\)</code> in the lower bound)</li>
+<li>Total outstanding loss liability at the end of <code>\(k\)</code> - for all periods of origin:
+$$ \overline{P}(k) = \sum_{i=0}^I \overline{P}(i,k) = \sum_{i=0}^I \sum_{m=k-i+1}^\infty C(i,m).$$</li>
+<li>Both <code>\(\overline{P}(i,k)\)</code> and <code>\(\overline{P}(k)\)</code> are aggregate amounts (not claims based).</li>
+<li>While the textbook says that most actuarial estimates are aggregate, <strong>individual claims reserving</strong> has gathered a lot of momentum<br>
+since then, thanks to data availability, computing power<br>
+and machine learning capabilities.</li>
+</ul>
+<h2 id="components-of-outstanding-loss-liability">
+  Components of outstanding loss liability
+  <a class="anchor" href="#components-of-outstanding-loss-liability">#</a>
+</h2>
+<h3 id="cash-flows">
+  Cash flows
+  <a class="anchor" href="#cash-flows">#</a>
+</h3>
+<p><img src="../../../../../../../../../../../img/module-2/Figure_1_4.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>The equation above is about “<em>completing the rectangle</em>”,<br>
+as illustrated above.</p>
+<h3 id="claims-inflation">
+  Claims inflation
+  <a class="anchor" href="#claims-inflation">#</a>
+</h3>
+<p>Usually, the reserving technique will yield estimates of <code>\(C^*\)</code>, that is, as of dollars of some base date (usually current date), so that
+<code>$$C(i,j) = C^*(i,j)\frac{\lambda(k)}{\lambda_0},$$</code>
+where</p>
+<ul>
+<li><code>\(\lambda(k)\)</code> is the relevant claims inflation index;</li>
+<li><code>\(\lambda_0\)</code> is the value of that index on the base date.</li>
+</ul>
+<p>(again, superimposed inflation is out of scope, but can conceptually be seen as adjusting <code>\(\lambda\)</code> appropriately)</p>
+<h3 id="loss-adjustment-expenses">
+  Loss adjustment expenses
+  <a class="anchor" href="#loss-adjustment-expenses">#</a>
+</h3>
+<p>We consider:</p>
+<ul>
+<li><strong>allocated</strong> loss adjustment expenses (ALAE)
+<ul>
+<li>These can be linked to specific claims.</li>
+<li>These are typically included in the <code>\(C(i,j)\)</code> and don’t require extra treatment.</li>
+</ul>
+</li>
+<li><strong>unallocated</strong> loss adjustment expenses (ULAE)
+<ul>
+<li>These cannot be easily linked to specific claims (think overhead costs, for instance).</li>
+<li>These are typically not in the <code>\(C(i,j)\)</code> and will require specific consideration if they are to be included.</li>
+<li>Denote
+$$ e(i,j)$$
+as the <em>proportion</em> of paid losses to be added to costs for ULAE.</li>
+</ul>
+</li>
+</ul>
+<h3 id="investment-income">
+  Investment income
+  <a class="anchor" href="#investment-income">#</a>
+</h3>
+<ul>
+<li>Liabilities will have assets covering them on the balance sheet.</li>
+<li>These may be invested, and it may be required to consider corresponding investment returns.</li>
+<li>That is, if the $10 you have to pay in 5 years can be covered with $9 today (even after allowing for inflation), then you may be required/allowed to reserve $9 instead of $10.</li>
+<li>Let <code>\(d(k)\)</code>, <code>\(k=I+1, I+2, \ldots\)</code>, be the discount factor to be applied for payments made in experience period <code>\(k\)</code> (in the example above, we would have <code>\(d(I+5)=9/10\)</code>) .</li>
+<li>Note that <code>\(\lambda \neq d\)</code>: there is no reason why claims inflation should evolve in the same identical way to your investments.</li>
+</ul>
+<hr>
+<p>In the end, we have:</p>
+<p><code>\begin{eqnarray*} \overline{P}(k) &amp;=&amp; \sum_{i=0}^I \sum_{m=k-i+1}^\infty C(i,m) \left[1+e(i,m)\right]d(i+m) \\ &amp;=&amp; \sum_{i=0}^I \sum_{m=k-i+1}^\infty C^*(i,m) \frac{\lambda(i+m)}{\lambda_0}\left[1+e(i,m)\right]d(i+m). \end{eqnarray*}</code></p>
+<h3 id="recoveries">
+  Recoveries
+  <a class="anchor" href="#recoveries">#</a>
+</h3>
+<p>Possible recoveries (offsetting claims):</p>
+<ul>
+<li>reinsurer payments;</li>
+<li>third parties at fault;</li>
+<li>salvage value (for property insurance).</li>
+</ul>
+<p>Generally speaking, insurers have a 
+  <a href="https://www.investopedia.com/terms/s/subrogation.asp"><code>subrogation right</code></a>, which allows them to seek compensation on behalf of the insured if they believe it is worth the effort.</p>
+<p>This can be considered as negative <code>\(C(i,j)\)</code>, or may require another triangle altogether. Specific treatment is outside scope here.</p>
+<h1 id="loss-reserving">
+  Loss reserving
+  <a class="anchor" href="#loss-reserving">#</a>
+</h1>
+<h2 id="general-1">
+  General
+  <a class="anchor" href="#general-1">#</a>
+</h2>
+<ul>
+<li>So far, we have defined the “oustanding loss liability” as a random variable - this is the actual amount that will have to be paid.</li>
+<li>In general this is unknown, and now the question is how to estimate this, and how much to set aside for covering those liabilities.</li>
+<li>It makes sense that you would reserve its expectation plus some margin, so that we define:
+<ul>
+<li><strong>Expected outstanding loss liability</strong>: this is the expectation, also called <strong>central estimate</strong>;</li>
+<li><strong>Prudential margin</strong> or <strong>risk margin</strong>: this is the margin you add to the central estimate to allow for estimation error, and “worse than average” cases.</li>
+</ul>
+</li>
+<li>In the end we have:
+<code>$$\text{loss reserve }= \text{ central estimate }+ \text{ risk margin}.$$</code></li>
+</ul>
+<h2 id="in-australia">
+  In Australia
+  <a class="anchor" href="#in-australia">#</a>
+</h2>
+<h3 id="legislative-framework">
+  Legislative framework
+  <a class="anchor" href="#legislative-framework">#</a>
+</h3>
+<p>The Standard governing actuarial valuations of insurance liabilities is found at 
+  <a href="https://www.legislation.gov.au/Details/F2023L00699/Html/Text#_Toc110005238"><code>www.legislation.gov.au</code></a></p>
+<ul>
+<li>Section 8 states that “An insurer must determine a value for both its outstanding claims liabilities and its premiums liabilities for each class of business underwritten by the insurer.”</li>
+<li>Sections 9 defines “outstanding claims liabilities” as relating “to all claims incurred prior to the valuation date, whether or not they have been reported to the insurer”.</li>
+<li>Section 10 defines “premium liability” as relating “to all future claim payments arising from future events post the valuation date that will be insured under the insurer’s existing policies that have not yet expired”.</li>
+</ul>
+<h3 id="outstanding-claims-liability-in-australia">
+  Outstanding claims liability in Australia
+  <a class="anchor" href="#outstanding-claims-liability-in-australia">#</a>
+</h3>
+<p>APRA’s 
+  <a href="https://www.apra.gov.au/sites/default/files/reporting_standard_grs_210.0_g_outstanding_claims_liability_insurance_risk_charge_0.pdf"><code>GRS 210 (where &quot;RS&quot; stands for &quot;Reporting standards&quot;)</code></a> says:</p>
+<p><em>The valuation of outstanding claims liabilities for each class of business must comprise:</em></p>
+<ol>
+<li><em>a central estimate (refer below); and</em></li>
+<li><em>a risk margin (refer below) that relates to the inherent uncertainty in the central estimate values.</em></li>
+</ol>
+<hr>
+<p>Furthermore, it continues on by clarifying:</p>
+<p><em>The valuation of insurance liabilities (i.e. outstanding claims liabilities and premiums liabilities) reflects the individual circumstances of the Level 2 insurance group. In any event, the value of insurance liabilities must be the greater of a value that is:</em></p>
+<ol>
+<li><em>determined on a basis that is intended to value the insurance liabilities of the Level 2 insurance group at a 75 percent level of sufficiency; and</em></li>
+<li><em>the central estimate plus one half of a standard deviation above the mean for the insurance liabilities of the Level 2 insurance group.</em></li>
+</ol>
+<p>There’s a lot more information in the document.</p>
+<h3 id="solvency-capital-requirements-in-australia">
+  Solvency capital requirements in Australia
+  <a class="anchor" href="#solvency-capital-requirements-in-australia">#</a>
+</h3>
+<ul>
+<li>Additionally, solvency requirements (look for “GPS”, where “PS” stands for “Prudential Standards”) require insurers to hold capital corresponding (typically) to a 99.5-ile at the company’s level (including diversification benefits), which requires knowledge of the distribution of future payments quite far in the tail, and how they interact across lines of business.</li>
+<li>This is similar in Europe with Solvency II.</li>
+<li>Of course, it is a little more complicated than that, but the main point is that you might need to work out the distribution of payments quite far in the tail.</li>
+</ul>
+<h1 id="data">
+  Data
+  <a class="anchor" href="#data">#</a>
+</h1>
+<h2 id="nature">
+  Nature
+  <a class="anchor" href="#nature">#</a>
+</h2>
+<p>Generally, available data includes at least:</p>
+<ul>
+<li>claim counts (open / closed);</li>
+<li>claim payments;</li>
+<li>case estimates.</li>
+</ul>
+<p>Nowadays, one also typically has:</p>
+<ul>
+<li>details of payment dates for each claim;</li>
+<li>details of case reserve amounts and associate revision dates for each claim;</li>
+<li>additional data such as policy data, claims qualitative data (description of the event), etc…</li>
+</ul>
+<p>These can be (are nowadays increasingly) used for improving reserving, but this is outside scope of this subject.</p>
+<h2 id="aggregate-data">
+  Aggregate data
+  <a class="anchor" href="#aggregate-data">#</a>
+</h2>
+<h3 id="incremental-data">
+  Incremental data
+  <a class="anchor" href="#incremental-data">#</a>
+</h3>
+<p>In the case of aggregate data, each cell <code>\((i,j)\)</code> will have data of four types:</p>
+<ul>
+<li><code>\(N(i,j)\)</code> are the counts of claims notified;</li>
+<li><code>\(C(i,j)\)</code> are paid losses;</li>
+<li><code>\(U(i,j)\)</code> are the counts of claims open ;</li>
+<li><code>\(Q(i,j)\)</code> are the case estimates of outstanding liability.</li>
+</ul>
+<p>Because those numbers refer to cell <code>\((i,j)\)</code> <em>only</em>, we often refer to the as <strong>incremental data</strong>.</p>
+<h3 id="cumulative-data">
+  Cumulative data
+  <a class="anchor" href="#cumulative-data">#</a>
+</h3>
+<p>It is sometimes convenient to express data in cumulative terms.</p>
+<p>We define:
+<code>$$A(i,j) = \sum_{m=0}^j N(i,m)$$</code>
+as cumulative counts data, with
+<code>$$N(i) = A(i,\infty)$$</code>
+being the <em>ultimate</em> count of incurred claims.</p>
+<hr>
+<p>Payment data can be similarly accumulated:
+<code>$$D(i,j) = \sum_{m=0}^j C(i,m)$$</code>
+such that
+<code>$$I(i,j) = D(i,j) + Q(i,j)$$</code>
+are the estimated amounts of incurred losses (note that even if this is indexed <code>\((i,j)\)</code> it is of <em>cumulative</em> nature).</p>
+<h1 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h1>
+<p><em>Main reference:</em></p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Tay00" class="csl-entry">
+<p>Taylor, Greg. 2000. <em>Loss Reserving: An Actuarial Perspective</em>. Huebner International Series on Risk, Insurance and Economic Security. Kluwer Academic Publishers.</p>
+</div>
+</div>
+</article>
+ 
+      <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/e2beda13bf512af5904cdeb728a05aa71fe9e7fe" title='Last modified by William Ho | 2 July 2024' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>2 July 2024</span>
+    </a>
+  </div>
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        <script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction---claims-liabilities">Introduction - Claims liabilities</a>
+      <ul>
+        <li><a href="#definition">Definition</a></li>
+        <li><a href="#the-case-of-iag">The case of IAG</a></li>
+      </ul>
+    </li>
+    <li><a href="#the-claims-process">The claims process</a>
+      <ul>
+        <li><a href="#main-reference">Main reference</a></li>
+        <li><a href="#time-line-of-a-claim-and-ibnr">Time line of a claim and IBNR</a></li>
+        <li><a href="#inflation">Inflation</a></li>
+      </ul>
+    </li>
+    <li><a href="#estimates-of-outstanding-loss-liability">Estimates of outstanding loss liability</a>
+      <ul>
+        <li><a href="#general">General</a>
+          <ul>
+            <li><a href="#time-dimensions-of-periods">Time dimensions of “periods”</a></li>
+            <li><a href="#further-notation">Further notation</a></li>
+          </ul>
+        </li>
+        <li><a href="#components-of-outstanding-loss-liability">Components of outstanding loss liability</a>
+          <ul>
+            <li><a href="#cash-flows">Cash flows</a></li>
+            <li><a href="#claims-inflation">Claims inflation</a></li>
+            <li><a href="#loss-adjustment-expenses">Loss adjustment expenses</a></li>
+            <li><a href="#investment-income">Investment income</a></li>
+            <li><a href="#recoveries">Recoveries</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#loss-reserving">Loss reserving</a>
+      <ul>
+        <li><a href="#general-1">General</a></li>
+        <li><a href="#in-australia">In Australia</a>
+          <ul>
+            <li><a href="#legislative-framework">Legislative framework</a></li>
+            <li><a href="#outstanding-claims-liability-in-australia">Outstanding claims liability in Australia</a></li>
+            <li><a href="#solvency-capital-requirements-in-australia">Solvency capital requirements in Australia</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#data">Data</a>
+      <ul>
+        <li><a href="#nature">Nature</a></li>
+        <li><a href="#aggregate-data">Aggregate data</a>
+          <ul>
+            <li><a href="#incremental-data">Incremental data</a></li>
+            <li><a href="#cumulative-data">Cumulative data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,7 +8,7 @@ categories: []
 tags: []
 ---
 
-**<p style="font-size:18px;">Risk and Insurance</p>**
+**<p style="font-size:18px;">Risk and Insurance</p>** 
 
 This section covers contents in the <span style="color: green;"> **Section 1.2 in the CM2 syllabus** </span>; see also the [learning outcomes mappings in the Subject Guide](../0-subject-guide/SILO).
 

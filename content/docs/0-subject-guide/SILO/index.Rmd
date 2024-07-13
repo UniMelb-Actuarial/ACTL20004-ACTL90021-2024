@@ -38,4 +38,4 @@ This subject is one of three subjects covering the contents of the [CM2 “Finan
 
 In particular, ACTL20004/90021 is meant to cover Items 1.2, 3 and 5 of the CM2 syllabus. This is detailed in the following table, with mapping towards the course modules (and major reference in parentheses; see “Subject Resources” below), as well as subject intended learning outcomes (SLO).
 
-A detailed mapping is available in the subject guides - [UG](https://canvas.lms.unimelb.edu.au/courses/153686/modules/items/4920777),[PG](https://canvas.lms.unimelb.edu.au/courses/154246/modules/items/4920784)
+A detailed mapping is available in the subject guides - [UG](https://canvas.lms.unimelb.edu.au/courses/183926/modules/items/5934974),[PG](https://canvas.lms.unimelb.edu.au/courses/181779/modules/items/5934975)

@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Utility theory (CM2 Section 1) on Topics in Actuarial, Insurance and Finance</title>
+    <title>Utility theory (CM2 1.2) on Topics in Actuarial, Insurance and Finance</title>
     <link>https://topics-actl.netlify.app/docs/1-utility/</link>
-    <description>Recent content in Utility theory (CM2 Section 1) on Topics in Actuarial, Insurance and Finance</description>
+    <description>Recent content in Utility theory (CM2 1.2) on Topics in Actuarial, Insurance and Finance</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://topics-actl.netlify.app/docs/1-utility/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M1 Utility, Risk and Insurance</title>
+      <link>https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://topics-actl.netlify.app/docs/1-utility/m1-risk-insurance/</guid>
+      <description>Introduction #  Decision making under risk and uncertainty #  Context #   In an Enterprise Risk Management context (ERM), “risk” is defined as the “effect of uncertainty on objectives” So essential ingredients here are:  having an objective (e.g. maximise profit under some solvency constraint) having to make a decision (e.g. decide on how much to (re)insure) the object is subject to uncertainty (e.g. the amount of losses an insurer will have to pay)    Understand decisions #   In economics (and social science in general), one can be interested in understanding / modelling how and why individuals make decisions.</description>
+    </item>
+    
   </channel>
 </rss>

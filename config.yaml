@@ -29,16 +29,16 @@ menu:
       url: 
       weight: 13
     - name: Ed discussion forum
-      url: https://canvas.lms.unimelb.edu.au/courses/191080/external_tools/5837?display=borderless
+      url: https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless
       weight: 15
     - name: ACTL20004 Canvas
-      url: https://canvas.lms.unimelb.edu.au/courses/153686
+      url: https://canvas.lms.unimelb.edu.au/courses/183926
       weight: 16
     - name: ACTL90021 Canvas
-      url: https://canvas.lms.unimelb.edu.au/courses/154246
+      url: https://canvas.lms.unimelb.edu.au/courses/181779
       weight: 17
     - name: Community Canvas
-      url: https://canvas.lms.unimelb.edu.au/courses/191080
+      url: https://canvas.lms.unimelb.edu.au/courses/220261  
       weight: 18
     - name: _______Exercises__________
       url: 
@@ -65,7 +65,7 @@ menu:
       url: https://communicate-data-with-r.netlify.app/
       weight: 45
     - name: Actuaries Institute info
-      url: https://actuaries.asn.au/becoming-an-actuary/becoming-a-university-subscriber
+      url: https://actuaries.asn.au/becoming-an-actuary/how-to-become-an-actuary/for-uni-students/become-a-uni-subscriber/
       weight: 50
 params:
   # BookMenuBundle: /menu

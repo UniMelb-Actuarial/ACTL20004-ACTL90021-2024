@@ -1,6 +1,6 @@
 ---
-bookHidden: false
-bookSearchExclude: false
+bookHidden: true
+bookSearchExclude: true
 title: "Week 2 Study Plan"
 weight: 2
 bibliography: ../../../../static/libraries.bib
@@ -49,14 +49,14 @@ Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https
 
 ## Mandatory
 
-1.  Chapter 7.1-7.3 and 8.1-8.3 of Joshi (2013) (for Module 1)
+1.  Chapter 7.1-7.3 and 8.1-8.3 of (**Jos13?**) (for Module 1)
 2.  Chapter 1 of Taylor (2000) (for Module 2)
 
 ## Optional
 
-1.  Unit 2 of IoA (2023)
-2.  Chapter 2 of *Insurance Risk and Ruin* (2016)
-3.  Unit 5 of IoA (2023)
+1.  Unit 2 of (**IoA23?**)
+2.  Chapter 2 of (**Dic16?**)
+3.  Unit 5 of (**IoA23?**)
 
 # Tutorials
 
@@ -107,25 +107,7 @@ We will move on to Module 3 (and perhaps 4).
 
 # References
 
-<div id="refs" class="references csl-bib-body hanging-indent">
-
-<div id="ref-Dic16" class="csl-entry">
-
-*Insurance Risk and Ruin*. 2016. 2nd ed. Cambridge University Press.
-
-</div>
-
-<div id="ref-IoA23" class="csl-entry">
-
-IoA. 2023. *Course Notes and Core Reading for Subject CM2 Models*. The Institute of Actuaries.
-
-</div>
-
-<div id="ref-Jos13" class="csl-entry">
-
-Joshi, Mark Suresh. 2013. *Introduction to Mathematical Portfolio Theory*. Cambridge University Press.
-
-</div>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 
 <div id="ref-Tay00" class="csl-entry">
 

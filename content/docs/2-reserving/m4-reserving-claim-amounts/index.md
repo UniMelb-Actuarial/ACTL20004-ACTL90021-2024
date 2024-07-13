@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '27 August 2023'
+date: '04 July 2024'
 output:
   beamer_presentation:
     toc: true
@@ -61,7 +61,7 @@ classoption: t,handout
 
 ## Two approaches
 
-You can think of the evolution of a claim costs as two parallel paths; consider those two examples (Figure 2 of Avanzi, Taylor, and Wang (2023)):
+You can think of the evolution of a claim costs as two parallel paths; consider those two examples (Figure 2 of (**AvTaWa23?**)):
 
 <img src="claim_history.png" width="100%" style="display: block; margin: auto;" />
 
@@ -221,7 +221,7 @@ Note:
   - The leverage on immature years is illustrated with the age-to-ultimate factors in gray in tab “Table 3.1”. Using all-year averages would reduce liability by 34-39% for the three most immature years.
   - A natural question would then be: are those changes permanent?
 
-# Separation method (3.3)
+# Separation method (3.3) `\(\maltese\)`
 
 ## Main rationale
 
@@ -357,13 +357,7 @@ A comparison and recap of all methods seen in this module is provided at the bot
 
 # References
 
-<div id="refs" class="references csl-bib-body hanging-indent">
-
-<div id="ref-AvTaWa23" class="csl-entry">
-
-Avanzi, Benjamin, Greg Taylor, and Melantha Wang. 2023. “SPLICE: A Synthetic Paid Loss and Incurred Cost Experience Simulator.” *Annals of Actuarial Science* 17 (1): 7–35.
-
-</div>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 
 <div id="ref-Tay00" class="csl-entry">
 
