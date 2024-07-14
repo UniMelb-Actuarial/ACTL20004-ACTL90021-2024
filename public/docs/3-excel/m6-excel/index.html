@@ -9,14 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://topics-actl.netlify.app/docs/3-excel/m6-excel/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2024-07-10T18:08:08+10:00" />
+<meta property="article:modified_time" content="2024-07-11T00:37:20+10:00" />
 
 <title>M6 Excel Topics | Topics in Actuarial, Insurance and Finance</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a08e958a0c32c71fa52257f56602fc9e6f4a8586733f7d90b6b544b160364dce.css" integrity="sha256-oI6Vigwyxx&#43;lIlf1ZgL8nm9KhYZzP32QtrVEsWA2Tc4=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.99252dcf6d014c8b638b93b9eae4e315ef0248adbbb7a43af0d57ba071cdddb2.js" integrity="sha256-mSUtz20BTItji5O56uTjFe8CSK27t6Q68NV7oHHN3bI=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.ec532b3c3b8f28eee7258bcf720c0a1c28796c77cf9b4097f987669d53c9fe01.js" integrity="sha256-7FMrPDuPKO7nJYvPcgwKHCh5bHfPm0CX&#43;YdmnVPJ/gE=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -185,71 +185,6 @@ MathJax = {
 
   
     <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-1/" class="">Week 1 Study Plan</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-2/" class="">Week 2 Study Plan</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-3/" class="">Week 3 Study Plan</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-4/" class="">Week 4 Study Plan</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-5/" class="">Week 5 Study Plan</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://topics-actl.netlify.app/docs/0-study-plan/week-6/" class="">Week 6 Study Plan</a>
   
 
         </li>
@@ -626,12 +561,16 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
     </li>
     <li><a href="#dynamic-references">Dynamic references</a>
       <ul>
-        <li><a href="#offset"><code>OFFSET()</code></a></li>
-        <li><a href="#indirect"><code>INDIRECT()</code></a></li>
-        <li><a href="#address"><code>ADDRESS()</code></a></li>
+        <li><a href="#some-functions-for-dynamic-referencing">Some functions for dynamic referencing</a>
+          <ul>
+            <li><a href="#offset"><code>OFFSET()</code></a></li>
+            <li><a href="#indirect"><code>INDIRECT()</code></a></li>
+            <li><a href="#address"><code>ADDRESS()</code></a></li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#general-etiquette-and-tools-and-tools-for-auditing">General etiquette and tools, and tools for auditing</a>
+    <li><a href="#general-etiquette-auditing-and-tools">General etiquette, auditing, and tools</a>
       <ul>
         <li><a href="#etiquette">Etiquette</a></li>
         <li><a href="#principles">Principles</a></li>
@@ -643,7 +582,31 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
         </li>
       </ul>
     </li>
-    <li><a href="#simulation-macros-and-vba">Simulation, Macros and VBA</a></li>
+    <li><a href="#simulation-macros-and-vba">Simulation, Macros and VBA</a>
+      <ul>
+        <li><a href="#simulation">Simulation</a>
+          <ul>
+            <li><a href="#why-simulation">Why simulation?</a></li>
+            <li><a href="#generating-random-numbers-1">Generating random numbers 1</a></li>
+            <li><a href="#generating-random-numbers-2">Generating random numbers 2</a></li>
+            <li><a href="#discrete-random-variables">Discrete random variables</a></li>
+          </ul>
+        </li>
+        <li><a href="#macros">Macros</a>
+          <ul>
+            <li><a href="#what-is-a-macro">What is a macro?</a></li>
+            <li><a href="#recording-a-macro">Recording a macro</a></li>
+            <li><a href="#running-a-macro">Running a macro</a></li>
+            <li><a href="#editing-your-macros">Editing your macros</a></li>
+          </ul>
+        </li>
+        <li><a href="#vba">VBA</a>
+          <ul>
+            <li><a href="#what-is-vba">What is VBA?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
     <li><a href="#next-steps">Next steps</a></li>
     <li><a href="#references">References</a></li>
   </ul>
@@ -707,7 +670,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <li>Formula Auditing: Chapter 9, p. 436-439</li>
 <li>Paste special (incl, e.g. <code>Transpose</code>): Chapter 11, pages 518-530</li>
 </ul>
-<p>Page references are for (<strong>EE19?</strong>), see 
+<p>Page references are for Slager and Slager (2020), see 
   <a href="https://link.springer.com/book/10.1007/978-1-4842-6209-2"><code>link here</code></a>.</p>
 <p>Also, see tab <code>Assumed Knowledge</code> in the 
   <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a>.</p>
@@ -759,7 +722,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <li>Merging and splitting columns with functions like <code>LEFT()</code>, <code>RIGHT()</code> and <code>MID()</code> and <code>SEARCH()</code>. Wildcard characters <code>?</code> and <code>*</code> are also useful.</li>
 </ul>
 </li>
-<li>Removing duplicate rows: <code>Data &gt; Data Tools &gt; Remove Duplicates</code>.</li>
+<li>Removing duplicate rows: <code>Data → Data Tools → Remove Duplicates</code>.</li>
 <li>Converting table into “machine-readable” formats.
 <ul>
 <li>An example in 
@@ -785,7 +748,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 </ul>
 </li>
 <li>Note there are recommended Pivot Tables (automated recommendation within Excel); in the case of FIFA WWC it is not very helpful.</li>
-<li>Reference: Chapter 15 of (<strong>EE19?</strong>).</li>
+<li>Reference: Chapter 15 of Slager and Slager (2020).</li>
 </ul>
 <h2 id="pivot-charts">
   Pivot charts
@@ -802,7 +765,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <li>I also included a “slicer” (click on chart / insert slicer), in order to easily filter by squad.</li>
 </ul>
 </li>
-<li>Reference: Chapter 15 of (<strong>EE19?</strong>).</li>
+<li>Reference: Chapter 15 of Slager and Slager (2020).</li>
 </ul>
 <h1 id="dynamic-arrays">
   Dynamic Arrays
@@ -817,7 +780,7 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 <li>Excel can do similar things, and the vectors are called arrays. This is new (post Office 365), and is a bit of a game changer.</li>
 <li>Before Office 365, Excel was incapable of depositing results beyond just 1 cell. This is called “spilling”.</li>
 <li>Note Excell will need the required space to spill.</li>
-<li>Main reference is (<strong>AE23?</strong>) - we’ll only introduce this here.</li>
+<li>Main reference is Katz (2023) - we’ll only introduce this here.</li>
 </ul>
 <h3 id="example">
   Example
@@ -933,20 +896,12 @@ spreadsheets.</li>
   <a class="anchor" href="#match-xmatch">#</a>
 </h3>
 <ul>
-<li>
-<p>Both functions work similarly by finding the index of your lookup value within the lookup array.</p>
-</li>
-<li>
-<p><code>XMATCH()</code> is more robust by providing new match mode and search mode.</p>
-</li>
-<li>
-<p>By combining with <code>INDEX()</code>, it returns the value instead of the index inside the lookup array.</p>
-</li>
-<li>
-<p>Check the <code>lookup</code> tab in 
-  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a> for comparisons between these lookup functions.</p>
-</li>
+<li>Both functions work similarly by finding the index of your lookup value within the lookup array.</li>
+<li><code>XMATCH()</code> is more robust by providing new match mode and search mode.</li>
+<li>By combining with <code>INDEX()</code>, it returns the value instead of the index inside the lookup array.</li>
 </ul>
+<p>Check 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a> for comparisons between these lookup functions.</p>
 <p>Reference: Murray, 2022 (Chapter 7, 11)</p>
 <h1 id="dynamic-references">
   Dynamic references
@@ -958,30 +913,31 @@ spreadsheets.</li>
 <li>This is tedious to do manually if we have a large dataset!</li>
 <li>Dynamic Referencing will be useful here.</li>
 </ul>
-<h2 id="offset">
+<h2 id="some-functions-for-dynamic-referencing">
+  Some functions for dynamic referencing
+  <a class="anchor" href="#some-functions-for-dynamic-referencing">#</a>
+</h2>
+<h3 id="offset">
   <code>OFFSET()</code>
   <a class="anchor" href="#offset">#</a>
-</h2>
+</h3>
 <ul>
 <li>Allows you to move your initial references to any direction by any number of cells.</li>
 <li>You can select the height and width of the returned range.</li>
 </ul>
-<h2 id="indirect">
+<h3 id="indirect">
   <code>INDIRECT()</code>
   <a class="anchor" href="#indirect">#</a>
-</h2>
+</h3>
 <ul>
 <li>
 <p>Goes to the address specified by the reference text you entered.</p>
 <ul>
-<li>e.g. <code>INDIRECT(B2)</code> goes to the cell <code>A2</code> if cell <code>B2</code> contains the text <code>A2</code>.</li>
+<li>e.g. <code>INDIRECT(B2)</code> goes to the cell <code>A2</code> if cell <code>B2</code> contains the text <code>&quot;A2&quot;</code>.</li>
 </ul>
 </li>
 <li>
 <p>Your reference text can be a table, a named range, etc.</p>
-</li>
-<li>
-<p>Combining with <code>ADDRESS()</code> allows you to reference dynamically.</p>
 </li>
 <li>
 <p>Both <code>OFFSET()</code> and <code>INDIRECT()</code> are volatile functions.</p>
@@ -991,20 +947,21 @@ spreadsheets.</li>
 </ul>
 </li>
 </ul>
-<h2 id="address">
+<h3 id="address">
   <code>ADDRESS()</code>
   <a class="anchor" href="#address">#</a>
-</h2>
+</h3>
 <ul>
 <li>Gives you the address of your specified columns and rows.</li>
-<li>This allows you to obtain dynamic addresses by dynamically changing your specified rows and columns.</li>
+<li>This allows you to obtain dynamic addresses by changing your specified columns and rows based on some index columns/rows.</li>
+<li>By combining with <code>INDIRECT()</code>, you can retrieve the data contained in your dynamic range.</li>
 </ul>
 <p>See <code>reference</code> tab in 
   <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a> for demonstrations.</p>
 <p>Reference: Murray, 2022 (Chapter 11)</p>
-<h1 id="general-etiquette-and-tools-and-tools-for-auditing">
-  General etiquette and tools, and tools for auditing
-  <a class="anchor" href="#general-etiquette-and-tools-and-tools-for-auditing">#</a>
+<h1 id="general-etiquette-auditing-and-tools">
+  General etiquette, auditing, and tools
+  <a class="anchor" href="#general-etiquette-auditing-and-tools">#</a>
 </h1>
 <h2 id="etiquette">
   Etiquette
@@ -1082,20 +1039,176 @@ spreadsheets.</li>
 </ul>
 </li>
 <li>If you want a formula to be shown all the time start with an apostrophe <code>'</code>, and the formula will show as text.</li>
-<li>Note also the <code>FORMULATEXT()</code> formula which is a dynamic array formula requiring spilling (see later section “Dynamic Arrays”!).</li>
 </ul>
 <p>(Formula Auditing: Chapter 9, p. 436-439)</p>
 <h1 id="simulation-macros-and-vba">
   Simulation, Macros and VBA
   <a class="anchor" href="#simulation-macros-and-vba">#</a>
 </h1>
+<h2 id="simulation">
+  Simulation
+  <a class="anchor" href="#simulation">#</a>
+</h2>
+<h3 id="why-simulation">
+  Why simulation?
+  <a class="anchor" href="#why-simulation">#</a>
+</h3>
+<ul>
+<li>Suppose we have some model with given inputs.</li>
+<li>Inputs can be uncertain.
+<ul>
+<li>Weather, arrival speed of claims, interest rates,…</li>
+</ul>
+</li>
+<li>We want to derive the distributions of our output.
+<ul>
+<li>We want to know the statistical properties (e.g. mean, SD) of our output.</li>
+<li>Sometimes it can be complicated to derive the distribution of the output explicitly.</li>
+</ul>
+</li>
+<li>By simulating the uncertain inputs, we can generate random observations from our model.
+<ul>
+<li>These generations will result in an empirical distribution of the output.</li>
+<li>We can then use this distribution to estimate moments, quantiles, ranges, and probabilities.</li>
+</ul>
+</li>
+<li>Simulation is widely used in the work by actuaries.</li>
+</ul>
+<h3 id="generating-random-numbers-1">
+  Generating random numbers 1
+  <a class="anchor" href="#generating-random-numbers-1">#</a>
+</h3>
+<ul>
+<li><code>RAND()</code> generates random numbers from a uniform distribution on (0,1).</li>
+<li><code>RANDARRAY()</code> can generate an array of random numbers with specified dimension.
+<ul>
+<li>You can specify the range of numbers.</li>
+<li>You can also specify whether the generations are discrete or continuous.</li>
+</ul>
+</li>
+<li>Excel recalculate these functions whenever there are changes in any cells.</li>
+<li>What if we want to generate numbers that are not uniformly distributed?</li>
+</ul>
+<h3 id="generating-random-numbers-2">
+  Generating random numbers 2
+  <a class="anchor" href="#generating-random-numbers-2">#</a>
+</h3>
+<ul>
+<li>Inverse functions can be useful to generate numbers under different distributions.
+<ul>
+<li>Use <code>NORM.S.INV(RAND())</code> to generate numbers with standard normal distribution.</li>
+<li>In general, to generate random numbers with specified distributions, we can apply their inverse functions to <code>RAND()</code>.</li>
+</ul>
+</li>
+<li>Some inverse functions available in Excel:
+<ul>
+<li><code>BETA.INV()</code> for Beta distribution</li>
+<li><code>LOGNORM.INV()</code> for lognormal distribution</li>
+</ul>
+</li>
+<li>To see more inverse/probability functions in Excel, go to Formulas → More
+Functions → Statistical.</li>
+</ul>
+<h3 id="discrete-random-variables">
+  Discrete random variables
+  <a class="anchor" href="#discrete-random-variables">#</a>
+</h3>
+<ul>
+<li>We can also simulate outcomes from discrete distributions.</li>
+<li>Suppose we have a random variable with three outcomes: <code>\(A\)</code> with <code>\(p=0.5\)</code>, <code>\(B\)</code> with <code>\(p=0.3\)</code>, and <code>\(C\)</code> with <code>\(p=0.2\)</code>.</li>
+<li>First, generate a random number <code>\(x\)</code> with <code>RAND()</code>.
+<ul>
+<li>If <code>\(x\leq 0.5\)</code>, the outcome is <code>\(A\)</code>.</li>
+<li>If <code>\(0.5 &lt; x \leq (0.5+0.3)=0.8\)</code>, the outcome is <code>\(B\)</code></li>
+<li>Otherwise, the outcome is <code>\(C\)</code>.</li>
+</ul>
+</li>
+<li>Why does it work? Inverse transformation.</li>
+<li>More theoretical formulation in Module 9.</li>
+</ul>
+<p>See 
+  <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a> for illustrations.</p>
+<h2 id="macros">
+  Macros
+  <a class="anchor" href="#macros">#</a>
+</h2>
+<h3 id="what-is-a-macro">
+  What is a macro?
+  <a class="anchor" href="#what-is-a-macro">#</a>
+</h3>
+<ul>
+<li>Sometimes we may need to do a set of actions or tasks repeatedly.
+<ul>
+<li>e.g. cleaning data, formatting cells, creating tables.</li>
+<li>This is repetitive and very time-consuming to do cell-by-cell!</li>
+</ul>
+</li>
+<li>A macro can store this set of actions and run whenever you need it.
+<ul>
+<li>You can also make minor edits to the recorded actions.</li>
+</ul>
+</li>
+</ul>
+<h3 id="recording-a-macro">
+  Recording a macro
+  <a class="anchor" href="#recording-a-macro">#</a>
+</h3>
+<ol>
+<li>A macro can be recorded by going to Developer tab → Record Macro.
+<ul>
+<li>To turn on the Developer tab, check 
+  <a href="https://support.microsoft.com/en-au/office/quick-start-create-a-macro-741130ca-080d-49f5-9471-1e5fb3d581a8#OfficeVersion=Mac"><code>Quick start: Create a macro</code></a></li>
+</ul>
+</li>
+<li>A dialog box will be opened. You can rename your macro and select a shortcut key for the macro.</li>
+<li>Click “OK” to create your macro. Excel will now start recording your actions.</li>
+<li>Click “Stop Recording” to save your macro.</li>
+</ol>
+<ul>
+<li>Note: You can select <code>Use Relative References</code> when recording a macro. In that way, you can run your macro relative to your currently selected cell, instead of a fixed range.</li>
+</ul>
+<h3 id="running-a-macro">
+  Running a macro
+  <a class="anchor" href="#running-a-macro">#</a>
+</h3>
+<ul>
+<li>There are multiple ways to run your recorded macros.</li>
+<li>Running macros with your assigned shortcut.</li>
+<li>Running macros through the Developer tab.
+<ol>
+<li>Go to Developer → Macro. A list of your recorded macros should come up.</li>
+<li>Click on the sheet and cells you want to run a macro with. Click “Run” to run it.</li>
+</ol>
+</li>
+<li>Running macros with buttons.
+<ol>
+<li>Go to Developer → Form Controls → Insert → Button.</li>
+<li>Click on the cell you want to insert the button, the Assign Macro box should come up.</li>
+<li>Choose your macro and click “OK”. Now you can run your macro by clicking the button.</li>
+</ol>
+</li>
+<li>There are more ways to run macros! See 
+  <a href="https://support.microsoft.com/en-au/office/run-a-macro-5e855fd2-02d1-45f5-90a3-50e645fe3155"><code>Run a macro</code></a>.</li>
+</ul>
+<h3 id="editing-your-macros">
+  Editing your macros
+  <a class="anchor" href="#editing-your-macros">#</a>
+</h3>
+<h2 id="vba">
+  VBA
+  <a class="anchor" href="#vba">#</a>
+</h2>
+<h3 id="what-is-vba">
+  What is VBA?
+  <a class="anchor" href="#what-is-vba">#</a>
+</h3>
 <h1 id="next-steps">
   Next steps
   <a class="anchor" href="#next-steps">#</a>
 </h1>
 <ul>
-<li>All of (<strong>AE23?</strong>) is relevant, but take it as a cook book for the assignment. You can go as far as you wish.</li>
-<li>Chapters 16, 17, 18, and 19 of (<strong>EE19?</strong>) are out of scope.</li>
+<li>All of Katz (2023) is relevant, but take it as a cook book for the assignment. You can go as far as you wish.</li>
+<li>Chapters 16, 17, 18, and 19 of Slager and Slager (2020) are out of scope.</li>
 <li>However, macros and VBA (which is Chapter 19) are essential components of Excel
 <ul>
 <li>I strongly encourage you to get started. Start by recording a macro, then play around with the code.</li>
@@ -1109,6 +1222,14 @@ spreadsheets.</li>
   References
   <a class="anchor" href="#references">#</a>
 </h1>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-AE23" class="csl-entry">
+<p>Katz, A. I. 2023. <em>Up up and Array! Dynamic Array Formulas for Excel 365 and Beyond</em>. Apress.</p>
+</div>
+<div id="ref-EE19" class="csl-entry">
+<p>Slager, D., and A. Slager. 2020. <em>Essential Excel 2019</em>. 2nd ed. Apress.</p>
+</div>
+</div>
 </article>
  
       <script src="//yihui.org/js/math-code.js"></script>
@@ -1122,9 +1243,9 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 
 
 
-  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/9247176571c9e9e9ab2cbaec999ae43787538066" title='Last modified by Lee Ho Ming | 10 July 2024' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/928b9b30c565716b03c263f77e3b1e0cd1240667" title='Last modified by Lee Ho Ming | 11 July 2024' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>10 July 2024</span>
+      <span>11 July 2024</span>
     </a>
   </div>
 
@@ -1202,12 +1323,16 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
     </li>
     <li><a href="#dynamic-references">Dynamic references</a>
       <ul>
-        <li><a href="#offset"><code>OFFSET()</code></a></li>
-        <li><a href="#indirect"><code>INDIRECT()</code></a></li>
-        <li><a href="#address"><code>ADDRESS()</code></a></li>
+        <li><a href="#some-functions-for-dynamic-referencing">Some functions for dynamic referencing</a>
+          <ul>
+            <li><a href="#offset"><code>OFFSET()</code></a></li>
+            <li><a href="#indirect"><code>INDIRECT()</code></a></li>
+            <li><a href="#address"><code>ADDRESS()</code></a></li>
+          </ul>
+        </li>
       </ul>
     </li>
-    <li><a href="#general-etiquette-and-tools-and-tools-for-auditing">General etiquette and tools, and tools for auditing</a>
+    <li><a href="#general-etiquette-auditing-and-tools">General etiquette, auditing, and tools</a>
       <ul>
         <li><a href="#etiquette">Etiquette</a></li>
         <li><a href="#principles">Principles</a></li>
@@ -1219,7 +1344,31 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
         </li>
       </ul>
     </li>
-    <li><a href="#simulation-macros-and-vba">Simulation, Macros and VBA</a></li>
+    <li><a href="#simulation-macros-and-vba">Simulation, Macros and VBA</a>
+      <ul>
+        <li><a href="#simulation">Simulation</a>
+          <ul>
+            <li><a href="#why-simulation">Why simulation?</a></li>
+            <li><a href="#generating-random-numbers-1">Generating random numbers 1</a></li>
+            <li><a href="#generating-random-numbers-2">Generating random numbers 2</a></li>
+            <li><a href="#discrete-random-variables">Discrete random variables</a></li>
+          </ul>
+        </li>
+        <li><a href="#macros">Macros</a>
+          <ul>
+            <li><a href="#what-is-a-macro">What is a macro?</a></li>
+            <li><a href="#recording-a-macro">Recording a macro</a></li>
+            <li><a href="#running-a-macro">Running a macro</a></li>
+            <li><a href="#editing-your-macros">Editing your macros</a></li>
+          </ul>
+        </li>
+        <li><a href="#vba">VBA</a>
+          <ul>
+            <li><a href="#what-is-vba">What is VBA?</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
     <li><a href="#next-steps">Next steps</a></li>
     <li><a href="#references">References</a></li>
   </ul>

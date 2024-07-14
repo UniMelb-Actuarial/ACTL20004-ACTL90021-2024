@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '10 July 2024'
+date: '15 July 2024'
 output:
   beamer_presentation:
     toc: true
@@ -87,7 +87,7 @@ See [`prerequisite knowledge on the website`](https://topics-actl.netlify.app/do
 - Formula Auditing: Chapter 9, p. 436-439
 - Paste special (incl, e.g. `Transpose`): Chapter 11, pages 518-530
 
-Page references are for (**EE19?**), see [`link here`](https://link.springer.com/book/10.1007/978-1-4842-6209-2).
+Page references are for Slager and Slager (2020), see [`link here`](https://link.springer.com/book/10.1007/978-1-4842-6209-2).
 
 Also, see tab `Assumed Knowledge` in the [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
 
@@ -119,7 +119,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 - Editing Texts
   - `CLEAN()`, `TRIM()`, and `SUBSTITUTE()` to deal with any non-printable characters.
   - Merging and splitting columns with functions like `LEFT()`, `RIGHT()` and `MID()` and `SEARCH()`. Wildcard characters `?` and `*` are also useful.
-- Removing duplicate rows: `Data > Data Tools > Remove Duplicates`.
+- Removing duplicate rows: `Data → Data Tools → Remove Duplicates`.
 - Converting table into “machine-readable” formats.
   - An example in [Kolokolov, 2023 (Chapter 1, P.2-9)](https://link.springer.com/book/10.1007/978-1-4842-8942-6).
   - Macros would be useful here!
@@ -133,7 +133,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
   - See how you can use variables as filters, rows, or columns. Move them around.
   - See how columns can display other things than `Sum`, such as `Count`, `Average`, `Max`, `Min`, or `Product`
 - Note there are recommended Pivot Tables (automated recommendation within Excel); in the case of FIFA WWC it is not very helpful.
-- Reference: Chapter 15 of (**EE19?**).
+- Reference: Chapter 15 of Slager and Slager (2020).
 
 ## Pivot charts
 
@@ -143,7 +143,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
   - Insert / Pivot Chart;
   - In the example I changed the style of graph to “Combo” to allow for the two different scales;
   - I also included a “slicer” (click on chart / insert slicer), in order to easily filter by squad.
-- Reference: Chapter 15 of (**EE19?**).
+- Reference: Chapter 15 of Slager and Slager (2020).
 
 # Dynamic Arrays
 
@@ -153,7 +153,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 - Excel can do similar things, and the vectors are called arrays. This is new (post Office 365), and is a bit of a game changer.
 - Before Office 365, Excel was incapable of depositing results beyond just 1 cell. This is called “spilling”.
 - Note Excell will need the required space to spill.
-- Main reference is (**AE23?**) - we’ll only introduce this here.
+- Main reference is Katz (2023) - we’ll only introduce this here.
 
 ### Example
 
@@ -233,36 +233,37 @@ Reference: Murray, 2022 (Chapter 7, 11)
 - This is tedious to do manually if we have a large dataset!
 - Dynamic Referencing will be useful here.
 
-## `OFFSET()`
+## Some functions for dynamic referencing
+
+### `OFFSET()`
 
 - Allows you to move your initial references to any direction by any number of cells.
 - You can select the height and width of the returned range.
 
-## `INDIRECT()`
+### `INDIRECT()`
 
 - Goes to the address specified by the reference text you entered.
 
-  - e.g. `INDIRECT(B2)` goes to the cell `A2` if cell `B2` contains the text `A2`.
+  - e.g. `INDIRECT(B2)` goes to the cell `A2` if cell `B2` contains the text `"A2"`.
 
 - Your reference text can be a table, a named range, etc.
-
-- Combining with `ADDRESS()` allows you to reference dynamically.
 
 - Both `OFFSET()` and `INDIRECT()` are volatile functions.
 
   - Excel recalculates them even if you changed a cell without these functions!
   - Can be computationally inefficient if the spreadsheet relies on them heavily.
 
-## `ADDRESS()`
+### `ADDRESS()`
 
 - Gives you the address of your specified columns and rows.
-- This allows you to obtain dynamic addresses by dynamically changing your specified rows and columns.
+- This allows you to obtain dynamic addresses by changing your specified columns and rows based on some index columns/rows.
+- By combining with `INDIRECT()`, you can retrieve the data contained in your dynamic range.
 
 See `reference` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for demonstrations.
 
 Reference: Murray, 2022 (Chapter 11)
 
-# General etiquette and tools, and tools for auditing
+# General etiquette, auditing, and tools
 
 ## Etiquette
 
@@ -320,16 +321,104 @@ This is useful for
 - The “Formulas” tool tab should have a “Show formula” tile. This will replace all numeric values by formulas.
   - This is helpful to check what numbers are hard coded, and which are results of calculations. Together with dependents, it helps seeing if everything is as dynamic as it should.
 - If you want a formula to be shown all the time start with an apostrophe `'`, and the formula will show as text.
-- Note also the `FORMULATEXT()` formula which is a dynamic array formula requiring spilling (see later section “Dynamic Arrays”!).
 
 (Formula Auditing: Chapter 9, p. 436-439)
 
 # Simulation, Macros and VBA
 
+## Simulation
+
+### Why simulation?
+
+- Suppose we have some model with given inputs.
+- Inputs can be uncertain.
+  - Weather, arrival speed of claims, interest rates,…
+- We want to derive the distributions of our output.
+  - We want to know the statistical properties (e.g. mean, SD) of our output.
+  - Sometimes it can be complicated to derive the distribution of the output explicitly.
+- By simulating the uncertain inputs, we can generate random observations from our model.
+  - These generations will result in an empirical distribution of the output.
+  - We can then use this distribution to estimate moments, quantiles, ranges, and probabilities.
+- Simulation is widely used in the work by actuaries.
+
+### Generating random numbers 1
+
+- `RAND()` generates random numbers from a uniform distribution on (0,1).
+- `RANDARRAY()` can generate an array of random numbers with specified dimension.
+  - You can specify the range of numbers.
+  - You can also specify whether the generations are discrete or continuous.
+- Excel recalculate these functions whenever there are changes in any cells.
+- What if we want to generate numbers that are not uniformly distributed?
+
+### Generating random numbers 2
+
+- Inverse functions can be useful to generate numbers under different distributions.
+  - Use `NORM.S.INV(RAND())` to generate numbers with standard normal distribution.
+  - In general, to generate random numbers with specified distributions, we can apply their inverse functions to `RAND()`.
+- Some inverse functions available in Excel:
+  - `BETA.INV()` for Beta distribution
+  - `LOGNORM.INV()` for lognormal distribution
+- To see more inverse/probability functions in Excel, go to Formulas → More
+  Functions → Statistical.
+
+### Discrete random variables
+
+- We can also simulate outcomes from discrete distributions.
+- Suppose we have a random variable with three outcomes: `\(A\)` with `\(p=0.5\)`, `\(B\)` with `\(p=0.3\)`, and `\(C\)` with `\(p=0.2\)`.
+- First, generate a random number `\(x\)` with `RAND()`.
+  - If `\(x\leq 0.5\)`, the outcome is `\(A\)`.
+  - If `\(0.5 < x \leq (0.5+0.3)=0.8\)`, the outcome is `\(B\)`
+  - Otherwise, the outcome is `\(C\)`.
+- Why does it work? Inverse transformation.
+- More theoretical formulation in Module 9.
+
+See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for illustrations.
+
+## Macros
+
+### What is a macro?
+
+- Sometimes we may need to do a set of actions or tasks repeatedly.
+  - e.g. cleaning data, formatting cells, creating tables.
+  - This is repetitive and very time-consuming to do cell-by-cell!
+- A macro can store this set of actions and run whenever you need it.
+  - You can also make minor edits to the recorded actions.
+
+### Recording a macro
+
+1.  A macro can be recorded by going to Developer tab → Record Macro.
+    - To turn on the Developer tab, check [`Quick start: Create a macro`](https://support.microsoft.com/en-au/office/quick-start-create-a-macro-741130ca-080d-49f5-9471-1e5fb3d581a8#OfficeVersion=Mac)
+2.  A dialog box will be opened. You can rename your macro and select a shortcut key for the macro.
+3.  Click “OK” to create your macro. Excel will now start recording your actions.
+4.  Click “Stop Recording” to save your macro.
+
+- Note: You can select `Use Relative References` when recording a macro. In that way, you can run your macro relative to your currently selected cell, instead of a fixed range.
+
+### Running a macro
+
+- There are multiple ways to run your recorded macros.
+- Running macros with your assigned shortcut.
+- Running macros through the Developer tab.
+  1.  Go to Developer → Macro. A list of your recorded macros should come up.
+  2.  Click on the sheet and cells you want to run a macro with. Click “Run” to run it.
+- Running macros with buttons.
+  1.  Go to Developer → Form Controls → Insert → Button.
+  2.  Click on the cell you want to insert the button, the Assign Macro box should come up.
+  3.  Choose your macro and click “OK”. Now you can run your macro by clicking the button.
+- There are more ways to run macros! See P.886-894 in Slager and Slager (2020).
+
+### Editing your macros
+
+- You can modify your recorded macros
+
+## VBA
+
+### What is VBA?
+
 # Next steps
 
-- All of (**AE23?**) is relevant, but take it as a cook book for the assignment. You can go as far as you wish.
-- Chapters 16, 17, 18, and 19 of (**EE19?**) are out of scope.
+- All of Katz (2023) is relevant, but take it as a cook book for the assignment. You can go as far as you wish.
+- Chapters 16, 17, 18, and 19 of Slager and Slager (2020) are out of scope.
 - However, macros and VBA (which is Chapter 19) are essential components of Excel
   - I strongly encourage you to get started. Start by recording a macro, then play around with the code.
   - VBA allows more efficient calculations via compiled code, and is a powerful addition to Excel.
@@ -337,4 +426,20 @@ This is useful for
 
 # References
 
-[^1]: References: (**EE19?**) and (**AE23?**) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/23-Top-M6-lec.pdf)
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-AE23" class="csl-entry">
+
+Katz, A. I. 2023. *Up up and Array! Dynamic Array Formulas for Excel 365 and Beyond*. Apress.
+
+</div>
+
+<div id="ref-EE19" class="csl-entry">
+
+Slager, D., and A. Slager. 2020. *Essential Excel 2019*. 2nd ed. Apress.
+
+</div>
+
+</div>
+
+[^1]: References: Slager and Slager (2020) and Katz (2023) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/23-Top-M6-lec.pdf)
