@@ -464,13 +464,49 @@ See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/mo
     1. Go to Developer → Form Controls → Insert → Button.
     1. Click on the cell you want to insert the button, the Assign Macro box should come up.
     1. Choose your macro and click "OK". Now you can run your macro by clicking the button.
-- There are more ways to run macros! See P.886-894 in @EE19.
+- There are more ways to run macros. See P.886-894 in @EE19.
 
-### Editing your macros
-- You can modify your recorded macros
 
 ## VBA
 ### What is VBA?
+- VBA stands for Visual Basic for Applications.
+- It is a programming language used by Excel (and all Microsoft Office apps).
+- Your recorded macros are stored as VBA code.
+- You can create your own macros by writing VBA code.
+  - They can be assigned in the same way as a recorded one.
+- VBA is needed as some actions such as conditioning and looping cannot be recorded.
+- Excel writes bad VBA code from recorded macros.
+
+### Editing your macros
+- You can modify your recorded macros with Visual Basic Editor (VBE).
+- Open VBE with `Alt + F8` or go to Developer → Code → Macros → select the macro you want to edit → Edit.
+- Some minor edits you can make to your macros:
+  - Switch between reference types.
+  - Add/change different types of formatting.
+  - Edit cell selections.
+  
+### Conditions
+- By using conditions in our VBA code, we can run different actions according to the given condition, just like `IF` in Excel.
+- But there's more we can do with VBA!
+- Some simple examples of conditioning:
+  - Change cell colour based on cell value.
+  - Display different message boxes based on the input to input box.
+  - Display different texts in cells based on the value in your active cell.
+- You can do nested if with if-else statements.
+- Logical operators are also available for multiple conditions.
+  - And, Or, Xor, Not
+
+### Loops
+- Useful when you want to automate iterative operations.
+- There are two types of loops in VBA:
+  - For loops are used when you know the number of iterations.
+  - While loops are used when you want to stop based on some conditions.
+  - Just a general rule. They are interchangeable.
+- Some examples:
+  - Format cells until reaching the end of a row/column.
+  - Fill every $n$ cell with some numbers.
+  - Keep showing input boxes and do operations until entering specific input.
+
 
 # Next steps
 

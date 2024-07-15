@@ -9,14 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://topics-actl.netlify.app/docs/3-excel/m6-excel/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2024-07-11T00:37:20+10:00" />
+<meta property="article:modified_time" content="2024-07-15T03:38:40+10:00" />
 
 <title>M6 Excel Topics | Topics in Actuarial, Insurance and Finance</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a08e958a0c32c71fa52257f56602fc9e6f4a8586733f7d90b6b544b160364dce.css" integrity="sha256-oI6Vigwyxx&#43;lIlf1ZgL8nm9KhYZzP32QtrVEsWA2Tc4=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.ec532b3c3b8f28eee7258bcf720c0a1c28796c77cf9b4097f987669d53c9fe01.js" integrity="sha256-7FMrPDuPKO7nJYvPcgwKHCh5bHfPm0CX&#43;YdmnVPJ/gE=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.bcada5225d040d1efa24c84a3bce5c8bd2cbcbdf61642b4eda8e41e2a05ae8d3.js" integrity="sha256-vK2lIl0EDR76JMhKO85ci9LLy99hZCtO2o5B4qBa6NM=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -597,12 +597,14 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
             <li><a href="#what-is-a-macro">What is a macro?</a></li>
             <li><a href="#recording-a-macro">Recording a macro</a></li>
             <li><a href="#running-a-macro">Running a macro</a></li>
-            <li><a href="#editing-your-macros">Editing your macros</a></li>
           </ul>
         </li>
         <li><a href="#vba">VBA</a>
           <ul>
             <li><a href="#what-is-vba">What is VBA?</a></li>
+            <li><a href="#editing-your-macros">Editing your macros</a></li>
+            <li><a href="#conditions">Conditions</a></li>
+            <li><a href="#loops">Loops</a></li>
           </ul>
         </li>
       </ul>
@@ -1187,13 +1189,8 @@ Functions → Statistical.</li>
 <li>Choose your macro and click “OK”. Now you can run your macro by clicking the button.</li>
 </ol>
 </li>
-<li>There are more ways to run macros! See 
-  <a href="https://support.microsoft.com/en-au/office/run-a-macro-5e855fd2-02d1-45f5-90a3-50e645fe3155"><code>Run a macro</code></a>.</li>
+<li>There are more ways to run macros. See P.886-894 in Slager and Slager (2020).</li>
 </ul>
-<h3 id="editing-your-macros">
-  Editing your macros
-  <a class="anchor" href="#editing-your-macros">#</a>
-</h3>
 <h2 id="vba">
   VBA
   <a class="anchor" href="#vba">#</a>
@@ -1201,6 +1198,58 @@ Functions → Statistical.</li>
 <h3 id="what-is-vba">
   What is VBA?
   <a class="anchor" href="#what-is-vba">#</a>
+</h3>
+<ul>
+<li>VBA stands for Visual Basic for Applications.</li>
+<li>It is a programming language used by Excel (and all Microsoft Office apps).</li>
+<li>Your recorded macros are stored as VBA code.</li>
+<li>You can create your own macros by writing VBA code.
+<ul>
+<li>They can be assigned in the same way as a recorded one.</li>
+</ul>
+</li>
+<li>VBA is needed as some actions such as conditioning and looping cannot be recorded.</li>
+<li>Excel writes bad VBA code from recorded macros.</li>
+</ul>
+<h3 id="editing-your-macros">
+  Editing your macros
+  <a class="anchor" href="#editing-your-macros">#</a>
+</h3>
+<ul>
+<li>You can modify your recorded macros with Visual Basic Editor (VBE).</li>
+<li>Open VBE with <code>Alt + F8</code> or go to Developer → Code → Macros → select the macro you want to edit → Edit.</li>
+<li>Some minor edits you can make to your macros:
+<ul>
+<li>Switch between reference types.</li>
+<li>Add/change different types of formatting.</li>
+<li>Edit cell selections.</li>
+</ul>
+</li>
+</ul>
+<h3 id="conditions">
+  Conditions
+  <a class="anchor" href="#conditions">#</a>
+</h3>
+<ul>
+<li>By using conditions in our VBA code, we can run different actions according to the given condition, just like <code>IF</code> in Excel.</li>
+<li>But there’s more we can do with VBA!</li>
+<li>Some simple examples of conditioning:
+<ul>
+<li>Change cell colour based on cell value.</li>
+<li>Display different message boxes based on the input to input box.</li>
+<li>Display different texts in cells based on the value in your active cell.</li>
+</ul>
+</li>
+<li>You can do nested if with if-else statements.</li>
+<li>Logical operators are also available for multiple conditions.
+<ul>
+<li>And, Or, Xor, Not</li>
+</ul>
+</li>
+</ul>
+<h3 id="loops">
+  Loops
+  <a class="anchor" href="#loops">#</a>
 </h3>
 <h1 id="next-steps">
   Next steps
@@ -1243,9 +1292,9 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 
 
 
-  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/928b9b30c565716b03c263f77e3b1e0cd1240667" title='Last modified by Lee Ho Ming | 11 July 2024' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/ca440a2b66f7ed4fe561d669a97ca6346cdecf07" title='Last modified by Lee Ho Ming | 15 July 2024' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>11 July 2024</span>
+      <span>15 July 2024</span>
     </a>
   </div>
 
@@ -1359,12 +1408,14 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
             <li><a href="#what-is-a-macro">What is a macro?</a></li>
             <li><a href="#recording-a-macro">Recording a macro</a></li>
             <li><a href="#running-a-macro">Running a macro</a></li>
-            <li><a href="#editing-your-macros">Editing your macros</a></li>
           </ul>
         </li>
         <li><a href="#vba">VBA</a>
           <ul>
             <li><a href="#what-is-vba">What is VBA?</a></li>
+            <li><a href="#editing-your-macros">Editing your macros</a></li>
+            <li><a href="#conditions">Conditions</a></li>
+            <li><a href="#loops">Loops</a></li>
           </ul>
         </li>
       </ul>
