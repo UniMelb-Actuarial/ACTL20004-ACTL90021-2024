@@ -73,6 +73,8 @@ Ch. 13: Working with Charts
 
 Ch. 14: Importing Data
 
+In semester 1 2024, the [`Actuarial Students’ Society`](https://www.melbourneactuary.com/) ran a workshop covering most of the resources above. We are currently seeing how to best share those with you. In the meantime feel free to contact them for access.
+
 \_
 
 *Reference:*

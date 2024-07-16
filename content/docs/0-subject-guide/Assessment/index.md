@@ -113,7 +113,7 @@ http://students.unimelb.edu.au/admin/special
 
 ## Type
 
-The final exam will be an invigilated exam on campus. There will be a 10 minute reading time. The focus of the final exam will be on the whole subject, with particular focus on the second half of the subject. Subject to confirmation, you may have a university-provided laptop to perform some calculations on Excel.
+The final exam will be an invigilated exam on campus. There will be a 10 minute reading time. The focus of the final exam will be on the whole subject. Subject to confirmation, you may have a university-provided laptop to perform some calculations on Excel.
 
 **You will be allowed to bring one A4 sheet of notes, double sided. You can write as much as you want on that one sheet of paper (text and/or formulas), on both sides, but it cannot be more than one A4 sheet.**
 
