@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '15 July 2024'
+date: '17 July 2024'
 output:
   beamer_presentation:
     toc: true
@@ -240,28 +240,57 @@ Reference: Murray, 2022 (Chapter 7, 11)
 - Allows you to move your initial references to any direction by any number of cells.
 - You can select the height and width of the returned range.
 
+<img src="offset_example.png" width="100%" style="display: block; margin: auto;" />
+
 ### `INDIRECT()`
 
 - Goes to the address specified by the reference text you entered.
-
   - e.g. `INDIRECT(B2)` goes to the cell `A2` if cell `B2` contains the text `"A2"`.
-
 - Your reference text can be a table, a named range, etc.
 
-- Both `OFFSET()` and `INDIRECT()` are volatile functions.
-
-  - Excel recalculates them even if you changed a cell without these functions!
-  - Can be computationally inefficient if the spreadsheet relies on them heavily.
+<img src="indirect_example.png" width="100%" style="display: block; margin: auto;" />
 
 ### `ADDRESS()`
 
 - Gives you the address of your specified columns and rows.
+- For instance, you will get `A1` if you type in the formula `ADDRESS(1,1)`.
+- The first argument specifies the row, and the second argument specifies the column.
 - This allows you to obtain dynamic addresses by changing your specified columns and rows based on some index columns/rows.
 - By combining with `INDIRECT()`, you can retrieve the data contained in your dynamic range.
+
+### Some drawbacks
+
+- Both `OFFSET()` and `INDIRECT()` are volatile functions.
+- Volatile functions are functions in which the value can change even if none of the function’s arguments change.
+- Excel recalculates them even if you changed a cell without these functions!
+- Can be computationally inefficient if the spreadsheet relies on them heavily.
 
 See `reference` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for demonstrations.
 
 Reference: Murray, 2022 (Chapter 11)
+
+## How to use them for triangles?
+
+### Manual method
+
+<img src="manual.png" width="100%" style="display: block; margin: auto;" />
+
+- This method requires you to change your reference ranges manually each development period.
+
+### Offset method
+
+<img src="offset.png" width="100%" style="display: block; margin: auto;" />
+
+1. First select the whole triangle (`OFFSET($B4:$G8,0,0)`).
+2. Select the range for summation using offset (The last two arguments in `OFFSET`).
+3. As development period increase, dynamically change the references by editing the height and width of the offset using the development period.
+
+### Indirect Address method
+
+<img src="indad.png" width="100%" style="display: block; margin: auto;" />
+
+1. Select the top left corner of the triangle first (`INDIRECT(ADDRESS(4,2))`).
+2. Dynamically change the reference by editing the location of bottom right corner of the reference (`INDIRECT(ADDRESS(7-C2, 3+C2)))`).
 
 # General etiquette, auditing, and tools
 
@@ -459,6 +488,7 @@ See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/mo
 - However, macros and VBA (which is Chapter 19) are essential components of Excel
   - I strongly encourage you to get started. Start by recording a macro, then play around with the code.
   - VBA allows more efficient calculations via compiled code, and is a powerful addition to Excel.
+- Some recent development in understanding spreadsheets with Large Language Models: [`SpreadsheetLLM: Encoding Spreadsheets for Large Language Models`](https://arxiv.org/abs/2407.09025).
 - Fun fact: the 2021 [`Excel World Champion`](https://www.fmworldcup.com/excel-esports/microsoft-excel-world-championship/) is an actuary: Andrew Ngai, now Director at Taylor Fry.
 
 # References

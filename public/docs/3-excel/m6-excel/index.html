@@ -9,14 +9,14 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://topics-actl.netlify.app/docs/3-excel/m6-excel/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2024-07-15T03:38:40+10:00" />
+<meta property="article:modified_time" content="2024-07-16T01:11:00+10:00" />
 
 <title>M6 Excel Topics | Topics in Actuarial, Insurance and Finance</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a08e958a0c32c71fa52257f56602fc9e6f4a8586733f7d90b6b544b160364dce.css" integrity="sha256-oI6Vigwyxx&#43;lIlf1ZgL8nm9KhYZzP32QtrVEsWA2Tc4=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.bcada5225d040d1efa24c84a3bce5c8bd2cbcbdf61642b4eda8e41e2a05ae8d3.js" integrity="sha256-vK2lIl0EDR76JMhKO85ci9LLy99hZCtO2o5B4qBa6NM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.d8e3ba2adb3afb56a506a01358464164fb99d77f9c44eeb9144bece916ab607f.js" integrity="sha256-2OO6Kts6&#43;1alBqATWEZBZPuZ13&#43;cRO65FEvs6RarYH8=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -566,6 +566,14 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
             <li><a href="#offset"><code>OFFSET()</code></a></li>
             <li><a href="#indirect"><code>INDIRECT()</code></a></li>
             <li><a href="#address"><code>ADDRESS()</code></a></li>
+            <li><a href="#some-drawbacks">Some drawbacks</a></li>
+          </ul>
+        </li>
+        <li><a href="#how-to-use-them-for-triangles">How to use them for triangles?</a>
+          <ul>
+            <li><a href="#manual-method">Manual method</a></li>
+            <li><a href="#offset-method">Offset method</a></li>
+            <li><a href="#indirect-address-method">Indirect Address method</a></li>
           </ul>
         </li>
       </ul>
@@ -927,40 +935,75 @@ spreadsheets.</li>
 <li>Allows you to move your initial references to any direction by any number of cells.</li>
 <li>You can select the height and width of the returned range.</li>
 </ul>
+<p><img src="offset_example.png" width="100%" style="display: block; margin: auto;" /></p>
 <h3 id="indirect">
   <code>INDIRECT()</code>
   <a class="anchor" href="#indirect">#</a>
 </h3>
 <ul>
-<li>
-<p>Goes to the address specified by the reference text you entered.</p>
+<li>Goes to the address specified by the reference text you entered.
 <ul>
 <li>e.g. <code>INDIRECT(B2)</code> goes to the cell <code>A2</code> if cell <code>B2</code> contains the text <code>&quot;A2&quot;</code>.</li>
 </ul>
 </li>
-<li>
-<p>Your reference text can be a table, a named range, etc.</p>
-</li>
-<li>
-<p>Both <code>OFFSET()</code> and <code>INDIRECT()</code> are volatile functions.</p>
-<ul>
-<li>Excel recalculates them even if you changed a cell without these functions!</li>
-<li>Can be computationally inefficient if the spreadsheet relies on them heavily.</li>
+<li>Your reference text can be a table, a named range, etc.</li>
 </ul>
-</li>
-</ul>
+<p><img src="indirect_example.png" width="100%" style="display: block; margin: auto;" /></p>
 <h3 id="address">
   <code>ADDRESS()</code>
   <a class="anchor" href="#address">#</a>
 </h3>
 <ul>
 <li>Gives you the address of your specified columns and rows.</li>
+<li>For instance, you will get <code>A1</code> if you type in the formula <code>ADDRESS(1,1)</code>.</li>
+<li>The first argument specifies the row, and the second argument specifies the column.</li>
 <li>This allows you to obtain dynamic addresses by changing your specified columns and rows based on some index columns/rows.</li>
 <li>By combining with <code>INDIRECT()</code>, you can retrieve the data contained in your dynamic range.</li>
+</ul>
+<h3 id="some-drawbacks">
+  Some drawbacks
+  <a class="anchor" href="#some-drawbacks">#</a>
+</h3>
+<ul>
+<li>Both <code>OFFSET()</code> and <code>INDIRECT()</code> are volatile functions.</li>
+<li>Volatile functions are functions in which the value can change even if none of the function’s arguments change.</li>
+<li>Excel recalculates them even if you changed a cell without these functions!</li>
+<li>Can be computationally inefficient if the spreadsheet relies on them heavily.</li>
 </ul>
 <p>See <code>reference</code> tab in 
   <a href="https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456"><code>module 6 spreadsheet</code></a> for demonstrations.</p>
 <p>Reference: Murray, 2022 (Chapter 11)</p>
+<h2 id="how-to-use-them-for-triangles">
+  How to use them for triangles?
+  <a class="anchor" href="#how-to-use-them-for-triangles">#</a>
+</h2>
+<h3 id="manual-method">
+  Manual method
+  <a class="anchor" href="#manual-method">#</a>
+</h3>
+<p><img src="manual.png" width="100%" style="display: block; margin: auto;" /></p>
+<ul>
+<li>This method requires you to change your reference ranges manually each development period.</li>
+</ul>
+<h3 id="offset-method">
+  Offset method
+  <a class="anchor" href="#offset-method">#</a>
+</h3>
+<p><img src="offset.png" width="100%" style="display: block; margin: auto;" /></p>
+<ol>
+<li>First select the whole triangle (<code>OFFSET($B4:$G8,0,0)</code>).</li>
+<li>Select the range for summation using offset (The last two arguments in <code>OFFSET</code>).</li>
+<li>As development period increase, dynamically change the references by editing the height and width of the offset using the development period.</li>
+</ol>
+<h3 id="indirect-address-method">
+  Indirect Address method
+  <a class="anchor" href="#indirect-address-method">#</a>
+</h3>
+<p><img src="indad.png" width="100%" style="display: block; margin: auto;" /></p>
+<ol>
+<li>Select the top left corner of the triangle first (<code>INDIRECT(ADDRESS(4,2))</code>).</li>
+<li>Dynamically change the reference by editing the location of bottom right corner of the reference (<code>INDIRECT(ADDRESS(7-C2, 3+C2)))</code>).</li>
+</ol>
 <h1 id="general-etiquette-auditing-and-tools">
   General etiquette, auditing, and tools
   <a class="anchor" href="#general-etiquette-auditing-and-tools">#</a>
@@ -1251,6 +1294,23 @@ Functions → Statistical.</li>
   Loops
   <a class="anchor" href="#loops">#</a>
 </h3>
+<ul>
+<li>Useful when you want to automate iterative operations.</li>
+<li>There are two types of loops in VBA:
+<ul>
+<li>For loops are used when you know the number of iterations.</li>
+<li>While loops are used when you want to stop based on some conditions.</li>
+<li>Just a general rule. They are interchangeable.</li>
+</ul>
+</li>
+<li>Some examples:
+<ul>
+<li>Format cells until reaching the end of a row/column.</li>
+<li>Fill every <code>\(n\)</code> cell with some numbers.</li>
+<li>Keep showing input boxes and do operations until entering specific input.</li>
+</ul>
+</li>
+</ul>
 <h1 id="next-steps">
   Next steps
   <a class="anchor" href="#next-steps">#</a>
@@ -1292,9 +1352,9 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 
 
 
-  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/ca440a2b66f7ed4fe561d669a97ca6346cdecf07" title='Last modified by Lee Ho Ming | 15 July 2024' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/UniMelb-Actuarial/commit/b92243b35c95eafa848eab1af506f2c7a904b739" title='Last modified by Lee Ho Ming | 16 July 2024' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>15 July 2024</span>
+      <span>16 July 2024</span>
     </a>
   </div>
 
@@ -1377,6 +1437,14 @@ src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
             <li><a href="#offset"><code>OFFSET()</code></a></li>
             <li><a href="#indirect"><code>INDIRECT()</code></a></li>
             <li><a href="#address"><code>ADDRESS()</code></a></li>
+            <li><a href="#some-drawbacks">Some drawbacks</a></li>
+          </ul>
+        </li>
+        <li><a href="#how-to-use-them-for-triangles">How to use them for triangles?</a>
+          <ul>
+            <li><a href="#manual-method">Manual method</a></li>
+            <li><a href="#offset-method">Offset method</a></li>
+            <li><a href="#indirect-address-method">Indirect Address method</a></li>
           </ul>
         </li>
       </ul>
