@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi[^2]"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '18 July 2024 10:17'
+date: '18 July 2024 17:37'
 output:
   beamer_presentation:
     toc: true
@@ -126,7 +126,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
   - Merging and splitting columns with functions like `LEFT()`, `RIGHT()` and `MID()` and `SEARCH()`. Wildcard characters `?` and `*` are also useful.
 - Removing duplicate rows: `Data → Data Tools → Remove Duplicates`.
 - Converting table into “machine-readable” formats.
-  - An example in [Kolokolov, 2023 (Chapter 1, P.2-9)](https://link.springer.com/book/10.1007/978-1-4842-8942-6).
+  - An example in Chapter 1, P.2-9 in Kolokolov (2023).
   - Macros would be useful here!
 - There are much more functions and steps can be used to clean your data - see [`Microsoft - Top ten ways to clean your data`](https://support.microsoft.com/en-au/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19).
 
@@ -229,7 +229,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 
 Check [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for comparisons between these lookup functions.
 
-Reference: Murray, 2022 (Chapter 7, 11)
+Reference: Chapter 7 and 11 of Murray (2022)
 
 # Dynamic references
 
@@ -272,8 +272,6 @@ Reference: Murray, 2022 (Chapter 7, 11)
 
 See `reference` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for demonstrations.
 
-Reference: Murray, 2022 (Chapter 11)
-
 ## How to use them for triangles?
 
 ### Manual method
@@ -296,6 +294,8 @@ Reference: Murray, 2022 (Chapter 11)
 
 1. Select the top left corner of the triangle first (`INDIRECT(ADDRESS(4,2))`).
 2. Dynamically change the reference by editing the location of bottom right corner of the reference (`INDIRECT(ADDRESS(7-C2, 3+C2)))`).
+
+Reference: Chapter 11 of Murray (2022)
 
 # General etiquette, auditing, and tools
 
@@ -486,6 +486,8 @@ See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/mo
   - Fill every `\(n\)` cell with some numbers.
   - Keep showing input boxes and do operations until entering specific input.
 
+Reference: Chapter 2, 3 of Lee and Lee (2023)
+
 # Next steps
 
 - All of Katz (2023) is relevant, but take it as a cook book for the assignment. You can go as far as you wish.
@@ -503,6 +505,24 @@ See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/mo
 <div id="ref-AE23" class="csl-entry">
 
 Katz, A. I. 2023. *Up up and Array! Dynamic Array Formulas for Excel 365 and Beyond*. Apress.
+
+</div>
+
+<div id="ref-MyDS23" class="csl-entry">
+
+Kolokolov, Alex. 2023. *Make Your Data Speak: Creating Actionable Data Through Excel for Non-Technical Professionals*.
+
+</div>
+
+<div id="ref-EoE23" class="csl-entry">
+
+Lee, John, and Cheng-Few Lee. 2023. *Essentials of Excel VBA, Python, and r: Volume i: Financial Statistics and Portfolio Analysis*.
+
+</div>
+
+<div id="ref-AEF22" class="csl-entry">
+
+Murray, Alan. 2022. *Advanced Excel Formulas: Unleashing Brilliance with Excel Formulas*.
 
 </div>
 
