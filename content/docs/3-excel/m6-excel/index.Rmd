@@ -113,7 +113,7 @@ library(extRemes)
 ```
 
 
-[^1]: References: @EE19 and @AE23 | $\; \rightarrow$ [\textcolor{blue}{\underline{latest slides}}](https://gim-am3.netlify.app/output/24-Top-M6-lec.pdf) 
+[^1]: References: @EE19 and @AE23 | $\; \rightarrow$ [\textcolor{blue}{\underline{latest slides}}](https://topics-actl.netlify.app/output/24-Top-M6-lec.pdf) 
 [^2]: Contributions from Ho Ming Lee and William Ho are gratefully acknowledged.
 
 

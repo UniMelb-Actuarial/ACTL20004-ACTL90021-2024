@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi[^2]"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '18 July 2024 10:14'
+date: '18 July 2024 10:17'
 output:
   beamer_presentation:
     toc: true
@@ -516,4 +516,4 @@ Slager, D., and A. Slager. 2020. *Essential Excel 2019*. 2nd ed. Apress.
 
 [^1]: Contributions from Ho Ming Lee and William Ho are gratefully acknowledged.
 
-[^2]: References: Slager and Slager (2020) and Katz (2023) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/24-Top-M6-lec.pdf)
+[^2]: References: Slager and Slager (2020) and Katz (2023) \| `\(\; \rightarrow\)` [](https://topics-actl.netlify.app/output/24-Top-M6-lec.pdf)

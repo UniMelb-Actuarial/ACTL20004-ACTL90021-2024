@@ -113,7 +113,7 @@ library(extRemes)
 ```
 
 
-[^1]: References: Chapter 7.1-7.3 and 8.1-8.3 of @Jos13 | $\; \rightarrow$ [\textcolor{blue}{\underline{latest slides}}](https://gim-am3.netlify.app/output/24-Top-M1-lec.pdf) 
+[^1]: References: Chapter 7.1-7.3 and 8.1-8.3 of @Jos13 | $\; \rightarrow$ [\textcolor{blue}{\underline{latest slides}}](https://topics-actl.netlify.app/output/24-Top-M1-lec.pdf) 
 
 # Introduction
 
