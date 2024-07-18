@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi[^2]"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '18 July 2024 10:06'
+date: '18 July 2024 10:14'
 output:
   beamer_presentation:
     toc: true
@@ -98,7 +98,7 @@ Also, see tab `Assumed Knowledge` in the [`module 6 lectures spreadsheet`](https
 
 There are many keyboard shortcuts that can help you work with Excel efficiently. The “Excel Wizards” hardly ever use their mouse. You are advised to try and learn as many of those shortcuts as you can!
 
-Examples of useful shortcuts are (e.g. for macOS):
+Examples of useful shortcuts are (e.g. for Windows):
 
 - F4: Cycles through combinations of absolute and relative references
 - ctrl + shift + arrow key: Extend the selection of cells to the last non-blank cell towards the specified direction
