@@ -196,7 +196,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
   
 - Removing duplicate rows: `Data → Data Tools → Remove Duplicates`.
 - Converting table into "machine-readable" formats.
-  - An example in [Kolokolov, 2023 (Chapter 1, P.2-9)](https://link.springer.com/book/10.1007/978-1-4842-8942-6).
+  - An example in Chapter 1, P.2-9 in @MyDS23.
   - Macros would be useful here!
 
 - There are much more functions and steps can be used to clean your data - see [`Microsoft - Top ten ways to clean your data`](https://support.microsoft.com/en-au/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19).
@@ -302,7 +302,7 @@ spreadsheets.
 
 Check [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for comparisons between these lookup functions.
 
-Reference: Murray, 2022 (Chapter 7, 11)
+Reference: Chapter 7 and 11 of @AEF22
 
 # Dynamic references
 
@@ -344,7 +344,6 @@ knitr::include_graphics("indirect_example.png")
 
 See `reference` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for demonstrations.
 
-Reference: Murray, 2022 (Chapter 11)
 
 ## How to use them for triangles?
 
@@ -368,6 +367,8 @@ knitr::include_graphics("indad.png")
 ```
 1. Select the top left corner of the triangle first (`INDIRECT(ADDRESS(4,2))`). 
 2. Dynamically change the reference by editing the location of bottom right corner of the reference (`INDIRECT(ADDRESS(7-C2, 3+C2)))`).
+
+Reference: Chapter 11 of @AEF22
 
 # General etiquette, auditing, and tools
 
@@ -547,6 +548,7 @@ See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/mo
   - Fill every $n$ cell with some numbers.
   - Keep showing input boxes and do operations until entering specific input.
 
+Reference: Chapter 2, 3 of @EoE23
 
 # Next steps
 
