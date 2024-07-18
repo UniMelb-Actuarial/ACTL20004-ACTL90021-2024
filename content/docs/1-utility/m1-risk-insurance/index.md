@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '13 July 2024 12:49'
+date: '18 July 2024 10:17'
 output:
   beamer_presentation:
     toc: true
@@ -634,4 +634,4 @@ Joshi, Mark Suresh. 2013. *Introduction to Mathematical Portfolio Theory*. Cambr
 
 </div>
 
-[^1]: References: Chapter 7.1-7.3 and 8.1-8.3 of Joshi (2013) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/24-Top-M1-lec.pdf)
+[^1]: References: Chapter 7.1-7.3 and 8.1-8.3 of Joshi (2013) \| `\(\; \rightarrow\)` [](https://topics-actl.netlify.app/output/24-Top-M1-lec.pdf)

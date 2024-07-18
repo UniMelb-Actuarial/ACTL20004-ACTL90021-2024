@@ -33,6 +33,10 @@ See also detailed learning outcomes of 1.2 (utility theory) of the CM2 syllabus 
 
 # Main references and lectures
 
+<p style="font-size:12px;color: rgb(255, 0, 0);">
+Note: Typos and issues are being updated continuously throughout the semester. The online notes are always up-to-date, and can easily be read on a mobile device (version date is at the bottom). If you download a pdf version of the slides, a version date is also available on the first page. If you click on the link “latest slides” you will download the latest version. You can then compare the date and work out if it was updated.
+</p>
+
 ## Prerequisite knowledge
 
 Please review the [`Prerequisite knowledge`](../../0-prerequisite-knowledge/) page for this course. This is not exhaustive by any means, but provides minimum knowledge you should be comfortable with. Note that Tutorials in Week 1 are your opportunity to ask about those topics.

@@ -4,10 +4,10 @@ bookSearchExclude: false
 weight: 20
 title: "M6 Excel Topics"
 subtitle: "Topics in Insurance, Risk, and Finance [^1]"
-author: "Professor Benjamin Avanzi"
+author: "Professor Benjamin Avanzi[^2]"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '18 July 2024'
+date: '18 July 2024 10:17'
 output:
   beamer_presentation:
     toc: true
@@ -30,7 +30,7 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{verbatim}
   - \usepackage[english]{varioref}
-  - \usepackage{natbib}
+  - \usepackage[numbers]{natbib}
   - \usepackage{actuarialangle}
   - \usepackage{pgfpages}    
   - \pgfdeclareimage[height=1cm]{university-logo}{../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png}
@@ -50,7 +50,7 @@ header-includes:
 classoption: t,handout 
 ---
 
-# Introduction and Assumed Knowledge
+# Introduction and assumed knowledge
 
 ## Why Excel?
 
@@ -63,16 +63,19 @@ classoption: t,handout
 
 Excel is notoriously problematic in certain areas:
 
-- Lack of transparency - one can’t see the formulas unless you click in a cell; alternatively, you can’t see the formulas and understand where the numbers come from unless you are in Excel (a problem for reports, presentations etc).
-- Mistakes can be tiny but have huge consequences in the end (the job of Excel auditor actually exists!).
-- Lack of good documentation capability (as opposed to code); this makes collaboration and audit difficult, and creates an operational risk (e.g. builder leaves).
+- Lack of transparency - one can’t see the formulas unless you click in a cell.
+- Similarly, you can’t see the formulas and understand where the numbers come from unless you are in Excel (a problem for reports, presentations etc).
+- Tiny mistakes (the wrong letter, the wrong number in cell reference, forgetting a \$) can have huge consequences in the end (Note that the job of Excel auditor actually exists!).
+- Lack of good documentation capability (as opposed to code); this makes collaboration and audit difficult, and creates an operational risk (e.g. spreadsheet developer leaves).
+- Lack of rigour in the construction of a model (input, assumptions, intermediary calculations, output).
 
 ------------------------------------------------------------------------
 
-- Lack of rigour in the construction of a model (input, assumptions, intermediary calculations, output).
+The following improved over recent years, but are still downsides of Excel as compared to some coded languages:
+
 - Can’t handle (seriously) large data sets.
 - Lack of good and flexible data cleaning and manipulation capabilities.
-- Sometimes code is a lot easier (e.g. flip a vector around, sum over a diagonal, …).
+- Some operations are just a lot easier to perform with code (e.g. flip a vector around, sum over a diagonal, …).
 
 I know there are counter arguments for all of those, but this presupposes you know what the solutions are. You’ll learn some of those here!
 
@@ -89,11 +92,13 @@ See [`prerequisite knowledge on the website`](https://topics-actl.netlify.app/do
 
 Page references are for Slager and Slager (2020), see [`link here`](https://link.springer.com/book/10.1007/978-1-4842-6209-2).
 
-Also, see tab `Assumed Knowledge` in the [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+Also, see tab `Assumed Knowledge` in the [`module 6 lectures spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
 
 ## Some keyboard shortcuts
 
-There are many keyboard shortcuts that can help you work with Excel efficiently. Some (but not all) useful shortcuts are:
+There are many keyboard shortcuts that can help you work with Excel efficiently. The “Excel Wizards” hardly ever use their mouse. You are advised to try and learn as many of those shortcuts as you can!
+
+Examples of useful shortcuts are (e.g. for Windows):
 
 - F4: Cycles through combinations of absolute and relative references
 - ctrl + shift + arrow key: Extend the selection of cells to the last non-blank cell towards the specified direction
@@ -102,7 +107,7 @@ There are many keyboard shortcuts that can help you work with Excel efficiently.
 
 See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en-au/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f) for list of all keyboard shortcuts.
 
-# Data Wrangling and Exploratory Data Analysis
+# Data wrangling and Exploratory Data Analysis (“EDA”)
 
 ## Data Wrangling
 
@@ -121,7 +126,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
   - Merging and splitting columns with functions like `LEFT()`, `RIGHT()` and `MID()` and `SEARCH()`. Wildcard characters `?` and `*` are also useful.
 - Removing duplicate rows: `Data → Data Tools → Remove Duplicates`.
 - Converting table into “machine-readable” formats.
-  - An example in Chapter 1, P.2-9 in Kolokolov (2023).
+  - An example in [Kolokolov, 2023 (Chapter 1, P.2-9)](https://link.springer.com/book/10.1007/978-1-4842-8942-6).
   - Macros would be useful here!
 - There are much more functions and steps can be used to clean your data - see [`Microsoft - Top ten ways to clean your data`](https://support.microsoft.com/en-au/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19).
 
@@ -145,7 +150,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
   - I also included a “slicer” (click on chart / insert slicer), in order to easily filter by squad.
 - Reference: Chapter 15 of Slager and Slager (2020).
 
-# Dynamic Arrays
+# Dynamic arrays
 
 ## Spilling
 
@@ -224,7 +229,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 
 Check [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for comparisons between these lookup functions.
 
-Reference: Chapter 7 and 11 of Murray (2022)
+Reference: Murray, 2022 (Chapter 7, 11)
 
 # Dynamic references
 
@@ -267,6 +272,8 @@ Reference: Chapter 7 and 11 of Murray (2022)
 
 See `reference` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for demonstrations.
 
+Reference: Murray, 2022 (Chapter 11)
+
 ## How to use them for triangles?
 
 ### Manual method
@@ -289,8 +296,6 @@ See `reference` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.a
 
 1. Select the top left corner of the triangle first (`INDIRECT(ADDRESS(4,2))`).
 2. Dynamically change the reference by editing the location of bottom right corner of the reference (`INDIRECT(ADDRESS(7-C2, 3+C2)))`).
-
-Reference: Chapter 11 of Murray (2022)
 
 # General etiquette, auditing, and tools
 
@@ -481,8 +486,6 @@ See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/mo
   - Fill every `\(n\)` cell with some numbers.
   - Keep showing input boxes and do operations until entering specific input.
 
-Reference: Chapter 2, 3 of Lee and Lee (2023)
-
 # Next steps
 
 - All of Katz (2023) is relevant, but take it as a cook book for the assignment. You can go as far as you wish.
@@ -495,29 +498,11 @@ Reference: Chapter 2, 3 of Lee and Lee (2023)
 
 # References
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 
 <div id="ref-AE23" class="csl-entry">
 
 Katz, A. I. 2023. *Up up and Array! Dynamic Array Formulas for Excel 365 and Beyond*. Apress.
-
-</div>
-
-<div id="ref-MyDS23" class="csl-entry">
-
-Kolokolov, Alex. 2023. *Make Your Data Speak: Creating Actionable Data Through Excel for Non-Technical Professionals*.
-
-</div>
-
-<div id="ref-EoE23" class="csl-entry">
-
-Lee, John, and Cheng-Few Lee. 2023. *Essentials of Excel VBA, Python, and r: Volume i: Financial Statistics and Portfolio Analysis*.
-
-</div>
-
-<div id="ref-AEF22" class="csl-entry">
-
-Murray, Alan. 2022. *Advanced Excel Formulas: Unleashing Brilliance with Excel Formulas*.
 
 </div>
 
@@ -529,4 +514,6 @@ Slager, D., and A. Slager. 2020. *Essential Excel 2019*. 2nd ed. Apress.
 
 </div>
 
-[^1]: References: Slager and Slager (2020) and Katz (2023) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/23-Top-M6-lec.pdf)
+[^1]: Contributions from Ho Ming Lee and William Ho are gratefully acknowledged.
+
+[^2]: References: Slager and Slager (2020) and Katz (2023) \| `\(\; \rightarrow\)` [](https://topics-actl.netlify.app/output/24-Top-M6-lec.pdf)
