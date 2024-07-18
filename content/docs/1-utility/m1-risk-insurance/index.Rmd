@@ -136,7 +136,7 @@ library(extRemes)
 - The question is then - how do people make decisions in that context?
 - A sub-question, of particular interest in this subject, is why do individuals choose to insure, even though insurance covers are typically charged at a much higher cost than expected value?
 
-## Preliminary: the easy case
+## Preliminary: the "easy" case
 
 ### First order stochastic dominance
 

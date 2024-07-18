@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '18 July 2024 10:17'
+date: '18 July 2024 10:27'
 output:
   beamer_presentation:
     toc: true
@@ -71,7 +71,7 @@ classoption: t,handout
 - The question is then - how do people make decisions in that context?
 - A sub-question, of particular interest in this subject, is why do individuals choose to insure, even though insurance covers are typically charged at a much higher cost than expected value?
 
-## Preliminary: the easy case
+## Preliminary: the “easy” case
 
 ### First order stochastic dominance
 
