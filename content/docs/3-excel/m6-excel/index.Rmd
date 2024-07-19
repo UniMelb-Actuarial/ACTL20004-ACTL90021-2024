@@ -161,7 +161,7 @@ See [`prerequisite knowledge on the website`](https://topics-actl.netlify.app/do
 
 Page references are for @EE19, see [`link here`]( https://link.springer.com/book/10.1007/978-1-4842-6209-2).
 
-Also, see tab `Assumed Knowledge` in the [`module 6 lectures spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+Also, see tab `Assumed Knowledge` in the [`module 6 lectures spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5960390).
 
 ## Some keyboard shortcuts
 

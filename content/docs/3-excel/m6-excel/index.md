@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi[^2]"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '18 July 2024 17:37'
+date: '19 July 2024 16:25'
 output:
   beamer_presentation:
     toc: true
@@ -92,7 +92,7 @@ See [`prerequisite knowledge on the website`](https://topics-actl.netlify.app/do
 
 Page references are for Slager and Slager (2020), see [`link here`](https://link.springer.com/book/10.1007/978-1-4842-6209-2).
 
-Also, see tab `Assumed Knowledge` in the [`module 6 lectures spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+Also, see tab `Assumed Knowledge` in the [`module 6 lectures spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5960390).
 
 ## Some keyboard shortcuts
 
