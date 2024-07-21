@@ -145,10 +145,10 @@ library(extRemes)
 - **First order stochastic dominance** is defined as follows. Outcome $A$ dominates $B$ if (assuming $x$ is formulated in terms of gains)
 $$F_A(x) \le F_B(x)\text{ for all }x,\text{ and }$$
 $$F_A(x)<F_B(x)\text{ for (at least) some value of }x,$$
-that is, the probability that $B$ will yield an outcome higher then a given threshold is never bigger than for $A$, and there is at least one instance where it is strictly less.
-- This is strong dominance, and no-one in their right mind would choose $B$ over $A$ from a pure financial perspective.
+that is, the probability that $B$ will yield an outcome higher than a given threshold is never bigger than for $A$, and there is at least one instance where it is strictly less.
+- This is strong dominance, and it is hard to imagine why someone would choose $B$ over $A$ when considering $F_A$ and $F_B$ only.
 - Note that we could still have an outcome of $A$ being lower than  
-for $B$ - the dominance is in probabilistic terms.
+for $B$ - the dominance is in probabilistic terms; we do **not** have $\Pr[A>B]=1$
 
 ---
 
@@ -174,7 +174,7 @@ then $A$ displays second order stochastic dominance over $B$.
 
 ---
 
-For example, if two normal disributions have the same mean but different variances, the one with lower variance displays second order dominance over the other.
+For example, if two normal disributions have the same mean but different variances, the one with lower variance displays second order dominance over the other. **Note we are plotting the integral of $F$ here!**
 
 ```{r 2stdom2,echo=F,fig.height=7}
 par(cex=1.4)
@@ -321,7 +321,7 @@ Notation:
 - Let $A$ and $B$ be two alternative choices
 - $A \succ B$ means that $A$ is preferred to $B$
 - $A \sim B$ means that neither $A$ or $B$ are preferred  
-We say that the DM is "indifferent: between $A$ and $B$
+We say that the DM is "indifferent" between $A$ and $B$
 - $A \succsim B$ means that $B$ is not preferred over $A$  
 (we can have either $A \succ B$ or $A \sim B$)
 
@@ -339,10 +339,10 @@ C & \text{ w.p. }& 1-p \end{array}\right.
 \;\;\sim\;\; \left\{\begin{array}{cccl} B & \text{ w.p. }& p & \text{ and } \\ 
 C & \text{ w.p. }& 1-p \end{array}\right.
 \end{equation*}
+(adding a third choice with identical weight is not going to alter the preference order between $A$ and $B$)
 - **Certainty equivalence**: 
-  - Suppose $A \succ B$
-  - Suppose $B \succ C$
-  - Then there exists $p$ such that
+  - Suppose $A \succ B$ and $B \succ C$ so that $B$ is "in the middle"
+  - Then there exists $p$ such that we can express $B$ as a mixture of $A$ and $C$:
   $$ B \;\;\sim\;\; \left\{\begin{array}{cccl} A & \text{ w.p. }& p & \text{ and } \\ 
 C & \text{ w.p. }& 1-p \end{array}\right. $$
 
@@ -366,7 +366,7 @@ According to this criterion, Ella will choose to sell ice creams instead.
 
 ### St Petersburg 
 
-Let us now investigate the case of the St Peterburg paradox, using a log utility function, that is,
+Let us now investigate the case of the St Petersburg paradox, using a log utility function, that is,
 $$u(x)= \log x.$$
 It follows that the expected utility is
 $$E\left[\log \left(2^N\right)\right] = \sum_{n=1}^\infty \log \left( 2^n\right)\cdot 2^{-n},$$
@@ -461,7 +461,7 @@ is called the **Risk premium**.
 
 ## General case
 
-- Assume now that the loss is no longer $c$, but a general random variable \$ $X \in \mathbb{R}$.
+- Assume now that the loss is no longer as simple as $c$ with probability $p$, but a more general random variable \$ $X \in \mathbb{R}$.
 - The certainty equivalent is 
 $$I = u^{-1} \left( \; E\left[ u(W_0+X)\right]\; \right).$$
 - The indifference price is
@@ -476,7 +476,7 @@ This is the maximum amount an insurer would be able to charge for full protectio
 
 The certainty equivalent for each option is
 $$ (\gamma \cdot E[u(W_0+X)]+1)^{1/\gamma},$$
-that is, noting that the numbers in the table ore of the type " $u(W_0+X)$ ,
+that is, noting that the numbers in the table ore of the type "$u(W_0+X)$", we get
 
 - \$7,414 for umbrellas, and
 - \$7,661 for ice creams.
