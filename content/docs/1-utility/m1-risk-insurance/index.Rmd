@@ -524,23 +524,25 @@ Setting up functions in `R`:
 ```{r umbicecreamgamma0,fig.show='hide'} 
 power <- function(x,gamma){ (x^gamma-1)/gamma }
 
-umbrella <- function(gamma){
-    expectedutility <- (power(30000,gamma)+2*power(4000,gamma)+power(2000,gamma))/4
+umbrella <- function(gamma,w0){
+    expectedutility <- (power(w0+30000,gamma)+2*power(w0+4000,gamma)+power(w0+2000,gamma))/4
     return( (expectedutility*gamma+1)^(1/gamma) ) }
 
-icecream <- function(gamma){
-    expectedutility <- (power(2000,gamma)+2*power(8000,gamma)+power(16000,gamma))/4
+icecream <- function(gamma,w0){
+    expectedutility <- (power(w0+2000,gamma)+2*power(w0+8000,gamma)+power(w0+16000,gamma))/4
     return( (expectedutility*gamma+1)^(1/gamma) ) }
 ```
 
 ---
 
+**Case 1: no wealth**
+
 Plot `R` code (result on the next slide):
 
 ```{r umbicecreamgamma,fig.show='hide'} 
 par(cex=1.4)
-curve(umbrella(x),from=0.01,to=0.99,lwd=2,col="blue",xlab="gamma",ylab="Certainty equivalent")
-curve(icecream(x),from=0.01,to=0.99,add=TRUE,lwd=2,col="red")
+curve(umbrella(x,0),from=0.01,to=0.99,lwd=2,col="blue",xlab="Parameter gamma (the smaller the more risk averse)",ylab="Certainty equivalent")
+curve(icecream(x,0),from=0.01,to=0.99,add=TRUE,lwd=2,col="red")
 abline(v=0.5849920142672,col="green")
 text(0.6,6000,paste(signif(0.5849920142672,digits=3),sep=""),col="green",adj=0)
 text(0.6,7600,"Ice cream",col="red",adj=0)
@@ -553,6 +555,27 @@ text(0.78,9000,"Umbrellas",col="blue",adj=1)
 
 ```{r umbicecreamgamma,echo=F,results='hide',fig.height=7}
 ```
+
+---
+
+**Case 2: wealth of 100,000**
+
+Plot `R` code (result on the next slide):
+
+```{r umbicecreamgamma2,fig.show='hide'} 
+par(cex=1.4)
+curve(umbrella(x,100000)-icecream(x,100000),from=0.01,to=0.99,lwd=2,col="black",xlab="Parameter gamma (the smaller the more risk averse)",ylab="Additional certainty equivalent of umbrellas")
+abline(v=0.5849920142672,col="green")
+```
+
+[Note `R` codes are not assessable!]
+
+---
+
+```{r umbicecreamgamma2,echo=F,results='hide',fig.height=7}
+```
+
+
 
 ### Discussion
 

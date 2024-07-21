@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '21 July 2024 20:22'
+date: '22 July 2024 09:20'
 output:
   beamer_presentation:
     toc: true
@@ -420,27 +420,30 @@ Setting up functions in `R`:
 power <- function(x, gamma) {
   (x^gamma - 1)/gamma
 }
-umbrella <- function(gamma) {
-  expectedutility <- (power(30000, gamma) + 2 * power(4000,
-    gamma) + power(2000, gamma))/4
+umbrella <- function(gamma, w0) {
+  expectedutility <- (power(w0 + 30000, gamma) + 2 * power(w0 +
+    4000, gamma) + power(w0 + 2000, gamma))/4
   return((expectedutility * gamma + 1)^(1/gamma))
 }
-icecream <- function(gamma) {
-  expectedutility <- (power(2000, gamma) + 2 * power(8000,
-    gamma) + power(16000, gamma))/4
+icecream <- function(gamma, w0) {
+  expectedutility <- (power(w0 + 2000, gamma) + 2 * power(w0 +
+    8000, gamma) + power(w0 + 16000, gamma))/4
   return((expectedutility * gamma + 1)^(1/gamma))
 }
 ```
 
 ------------------------------------------------------------------------
 
+**Case 1: no wealth**
+
 Plot `R` code (result on the next slide):
 
 ``` r
 par(cex = 1.4)
-curve(umbrella(x), from = 0.01, to = 0.99, lwd = 2, col = "blue",
-  xlab = "gamma", ylab = "Certainty equivalent")
-curve(icecream(x), from = 0.01, to = 0.99, add = TRUE, lwd = 2,
+curve(umbrella(x, 0), from = 0.01, to = 0.99, lwd = 2, col = "blue",
+  xlab = "Parameter gamma (the smaller the more risk averse)",
+  ylab = "Certainty equivalent")
+curve(icecream(x, 0), from = 0.01, to = 0.99, add = TRUE, lwd = 2,
   col = "red")
 abline(v = 0.5849920142672, col = "green")
 text(0.6, 6000, paste(signif(0.5849920142672, digits = 3), sep = ""),
@@ -454,6 +457,26 @@ text(0.78, 9000, "Umbrellas", col = "blue", adj = 1)
 ------------------------------------------------------------------------
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/umbicecreamgamma-1.png" width="672" />
+
+------------------------------------------------------------------------
+
+**Case 2: wealth of 100,000**
+
+Plot `R` code (result on the next slide):
+
+``` r
+par(cex = 1.4)
+curve(umbrella(x, 1e+05) - icecream(x, 1e+05), from = 0.01, to = 0.99,
+  lwd = 2, col = "black", xlab = "Parameter gamma (the smaller the more risk averse)",
+  ylab = "Additional certainty equivalent of umbrellas")
+abline(v = 0.5849920142672, col = "green")
+```
+
+\[Note `R` codes are not assessable!\]
+
+------------------------------------------------------------------------
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/umbicecreamgamma2-1.png" width="672" />
 
 ### Discussion
 
