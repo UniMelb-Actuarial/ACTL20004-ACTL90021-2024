@@ -46,7 +46,7 @@ Please review the [`Prerequisite knowledge`](../../0-prerequisite-knowledge/) pa
 Read: [`Module 1: Utility, Risk and Insurance`](../../1-utility/m1-risk-insurance/)
 
 Annotate: [`slides`](../../../output/24-Top-M1-lec.pdf)
-<!-- [``annotated slides``](../../../output/22-GIM-M1-lec_a.pdf) -->
+[`annotated slides UG`](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [`annotated slides PG`](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
 
 Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
 
@@ -55,7 +55,7 @@ Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https
 Read: [`Module 6: Excel topics`](../../3-excel/m6-excel)
 
 Annotate: [`slides`](../../../output/24-Top-M6-lec.pdf) [`spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5960390)
-<!-- [``annotated slides``](../../../output/22-GIM-M1-lec_a.pdf) -->
+[`annotated slides UG`](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [`annotated slides PG`](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
 
 Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
 
