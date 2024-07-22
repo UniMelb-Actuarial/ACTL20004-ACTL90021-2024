@@ -25,7 +25,7 @@ menu:
   #     weight: 10
 
   after:
-    - name: ___Websites and forums___
+    - name: ____Websites and forums____
       url: 
       weight: 13
     - name: Ed discussion forum
@@ -40,13 +40,19 @@ menu:
     - name: Community Canvas
       url: https://canvas.lms.unimelb.edu.au/courses/220261  
       weight: 18
-    - name: _______Exercises__________
+    - name: ___Exercises for this week____
       url: 
       weight: 19
-    - name: Tutorial exercises
-      url: https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5029017
+    - name: Pre-Tutorial exercises
+      url: https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5966328
       weight: 27
-    - name: __________Links___________
+    - name: Tutorial exercises (no sol)
+      url: https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5966329
+      weight: 28
+    - name: Tutorial exercises (sol)
+      url: https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5966330
+      weight: 29
+    - name: ___________Links____________
       url: 
       weight: 35 
     - name: Benjamin Avanzi
