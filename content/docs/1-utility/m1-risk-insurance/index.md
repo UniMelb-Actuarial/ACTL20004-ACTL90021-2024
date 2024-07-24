@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '22 July 2024 09:20'
+date: '24 July 2024 11:49'
 output:
   beamer_presentation:
     toc: true
@@ -196,6 +196,35 @@ which clearly goes to infinity as `\(n_\text{max}\)` goes to infinity.
 
 ## The Expected Utility Theorem (EUT)
 
+### Ranking preferences
+
+Here we are setting a desired framework under which our “criterion” for making choices would ideally work.
+
+Notation:
+
+- Let `\(A\)` and `\(B\)` be two alternative choices
+- `\(A \succ B\)` means that `\(A\)` is preferred to `\(B\)`
+- `\(A \sim B\)` means that neither `\(A\)` or `\(B\)` are preferred  
+  We say that the DM is “indifferent” between `\(A\)` and `\(B\)`
+- `\(A \succsim B\)` means that `\(B\)` is not preferred over `\(A\)`  
+  (we can have either `\(A \succ B\)` or `\(A \sim B\)`)
+
+------------------------------------------------------------------------
+
+The following **axioms** are properties which we take as true without proof. Our criterion of choice should sastify those (the EUT afterwards does):
+
+- **Comparability**: a DM can state a preference between all available outcomes.
+- **Transitivity**:
+  $$ A \succ B \text{ and } B \succ C \Longrightarrow A \succ C.$$
+- **Independence**: If `\(A \sim B\)` then
+  `\begin{equation*} \left\{ \begin{array}{cccl} A & \text{ w.p. }& p & \text{ and } \\  C & \text{ w.p. }& 1-p \end{array}\right. \;\;\sim\;\; \left\{\begin{array}{cccl} B & \text{ w.p. }& p & \text{ and } \\  C & \text{ w.p. }& 1-p \end{array}\right. \end{equation*}`
+  (adding a third choice with identical weight is not going to alter the preference order between `\(A\)` and `\(B\)`)
+- **Certainty equivalence**:
+  - Suppose `\(A \succ B\)` and `\(B \succ C\)` so that `\(B\)` is “in the middle”
+  - Then there exists `\(p\)` such that we can express `\(B\)` as a mixture of `\(A\)` and `\(C\)`:
+    $$ B \;\;\sim\;\; \left\{\begin{array}{cccl} A & \text{ w.p. }& p & \text{ and } \\ 
+    C & \text{ w.p. }& 1-p \end{array}\right. $$
+
 ### The concept of utility
 
 - It is a fact that humans don’t behave according to expectation maximisation.
@@ -215,37 +244,9 @@ According to IoA (2023), the “**Expected Utility Theorem**” states that a fu
 Note:
 
 - this means that rather than maximising `\(E[X]\)` for random `\(X\)`, we maximise the transformed \$ of `\(X\)` into utility, that is, `\(E[u(X)]\)`.
+- all axioms are verified with this criterion.
 - of course, if `\(u\)` is linear then we just have a change of currency (and potential shift) and both approaches are equivalent.
 - rather than “investor” we will refer to “decision maker” (DM).
-
-### Axioms
-
-There are a number of axioms behind EUT which we need to review.
-
-Notation:
-
-- Let `\(A\)` and `\(B\)` be two alternative choices
-- `\(A \succ B\)` means that `\(A\)` is preferred to `\(B\)`
-- `\(A \sim B\)` means that neither `\(A\)` or `\(B\)` are preferred  
-  We say that the DM is “indifferent” between `\(A\)` and `\(B\)`
-- `\(A \succsim B\)` means that `\(B\)` is not preferred over `\(A\)`  
-  (we can have either `\(A \succ B\)` or `\(A \sim B\)`)
-
-------------------------------------------------------------------------
-
-Axioms:
-
-- **Comparability**: a DM can state a preference between all available outcomes.
-- **Transitivity**:
-  $$ A \succ B \text{ and } B \succ C \Longrightarrow A \succ C.$$
-- **Independence**: If `\(A \sim B\)` then
-  `\begin{equation*} \left\{ \begin{array}{cccl} A & \text{ w.p. }& p & \text{ and } \\  C & \text{ w.p. }& 1-p \end{array}\right. \;\;\sim\;\; \left\{\begin{array}{cccl} B & \text{ w.p. }& p & \text{ and } \\  C & \text{ w.p. }& 1-p \end{array}\right. \end{equation*}`
-  (adding a third choice with identical weight is not going to alter the preference order between `\(A\)` and `\(B\)`)
-- **Certainty equivalence**:
-  - Suppose `\(A \succ B\)` and `\(B \succ C\)` so that `\(B\)` is “in the middle”
-  - Then there exists `\(p\)` such that we can express `\(B\)` as a mixture of `\(A\)` and `\(C\)`:
-    $$ B \;\;\sim\;\; \left\{\begin{array}{cccl} A & \text{ w.p. }& p & \text{ and } \\ 
-    C & \text{ w.p. }& 1-p \end{array}\right. $$
 
 ## Examples
 
@@ -284,7 +285,7 @@ Note:
 The attitudes of the DM towards risk will be reflected in the mathematical properties of `\(u(x)\)`. We have:
 
 - **Non-satiation**: assuming that more money is always preferred, we must have `$$u'(x)>0.$$`
-- **Risk aversion**: a risk averse individual will be satisfied by a positive gain `\(c\)` less than it will be dissatisfied by a loss of `\(-c\)`. In other words, it will not proceed with a game that pays `\(c\)` or `\(-c\)` with equal probability. Since this game needs to have a negative value,
+- **Risk aversion**: a risk averse individual will be satisfied by a positive gain `\(c\)` less than it will be dissatisfied by a loss of `\(-c\)`. In other words, it will not proceed with a game that pays `\(c\)` or `\(-c\)` with equal probability. Since this game needs to have a negative value (in terms of utility),
   $$ u(x+dx)-u(x) < u(x) - u(x-dx) \Longrightarrow u(x+dx)-2 u(x) + u(x-dx) < 0$$
   which leads to (for small `\(dx\)`)
   `$$u''(x)<0.$$`
