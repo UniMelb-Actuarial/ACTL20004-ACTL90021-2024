@@ -50,7 +50,7 @@ Annotate: [`slides`](../../../output/24-Top-M2-lec.pdf)
 
 Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
 
-## Module 6: Utility, Risk and Insurance
+## Module 6: Excel
 
 Read: [`Module 6: Excel topics`](../../3-excel/m6-excel)
 
