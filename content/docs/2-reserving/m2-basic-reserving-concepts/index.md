@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '07 September 2023'
+date: '26 July 2024 17:25'
 output:
   beamer_presentation:
     toc: true
@@ -30,7 +30,7 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{verbatim}
   - \usepackage[english]{varioref}
-  - \usepackage{natbib}
+  - \usepackage[numbers]{natbib}
   - \usepackage{actuarialangle}
   - \usepackage{pgfpages}    
   - \pgfdeclareimage[height=1cm]{university-logo}{../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png}
@@ -69,22 +69,19 @@ classoption: t,handout
 
 ## The case of IAG
 
-Insurance Australia Group is one of the largest Australian general insurers (the largest under some measures)
-
-Its latest Balance Sheet (as at 31 December 2022, see [`page 20`](https://www.iag.com.au/sites/default/files/Documents/Results%20%26%20reports/IAGL-1H23-Financial-statements.pdf)) shows
+Insurance Australia Group is one of the largest Australian general insurers (the largest under some measures). Its latest Balance Sheet (as at 31 December 2023, see [`page 22 of the financial report`](https://www.iag.com.au/sites/default/files/Documents/Results%20%26%20reports/IAGL-1H24-4D-Financial-report.pdf)) shows:
 
 - Assets
-  - Total: 34,428m (100%)
+  - Total: 24,956m (100%)
 - Liabilities
-  - Unearned premium liability: 7,084m (20.6%)
-  - Outstanding claims liability: 13,560m (39.4%)
+  - Insurance contract liabilities: 14,139m (56.7%), of which (p. 33)
+    - Liability for remaining coverage: 2,191m (8.8%)
+    - **Liability for incurred claims: 11,948 (47.9%)**
+  - Other: 3,783m (15.1%)
 - Equity
-  - Total: 6,819m (19.8%)
+  - Total: 7,034 (28.2%)
 
-It is worth noting that IAG holds 2.01 times the APRA “Prescribed Capital Amount” (PCA), see [`F on page 12`](https://www.iag.com.au/sites/default/files/Documents/Results%20%26%20reports/IAGL-1H23-Financial-statements.pdf).
-
-See https://www.iag.com.au/results-and-reports to dowload the  
-latest financial statements of IAG.
+It is worth noting that IAG holds 2.07 times the APRA “Prescribed Capital Amount” (PCA), see [`page 7`](https://www.iag.com.au/sites/default/files/Documents/Results%20%26%20reports/IAGL-1H24-4D-Financial-report.pdf). See https://www.iag.com.au/results-and-reports to download the latest financial statements of IAG.
 
 # The claims process
 
@@ -341,7 +338,7 @@ are the estimated amounts of incurred losses (note that even if this is indexed 
 
 *Main reference:*
 
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 
 <div id="ref-Tay00" class="csl-entry">
 
@@ -351,4 +348,4 @@ Taylor, Greg. 2000. *Loss Reserving: An Actuarial Perspective*. Huebner Internat
 
 </div>
 
-[^1]: References: Chapter 1 of Taylor (2000) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/23-Top-M2-lec.pdf)
+[^1]: References: Chapter 1 of Taylor (2000) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/24-Top-M2-lec.pdf)

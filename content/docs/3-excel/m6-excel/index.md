@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi[^2]"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '19 July 2024 16:25'
+date: '26 July 2024 17:05'
 output:
   beamer_presentation:
     toc: true
@@ -123,7 +123,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 
 - Editing Texts
   - `CLEAN()`, `TRIM()`, and `SUBSTITUTE()` to deal with any non-printable characters.
-  - Merging and splitting columns with functions like `LEFT()`, `RIGHT()` and `MID()` and `SEARCH()`. Wildcard characters `?` and `*` are also useful.
+  - Merging and splitting columns with functions like `LEFT()`, `RIGHT()` and `MID()` and `SEARCH()`. Wildcard characters `?` (one unknown character) and `*` (one or more unknown characters) are also useful.
 - Removing duplicate rows: `Data → Data Tools → Remove Duplicates`.
 - Converting table into “machine-readable” formats.
   - An example in Chapter 1, P.2-9 in Kolokolov (2023).
@@ -133,7 +133,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 ## Pivot tables
 
 - Pivot tables are often considered as very difficult to master, but they are not that difficult to start with.
-- Example (in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456)): FIFA WWC
+- Example (in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5976893)): FIFA WWC
   - Insert / Pivot Table.
   - See how you can use variables as filters, rows, or columns. Move them around.
   - See how columns can display other things than `Sum`, such as `Count`, `Average`, `Max`, `Min`, or `Product`
@@ -144,7 +144,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 
 - A pivot chart can be created from the Pivot Table but also directly from the data.
 - A major difference with start charts is that you it will be somewhat “interactive” - there will be buttons you can use to alter the chart.
-- Example (in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456)): FIFA WWC
+- Example (in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5976893)): FIFA WWC
   - Insert / Pivot Chart;
   - In the example I changed the style of graph to “Combo” to allow for the two different scales;
   - I also included a “slicer” (click on chart / insert slicer), in order to easily filter by squad.

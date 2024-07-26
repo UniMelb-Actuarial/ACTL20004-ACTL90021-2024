@@ -54,7 +54,7 @@ Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https
 
 Read: [`Module 6: Excel topics`](../../3-excel/m6-excel)
 
-Annotate: [`slides`](../../../output/24-Top-M6-lec.pdf) [`spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5960390)
+Annotate: [`slides`](../../../output/24-Top-M6-lec.pdf) [`spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5976893)
 [`annotated slides UG`](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [`annotated slides PG`](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
 
 Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
@@ -79,16 +79,14 @@ Please let us know of any mistake or required update on [`Ed`](https://canvas.lm
 <!-- ## Pre-Tutorial work -->
 <!-- Please study those questions **before** the tutorial. -->
 <!-- Pre-Tutorial exercises are available in the [``Pre-Tutorial book``](https://canvas.lms.unimelb.edu.au/courses/173733/modules/items/4464391), which already includes solutions. It is recommended to attempt the questions *before* looking at the solutions -->
-
-## Tutorial materials
-
+<!-- ## Tutorial materials -->
 <!-- Some questions have been especially selected for the tutorials. Students should review and attempt those questions ***prior to their scheduled tutorial***, after they complete the pre-tutorial work.  -->
 <!-- The [``Tutorial book``]() includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set. -->
 <!-- Note that solutions will be gradually added to that same document. Hence it is not recommended to print it, as it will regularly change (typos will also dynamically be corrected). -->
 
 ## This week
 
-To be announced after the lectures.
+In scope this week are Sections 1.4, whole of Module 2 and 6.2. Note there is only one pre-tutorial question this week (for excel in Section 6.2).
 
 <!-- Tutorial exercises in scope this week are Sections 1.1 to 1.3, minus utilins3 (exercise 1.3.5). The two last exercises (`utilins3` and `util8`) will be covered next week. -->
 <!-- Here is the recording available for Week 1 from William: -->
@@ -100,11 +98,8 @@ To be announced after the lectures.
 <!-- <iframe height="420" width="640" allowfullscreen frameborder=0 src="https://echo360.net.au/media/a5dc442a-1e84-49c8-b317-3f4eb4c1cfa0/public?autoplay=false&automute=false"></iframe> -->
 <!--  -->
 <!-- <p style="font-size:10px;color: rgb(252, 156, 249);"> If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and <a href="https://canvas.lms.unimelb.edu.au/courses/145406/external_tools/701">entered Lecture Capture</a> via Canvas once for each session. This is to restrict access to students enrolled at the University of Melbourne only. </p> -->
-
-## Next week (week 2)
-
-To be announced after the lectures.
-
+<!-- ## Next week (week 2) -->
+<!-- To be announced after the lectures. -->
 <!-- The two last exercises of Module ` (`utilins3` and `util8`) will be covered next week. Also, we will start on Loss Reserving and will discuss Modules 2 (and possibly 3). -->
 <!-- ## Additional questions -->
 <!-- The "additional questions" are here for reinforcement or revision, but are not the main focus of the tutorials. Solutions for those exercises are already available. -->
@@ -116,7 +111,7 @@ To be announced after the lectures.
 <!-- install.packages("devtools") -->
 <!-- devtools::install_github("hadley/emo") -->
 
-- Nothing to do for now - just don’t fall behind 😄.
+- Start summarising Module 1. By the end of the week you should have studied everything there is to study for this Module, which will be assessed in the mid-semester exam.
 
 <!-- devtools::install_github("hadley/emo") -->
 

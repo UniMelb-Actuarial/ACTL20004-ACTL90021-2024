@@ -1,6 +1,6 @@
 ---
-bookHidden: true
-bookSearchExclude: true
+bookHidden: false
+bookSearchExclude: false
 title: "Week 2 Study Plan"
 weight: 2
 bibliography: ../../../../static/libraries.bib
@@ -16,7 +16,9 @@ This week, we will cover the following topics:
 
 - End of Module 1 (characterising risk aversion, and additional considerations)
 - Module 2, which introduces the basics of loss reserving: what it is, why it matters, notation, data
+- Module 6.2, which looks at data cleaning, wrangling, and pivot tables.
 
+See also detailed learning outcomes of 1.2 ("Rational choice theory") and 5.2 ("Liability valuations / Run-off triangles") of the CM2 syllabus [``here``](../../0-subject-guide/SILO).
 
 <!-- Here is the end of week 1 video, which introduces week 2: -->
 
@@ -30,29 +32,40 @@ This week, we will cover the following topics:
 
 
 
-See also detailed learning outcomes of 1.2 ("Rational choice theory") and 5.2 ("Liability valuations / Run-off triangles") of the CM2 syllabus [``here``](../../0-subject-guide/SILO).
+
 
 
 # Main references and lectures
 
+<p style="font-size:12px;color: rgb(255, 0, 0);">Note: Typos and issues are being updated continuously throughout the semester. The online notes are always up-to-date, and can easily be read on a mobile device (version date is at the bottom). If you download a pdf version of the slides, a version date is also available on the first page. If you click on the link "latest slides" you will download the latest version. You can then compare the date and work out if it was updated. </p>
 
 ## Module 1: Utility, Risk and Insurance
 
 Read: [``Module 1: Utility, Risk and Insurance``](../../1-utility/m1-risk-insurance/)
 
-Annotate: [``slides``](../../../output/23-Top-M1-lec.pdf) 
-<!-- [``annotated slides``](../../../output/22-GIM-M1-lec_a.pdf) -->
+Annotate: [``slides``](../../../output/24-Top-M1-lec.pdf) 
+[``annotated slides UG``](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [``annotated slides PG``](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
 
-Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/153686/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/154246/external_tools/701)). This is where annotated slides will be made available, too.
+Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
 
 ## Module 2: Basic Reserving Concepts
 
 Read: [``Module 2: Basic Reserving Concepts``](../../2-reserving/m2-basic-reserving-concepts/)
 
-Annotate: [``slides``](../../../output/23-Top-M2-lec.pdf) 
-<!-- [``annotated slides``](../../../output/22-GIM-M1-lec_a.pdf) -->
+Annotate: [``slides``](../../../output/24-Top-M2-lec.pdf) 
+[``annotated slides UG``](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [``annotated slides PG``](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
 
-Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/153686/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/154246/external_tools/701)). This is where annotated slides will be made available, too.
+Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
+
+
+## Module 6: Utility, Risk and Insurance
+
+Read: [``Module 6: Excel topics``](../../3-excel/m6-excel)
+
+Annotate: [``slides``](../../../output/24-Top-M6-lec.pdf) [``spreadsheet``](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5960390) 
+[``annotated slides UG``](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [``annotated slides PG``](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
+
+Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
 
 
 # Additional preparation and resources
@@ -72,7 +85,7 @@ Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https:/
 
 # Tutorials
 
-Please let us know of any mistake or required update on [``Ed``](https://canvas.lms.unimelb.edu.au/courses/191080/external_tools/5837?display=borderless).
+Please let us know of any mistake or required update on [``Ed``](https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless).
 
 <!-- ## Pre-Tutorial work -->
 
