@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '24 July 2024 11:49'
+date: '29 July 2024 09:44'
 output:
   beamer_presentation:
     toc: true
@@ -536,7 +536,7 @@ Examples:
   and hence
   `$$\frac{1}{2} u''(W_0)\sigma^2 \approx u'(W_0) P \Longleftrightarrow P \approx \frac{1}{2}\frac{u''(W_0)}{u'(W_0)} \sigma^2 = - A(W_0) \sigma^2.$$`
   This shows that the indifference price is (approximately) proportional to the absolute risk aversion, which makes a lot of sense.
-- Here the risk premium is `\(-P\)` (remember `\(E[X]0\)` ), which means that it is simply `\(A(W_0)\)` scaled up by `\(\sigma^2\)`.
+- Here the risk premium is `\(-P\)` (remember `\(E[X]=0\)` ), which means that it is simply `\(A(W_0)\)` scaled up by `\(\sigma^2\)`.
 
 ### Effect of wealth on ARA
 
@@ -605,6 +605,7 @@ There are essentially two different types of use:
 
 1.  “Assume” a utility function, which we believe is appropriate to the context, to draw insights from a stylised theoretical model.
     - For instance, one might ask what the optimal way of investing money in retirement is (a hot topic!).
+    - As an example, see [`the published paper coming out of Lewis de Felice's 2023 honours essay`](https://link.springer.com/article/10.1007/s10203-024-00448-y)
 2.  Gather data (choices) about an individual, and try to “fit” an appropriate utility function to those choices.
     - The result could be informative in itself (such as in supporting assumptions such as those made in the previous case), and/or
     - could be used to support decision making.
