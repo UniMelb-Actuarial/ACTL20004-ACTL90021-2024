@@ -83,14 +83,15 @@ Please let us know of any mistake or required update on [`Ed`](https://canvas.lm
 ## Tutorial materials
 
 <!-- Some questions have been especially selected for the tutorials. Students should review and attempt those questions ***prior to their scheduled tutorial***, after they complete the pre-tutorial work.  -->
-
-The [`Tutorial book`]() includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set.
-
-Note that solutions will be gradually added to that same document. Hence it is not recommended to print it, as it will regularly change (typos will also dynamically be corrected).
+<!-- The [``Tutorial book``]() includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set. -->
+<!-- Note that solutions will be gradually added to that same document. Hence it is not recommended to print it, as it will regularly change (typos will also dynamically be corrected). -->
 
 ## This week
 
-Tutorial exercises in scope this week are the two last exercises (`utilins3` and `util8`) of Module 1, as well as Module 2.
+Tutorial exercises in scope this week are
+
+- Pre-tutorials: 6.2.1 (`wranglexl1`);
+- Tutorials: 1.1.1 (`util8`), 2.1.1 and 2.1.2 (`lossres1xl` and `lossres2xl`), and 6.2.1 (`pivottable1`).
 
 <!-- Here is the recording available for Week 1 from William: -->
 <!--  -->

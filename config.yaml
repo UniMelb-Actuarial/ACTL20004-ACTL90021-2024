@@ -44,13 +44,13 @@ menu:
       url: 
       weight: 19
     - name: Pre-Tutorial exercises
-      url: https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5966328
+      url: https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5980919
       weight: 27
     - name: Tutorial exercises (no sol)
-      url: https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5966329
+      url: https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5980920
       weight: 28
     - name: Tutorial exercises (sol)
-      url: https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5966330
+      url: https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5980921
       weight: 29
     - name: ___________Links____________
       url: 
