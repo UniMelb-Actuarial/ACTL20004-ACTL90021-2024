@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi[^2]"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '26 July 2024 17:05'
+date: '01 August 2024 14:54'
 output:
   beamer_presentation:
     toc: true
@@ -156,18 +156,19 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 
 - One advantage of programs like `R` are the easy use and manipulation of vectors.
 - Excel can do similar things, and the vectors are called arrays. This is new (post Office 365), and is a bit of a game changer.
-- Before Office 365, Excel was incapable of depositing results beyond just 1 cell. This is called “spilling”.
-- Note Excell will need the required space to spill.
+- Before Office 365, Excel was incapable of depositing results beyond just 1 cell.
+- This new capability is called “spilling”.
+- Note Excel will need the required space to spill.
 - Main reference is Katz (2023) - we’ll only introduce this here.
 
 ### Example
 
 - Here we introduce array formulas.
   - If you calculate the sum of an array you’ll get a single number.
-  - The result of an array formula (such as `LEN()`), when you input an array, will give you an array.
-- See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456):
-  - `LEN()` gives an array.
-  - You could then get the sum without having to put the array anywhere: `SUM(LEN(B3:B6))`.
+  - The result of an array formula (such as `LEN()` - length of a string), when you input an array, will give you an array.
+- See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5986993):
+  - `LEN()` yields an array.
+  - Note that `SUM(LEN(B3:B6))`$\neq$`SUM(B3:B6)` (the former is 4 as the array has four elements).
   - Note that when I wrote the above, it became `SUM(LEN(B3#))` automatically - more on that later.
 - `SUM(LEN(B3:B6))` will work in any version of Excel because it requires only one cell to output, but not `LEN(B3:B6)` as it requires several cells (“spilling”).
 - Note you can spill named ranges, too!
@@ -178,27 +179,27 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 - You can also use arrays in arguments of known formulas such as `VLOOKUP()`,
   - For instance `VLOOKUP(.,.,{2,5})` will return value from the 2nd and 5th columns row-wise.
   - If you use `VLOOKUP(.,.,{2;5})` (with the semicolon) they will display columnwise.
-  - See examples in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+  - See examples in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5986993).
 
 ## The `#` sign
 
 - The `#` sign when added to a reference to a cell where a dynamic array is written will duplicate that array (and spilled results).
 - It is shorter, but also it will dynamically change the size of the array
   - This can be desired or not.
-  - See example in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+  - See examples in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5986993).
 
 ## New formulas
 
 - There are a number of new formulas which were available in coding languages like `R` for a long time, which can be useful, and which are now available in Excel
   - for instance `SEQUENCE()`, `UNIQUE()`, `FILTER()`, `RANDARRAY()`…
-- Some of those are exemplifed in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456).
+- Some of those are exemplifed in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5986993).
 - You are encouraged to browse through. They really bring data handling in Excel a little closer to coded languages such as `R`.
 
 ## Lookup functions
 
 - Lookup functions are essential for Excel users.
-- Useful when you need to search within a single row or column to find a corresponding value in the same position in a second row or column.
-- Multiple lookup functions are available.
+- These are essentially functions that look up for values in a table according to some criteria.
+- Various lookup functions are available.
 - All of them works with arrays of lookup values!
 
 ### `VLOOKUP()`
@@ -206,8 +207,8 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 - Available for all versions of Excel, so it is reliable when sharing
   spreadsheets.
 - Some drawbacks of `VLOOKUP()`:
-  - Lookup Column Must Be the First Column
-  - Can be confusing when specifying the return column
+  - The lookup column in the table of origin must be the first column (like an index)
+  - This is not to be confused with the column number of what we want to return (the result)
 - `HLOOKUP()` is the horizontal version of `VLOOKUP()`.
 - Check [`this video`](https://support.microsoft.com/en-au/office/video-vlookup-when-and-how-to-use-it-9a86157a-5542-4148-a536-724823014785) to see how it works.
 
@@ -227,7 +228,7 @@ See [Microsoft - `Keyboard shortcuts in Excel`](https://support.microsoft.com/en
 - `XMATCH()` is more robust by providing new match mode and search mode.
 - By combining with `INDEX()`, it returns the value instead of the index inside the lookup array.
 
-Check [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for comparisons between these lookup functions.
+Check [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5986993) for comparisons between these lookup functions.
 
 Reference: Chapter 7 and 11 of Murray (2022)
 
