@@ -79,9 +79,7 @@ Please let us know of any mistake or required update on [`Ed`](https://canvas.lm
 <!-- ## Pre-Tutorial work -->
 <!-- Please study those questions **before** the tutorial. -->
 <!-- Pre-Tutorial exercises are available in the [``Pre-Tutorial book``](https://canvas.lms.unimelb.edu.au/courses/173733/modules/items/4464391), which already includes solutions. It is recommended to attempt the questions *before* looking at the solutions -->
-
-## Tutorial materials
-
+<!-- ## Tutorial materials -->
 <!-- Some questions have been especially selected for the tutorials. Students should review and attempt those questions ***prior to their scheduled tutorial***, after they complete the pre-tutorial work.  -->
 <!-- The [``Tutorial book``]() includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set. -->
 <!-- Note that solutions will be gradually added to that same document. Hence it is not recommended to print it, as it will regularly change (typos will also dynamically be corrected). -->
@@ -102,10 +100,8 @@ Tutorial exercises in scope this week are
 <!-- <iframe height="420" width="640" allowfullscreen frameborder=0 src="https://echo360.net.au/media/a5dc442a-1e84-49c8-b317-3f4eb4c1cfa0/public?autoplay=false&automute=false"></iframe> -->
 <!--  -->
 <!-- <p style="font-size:10px;color: rgb(252, 156, 249);"> If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and <a href="https://canvas.lms.unimelb.edu.au/courses/145406/external_tools/701">entered Lecture Capture</a> via Canvas once for each session. This is to restrict access to students enrolled at the University of Melbourne only. </p> -->
-
-## Next week (week 3)
-
-We will move on to Module 3 (and perhaps 4).
+<!-- ## Next week (week 3) -->
+<!-- We will move on to Module 3 (and perhaps 4). -->
 
 # Preparation for assessment
 

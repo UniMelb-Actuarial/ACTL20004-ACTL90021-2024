@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '04 July 2024'
+date: '01 August 2024 16:55'
 output:
   beamer_presentation:
     toc: true
@@ -30,7 +30,7 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{verbatim}
   - \usepackage[english]{varioref}
-  - \usepackage{natbib}
+  - \usepackage[numbers]{natbib}
   - \usepackage{actuarialangle}
   - \usepackage{pgfpages}    
   - \pgfdeclareimage[height=1cm]{university-logo}{../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png}
@@ -122,7 +122,7 @@ with IBNR
 
 Taylor (2000), Table 2.1 and Table 2.2 provide an example of such calculations, where `\(f(i)=1\)`.
 
-See the spreadsheet [`here`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291).
+See the spreadsheet [`here`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5987604).
 
 ------------------------------------------------------------------------
 
@@ -191,7 +191,7 @@ Notes on the extrapolation:
 
 - Table 2.3 and 2.4 revisit the previous example with `\(S=\{0,1\}\)`.
 - This can be useful if some disturbance to the claim notification process has caused a movement between development periods 0 and 1 but has had no other effect.
-- See the spreadsheet [`here`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291).
+- See the spreadsheet [`here`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5987604).
 
 ------------------------------------------------------------------------
 
@@ -241,7 +241,7 @@ Notes on treatment of the last row:
 ### Example
 
 - Table 2.5, 2.6 and 2.7 revisit the previous example using the chain ladder example.
-- See the spreadsheet [`here`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291).
+- See the spreadsheet [`here`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5987604).
 - Notes on the extrapolation: assuming that it is the excess over 1 that decays exponentially, we fit `\(\ln\left[\hat{v}(j-6)-1\right]\)` for `\(j=6,\ldots,9\)`. The extrapolation to infinity is then added to 1 to get an age to ultimate factor. This is an ad hoc approach, but it’s the one’s taken in the book.
 
 ## Derivation 2 - Poisson approach
@@ -306,10 +306,10 @@ is the proportion of claims notified **in** development period `\(j\)` (assume `
 
 ## Example
 
-- Table 2.8 (see [`spreadsheet here for calculations`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291)) displays estimated claim frequencies from the three methods presented in the previous section.
+- Table 2.8 (see [`spreadsheet here for calculations`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5987604)) displays estimated claim frequencies from the three methods presented in the previous section.
   - 1991 and 1992 seem to reverse a strong downward trend from 1984 to 1990.
   - is this due to a method issue (introduced when “completing the rectangle”), or due to a real effect?
-- Table 2.9 (see [`spreadsheet here for calculations`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291)) and associated Figure 2.2 compares the notified claims frequency with the estimated claims frequencies of Table 2.8.
+- Table 2.9 (see [`spreadsheet here for calculations`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5987604)) and associated Figure 2.2 compares the notified claims frequency with the estimated claims frequencies of Table 2.8.
   - It appears that the reversal of trend is already present in the actual data, and is not a result of the modelling.
   - This may reassure the actuary that the reversal is real. She would need to gather more data from the claims department to ascertain whether that is a reasonable feature of the model.
 
@@ -327,4 +327,4 @@ Taylor, Greg. 2000. *Loss Reserving: An Actuarial Perspective*. Huebner Internat
 
 </div>
 
-[^1]: References: Chapter 2 of Taylor (2000) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/23-Top-M3-lec.pdf)
+[^1]: References: Chapter 2 of Taylor (2000) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/24-Top-M3-lec.pdf)

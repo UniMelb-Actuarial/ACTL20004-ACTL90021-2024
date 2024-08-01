@@ -1,6 +1,6 @@
 ---
-bookHidden: true
-bookSearchExclude: true
+bookHidden: false
+bookSearchExclude: false
 title: "Week 3 Study Plan"
 weight: 3
 bibliography: ../../../../static/libraries.bib
@@ -14,8 +14,10 @@ Week 3
 
 This week, we will cover the following topics:
 
-- Module 3, which is concerned with the calculation of IBNR claim counts.
-- There are some slides with the main elements, but a major component of the module is with a spreadsheet, which can be downloaded [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291)
+- The third section of Module 6 Excel, which is concerned with arrays and related formulas.
+- The end of Module 2: essentially a bit more notation, and discussion of the regulatory framework in Australia
+- The first two sections of Module 3: how to take exposure into account (a major element that could change from one period of origin to the next), and our first reserving technique for counts, which is based on exposure
+- There are some slides with the main elements, but a major component of the module is with a spreadsheet, which can be downloaded [here](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5987604)
 
 <!-- Here is the end of week 2 video, which introduces week 3: -->
 <!--  -->
@@ -27,42 +29,62 @@ See also detailed learning outcomes of 5.2 (“Liability valuations / Run-off tr
 
 # Main references and lectures
 
+<p style="font-size:12px;color: rgb(255, 0, 0);">
+Note: Typos and issues are being updated continuously throughout the semester. The online notes are always up-to-date, and can easily be read on a mobile device (version date is at the bottom). If you download a pdf version of the slides, a version date is also available on the first page. If you click on the link “latest slides” you will download the latest version. You can then compare the date and work out if it was updated.
+</p>
+
+## Module 2: Basic Reserving Concepts
+
+Read: [`Module 2: Basic Reserving Concepts`](../../2-reserving/m2-basic-reserving-concepts/)
+
+Annotate: [`slides`](../../../output/24-Top-M2-lec.pdf)
+[`annotated slides UG`](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [`annotated slides PG`](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
+
+Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
+
 ## Module 3: Reserving Claim Counts
 
 Read: [`Module 3: Reserving Claim Counts`](../../2-reserving/m3-reserving-claim-counts/)
 
-Annotate: [`slides`](../../../output/23-Top-M3-lec.pdf)
+Annotate: [`slides`](../../../output/24-Top-M3-lec.pdf) [`spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5987604) [`annotated slides UG`](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [`annotated slides PG`](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
 
-Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/153686/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/154246/external_tools/701)). This is where annotated slides will be made available, too.
+Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
+
+## Module 6: Excel
+
+Read: [`Module 6: Excel topics`](../../3-excel/m6-excel)
+
+Annotate: [`slides`](../../../output/24-Top-M6-lec.pdf) [`spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5986993)
+[`annotated slides UG`](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [`annotated slides PG`](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
+
+Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
 
 # Additional preparation and resources
 
 ## Mandatory
 
-1.  Chapter 2 of Taylor (2000)
-2.  Spreadsheet [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5059291)
+1.  Chapter 2 and 3 of Taylor (2000)
+2.  Spreadsheet [here](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5987604) (Module 3)
+3.  Spreadsheet [here](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5986993) (Excel)
 
 ## Optional
 
-1.  Unit 5 of (**IoA23?**)
+1.  Unit 5 of IoA (2023)
 
 # Tutorials
 
-Please let us know of any mistake or required update on [`Ed`](https://canvas.lms.unimelb.edu.au/courses/191080/external_tools/5837?display=borderless).
+Please let us know of any mistake or required update on [`Ed`](https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless).
 
 <!-- ## Pre-Tutorial work -->
 <!-- Please study those questions **before** the tutorial. -->
 <!-- Pre-Tutorial exercises are available in the [``Pre-Tutorial book``](https://canvas.lms.unimelb.edu.au/courses/173733/modules/items/4464391), which already includes solutions. It is recommended to attempt the questions *before* looking at the solutions -->
-
-## Tutorial materials
-
-Some questions have been especially selected for the tutorials. Students should review The [`Tutorial book`]() includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set.
-
-Note that solutions will be gradually added to that same document. Hence it is not recommended to print it, as it will regularly change (typos will also dynamically be corrected).
+<!-- ## Tutorial materials -->
+<!-- Some questions have been especially selected for the tutorials. Students should review The [``Tutorial book``]() includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set. -->
+<!-- Note that solutions will be gradually added to that same document. Hence it is not recommended to print it, as it will regularly change (typos will also dynamically be corrected). -->
 
 ## This week
 
-All of Module 3 is in scope for this week.
+Will be announced after the lectures.
 
 <!-- A recording will be made available at the end of the week. -->
 <!-- Here is the recording available for Week 3 from William: -->
@@ -74,10 +96,8 @@ All of Module 3 is in scope for this week.
 <!-- <iframe height="420" width="640" allowfullscreen frameborder=0 src="https://echo360.net.au/media/6f1c6fc6-a83f-4700-9285-14b09a8d8918/public?autoplay=false&automute=false"></iframe> -->
 <!--  -->
 <!-- <p style="font-size:10px;color: rgb(252, 156, 249);"> If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and <a href="https://canvas.lms.unimelb.edu.au/courses/145406/external_tools/701">entered Lecture Capture</a> via Canvas once for each session. This is to restrict access to students enrolled at the University of Melbourne only. </p> -->
-
-## Next week (week 4)
-
-Next week, we will discuss Module 4.
+<!-- ## Next week (week 4) -->
+<!-- Next week, we will discuss Module 4. -->
 
 # Preparation for assessment
 
@@ -96,6 +116,12 @@ Next week, we will discuss Module 4.
 # References
 
 <div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+
+<div id="ref-IoA23" class="csl-entry">
+
+IoA. 2023. *Course Notes and Core Reading for Subject CM2 Models*. The Institute of Actuaries.
+
+</div>
 
 <div id="ref-Tay00" class="csl-entry">
 
