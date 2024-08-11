@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi[^2]"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '01 August 2024 14:54'
+date: '11 August 2024 17:01'
 output:
   beamer_presentation:
     toc: true
@@ -271,7 +271,7 @@ Reference: Chapter 7 and 11 of Murray (2022)
 - Excel recalculates them even if you changed a cell without these functions!
 - Can be computationally inefficient if the spreadsheet relies on them heavily.
 
-See `reference` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for demonstrations.
+See `M6.4 - Dynamic references` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6007589) for demonstrations.
 
 ## How to use them for triangles?
 
@@ -285,16 +285,16 @@ See `reference` tab in [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.a
 
 <img src="offset.png" width="100%" style="display: block; margin: auto;" />
 
-1. First select the whole triangle (`OFFSET($B4:$G8,0,0)`).
-2. Select the range for summation using offset (The last two arguments in `OFFSET`).
-3. As development period increase, dynamically change the references by editing the height and width of the offset using the development period.
+1.  First select the whole triangle (`OFFSET($B4:$G8,0,0)`).
+2.  Select the range for summation using offset (The last two arguments in `OFFSET`).
+3.  As the development period increase, dynamically change the references by editing the height and width of the offset using the origin and development period indices.
 
 ### Indirect Address method
 
 <img src="indad.png" width="100%" style="display: block; margin: auto;" />
 
-1. Select the top left corner of the triangle first (`INDIRECT(ADDRESS(4,2))`).
-2. Dynamically change the reference by editing the location of bottom right corner of the reference (`INDIRECT(ADDRESS(7-C2, 3+C2)))`).
+1.  Select the top left corner of the triangle first (`INDIRECT(ADDRESS(4,2))`).
+2.  Dynamically change the reference by editing the location of bottom right corner of the reference (`INDIRECT(ADDRESS(7-C2, 3+C2)))`).
 
 Reference: Chapter 11 of Murray (2022)
 
