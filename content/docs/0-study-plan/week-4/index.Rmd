@@ -1,6 +1,6 @@
 ---
-bookHidden: true
-bookSearchExclude: true
+bookHidden: false
+bookSearchExclude: false
 title: "Week 4 Study Plan"
 weight: 4
 bibliography: ../../../../static/libraries.bib
@@ -14,8 +14,12 @@ bibliography: ../../../../static/libraries.bib
 
 This week, we will cover the following topics:
 
-- Module 4, which is concerned with the calculation of IBNR claim amounts.
-- There are some slides with the main elements, but a major component of the module is with two spreadsheets, which can be downloaded [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080918) and [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080919)
+- For Excel, we will discuss dynamic referencing, which will be most helpful to avoid the tedious manual editing of formulas when dealing with triangles.
+- For reserving, the second half of Module 3, which introduces the most important reserving technique (rationale) you will learn in this subject - the Chain Ladder method.
+
+
+<!-- - Module 4, which is concerned with the calculation of IBNR claim amounts. -->
+<!-- - There are some slides with the main elements, but a major component of the module is with two spreadsheets, which can be downloaded [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080918) and [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080919) -->
 
 
 
@@ -24,14 +28,37 @@ See also detailed learning outcomes of 5.2 ("Liability valuations / Run-off tria
 # Main references and lectures
 
 
-## Module 4
+<p style="font-size:12px;color: rgb(255, 0, 0);">Note: Typos and issues are being updated continuously throughout the semester. The online notes are always up-to-date, and can easily be read on a mobile device (version date is at the bottom). If you download a pdf version of the slides, a version date is also available on the first page. If you click on the link "latest slides" you will download the latest version. You can then compare the date and work out if it was updated. </p>
 
 
-Read: [``Module 4``](../../2-reserving/m4-reserving-claim-amounts/)
 
-Annotate: [``slides``](../../../output/23-Top-M4-lec.pdf) 
+## Module 3: Reserving Claim Counts
 
-Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/153686/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/154246/external_tools/701)). This is where annotated slides will be made available, too.
+Read: [``Module 3: Reserving Claim Counts``](../../2-reserving/m3-reserving-claim-counts/)
+
+Annotate: [``slides``](../../../output/24-Top-M3-lec.pdf) [``spreadsheet``](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5987604) [``annotated slides UG``](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [``annotated slides PG``](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
+
+Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
+
+
+
+
+## Module 6: Excel
+
+Read: [``Module 6: Excel topics``](../../3-excel/m6-excel)
+
+Annotate: [``slides``](../../../output/24-Top-M6-lec.pdf) [``spreadsheet``](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6007589) 
+[``annotated slides UG``](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [``annotated slides PG``](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
+
+Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
+<!-- ## Module 4 -->
+
+
+<!-- Read: [``Module 4``](../../2-reserving/m4-reserving-claim-amounts/) -->
+
+<!-- Annotate: [``slides``](../../../output/23-Top-M4-lec.pdf)  -->
+
+<!-- Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/153686/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/154246/external_tools/701)). This is where annotated slides will be made available, too. -->
 
 
 
@@ -39,9 +66,16 @@ Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https:/
 
 ## Mandatory
 
-1. Chapter 3 of @Tay00.
-1. Spreadsheet [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080918)
-1. Spreadsheet [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080919)
+1. Chapter 2 of @Tay00.
+1. Spreadsheet [here](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/5987604)
+1. Spreadsheet [here](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6007589)
+
+
+
+
+<!-- 1. Chapter 3 of @Tay00. -->
+<!-- 1. Spreadsheet [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080918) -->
+<!-- 1. Spreadsheet [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080919) -->
 
 ## Optional
 
@@ -51,38 +85,31 @@ Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https:/
 
 # Tutorials
 
-Please let us know of any mistake or required update on [``Ed``](https://canvas.lms.unimelb.edu.au/courses/191080/external_tools/5837?display=borderless).
+Please let us know of any mistake or required update on [``Ed``](https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless).
 
-## Tutorial materials
+<!-- ## Pre-Tutorial work -->
 
-Some questions have been especially selected for the tutorials. Students should review The [``Tutorial book``]() includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set.
+<!-- Please study those questions **before** the tutorial. -->
 
-Note that solutions will be gradually added to that same document. Hence it is not recommended to print it, as it will regularly change (typos will also dynamically be corrected).
+<!-- Pre-Tutorial exercises are available in the [``Pre-Tutorial book``](https://canvas.lms.unimelb.edu.au/courses/173733/modules/items/4464391), which already includes solutions. It is recommended to attempt the questions *before* looking at the solutions -->
+
+<!-- ## Tutorial materials -->
+
+<!-- Some questions have been especially selected for the tutorials. Students should review The [``Tutorial book``]() includes all questions for the whole semester already, but solutions will only be added sequentially at the end of each week, as we work our way through the set. -->
+
+<!-- Note that solutions will be gradually added to that same document. Hence it is not recommended to print it, as it will regularly change (typos will also dynamically be corrected). -->
+
 
 ## This week
 
-All of Module 4 is in scope for the week 4 tutorials. 
 
-<!-- Here is the recording available for Week 4 from William: -->
+To be announced after the lectures.
 
-<!-- <!--html_preserve--> -->
-<!-- <iframe height="420" width="640" allowfullscreen frameborder=0 src="https://echo360.net.au/media/55dbe360-7d90-4fd7-af2d-c204d24c5830/public?autoplay=false&automute=false"></iframe> -->
-<!-- <!--/html_preserve--> -->
+<!-- Tutorial exercises in scope this week are  -->
 
-<!-- Here is the recording available for Week 4 from Eric: -->
-
-<!-- <!--html_preserve--> -->
-<!-- <iframe height="420" width="640" allowfullscreen frameborder=0 src="https://echo360.net.au/media/decc70d6-0e19-49a0-b6ea-e4baf6274fa7/public?autoplay=false&automute=false"></iframe> -->
-<!-- <!--/html_preserve--> -->
-
-<!-- <p style="font-size:10px;color: rgb(252, 156, 249);"> If you wish to watch the embedded videos from Lecture Capture, you need to have logged in and <a href="https://canvas.lms.unimelb.edu.au/courses/145406/external_tools/701">entered Lecture Capture</a> via Canvas once for each session. This is to restrict access to students enrolled at the University of Melbourne only. </p> -->
-
-
-## Next week (week 5)
-
-Next week, we will do a Q&A for the mid-semester exam.
-
-
+<!-- - Pre-tutorials: 6.3.1 (`lookup1`), 6.3.2 (`array1`), as well as reviewing the lecture's spreadsheet and associated slides (ignore $f(i)$ for now). -->
+<!-- - Tutorials: 6.3.1 (`exposurexl1`) and 3.1.1 (`LRcountsxl1`). Note that 3.1.1 has to be replicated for three different data sets. It will take you a while to do all of them for the first time! Have the lecture spreadsheet next to it and try to replicate the steps. -->
+ 
 
 
 
@@ -95,7 +122,6 @@ Next week, we will do a Q&A for the mid-semester exam.
 <!-- devtools::install_github("hadley/emo") -->
 
 - Finalise your summary of Module 3 as you consolidate your understanding with the exercises.
-- Start your summary of Module 4. This is the last one in scope for the mid-semester exam.
 
 
 ***Make sure you start preparing for the mid-semester exam***
@@ -103,7 +129,7 @@ Next week, we will do a Q&A for the mid-semester exam.
 ## Assignment (25%)
 
 - Nothing to do for now.
-- The assignment will likely be made available shortly after the mid-semester exam.
+- The assignment will likely be made available in the second half of the subject.
 
 
 # References
