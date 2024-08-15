@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi[^2]"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '11 August 2024 17:01'
+date: '15 August 2024 15:48'
 output:
   beamer_presentation:
     toc: true
@@ -336,7 +336,7 @@ There is no single way to achieve the objectives above, but there are a number o
 
 Use of dependents / precedents, e.g.:
 
-1.  go to tab `Dependents - Precedents - PPCI`;
+1.  go to tab `M6.5 - Dependents` in the [`spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021475);
 2.  click on one of the outstanding loss projected amounts;
 3.  make sure the formula tool tab is live;
 4.  click on the “trace precedents” sequentially.

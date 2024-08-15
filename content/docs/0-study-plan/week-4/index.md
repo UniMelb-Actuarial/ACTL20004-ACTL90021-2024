@@ -17,9 +17,6 @@ This week, we will cover the following topics:
 - For Excel, we will discuss dynamic referencing, which will be most helpful to avoid the tedious manual editing of formulas when dealing with triangles.
 - For reserving, the second half of Module 3, which introduces the most important reserving technique (rationale) you will learn in this subject - the Chain Ladder method.
 
-<!-- - Module 4, which is concerned with the calculation of IBNR claim amounts. -->
-<!-- - There are some slides with the main elements, but a major component of the module is with two spreadsheets, which can be downloaded [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080918) and [here](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080919) -->
-
 See also detailed learning outcomes of 5.2 (“Liability valuations / Run-off triangles”) of the CM2 syllabus [`here`](../../0-subject-guide/SILO).
 
 # Main references and lectures
@@ -44,11 +41,6 @@ Annotate: [`slides`](../../../output/24-Top-M6-lec.pdf) [`spreadsheet`](https://
 [`annotated slides UG`](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [`annotated slides PG`](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
 
 Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
-<!-- ## Module 4 -->
-
-<!-- Read: [``Module 4``](../../2-reserving/m4-reserving-claim-amounts/) -->
-<!-- Annotate: [``slides``](../../../output/23-Top-M4-lec.pdf)  -->
-<!-- Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https://canvas.lms.unimelb.edu.au/courses/153686/external_tools/701)/[``PG``](https://canvas.lms.unimelb.edu.au/courses/154246/external_tools/701)). This is where annotated slides will be made available, too. -->
 
 # Additional preparation and resources
 

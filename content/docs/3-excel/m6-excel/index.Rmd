@@ -413,7 +413,7 @@ There is no single way to achieve the objectives above, but there are a number o
 
 Use of dependents / precedents, e.g.:
 
-1. go to tab `Dependents - Precedents - PPCI`;
+1. go to tab `M6.5 - Dependents` in the [`spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021475);
 1. click on one of the outstanding loss projected amounts;
 1. make sure the formula tool tab is live;
 1. click on the "trace precedents" sequentially.

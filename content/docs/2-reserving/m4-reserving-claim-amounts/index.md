@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '04 July 2024'
+date: '15 August 2024 15:51'
 output:
   beamer_presentation:
     toc: true
@@ -30,7 +30,7 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{verbatim}
   - \usepackage[english]{varioref}
-  - \usepackage{natbib}
+  - \usepackage[numbers]{natbib}
   - \usepackage{actuarialangle}
   - \usepackage{pgfpages}    
   - \pgfdeclareimage[height=1cm]{university-logo}{../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png}
@@ -61,7 +61,7 @@ classoption: t,handout
 
 ## Two approaches
 
-You can think of the evolution of a claim costs as two parallel paths; consider those two examples (Figure 2 of (**AvTaWa23?**)):
+You can think of the evolution of a claim costs as two parallel paths; consider those two examples (Figure 2 of Avanzi, Taylor, and Wang (2023)):
 
 <img src="claim_history.png" width="100%" style="display: block; margin: auto;" />
 
@@ -108,7 +108,7 @@ This is discussed/applied in Section 4.4 of Taylor (2000) (outside scope).
 
 ### Example
 
-- See the spreadsheet [`Chapter3.xlsx`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080918) for details of the calculations. The first tab sets out payment data corresponding to the example we studied in Module 3.
+- See the spreadsheet [`Chapter3.xlsx`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021476) for details of the calculations. The first tab sets out payment data corresponding to the example we studied in Module 3.
 - Table 3.1-3.3 demonstrate how chain ladder can be used on payment data, in absence of inflation adjusment.
 
 ### Inflation adjusted chain ladder
@@ -160,7 +160,7 @@ Note:
 
 ### Example
 
-- See the spreadsheet [`Chapter3.xlsx`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080918) for details of the calculations.
+- See the spreadsheet [`Chapter3.xlsx`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021476) for details of the calculations.
 - Table 3.4 displays `\(C^*(i,j)\)` as of 31 December 1995 using the inflation index set of Appendix B.2.
   - Note the accumulation factor of 1995 is not 1; it likely reflects the fact that payments in cells `\(k=1995\)` were spread throughout 1995, so some adjustment is required to bring them to 31 December.
 - Table 3.5 determines age to age factors, which we analyse from the point a view of the discussion above before proceeding to projections.
@@ -204,7 +204,7 @@ Note:
 
 ### Example
 
-- See the spreadsheet [`Chapter3.xlsx`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080918) for details of the calculations.
+- See the spreadsheet [`Chapter3.xlsx`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021476) for details of the calculations.
 - Table 3.10 displays incurred losses `\(I(i,j)\)` (the “cumulative” data), which is decomposed in the next table (not in book) into `\(\Delta I(i,j)\)` (the “incremental” data) - the heat map on that triangle illustrates the generally increasing, then decreasing nature of aggregate incurred losses.
 - Table 3.11 age to age factors on the cumulative data.
 - Note that the factors are no longer all `\(>1\)`, which requires a new smoothing method, namely here a 3-period moving average; see (3.61) in Taylor (2000).
@@ -287,7 +287,7 @@ $$ \hat{\kappa}(k) = \frac{\displaystyle
 
 ## Example
 
-- See the spreadsheet [`Chapter3.xlsx`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080918) for details of the calculations.
+- See the spreadsheet [`Chapter3.xlsx`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021476) for details of the calculations.
 - Table 3.13 starts by computing the `\(C(i,j)/N(i)\)`, where `\(N(i)\)` comes from Table 2.4. It also displays diagonal and column sums.
 - Those sums are used in Table 3.14 to calculate the `\(\hat{\kappa}(k)\)` and `\(v^*(j)\)` in the sequential way described above.
 
@@ -342,7 +342,7 @@ $$ \hat{\kappa}(k) = \frac{\displaystyle
 
 ## Example
 
-- See the spreadsheet [`PPCI.xlsx`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5080919) for details of the calculations, which are based on the data of Taylor (2000), but do not follow the (more complicated) calculations of Chapter 4.
+- See the spreadsheet [`PPCI.xlsx`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021477) for details of the calculations, which are based on the data of Taylor (2000), but do not follow the (more complicated) calculations of Chapter 4.
 - Start from Table 3.10 of incurred losses, and incurred claims counts from Table 2.2. We need to transform the latter into cumulative form, so we can have both of same nature (cumulative).
 - The result of the division is an average payment per claim incurred:
   - Analysis of age to age actors shows that recent years are different, especially for later years.
@@ -359,6 +359,12 @@ A comparison and recap of all methods seen in this module is provided at the bot
 
 <div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 
+<div id="ref-AvTaWa23" class="csl-entry">
+
+Avanzi, Benjamin, Greg Taylor, and Melantha Wang. 2023. “SPLICE: A Synthetic Paid Loss and Incurred Cost Experience Simulator.” *Annals of Actuarial Science* 17 (1): 7–35.
+
+</div>
+
 <div id="ref-Tay00" class="csl-entry">
 
 Taylor, Greg. 2000. *Loss Reserving: An Actuarial Perspective*. Huebner International Series on Risk, Insurance and Economic Security. Kluwer Academic Publishers.
@@ -367,4 +373,4 @@ Taylor, Greg. 2000. *Loss Reserving: An Actuarial Perspective*. Huebner Internat
 
 </div>
 
-[^1]: References: Chapter 3 of Taylor (2000) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/23-Top-M4-lec.pdf)
+[^1]: References: Chapter 3 of Taylor (2000) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/24-Top-M4-lec.pdf)
