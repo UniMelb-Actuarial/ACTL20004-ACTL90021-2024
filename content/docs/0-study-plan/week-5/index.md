@@ -84,16 +84,17 @@ Will be announced after the lectures.
 <!-- install.packages("devtools") -->
 <!-- devtools::install_github("hadley/emo") -->
 
-- Finalise your summary of Modules 1-4.
+- Finalise your summary of Modules 1-3.
 - Work on your [cheat sheet](https://topics-actl.netlify.app/docs/0-subject-guide/assessment/#type)
 
-Note that all of Modules 1 to 4 are in scope for the [`mid-semester exam`](../../0-subject-guide/assessment//#mid-semester-exam); see also [`this post on Ed`](https://edstem.org/au/courses/12155/discussion/1514408).
+<!-- Note that all of Modules 1 to 4 are in scope for the [``mid-semester exam``](../../0-subject-guide/assessment//#mid-semester-exam); see also [`this post on Ed`](https://edstem.org/au/courses/12155/discussion/1514408). -->
 
 ***Extra consultation hours will be announced***
 
 ## Assignment (25%)
 
 - Nothing to do for now, except not fall behind with course materials 😄.
+- The assignment will likely be made available in the second half of the subject.
 
 # References
 
