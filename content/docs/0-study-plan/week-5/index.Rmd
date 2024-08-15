@@ -97,7 +97,7 @@ Watch: refer to your lecture recording under "Lecture Capture" ([``UG``](https:/
 
 Please let us know of any mistake or required update on [``Ed``](https://canvas.lms.unimelb.edu.au/courses/220261/external_tools/5837?display=borderless).
 
-## Tutorial materials
+<!-- ## Tutorial materials -->
 
 
 ## This week
