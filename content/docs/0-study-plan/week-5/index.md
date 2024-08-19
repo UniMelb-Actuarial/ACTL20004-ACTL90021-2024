@@ -73,9 +73,10 @@ Please let us know of any mistake or required update on [`Ed`](https://canvas.lm
 
 Will be announced after the lectures.
 
-<!-- Tutorial exercises in scope this week are -->
-<!-- - Pre-tutorials: 6.4.1 (`offset1`), as well as reviewing the lecture's spreadsheet and associated slides (ignore `\(f(i)\)` for now). -->
-<!-- - Tutorials: 3.2.1 (`LRcountsxl2`), 3.2.2 (`compareLR1`), and 3.3.1 (`frequency1`). Note that 3.2.1-3.2.2 has to be replicated for three different data sets. It will take you a while to do all of them for the first time! Have the lecture spreadsheet next to it and try to replicate the steps. -->
+Tutorial exercises in scope this week are
+
+- Pre-tutorials: 6.5.1 (`etiquette1xl`), as well as reviewing the lecture’s spreadsheet and associated slides.
+- Tutorials: 4.1.1 (`LRamounts1`), 4.2.1 (`LRamounts2`), and 4.2.2 (`LRamounts3`).
 
 # Preparation for assessment
 
