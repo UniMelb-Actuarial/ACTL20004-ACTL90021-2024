@@ -36,7 +36,7 @@ Note: Typos and issues are being updated continuously throughout the semester. T
 
 Read: [`Module 4`](../../2-reserving/m4-reserving-claim-amounts/)
 
-Annotate: [`slides`](../../../output/24-Top-M4-lec.pdf)
+Annotate: [`slides`](../../../output/24-Top-M4-lec.pdf) [`Spreadsheet for the PPCI method`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021477)
 
 Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
 
@@ -52,7 +52,7 @@ Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https
 
 Read: [`Module 6: Excel topics`](../../3-excel/m6-excel)
 
-Annotate: [`slides`](../../../output/24-Top-M6-lec.pdf) [`spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021475)
+Annotate: [`slides`](../../../output/24-Top-M6-lec.pdf) [`spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6034154)
 [`annotated slides UG`](https://canvas.lms.unimelb.edu.au/courses/183926/modules) [`annotated slides PG`](https://canvas.lms.unimelb.edu.au/courses/181779/modules)
 
 Watch: refer to your lecture recording under “Lecture Capture” ([`UG`](https://canvas.lms.unimelb.edu.au/courses/183926/external_tools/701)/[`PG`](https://canvas.lms.unimelb.edu.au/courses/181779/external_tools/701)). This is where annotated slides will be made available, too.
