@@ -18,8 +18,7 @@ This week, we have a lecture on Monday, the [`mid-semester exam`](https://topics
 
 In the lecture and tutorials, we will cover the following topics:
 
-- End of Module 4, which is concerned with the calculation of IBNR claim ***amounts*** (the actual payments/costs).
-- This week we focus on the Payment Per Claim Incurred (PPCI) method, which is akin to the Exposure methods for counts.
+- This week (for Module 4) we focus on the Payment Per Claim Incurred (PPCI) method, which is somewhat akin to the Exposure methods for counts.
 - There are some slides with the main elements, but major components of the module is with two spreadsheets, which can be downloaded [`here for Chapter 3`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021476) and [`here for the PPCI method`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6021477)
 - Module 5 discusses how to make a choice / combine diverging results from different reserving methods, and also introduced the Bornhuetter-Ferguson method, which typically deals with highly leveraged triangles for their most immature years.
 - In Excel, we discuss simulation, how to implement that in Excel, and also Macros. You will discuss simulation more with Yuyu.
