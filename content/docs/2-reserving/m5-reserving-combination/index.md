@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '01 November 2023'
+date: '23 August 2024 14:46'
 output:
   beamer_presentation:
     toc: true
@@ -29,7 +29,7 @@ header-includes:
   - \usepackage{booktabs}
   - \usepackage{verbatim}
   - \usepackage[english]{varioref}
-  - \usepackage{natbib}
+  - \usepackage[numbers]{natbib}
   - \usepackage{hyperref}
   - \usepackage{actuarialangle}
   - \usepackage{pgfpages}    
@@ -111,7 +111,7 @@ Those weights can be determined in different ways:
 - Judgmentally, by considering the properties of the models available, and their respective strenghts and weaknesses for different `\(i\)`.
 - With respect to some sort of objective criteria.
   - This is done to some extent in the book (Chapter 12).
-  - This has been done a lot more rigorously only very recently by [Avanzi et al. (2023)](https://arxiv.org/abs/2206.08541) via ensembling, which was awarded the 2023 Hachemeister Prize by the American Casualty Actuarial Society (CAS).
+  - This has been done a lot more rigorously only very recently by honours student Yanfeng (Jim) Li in [Avanzi et al. (2024)](https://doi.org/10.1080/03461238.2024.2365392) via ensembling, which was awarded the 2023 Hachemeister Prize by the American Casualty Actuarial Society (CAS).
   - It is still a relevant topic!
 
 # Allowance for prior expectations
@@ -139,7 +139,7 @@ Bornhuetter and Ferguson (1972) suggested the most simple approach, which is to 
 
 The “textbook”, “plain” vanilla Bornhuetter-Ferguson (BF):
 
-- applies `\(z(i)\)` on all or only some subset of the most immature years
+- applies `\(z(i)=0\)` on all or only some subset of the most immature years
 - calculates the prior expectation based on premium and loss ratios
 
 An example is provided below.
@@ -213,9 +213,9 @@ Remember that `\(\pi\)` is normally defined as a `\(\pi(j)\)`, so that `\(\pi(1)
 
 <div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 
-<div id="ref-AvLiWoXi23" class="csl-entry">
+<div id="ref-AvLiWoXi24" class="csl-entry">
 
-Avanzi, Benjamin, Yanfeng Li, Bernard Wong, and Alan Xian. 2023. “Ensemble Distributional Forecasting for Insurance Loss Reserving.”
+Avanzi, Benjamin, Yanfeng Li, Bernard Wong, and Alan Xian. 2024. “Ensemble Distributional Forecasting for Insurance Loss Reserving.” *Scandinavian Actuarial Journal* 2024.
 
 </div>
 
@@ -233,4 +233,4 @@ Taylor, Greg. 2000. *Loss Reserving: An Actuarial Perspective*. Huebner Internat
 
 </div>
 
-[^1]: References: Chapter 5 of Taylor (2000) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/23-Top-M5-lec.pdf)
+[^1]: References: Chapter 5 of Taylor (2000) \| `\(\; \rightarrow\)` [](https://gim-am3.netlify.app/output/24-Top-M5-lec.pdf)

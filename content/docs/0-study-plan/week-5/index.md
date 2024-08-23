@@ -71,7 +71,7 @@ Please let us know of any mistake or required update on [`Ed`](https://canvas.lm
 
 ## This week
 
-Will be announced after the lectures.
+<!-- Will be announced after the lectures. -->
 
 Tutorial exercises in scope this week are
 
@@ -89,8 +89,6 @@ Tutorial exercises in scope this week are
 - Work on your [cheat sheet](https://topics-actl.netlify.app/docs/0-subject-guide/assessment/#type)
 
 <!-- Note that all of Modules 1 to 4 are in scope for the [``mid-semester exam``](../../0-subject-guide/assessment//#mid-semester-exam); see also [`this post on Ed`](https://edstem.org/au/courses/12155/discussion/1514408). -->
-
-***Extra consultation hours will be announced***
 
 ## Assignment (25%)
 

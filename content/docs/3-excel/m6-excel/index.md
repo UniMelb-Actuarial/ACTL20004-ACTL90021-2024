@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi[^2]"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '15 August 2024 15:48'
+date: '23 August 2024 14:37'
 output:
   beamer_presentation:
     toc: true
@@ -407,7 +407,7 @@ This is useful for
 - Why does it work? Inverse transformation.
 - More theoretical formulation in Module 9.
 
-See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/191080/modules/items/5091456) for illustrations.
+See [`module 6 spreadsheet`](https://canvas.lms.unimelb.edu.au/courses/220261/modules/items/6034154) for illustrations.
 
 ## Macros
 
@@ -497,7 +497,7 @@ Reference: Chapter 2, 3 of Lee and Lee (2023)
   - I strongly encourage you to get started. Start by recording a macro, then play around with the code.
   - VBA allows more efficient calculations via compiled code, and is a powerful addition to Excel.
 - Some recent development in understanding spreadsheets with Large Language Models: [`SpreadsheetLLM: Encoding Spreadsheets for Large Language Models`](https://arxiv.org/abs/2407.09025).
-- Fun fact: the 2021 [`Excel World Champion`](https://www.fmworldcup.com/excel-esports/microsoft-excel-world-championship/) is an actuary: Andrew Ngai, now Director at Taylor Fry.
+- Fun fact: the triple-world Excel champion [`Excel World Champion`](https://www.actuaries.digital/2024/02/14/under-the-spotlight-with-the-microsoft-excel-king-andrew-ngai) is an actuary: Andrew Ngai, now Director at Taylor Fry.
 
 # References
 
