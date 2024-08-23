@@ -14,7 +14,7 @@ Week 6
 
 <!-- This week, we will cover the following topics: -->
 
-This week, we have the [`mid-semester exam`](https://topics-actl.netlify.app/docs/0-subject-guide/assessment/#mid-semester-exam) on Wednesday, and the remainder of tutorials for Modules 4/5/6 on Friday. This is the last week I’ll be teaching this semester!
+This week, we have a lecture on Monday, the [`mid-semester exam`](https://topics-actl.netlify.app/docs/0-subject-guide/assessment/#mid-semester-exam) on Wednesday, and the remainder of tutorials for Modules 4/5/6 on Friday. This is the last week I’ll be teaching this semester!
 
 In the lecture and tutorials, we will cover the following topics:
 
