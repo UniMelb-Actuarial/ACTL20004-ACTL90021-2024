@@ -7,7 +7,7 @@ subtitle: "Topics in Insurance, Risk, and Finance [^1]"
 author: "Professor Benjamin Avanzi"
 institute:  |
   ![](../../../../static/img/PRIMARY_A_Vertical_Housed_RGB.png){width=1.2in}  
-date: '23 August 2024 14:46'
+date: '27 August 2024 12:33'
 output:
   beamer_presentation:
     toc: true
@@ -172,14 +172,14 @@ The loss method proceeds as follows. For each `\(i\)`
   $$ LR(i) = \frac{C(i)}{EP(i)}.$$
 
 The method projects `\(LR(i)\)` from past values and infers `\(C(i)\)` from observable `\(EP(i)\)`. We have then (assuming chain ladder development patterns)
-`$$\overline{P_0^*}(i,k) = LR(i)EP(i)\left( 1-\frac{1}{\pi(k)}\right)$$`
+`$$\overline{P_0^*}(i,k) = LR(i)EP(i)\left( 1-\frac{1}{\pi(k-i)}\right)$$`
 which is typically applied with `\(z(i)=1\)` in immature (or all) years.
 
 ### Example
 
 Consider the following triangle (cumulative claims):
 
-| Origin |  EP   | DY1 | DY2 | DY3 | DY4 |
+| Origin |  EP   | DY0 | DY1 | DY2 | DY3 |
 |:------:|:-----:|:---:|:---:|:---:|:---:|
 |  2020  |  860  | 473 | 620 | 690 | 715 |
 |  2021  |  940  | 512 | 660 | 750 |     |
@@ -200,9 +200,9 @@ Then calculate the loss ratio `\(LR\)` and the prior expectations of ultimate:
 
 Now, we have
 
-`$$\begin{aligned} \text{outstanding} &= \sum_{i=1}^4 \overline{P_0^*}(i,4) \\ &= \sum_{i=1}^4 LR(i)EP(i)\left(1-\frac{1}{\pi(i)}\right) \\ &= 0+27.30+115.82+261.64 \\ &=404.76. \end{aligned}$$`
+`$$\begin{aligned} \text{outstanding} &= \sum_{i=1}^4 \overline{P_0^*}(i,4) \\ &= \sum_{i=1}^4 LR(i)EP(i)\left(1-\frac{1}{\pi(4-i)}\right) \\ &= 0+27.30+115.82+261.64 \\ &=404.76. \end{aligned}$$`
 
-Remember that `\(\pi\)` is normally defined as a `\(\pi(j)\)`, so that `\(\pi(1)\)` applies to that year where we have only `\(j=1\)` cell available - the last row. Similarly, `\(\pi(3)\)` is the one that applies to the amount in the diagonal that is at `\(j=3\)` - here 781.41.
+Remember that `\(\pi\)` is normally defined as a `\(\pi(j)\)`, so that `\(\pi(0)\)` applies to that year where we have only one cell available - the last row. Similarly, `\(\pi(2)\)` is the one that applies to the amount in the diagonal that is at `\(j=2\)` - here 781.41.
 
 ### Extensions
 
