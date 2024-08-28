@@ -74,7 +74,7 @@ Please let us know of any mistake or required update on [`Ed`](https://canvas.lm
 
 ## This week
 
-Will be announced after the lectures.
+All of Module 5 and 6.6 are in scope this week.
 
 <!-- Tutorial exercises in scope this week are -->
 <!-- - Pre-tutorials: 6.5.1 (`etiquette1xl`), as well as reviewing the lecture's spreadsheet and associated slides. -->
